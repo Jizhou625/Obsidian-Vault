@@ -1,0 +1,203 @@
+{
+  "main": {
+    "id": "158c90f999367fcf",
+    "type": "split",
+    "children": [
+      {
+        "id": "eceff32da06ee945",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e4e30f26d5558813",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "分析学/凸分析/Lecture 1. Convex Sets.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f91c5cae2f6cc636",
+    "type": "split",
+    "children": [
+      {
+        "id": "1350d3288a9e97c3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1540de2207820773",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "bbc36c3718db1e11",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "dd44aabb805f5508",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "45b6cc51caac60ea",
+    "type": "split",
+    "children": [
+      {
+        "id": "4acbe99a6d909605",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "75efd8ef3626eec0",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "分析学/凸分析/Lecture 1. Convex Sets.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "77b7881659bc9657",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "分析学/凸分析/Lecture 1. Convex Sets.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "096966112e87e6b7",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "c0cb9946f3baa9db",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "分析学/凸分析/Lecture 1. Convex Sets.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "markdown-importer:打开 Markdown 格式转换器": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
+    }
+  },
+  "active": "e4e30f26d5558813",
+  "lastOpenFiles": [
+    "分析学/凸分析/Lecture 2. Convex Function.md",
+    "分析学/凸分析/Lecture 0. Topology.md",
+    "机器学习/Lecture 3. 线性分类问题.md",
+    "机器学习/Lecture 2.3. VC Theory(泛化上界).md",
+    "机器学习/Lecture 2.2. VC Theory(生长函数).md",
+    "Lecture 2. VC Theory.md",
+    "机器学习/Lecture 2.1. VC Theory(Rademacher复杂度).md.crswap",
+    "机器学习/Lecture 2.4. VC Theory(泛化下界).md.crswap",
+    "机器学习/Lecture 2.3. VC Theory(泛化上界).md.crswap",
+    "机器学习/Lecture 2.2. VC Theory(生长函数).md.crswap",
+    "机器学习/Lecture 2.4. VC Theory(泛化下界).md",
+    "机器学习/Lecture 2.4. VC Theory(泛化下界)",
+    "机器学习/Lecture 2.3. VC Theory(泛化上界)",
+    "机器学习/Lecture 2.1. VC Theory(Rademacher复杂度).md",
+    "机器学习/Lecture 2.2. VC Theory(生长函数)",
+    "机器学习/Lecture 2.1 VC Theory(Rademacher复杂度).md",
+    "机器学习/Lecture 2. VC Theory.md",
+    "机器学习/Lecture 2.1 VC Theory.md",
+    "分析学/数学分析/Lecture 1. 极限.md",
+    "概率论/概率不等式/Lecture 5. Inequalities Based on Specific Distribution.md",
+    "深度学习与强化学习/Lecture 5. Transformer.md",
+    "重要方法/Normalization of Neural Network.md",
+    "深度学习与强化学习/Lecture 1. Regularization and Deep Learning.md",
+    "深度学习与强化学习/Lecture 2. Optimization.md",
+    "重要方法/Initialization of Neural Network.md",
+    "深度学习与强化学习/Lecture 4. RNN.md",
+    "重要方法/No Free Lunch Theorem for Optimization.md",
+    "重要方法/Domain Adaptation.md",
+    "深度学习与强化学习/Lecture 3. CNN.md",
+    "未命名.canvas",
+    "重要方法/Normalization of Neural Network.assets/image-20230408131146636.png",
+    "矩阵代数/Chapter 1. 线性代数/Lecture 5. 矩阵对角化.md",
+    "分析学/凸分析/Lecture 1. Convex Sets.md",
+    "References/Theory/No Free Lunch.pdf",
+    "重要方法",
+    "深度学习与强化学习/Lecture 5. Transformer.assets/image-20230404135705974.png",
+    "深度学习与强化学习/Lecture 5. Transformer.assets/image-20230404135248179.png",
+    "深度学习与强化学习/Lecture 5. Transformer.assets/image-20230404133515600.png",
+    "深度学习与强化学习/Lecture 5. Transformer.assets",
+    "重要文献/Initialization of Neural Network.md",
+    "矩阵代数/Chapter 2. 矩阵求导/Lecture 2. 矩阵微分.md",
+    "深度学习与强化学习/Lecture 4. RNN.assets/image-20230403003612017.png",
+    "深度学习与强化学习/Lecture 4. RNN.assets/image-20230403002414466.png",
+    "深度学习与强化学习/Lecture 4. RNN.assets/image-20230403001612554.png",
+    "深度学习与强化学习/Lecture 4. RNN.assets/image-20230402235402584.png",
+    "深度学习与强化学习/Lecture 4. RNN.assets/image-20230402181813599.png",
+    "深度学习与强化学习/Lecture 4. RNN.assets/image-20230401192832430.png"
+  ]
+}

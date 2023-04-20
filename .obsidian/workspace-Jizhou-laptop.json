@@ -1,0 +1,290 @@
+{
+  "main": {
+    "id": "158c90f999367fcf",
+    "type": "split",
+    "children": [
+      {
+        "id": "37c0393210534c84",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9b942c2e2a71fe9b",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "2f7e1c95143e31f4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "机器学习/Lecture 1. Introduction.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f771f7f6655a6285",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "凸分析与最优化/Convergence Rate.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "75de30e6e78cd44f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "重要文献/No Free Lunch Theorem for Optimization.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d66e827f02030bd6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "重要文献/Domain Adaptation.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b60acd6c35422b56",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "深度学习与强化学习/Lecture 1. Regularization and Deep Learning.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e1cfc1544db39382",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "深度学习与强化学习/Lecture 2. Optimization.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "47ffcab988a648b5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "深度学习与强化学习/Lecture 2. Optimization.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ffd0f8fd5a4affa7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "深度学习与强化学习/Lecture 2. Optimization.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "91914dae8f9b1314",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "重要文献/Initialization of Neural Network.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 9
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f91c5cae2f6cc636",
+    "type": "split",
+    "children": [
+      {
+        "id": "1350d3288a9e97c3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1540de2207820773",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "bbc36c3718db1e11",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "dd44aabb805f5508",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "45b6cc51caac60ea",
+    "type": "split",
+    "children": [
+      {
+        "id": "4acbe99a6d909605",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "75efd8ef3626eec0",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "重要文献/Initialization of Neural Network.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "77b7881659bc9657",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "重要文献/Initialization of Neural Network.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "096966112e87e6b7",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "c0cb9946f3baa9db",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "重要文献/Initialization of Neural Network.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "markdown-importer:打开 Markdown 格式转换器": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
+    }
+  },
+  "active": "91914dae8f9b1314",
+  "lastOpenFiles": [
+    "深度学习与强化学习/Lecture 2. Optimization.md",
+    "重要文献/Initialization of Neural Network.md",
+    "重要文献/Domain Adaptation.md",
+    "凸分析与最优化/Convergence Rate.md",
+    "重要文献/No Free Lunch Theorem for Optimization.md",
+    "深度学习与强化学习/Lecture 1. Regularization and Deep Learning.md",
+    "机器学习/Lecture 1. Introduction.md",
+    "矩阵代数/Derivative.md",
+    "重要文献",
+    "概率论/概率不等式/Lecture 3. Bernstein's Type Inequality.md",
+    "概率论/概率不等式/Lecture 4. Bounds on Expectation.md",
+    "概率论/概率不等式/Lecture 2. Hoeffding Type Bounds.md",
+    "概率论/概率不等式/Lecture 1. Basic Probability Inequalities.md",
+    "未命名.canvas",
+    "概率论/概率不等式",
+    "分析学",
+    "凸分析与最优化",
+    "概率论",
+    "机器学习",
+    "数值计算",
+    "深度学习与强化学习",
+    "矩阵代数"
+  ]
+}
