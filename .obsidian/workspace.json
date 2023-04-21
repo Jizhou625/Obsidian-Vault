@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "分析学/数学分析/Lecture 6.3. 级数(函数项级数).md",
+                "file": "统计学/计量经济学/Lecture 0. 数据表示.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "分析学/数学分析/Lecture 6.3. 级数(函数项级数).md",
+                "file": "统计学/计量经济学/Lecture 0. 数据表示.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "分析学/数学分析/Lecture 6.3. 级数(函数项级数).md",
+                "file": "统计学/计量经济学/Lecture 0. 数据表示.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "分析学/数学分析/Lecture 6.3. 级数(函数项级数).md"
+                "file": "统计学/计量经济学/Lecture 0. 数据表示.md"
               }
             }
           }
@@ -152,6 +152,8 @@
   },
   "active": "e4e30f26d5558813",
   "lastOpenFiles": [
+    "统计学/计量经济学/Lecture 1. 简单回归模型.md",
+    "分析学/数学分析/Lecture 6.3. 级数(函数项级数).md",
     "分析学/数学分析/Lecture 6.2. 级数(一般项级数).md",
     "分析学/数学分析/Lecture 6.1. 级数(收敛判别法).md",
     "分析学/凸分析/Lecture 1. Convex Sets.md",
@@ -183,10 +185,8 @@
     "深度学习与强化学习/Lecture 4. RNN.md",
     "重要方法/No Free Lunch Theorem for Optimization.md",
     "重要方法/Domain Adaptation.md",
-    "深度学习与强化学习/Lecture 3. CNN.md",
     "未命名.canvas",
     "重要方法/Normalization of Neural Network.assets/image-20230408131146636.png",
-    "矩阵代数/Chapter 1. 线性代数/Lecture 5. 矩阵对角化.md",
     "References/Theory/No Free Lunch.pdf",
     "重要方法",
     "深度学习与强化学习/Lecture 5. Transformer.assets/image-20230404135705974.png",
