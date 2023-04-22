@@ -1,15 +1,15 @@
-## 2. 行列式
-### 2.1. 定义
+## 1. 行列式
+### 1.1. 定义
 $A$ is a $n \times n$ square matrix. Given a permutation $\sigma$. The signature of $\sigma$ is defincd to be $+1$ whenever the reordering given by $\sigma$ can be achicved by successively interchanging two entries an even number of times, and $-1$ whenever it can be achieved by an odd number of such interchangings.
 $$
 \operatorname{det}(A)=\sum_{\sigma \in S_n}\left(\operatorname{sgn}(\sigma) \prod_{i=1}^n a_{i, \sigma_i}\right)
 $$
-### 2.2. Cofactor Expansion
+### 1.2. Cofactor Expansion
 The minor $M_{i, j}$ is defined to be the determinant of the $(n-1) \times(n-1)$ matrix that results from $A$ by removing the $i$ th row and the $j$ th column. The expansion $(-1)^{i+j} M_{i, j}$ is known as a cofactor. For every $i$, one has the equality
 $$
 \operatorname{det}(A)=\sum_{j=1}^n(-1)^{i+j} a_{i j} M_{i j}
 $$
-### 2.3. Laplace Expansion
+### 1.3. Laplace Expansion
 Let $A\left(\begin{array}{llll}i_1, & i_2, & \cdots, & i_k \\ j_1, & j_2, & \cdots, & j_k\end{array}\right)$ denote the determinant of $i_1, i_2, \cdots, i_k$ rows and $j_1, j_2, \cdots, j_k$ columns of matrix $A$.
 $$
 |A|=\sum_{1 \leq j_1<\cdots<j_k \leq n} (-1)^{i_1+\cdots+i_k+j_1+\cdots+j_k} A\left(\begin{array}{llll}
@@ -22,7 +22,7 @@ j_1^{\prime}, & j_2^{\prime}, & \cdots, & j_{n-k}^{\prime}
 $$
 这里$\{i_1<i_2<\cdots<i_k\}\bigcup \{i_1^{\prime}<i_2^{\prime}<\cdots<i_{n-k}^{\prime}\} = \{1,2,\cdots,n\}$ and $\{j_1<j_2<\cdots<j_k\}\bigcup \{j_1^{\prime}<j_2^{\prime}<\cdots<j_{n-k}^{\prime}\} = \{1,2,\cdots,n\}$
 
-### 2.4. Inequalities 
+### 1.4. Inequalities 
 1. **Cauchy-Schwartz不等式**: 若$A,B$都是$m\times n$矩阵, 则
    $$
    |A^{\top} B|^2 \le |A^{\top} A||B^{\top} B|
@@ -36,12 +36,14 @@ $$
 
 ---
 ***Proof***: 
+
 **Cauchy-Schwartz不等式**: 
+
 **Hadamard不等式**:
 
 
-## 3. Schur Complement
-### 3.1. 定义
+## 2. Schur Complement
+### 2.1. 定义
 Suppose $p, q$ are nonnegative integers, $A, B, C, D$ are respectively $p \times p, p \times q, q \times p$ and $q \times q$ matrices of complex numbers. Let
 $$
 M=\left[\begin{array}{ll}
@@ -80,7 +82,7 @@ M^{-1}=\left[\begin{array}{cc}
 -D^{-1} C(M / D)^{-1} & D^{-1}+D^{-1} C(M / D)^{-1} B D^{-1}
 \end{array}\right]
 $$
-### 3.2. Specific Case for $2\times 2$ Matrix
+### 2.2. Specific Case for $2\times 2$ Matrix
 When $p$ and $q$ are both 1 (i.e. $A, B, C, D$ are all scalars). we get the familiar formula for the inverse of a $2 \times 2$ matrix
 $$
 M^{-1}=\frac{1}{A D-B C}\left[\begin{array}{cc}
@@ -88,7 +90,7 @@ D & -B \\
 -C & A
 \end{array}\right]
 $$
-### 3.3. Properties
+### 2.3. Properties
 **Schur Formula**: When $A$ is invertible, the determinant of $M$ is clearly seen to be given by
 $$
 |M|=|A|\left|D-C A^{-1} B\right|=|A||M / A|
@@ -102,3 +104,9 @@ $$
 \operatorname{rank}(M)=\operatorname{rank} D+\operatorname{rank}\left(A-B D^{-1} C\right)
 $$
 
+## 3. 其他求逆的分解
+### 3.1. Sherman-Morrison Formula
+如果$A$是非奇异矩阵, $\boldsymbol{x}$与$\boldsymbol{y}$为向量, 则$A+ \boldsymbol{x}\boldsymbol{y}^{\top}$为非奇异矩阵, 如果$\boldsymbol{y}^{\top} A^{-1}\boldsymbol{x}\neq -1$, 则有
+$$
+(A+\boldsymbol{x}\boldsymbol{y}^{\top})^{-1} = A^{-1} - \dfrac{A^{-1}\boldsymbol{x}\boldsymbol{y}^{\top}A^{-1}}{1+ \boldsymbol{y}^{\top}A^{-1}\boldsymbol{x}}
+$$
