@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "概率论/初等概率论/Chapter 1. 概率不等式/Lecture 5. Inequalities Based on Specific Distribution.md",
+                "file": "分析学/凸分析/Lecture 0. 集合论和简单拓扑.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "概率论/初等概率论/Chapter 1. 概率不等式/Lecture 5. Inequalities Based on Specific Distribution.md",
+                "file": "分析学/凸分析/Lecture 0. 集合论和简单拓扑.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "概率论/初等概率论/Chapter 1. 概率不等式/Lecture 5. Inequalities Based on Specific Distribution.md",
+                "file": "分析学/凸分析/Lecture 0. 集合论和简单拓扑.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "概率论/初等概率论/Chapter 1. 概率不等式/Lecture 5. Inequalities Based on Specific Distribution.md"
+                "file": "分析学/凸分析/Lecture 0. 集合论和简单拓扑.md"
               }
             }
           }
@@ -150,8 +150,13 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "1540de2207820773",
+  "active": "e4e30f26d5558813",
   "lastOpenFiles": [
+    "概率论/测度论/Lecture 1 可测空间.md",
+    "概率论/测度论/Lecture 1.md",
+    "概率论/测度论/Lecture .md",
+    "概率论/初等概率论/Chapter 1. 概率不等式/Lecture 5. Inequalities Based on Specific Distribution.md",
+    "概率论/测度论/Lecture 0.md",
     "概率论/测度论",
     "概率论/初等概率论",
     "概率论/初等概率论/Chapter 1. 概率不等式/Lecture 4. Bounds on Expectation.md",
@@ -175,21 +180,16 @@
     "机器学习/Lecture 3. 线性分类问题.md",
     "机器学习/Lecture 2.3. VC Theory(泛化上界).md",
     "机器学习/Lecture 2.2. VC Theory(生长函数).md",
-    "Lecture 2. VC Theory.md",
     "机器学习/Lecture 2.1. VC Theory(Rademacher复杂度).md.crswap",
     "机器学习/Lecture 2.4. VC Theory(泛化下界).md.crswap",
     "机器学习/Lecture 2.3. VC Theory(泛化上界).md.crswap",
     "机器学习/Lecture 2.2. VC Theory(生长函数).md.crswap",
-    "机器学习/Lecture 2.4. VC Theory(泛化下界).md",
     "机器学习/Lecture 2.4. VC Theory(泛化下界)",
     "机器学习/Lecture 2.3. VC Theory(泛化上界)",
     "机器学习/Lecture 2.2. VC Theory(生长函数)",
-    "机器学习/Lecture 2.1 VC Theory(Rademacher复杂度).md",
-    "机器学习/Lecture 2. VC Theory.md",
     "未命名.canvas",
     "重要方法/Normalization of Neural Network.assets/image-20230408131146636.png",
     "References/Theory/No Free Lunch.pdf",
-    "重要方法",
     "深度学习与强化学习/Lecture 5. Transformer.assets/image-20230404135705974.png",
     "深度学习与强化学习/Lecture 5. Transformer.assets/image-20230404135248179.png",
     "深度学习与强化学习/Lecture 5. Transformer.assets/image-20230404133515600.png",

@@ -265,14 +265,16 @@ $$
 ### 5.1. $F_{\sigma}, G_{\delta}$集
 若$E\subset \mathbb{R}^n$是可数个闭集的并集, 则称$E$是$F_{\sigma}$集, 若$E\subset \mathbb{R}^n$是可数个开集的交集, 则称$E$是$G_{\delta}$集.
 
+### 5.2. Baire定理
+设$E\subset \mathbb{R}^n$是$F_{\sigma}$集, 即$E = \bigcup\limits_{k=1}^nF_k$, $F_k$是闭集, 若每个$F_K$均无内点, 则$E$也没有内点. 
+
+### 5.3. 稠密集和纲
+设$E\subset \mathbb{R}^n$, 若$\bar{E}=\mathbb{R}^n$, 则称$E$是$\mathbb{R}^n$中的稠密集; 若$\bar{E}^{\circ}=\varnothing$, 则称$E$是$\mathbb{R}^n$中的无处稠密集. 可数个无处稠密集的并集称为贫集或第一纲集, 不是第一纲集称为第二纲集.
 
 
-
-
-
-
-### 8. Closedness for function
-**Definition**: A function $f: \mathbb{R}^n \rightarrow \mathbb{R}$ is said to be closed if, for each $\alpha \in \mathbb{R}$, the sublevel set
+## 6. 函数的closedness
+### 6.1. 函数闭的定义
+A function $f: \mathbb{R}^n \rightarrow \mathbb{R}$ is said to be closed if, for each $\alpha \in \mathbb{R}$, the sublevel set
 $$
 \{\boldsymbol{x} \in \operatorname{dom} f \mid f(\boldsymbol{x}) \leq \alpha\}
 $$
@@ -281,16 +283,17 @@ $$
 \text { epi } f=\left\{(\boldsymbol{x}, t) \in \mathbb{R}^{n+1} \mid \boldsymbol{x} \in \operatorname{dom} f, f(\boldsymbol{x}) \leq t\right\}
 $$
 is closed.
-**Properties**: 
+
+### 6.2. 函数闭的判定
 1. If $f: \mathbb{R}^n \rightarrow \mathbb{R}$ is continuous, and $\operatorname{dom} f$ is closed, then $f$ is closed.
 
-2. If $f: \mathbb{R}^n \rightarrow \mathbb{R}$ is continuous, with dom $f$ open, then $f$ is closed iff $f$ converges to $\infty$ along every sequence converging to a boundary point of $\operatorname{dom} f$. In other words, if
+2. If $f: \mathbb{R}^n \rightarrow \mathbb{R}$ is continuous, with $\operatorname{dom} f$ open, then $f$ is closed iff $f$ converges to $\infty$ along every sequence converging to a boundary point of $\operatorname{dom} f$. In other words
    $$
-   \lim _{i \rightarrow \infty} \boldsymbol{x}_i=\boldsymbol{x} \in \partial(\operatorname{dom} f), \quad \boldsymbol{x}_i \in \operatorname{dom} f
+   \lim _{n \rightarrow \infty} \boldsymbol{x}_n=\boldsymbol{x} \in \partial(\operatorname{dom} f), \quad \boldsymbol{x}_n \in \operatorname{dom} f
    $$
    Then
    $$
-   \lim _{i \rightarrow \infty} f\left(\boldsymbol{x}_i\right)=\infty
+   \lim _{n \rightarrow \infty} f\left(\boldsymbol{x}_n\right)=\infty
    $$
    
 
