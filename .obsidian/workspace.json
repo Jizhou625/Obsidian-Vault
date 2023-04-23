@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "重要方法/Initialization of Neural Network.md",
+                "file": "概率论/初等概率论/Chapter 1. 概率不等式/Lecture 5. Inequalities Based on Specific Distribution.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "重要方法/Initialization of Neural Network.md",
+                "file": "概率论/初等概率论/Chapter 1. 概率不等式/Lecture 5. Inequalities Based on Specific Distribution.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "重要方法/Initialization of Neural Network.md",
+                "file": "概率论/初等概率论/Chapter 1. 概率不等式/Lecture 5. Inequalities Based on Specific Distribution.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "重要方法/Initialization of Neural Network.md"
+                "file": "概率论/初等概率论/Chapter 1. 概率不等式/Lecture 5. Inequalities Based on Specific Distribution.md"
               }
             }
           }
@@ -150,8 +150,18 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "e4e30f26d5558813",
+  "active": "1540de2207820773",
   "lastOpenFiles": [
+    "概率论/测度论",
+    "概率论/初等概率论",
+    "概率论/初等概率论/Chapter 1. 概率不等式/Lecture 4. Bounds on Expectation.md",
+    "概率论/初等概率论/Chapter 1. 概率不等式/Lecture 3. Bernstein's Type Inequality.md",
+    "概率论/初等概率论/Chapter 1. 概率不等式/Lecture 2. Hoeffding Type Bounds.md",
+    "机器学习/Lecture 2.1. VC Theory(Rademacher复杂度).md",
+    "概率论/初等概率论/Chapter 1. 概率不等式/Lecture 1. Basic Probability Inequalities.md",
+    "分析学/凸分析/Lecture 0. 集合论和简单拓扑.md",
+    "概率论/初等概率论/Chapter 2. 收敛理论/Lecture 1. Modes of Stochastic Convergence.md",
+    "重要方法/Initialization of Neural Network.md",
     "矩阵代数/Chapter 1. 线性代数/Lecture 1.1 逆与行列式.md",
     "统计学/计量经济学/Lecture 1. 简单回归模型.md",
     "矩阵代数/Chapter 1. 线性代数/Lecture 0. 矩阵范数.md",
@@ -173,18 +183,9 @@
     "机器学习/Lecture 2.4. VC Theory(泛化下界).md",
     "机器学习/Lecture 2.4. VC Theory(泛化下界)",
     "机器学习/Lecture 2.3. VC Theory(泛化上界)",
-    "机器学习/Lecture 2.1. VC Theory(Rademacher复杂度).md",
     "机器学习/Lecture 2.2. VC Theory(生长函数)",
     "机器学习/Lecture 2.1 VC Theory(Rademacher复杂度).md",
     "机器学习/Lecture 2. VC Theory.md",
-    "机器学习/Lecture 2.1 VC Theory.md",
-    "分析学/数学分析/Lecture 1. 极限.md",
-    "概率论/概率不等式/Lecture 5. Inequalities Based on Specific Distribution.md",
-    "深度学习与强化学习/Lecture 5. Transformer.md",
-    "重要方法/Normalization of Neural Network.md",
-    "深度学习与强化学习/Lecture 1. Regularization and Deep Learning.md",
-    "深度学习与强化学习/Lecture 2. Optimization.md",
-    "重要方法/Initialization of Neural Network.md",
     "未命名.canvas",
     "重要方法/Normalization of Neural Network.assets/image-20230408131146636.png",
     "References/Theory/No Free Lunch.pdf",
@@ -192,7 +193,6 @@
     "深度学习与强化学习/Lecture 5. Transformer.assets/image-20230404135705974.png",
     "深度学习与强化学习/Lecture 5. Transformer.assets/image-20230404135248179.png",
     "深度学习与强化学习/Lecture 5. Transformer.assets/image-20230404133515600.png",
-    "深度学习与强化学习/Lecture 5. Transformer.assets",
     "深度学习与强化学习/Lecture 4. RNN.assets/image-20230403003612017.png",
     "深度学习与强化学习/Lecture 4. RNN.assets/image-20230403002414466.png",
     "深度学习与强化学习/Lecture 4. RNN.assets/image-20230403001612554.png",

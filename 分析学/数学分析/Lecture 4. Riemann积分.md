@@ -31,7 +31,8 @@ $$
 3. 设$\Delta',\Delta''$是$[a,b]$的任意两个分划, 则有$\underline{S}_{\Delta''}\le\overline{S}_{\Delta'}$, 即达布上和大于等于达布下和恒成立
    
 ### 1.3. 达布定理
-设函数$f$在区间$[a,b]$上有界, 对$[a,b]$的一切分划$\Delta $, 作相应的达布上和数集$\{\overline{S}_{\Delta}\}$与达布下和数集$\{\underline{S}_{\Delta}\}$, 且记其下,上确界分别为$$
+设函数$f$在区间$[a,b]$上有界, 对$[a,b]$的一切分划$\Delta$, 作相应的达布上和数集$\{\overline{S}_{\Delta}\}$与达布下和数集$\{\underline{S}_{\Delta}\}$, 且记其下,上确界分别为
+$$
 \inf\limits_{\Delta}\{\overline{S}_{\Delta}\}=\overline{\int_a^b}f(x)\mathrm{d}x,\quad \sup\limits_{\Delta}\{\underline{S}_{\Delta}\}=\underline{\int_a^b}f(x)\mathrm{d}x
 $$ 
 并分别称它们为$f(x)$在$[a,b]$上的达布上积分和达布下积分, 我们有
@@ -62,8 +63,9 @@ $$
 	$$
     \sum_{w_i\ge \varepsilon}\Delta x_i<\sigma 
     $$
-4. 设$f$在$[a,b]$上有界, 且$f$的所有不连续点可以用总长度任意小的至多可列个开区间覆盖
+4. $f$在$[a,b]$上有界, 且$f$的所有不连续点可以用总长度任意小的至多可列个开区间覆盖
    
+
 ## 2. 特殊函数的积分
 ### 2.1. 有理函数的积分
 有理函数是具有以下形式的函数
@@ -191,6 +193,7 @@ $$
 $$
 
 
+
 ## 5. 原函数与定积分
 ### 5.1. 微积分基本定理
 设$f$在$[a,b]$上可积, 且在$[a,b]$上有原函数$F(x)$, 则
@@ -211,22 +214,22 @@ $$
     在$[0,2]$上可积,但在$[0,2]$不存在原函数
 2. 即使有原函数存在的函数也不一定可积(不包括广义可积)
    **Example**: 在$[-1,1]$上的函数
-		$$
-        F(x)=\left\{\begin{aligned}
-                    &0,\qquad &x=0\\
-                    &x^2\sin \dfrac{1}{x^2},\quad &x\neq0
-                \end{aligned}
-                \right.
-        $$
-		是函数
-		$$
-        f(x)=\left\{\begin{aligned}
-                    &0,\qquad &x=0\\
-                    &-\dfrac{2}{x}\cos\dfrac{1}{x^2}+2x\sin \dfrac{1}{x^2},\quad &x\neq0
-                \end{aligned}
-                \right.
-        $$
-		在$[-1,1]$的原函数, 但$f \notin R([-1,1])$
+    $$
+    F(x)=\left\{\begin{aligned}
+                &0,\qquad &x=0\\
+                &x^2\sin \dfrac{1}{x^2},\quad &x\neq0
+            \end{aligned}
+            \right.
+    $$
+    是函数
+    $$
+    f(x)=\left\{\begin{aligned}
+                &0,\qquad &x=0\\
+                &-\dfrac{2}{x}\cos\dfrac{1}{x^2}+2x\sin \dfrac{1}{x^2},\quad &x\neq0
+            \end{aligned}
+            \right.
+    $$
+    在$[-1,1]$的原函数, 但$f \notin R([-1,1])$
 
 ### 5.3. 变限函数积分的导数
 若$f \in C([a,b])$, 且有定义在$[c,d]$上的可微函数$\varphi(x), \psi(x)$满足$a\le \varphi(x), \psi(x)\le b$, 则函数$F(x)=\displaystyle{\int_{\varphi(x)}^{\psi(x)}f(t)\mathrm{d}t, x\in [c,d]}$在$[c,d]$上可微, 且$\dfrac{\mathrm{d}F(x)}{\mathrm{d}x}=f[\psi(x)]\psi'(x)-f[\varphi(x)]\varphi'(x)$
