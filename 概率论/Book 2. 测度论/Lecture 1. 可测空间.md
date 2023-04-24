@@ -151,4 +151,29 @@ ___
 $$
 \mathscr{G}_A = \{B\in \lambda(\mathscr{P})\mid A\cap B\in \lambda(\mathscr{P})\}
 $$
-易证$\mathscr{G}_A$是一个$\lambda$系
+易证$\mathscr{G}_A$是一个$\lambda$系, $\mathscr{G}_A\supset \mathscr{P}$, 从而$\mathscr{G}_A\supset \lambda(\mathscr{P})$. 这说明
+$$
+A\in \mathscr{P}, B\in \lambda(\mathscr{P}) \Longrightarrow A\cap B\in \lambda(\mathscr{P})
+$$
+再对任意的$B\in \lambda(\mathscr{P})$, 设
+$$
+\mathscr{H}_B = \{A\in \lambda(\mathscr{P})\mid A\cap B\in \lambda(\mathscr{P})\}
+$$
+同样地, 我们可以得到$\mathscr{H}_B\supset \lambda(\mathscr{P})$, 即
+$$
+A, B\in \lambda(\mathscr{P}) \Longrightarrow A\cap B\in \lambda(\mathscr{P})
+$$
+这就证明了$\lambda(\mathscr{P})$是一个$\pi$系.
+
+### 4.5. Borel集合系
+由简单集合系生成的$\sigma$域的一个重要的例子是
+$$
+\mathscr{B}_{\mathbb{R}} = \sigma(\mathscr{Q}_{\mathbb{R}}) = \sigma(\mathscr{P}_{\mathbb{R}})
+$$
+用$\mathscr{O}_{\mathbb{R}}$表示$\mathbb{R}$中开集组成的集合系, 容易证明$\mathscr{B} = \sigma(\mathscr{O}_{\mathbb{R}})$. 
+
+可以将Borel集的概念一般化, 对于拓扑空间$X$, 以$\mathscr{O}$记其开集系, 我们把
+$$
+\mathscr{B} = \sigma(\mathscr{O})
+$$
+称为$X$上的Borel集合系, 其中的集合称为$X$中的Borel集, 而$(X, \mathscr{B})$
