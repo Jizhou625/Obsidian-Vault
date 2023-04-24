@@ -147,4 +147,8 @@ $$
 \mathscr{P}\subset \mathscr{L}\Longrightarrow \sigma(\mathscr{P})\subset \mathscr{L}
 $$
 ___
-**Proof**: 显然, $\sigma(\mathscr{P})\supset \lambda(\mathscr{P})$
+**Proof**: 显然, $\sigma(\mathscr{P})\supset \lambda(\mathscr{P})$. 于是只要证明$\lambda(\mathscr{P})$是一个$\pi$系, 对于任意的$A\in \mathscr{P}$, 设
+$$
+\mathscr{G}_A = \{B\in \lambda(\mathscr{P})\mid A\cap B\in \lambda(\mathscr{P})\}
+$$
+易证$\mathscr{G}_A$是一个$\lambda$系
