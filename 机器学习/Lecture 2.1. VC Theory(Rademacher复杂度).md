@@ -50,7 +50,7 @@ $$
 $$
 |\Phi(S^{\prime}) - \Phi(S) | \le \dfrac{1}{m}
 $$
-利用[[../概率论/初等概率论/Chapter 1. 概率不等式/Lecture 2. Hoeffding Type Bounds#3. McDiarmid's Inequality]], 有
+利用[[../概率论/Book 1. 初等概率论/Chapter 1. 概率不等式/Lecture 2. Hoeffding Type Bounds#3. McDiarmid's Inequality]], 有
 $$
 \mathbb{P}\left(\Phi(S) - \operatorname*{\mathbb{E}}\limits_s\Phi(S)\ge t\right) \le \exp\left(-{2mt^2}\right)
 $$
@@ -136,7 +136,7 @@ $$
 & = \sum\limits_{\boldsymbol{x}\in A}^{}\prod\limits_{i=1}^{m}\operatorname*{\mathbb{E}}\limits_{\sigma_i}\exp(t\sigma_ix_i)\\
 \end{aligned}
 $$
-因为$-|x_i|\le \sigma_i x_i \le |x_i|$, 使用[[../概率论/初等概率论/Chapter 1. 概率不等式/Lecture 2. Hoeffding Type Bounds#1. Hoeffding Lemma]], 我们有
+因为$-|x_i|\le \sigma_i x_i \le |x_i|$, 使用[[../概率论/Book 1. 初等概率论/Chapter 1. 概率不等式/Lecture 2. Hoeffding Type Bounds#1. Hoeffding Lemma]], 我们有
 $$
 \begin{aligned}
 \exp\left(t\operatorname*{\mathbb{E}}\limits_{\boldsymbol{\sigma}}\left[\sup\limits_{\boldsymbol{x}\in A}\sum\limits_{i=1}^{m} \sigma_ix_i  \right]\right) & \le \operatorname*{\mathbb{E}}\limits_{\boldsymbol{\sigma}}\left[\exp\left(t\sup\limits_{\boldsymbol{x}\in A}\sum\limits_{i=1}^{m} \sigma_ix_i  \right)\right]\\
