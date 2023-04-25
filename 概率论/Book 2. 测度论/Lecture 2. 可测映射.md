@@ -65,7 +65,7 @@ $$
 $$
 特别地, $\{f=a\}\in \mathscr{F}, \ \forall a\in \overline{\mathbb{R}}$
 
-## 2. 可测函数的运用
+## 2. 可测函数的运算
 ### 2.1. 可测函数的四则运算
 如果$f, g$是可测函数, 则
 1. 对于任何$a\in \overline{\mathbb{R}}$, $af$是可测函数. 
@@ -80,9 +80,46 @@ $$
 3. $\mathop{\lim\inf}\limits_{n\to\infty}f_n$ 是可测函数.
 4. $\mathop{\lim\sup}\limits_{n\to\infty}f_n$ 是可测函数.
 
-### 2.3. 有限分割
-有限个两两不交的集合$\{A_i\subset X, i=1,2,\cdots,n\}$如满足$\bigcup\limits_{i=1}^nA_i =X$, 就把它称为空间$X$的一个有限分割. 如果对每个$i=1,2,\cdots,n$有$A_i\in \mathscr{\mathscr{F}}$, 则$X$的有限分割$\{A_i\mid i=1,2,\cdots\}$称为可测空间$(X, \mathscr{F})$的有限可测分割. 对于可测空间$(X, \mathscr{F})$上的函数$f: X\to \mathbb{R}$, 如果存在有限可测分割$\{A_i\in \mathscr{F}\mid i=1,2\cdots, n\}$和实数$\{a_i\mid i=1,2,\cdots, n\}$使得
+### 2.3. 有限分割和简单函数
+有限个两两不交的集合$\{A_i\subset X, i=1,2,\cdots,n\}$如满足$\bigcup\limits_{i=1}^nA_i =X$, 就把它称为空间$X$的一个有限分割. 
+
+如果对每个$i=1,2,\cdots,n$有$A_i\in \mathscr{\mathscr{F}}$, 则$X$的有限分割$\{A_i\mid i=1,2,\cdots\}$称为可测空间$(X, \mathscr{F})$的有限可测分割. 
+
+对于可测空间$(X, \mathscr{F})$上的函数$f: X\to \mathbb{R}$, 如果存在有限可测分割$\{A_i\in \mathscr{F}\mid i=1,2\cdots, n\}$和实数$\{a_i\mid i=1,2,\cdots, n\}$使得
 $$
 f = \sum\limits_{i=1}^{n} a_i\mathbb{I}_{A_i}
 $$
-则称之为简单函数.
+则称之为简单函数. 
+
+### 2.4. 对可测函数的简单函数逼近
+1. 对任意的非负可测函数$f$, 存在非负简单函数列$\{f_n\mid n=1,2,\cdots\}$使得$f_n\uparrow f$, 如果$f$是非负有界可测的, 则存在非负简单函数列$\{f_n\mid n=1,2,\cdots\}$使得$f_n(x)\uparrow f(x)$对$x\in X$一致成立
+2. 对任何的可测函数$f$, 存在简单函数列$\{f_n\mid n=1,2, \cdots\}$使得$f_n\to f$. 如果$f$是有界可测的, 则存在简单函数列$\{f_n\mid n=1,2,\cdots\}$使得$f_n(x)\to f(x)$对$x\in X$一致成立. 
+___
+**Proof**: 
+设$f$非负可测, 对每个$n=1,2,\cdots$, 设
+$$
+f_n(x) = \sum\limits_{k=0}^{n2^n-1} \dfrac{k}{2^n}\mathbb{I}\left(\dfrac{k}{2^n}\le f(x)<\dfrac{k+1}{2^n}\right)
+$$
+显然$f_n$非负非降, 并且$\lim\limits_{n\to\infty} f_n(x)=f(x)$. 根据构造也可以发现如果$f$有界则对充分大的$N$和任意$n>N$都成立
+$$
+0\le f(x) - f_n(x) \le \dfrac{1}{2^n}, \quad \forall x\in X
+$$
+对于可测函数, 只需要用分解$f = f^+ - f^-$并且分别用1的结论即可
+
+
+### 2.5. 复合可测函数
+设 $g$ 是 $(X, \mathscr{F})$ 到 $(Y, \mathscr{S})$ 的可测映射. 则 $h$ 是 $\left(X, g^{-1} (\mathscr{S})\right)$ 上的可测函数 (或随机变量, 或有界可测函数) 当且仅当存在 $(Y, \mathscr{S})$ 上的可测函数 (或随机变量, 或有界可测函数) $f$ 使得 $h=f \circ g$
+___
+**Proof**: 定理的当部分是[[#1.4. 可测映射的判定]]的特例, 于是我们只需要证明仅当部分. 
+1. 首先, 考虑$h$是$(X, g^{-1}(\mathscr{S}))$上的简单函数, 即存在$X$的有限分割$\{A_i\in g^{-1}(\mathscr{S})\}$和实数$\{a_i\}$使得$h=\sum\limits_{i=1}^{n} a_i\mathbb{I}_{A_i}$. 取$C_i\in \mathscr{S}$使得$A_i = g^{-1}(C_i)$, 则对$B_i= C_i\backslash \bigcup\limits_{k=1}^{i-1}C_k$, 有
+    $$
+    A_i = A_i\backslash \bigcup\limits_{k=1}^{i-1}A_k = g^{-1}(B_i)
+    $$
+    设$f=\sum\limits_{i=1}^{n}a_i\mathbb{I}_{B_i}$, 其为$(Y,\mathscr{S})$上的简单函数, 且
+    $$
+    h(x) = \sum\limits_{i=1}^{n}a_i\mathbb{I}_{A_i}(x) = \sum\limits_{i=1}^{n}a_i\mathbb{I}_{B_i}(g(x)) = f(g(x)) 
+    $$
+2. 对于一般的可测函数$h$, 我们可以取简单函数列$\{h_n, n=1,2,\cdots\}$使得$\lim\limits_{n\to\infty} h_n=h$, 根据简单函数的结论, 存在$(Y,\mathscr{S})$上的简单函数$f_n$使得$h_n=f_n\circ g$. 于是
+    $$
+    h(x) = \lim\limits_{n\to\infty} h_n(x) = \lim\limits_{n\to\infty} f_n(g(x)) = f(g(x))
+    $$
