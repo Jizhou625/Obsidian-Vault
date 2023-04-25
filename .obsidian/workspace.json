@@ -11,8 +11,13 @@
             "id": "e4e30f26d5558813",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "概率论/Book 2. 测度论/Lecture 2. 可测映射.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "概率论/Book 2. 测度论/Lecture 2. 可测映射.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "概率论/Book 2. 测度论/Lecture 2. 可测映射.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "概率论/Book 2. 测度论/Lecture 2. 可测映射.md"
+              }
             }
           }
         ],
@@ -141,7 +150,7 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "1540de2207820773",
+  "active": "e4e30f26d5558813",
   "lastOpenFiles": [
     "概率论/Book 2. 测度论/Lecture 1. 可测空间.md",
     "概率论/Book 2. 测度论/Lecture 2. 可测映射.md",

@@ -66,6 +66,9 @@ $$
 1. 一个既是单调系又是域的集合系必然是$\sigma$域
 2. 一个既是$\lambda$系又是$\pi$系的集合系必然是$\sigma$域
 
+### 3.3. 可测空间
+我们把非空集合$X$和它上面的一个$\sigma$域$\mathscr{F}$放在一起称为可测空间. 记为$(X, \mathscr{F})$
+
 ## 4. $\sigma$域的生成
 ### 4.1. 集合的生成
 称 $\mathscr{S}$ 是由集合系 $\mathscr{E}$ 生成的环 (或单调系, 或 $\lambda$ 系, 或 $\sigma$ 域), 如果下列条件被满足
@@ -170,10 +173,16 @@ $$
 $$
 \mathscr{B}_{\mathbb{R}} = \sigma(\mathscr{Q}_{\mathbb{R}}) = \sigma(\mathscr{P}_{\mathbb{R}})
 $$
-用$\mathscr{O}_{\mathbb{R}}$表示$\mathbb{R}$中开集组成的集合系, 容易证明$\mathscr{B} = \sigma(\mathscr{O}_{\mathbb{R}})$. 
+用$\mathscr{O}_{\mathbb{R}}$表示$\mathbb{R}$中开集组成的集合系, 容易证明$\mathscr{B}_{\mathbb{R}} = \sigma(\mathscr{O}_{\mathbb{R}})$. 可以证明, 下列的等式成立
+$$
+\begin{aligned} 
+    \mathscr{B}_{\mathbb{R}} &= \sigma(\{(-\infty, a)\mid a\in \mathbb{R}\}) = \sigma(\{(-\infty, a]\mid a\in \mathbb{R}\}) \\ 
+    & = \sigma(\{(a, +\infty)\mid a\in \mathbb{R}\}) = \sigma(\{[a, +\infty)\mid a\in \mathbb{R}\}) \\
+\end{aligned}
+$$
 
-可以将Borel集的概念一般化, 对于拓扑空间$X$, 以$\mathscr{O}$记其开集系, 我们把
+将Borel集的概念一般化, 对于拓扑空间$X$, 以$\mathscr{O}$记其开集系, 我们把
 $$
 \mathscr{B} = \sigma(\mathscr{O})
 $$
-称为$X$上的Borel集合系, 其中的集合称为$X$中的Borel集, 而$(X, \mathscr{B})$
+称为$X$上的Borel集合系, 其中的集合称为$X$中的Borel集, 而$(X, \mathscr{B})$叫做拓扑可测空间. 
