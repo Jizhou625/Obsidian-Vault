@@ -137,3 +137,59 @@ $$
 \end{aligned}
 $$
 
+如果$A_1, A_2, \cdots \in \mathscr{Q}$, $A_n \downarrow A\in \mathscr{Q}$, 且$\mu(A_1)<\infty$, 则存在两两不交的集合$\{C_{n, k}\in \mathscr{Q}\}$使得对每个$n=1,2,\cdots$, 有
+$$
+A_n\backslash A_{n+1} = \bigcup\limits_{k=1}^{k_n} C_{n, k}
+$$
+易见
+$$
+\{A\in\mathscr{Q},  C_{n, k}\in \mathscr{Q}\mid k=1,2,\cdots, k_n;\  n=1,2,\cdots\}
+$$
+两两不交且$A_n=\bigcup\limits_{i=n}^{\infty} (A_i\backslash A_{i+1})\cup A =\bigcup\limits_{i=n}^{\infty}\bigcup\limits_{k=1}^{k_i} C_{n, k}\cup A$, 故由可列可加性得
+$$
+\mu(A_n) = \sum\limits_{i=n}^{\infty} \sum\limits_{k=1}^{k_i} \mu(C_{n, k}) + \mu(A)
+$$ 
+对每个$n=1,2,\cdots$成立, 特别地
+$$
+\sum\limits_{i=1}^{\infty} \sum\limits_{k=1}^{k_i} \mu(C_{n, k}) \le  \mu(A_1) <\infty
+$$
+从而
+$$
+\lim\limits_{n\to\infty} \sum\limits_{i=n}^{\infty} \sum\limits_{k=1}^{k_i} \mu(C_{n, k}) = 0
+$$
+如果$A_1, A_2, \cdots\in \mathscr{Q}$且$\bigcup\limits_{n=1}^{\infty} A_n\in \mathscr{Q}$, 则由环的定义知道
+$$
+A_1, A_2, \cdots \in \mathscr{Q}\subset r(\mathscr{Q}) \Longrightarrow \bigcup\limits_{k=1}^{n-1} A_k \in r(\mathscr{Q}) \Longrightarrow A_n\Big\backslash \left(\bigcup\limits_{k=1}^{n-1} A_k \right) \in r(\mathscr{Q})
+$$
+对每个$n=1,2,\cdots$成立, 于是存在两两不交的集合$\{C_{n, k}\in \mathscr{Q}\}$使得
+$$
+A_n\Big\backslash \left(\bigcup\limits_{k=1}^{n-1} A_k \right) = \bigcup\limits_{k=1}^{k_n} C_{n, k}
+$$
+运用同样的推理, 存在两两不交的集合$\{D_{n, l}\in \mathscr{Q}\}$, 使得
+$$
+A_n\Big\backslash \left(\bigcup\limits_{k=1}^{k_n} C_{n,k} \right) = \bigcup\limits_{i=1}^{l_n} D_{n, l}
+$$
+于是我们得到表达式
+$$
+A_n = \bigcup\limits_{k=1}^{k_n} C_{n, k} \cup \bigcup\limits_{i=1}^{l_n} D_{n, l} 
+$$
+其中$\{C_{n, k}\in \mathscr{Q}\}$和$\{D_{n, l}\in \mathscr{Q}\}$两两不交. 这样, 由$\mu$的可列可加性
+$$
+\begin{aligned} 
+   \mu\left(\bigcup\limits_{n=1}^{\infty} A_n\right) &= \mu\left(\bigcup\limits_{n=1}^{\infty} \left(A_n \Big\backslash \bigcup\limits_{i=1}^{n-1} A_{i}\right)\right) \\ 
+   & = \mu\left(\bigcup\limits_{n=1}^{\infty}\sum\limits_{k=1}^{k_n} C_{n, k} \right) \\ 
+   & = \sum\limits_{n=1}^{\infty} \sum\limits_{k=1}^{k_n} \mu(C_{n, k}) \\
+   & \le \sum\limits_{n=1}^{\infty} \left[\sum\limits_{k=1}^{k_n} \mu(C_{n, k}) + \sum\limits_{k=1}^{k_n} \mu(D_{n, k}) \right] \\ 
+   & = \sum\limits_{n=1}^{\infty} \mu(A_n)
+\end{aligned}
+$$
+
+### 2.3. 环上有限可加非负集函数
+对于环$\mathbb{R}$上的有限可加非负集函数$\mu$, 下面的几个命题是等价的:
+
+$\mu$是可列可加 $\iff \mu$半可列可加 $\iff \mu$下连续 $\implies\mu$上连续 $\implies \mu$在$\varnothing$上连续, 即对任何满足$A_n\downarrow \varnothing$和$\mu(A_1)<\infty$的
+   $\{A_n\in \mathscr{R}\}$有
+   $$
+   \lim\limits_{n\to\infty} \mu(A_n) = 0
+   $$
+如果$\mu$是有限的, 则上面的所有$\implies$全部变为$\iff$
