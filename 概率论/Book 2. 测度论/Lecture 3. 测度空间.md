@@ -193,3 +193,31 @@ $\mu$是可列可加 $\iff \mu$半可列可加 $\iff \mu$下连续 $\implies\mu$
    \lim\limits_{n\to\infty} \mu(A_n) = 0
    $$
 如果$\mu$是有限的, 则上面的所有$\implies$全部变为$\iff$
+___
+**Proof**: 我们只证明部分结论
+
+1. $\mu$半可列可加$\implies$ $\mu$可列可加: 如果$\{A_n\in \mathscr{R}\}$两两不交且$A = \bigcup\limits_{n=1}^{\infty} A_n\in \mathscr{R}$, 则由$\mu$的单调性和有限可加性知
+   $$
+   \mu(A)\ge \mu\left(\bigcup\limits_{n=1}^{N} A_n\right) =\sum\limits_{n=1}^{N} \mu(A_n)
+   $$
+   对每个$N=1,2,\cdots$成立, 从而
+   $$
+   \mu(A)\ge \sum\limits_{n=1}^{\infty} \mu(A_n)
+   $$
+   此式加上$\mu$的半可列可加性即得证
+2. $\mu$下连续$\implies$ $\mu$可列可加: 如果$\{A_n\in \mathscr{R}\}$两两不交, 则
+   $$
+   \bigcup\limits_{n=1}^{N} A_n \uparrow \bigcup\limits_{n=1}^{\infty} A_n
+   $$
+   从而当$\bigcup\limits_{n=1}^{\infty} A_n\in \mathscr{R}$时由下连续性和有限可加性
+   $$
+   \mu\left(\bigcup\limits_{n=1}^{\infty} A_n\right) = \lim\limits_{N\to\infty} \mu\left(\bigcup\limits_{n=1}^{N} A_n\right) = \lim\limits_{N\to\infty} \sum\limits_{n=1}^{N} \mu(A_n) = \sum\limits_{n=1}^{\infty} \mu(A_n)
+   $$
+3. 当$\mu$是有限时, 如果$\{A_n\in \mathscr{R}\}$两两不交且$\bigcup\limits_{n=1}^{\infty} A_n\in\mathscr{R}$, 则
+   $$
+   \bigcup\limits_{n=N+1}^{\infty} A_n  = \bigcup\limits_{n=1}^{\infty} A_n \Big\backslash \bigcup\limits_{n=1}^{N} A_n \in \mathscr{R}
+   $$
+   从而由$\bigcup\limits_{n=1}^{\infty} A_n = \bigcup\limits_{n=1}^{N} A_n\cup \bigcup\limits_{n=N+1}^{\infty} A_n$和有限可加性得到
+   $$
+   \mu\left(\bigcup\limits_{n=1}^{\infty} A_n\right) = \sum\limits_{n=1}^{N}\mu(A_n) + \mu\left(\bigcup\limits_{n=N+1}^{\infty} A_n\right)
+   $$
