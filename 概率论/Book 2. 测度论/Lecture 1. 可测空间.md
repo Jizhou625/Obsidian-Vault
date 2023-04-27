@@ -173,6 +173,8 @@ $$
 $$
 \mathscr{B}_{\mathbb{R}} = \sigma(\mathscr{Q}_{\mathbb{R}}) = \sigma(\mathscr{P}_{\mathbb{R}})
 $$
+其中$\mathscr{Q}_{\mathbb{R}} = \{(a, b]\mid a, b\in \mathbb{R}\}$是由全体左开右闭区间全体组成的集合系, 是$\mathbb{R}$上的半环. $\mathscr{P}_{\mathbb{R}}=\{(-\infty, a]\mid a\in \mathbb{R}\}$是$\mathbb{R}$上的$\pi$系. 
+
 用$\mathscr{O}_{\mathbb{R}}$表示$\mathbb{R}$中开集组成的集合系, 容易证明$\mathscr{B}_{\mathbb{R}} = \sigma(\mathscr{O}_{\mathbb{R}})$. 可以证明, 下列的等式成立
 $$
 \begin{aligned} 
