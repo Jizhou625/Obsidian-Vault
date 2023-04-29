@@ -11,7 +11,10 @@
 ### 1.4. 渐近线和极限
 设$f(x)$在$(a,\infty)$上可导, 即使曲线$y=f(x)$在$x \to \infty$时有斜渐近线, 也不一定存在极限$\lim\limits_{x \to \infty}f'(x)$
 ___
-**Example**: $f(x)=x+\dfrac{\sin x^2}{x}$, 容易得到渐近线为$y=x$, 但由于$f'(x)=1+2\cos x^2-\dfrac{\sin x^2}{x^2}$, 所以$f'(x)$在$x \to +\infty $上无极限
+##### Example: 
+$f(x)=x+\dfrac{\sin x^2}{x}$, 容易得到渐近线为$y=x$, 但由于$f'(x)=1+2\cos x^2-\dfrac{\sin x^2}{x^2}$, 所以$f'(x)$在$x \to +\infty $上无极限
+#####
+___
 
 ## 2. 反函数与隐函数求导法则
 ### 2.1 反函数求导法则
@@ -33,6 +36,7 @@ $$
 \left[f(x)-\sum_{k=0}^{n}\dfrac{f^{(k)}(x_0)}{k!}(x-x_0)^k\right]g^{(n+1)}(\xi)=\left[g(x)-\sum_{k=0}^{n}\dfrac{g^{(k)}(x_0)}{k!}(x-x_0)^k\right]f^{(n+1)}(\xi)
 $$
 ___
+##### 泰勒公式是广义Taylor中值公式的特例:
 不妨设$x_0<x<b$, 取定$x$, 作
 $$
 F(t)=f(t)+\displaystyle{\sum_{k=1}^{n-1}\dfrac{f^{(k)}(t)}{k!}(x-t)^k}
@@ -45,6 +49,8 @@ $$
 F'(\xi)\left[G(x)-G(x_0)\right]=G'(\xi)\left[F(x)-F(x_0)\right]
 $$
 将导数的表达式带入即可得命题成立. 注意到, 取$g(x)=(x-x_0)^n$即可得到Taylor公式
+#####
+___
 
 ### 3.2. 泰勒公式
 对于在$x_0$处$n$次可导的函数$f(x)$，我们称多项式
@@ -58,7 +64,9 @@ $$
 为$f(x)$在点$x_0$处的Taylor余项
 
 **Peano余项**: 若函数$f$在点$x_0$存在$n$阶导数$f^{(n)}(x_0)$, 则有
-\[f(x)=f(x_0)+f'(x_0)(x-x_0)+\cdots+\dfrac{f^{(n)}(x_0)}{n!}(x-x_0)^n+o((x-x_0)^n)\quad (x \to x_0)\]
+$$
+f(x)=f(x_0)+f'(x_0)(x-x_0)+\cdots+\dfrac{f^{(n)}(x_0)}{n!}(x-x_0)^n+o((x-x_0)^n)\quad (x \to x_0)
+$$
 
 **Lagrange余项**: 若函数$f$在点$x_0$的某个邻域$U(x_0)$中$n+1$次可微, 则对$\forall x \neq x_0\in U(x_0) $, 在$x_0$和$x$之间存在$\xi$, 使得
 $$
@@ -81,20 +89,23 @@ f(x)=f(x_0)+f'(x_0)(x-x_0)+\cdots+\dfrac{f^{(n)}(x_0)}{n!}(x-x_0)^n+\dfrac{f^{(n
 $$
 当$p=1$时, 即为Cauchy余项
 ___
-**Proof**: 证明: 设$x_0<x$, 考虑$[x_0,x]$上的函数
-	$$
-    F(t)=f(x)-\left[f(t)+\dfrac{f'(t)}{1!}(x-t)+\cdots+\dfrac{f^{(n)}(x)}{n!}(x-t)^n\right]
-    $$
-	易得
-	$$
-    F(x_0)=R_n(x),\quad F(x)=0,\quad F'(t)=-\dfrac{f^{(n+1)}(t)(x-t)^n}{n! }
-    $$
-	根据Cauchy中值公式
-	$$
-    \dfrac{F(x)-F(x_0)}{G(x)-G(x_0)}=\dfrac{F'(\xi)}{G'(\xi)},\quad x_0<\xi<x
-    $$
-	取$G(t)=(x-t)^p$并记$\xi=x_0+\theta(x-x_0)$, 我们有
-	$$
-    R_n(x)=\dfrac{G(x)-G(x_0)}{G'(\xi)}\cdot\dfrac{f^{(n+1)}(\xi)}{n!}(x-\xi)^n=\dfrac{f^{(n+1)}\left(x_0+\theta(x-x_0)\right)}{n!p}(1-\theta)^{n+1-p}(x-x_0)^{n+1}
-    $$
+##### Proof: 
+证明: 设$x_0<x$, 考虑$[x_0,x]$上的函数
+$$
+F(t)=f(x)-\left[f(t)+\dfrac{f'(t)}{1!}(x-t)+\cdots+\dfrac{f^{(n)}(x)}{n!}(x-t)^n\right]
+$$
+易得
+$$
+F(x_0)=R_n(x),\quad F(x)=0,\quad F'(t)=-\dfrac{f^{(n+1)}(t)(x-t)^n}{n! }
+$$
+根据Cauchy中值公式
+$$
+\dfrac{F(x)-F(x_0)}{G(x)-G(x_0)}=\dfrac{F'(\xi)}{G'(\xi)},\quad x_0<\xi<x
+$$
+取$G(t)=(x-t)^p$并记$\xi=x_0+\theta(x-x_0)$, 我们有
+$$
+R_n(x)=\dfrac{G(x)-G(x_0)}{G'(\xi)}\cdot\dfrac{f^{(n+1)}(\xi)}{n!}(x-\xi)^n=\dfrac{f^{(n+1)}\left(x_0+\theta(x-x_0)\right)}{n!p}(1-\theta)^{n+1-p}(x-x_0)^{n+1}
+$$
+#####
+___
 

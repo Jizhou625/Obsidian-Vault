@@ -60,10 +60,12 @@ $$
 $$
 \operatorname*{\mathbb{P}}\limits_{S\in \mathcal{\mathcal{D}}^m} \left(R_{\mathcal{\mathcal{D}}}(h_s, f)> \dfrac{d-1}{32m} \right) \ge \dfrac{1}{100}
 $$
+#####
 ___
 **Note**: 
 1. 上面的结论说明了, 对于任意的学习算法$\mathcal{A}$, 存在一个$\mathcal{X}$上坏的分布以及一个目标函数, 以某个常数概率由算法$A$返回的假设误差为$\Omega\left(\dfrac{d}{m}\right)$. 这进一步反映了VC维在Learning中的作用.
 2. 这个结果也说明了当VC维是无穷时, PAC学习在可实现(一致)的情况下是不可能的. 
+___
 
 ### 4.2 不可实现(不一致)情况下的下界
 令$\mathcal{H}$是一个假设集, 且它的VC维$d>1$. 那么对于任意的学习算法$\mathcal{A}$, 存在一个$\mathcal{X}\times \{0, 1\}$上的分布$\mathcal{\mathcal{D}}$使得
@@ -118,6 +120,7 @@ $$
 u\ge \dfrac{1}{8} \iff \dfrac{m}{d}\le \left(\dfrac{49}{64^2\varepsilon^2} - 1\right) \log \dfrac{4}{3} - 1
 $$
 右边是关于$\varepsilon$的减函数, 而当$\varepsilon = \sqrt{\dfrac{d}{320m}}$时, 不等式成立. 于是定理得证
+#####
 ___
 **Note**: 上面的定理告诉我们, 对于任意的学习算法$\mathcal{A}$, 在不可实现的情况下, 存在一个$\mathcal{X}\times \{0, 1\}$上坏的分布, 以某一个常数概率由算法$\mathcal{A}$返回的假设误差为$\Omega\left(\sqrt{\dfrac{d}{m}}\right)$. 特别地, 当VC维无限时, 不可知PAC学习是不可能的. 
 
@@ -129,7 +132,8 @@ $$
 $$
 其中, 对于所有的$m, \varepsilon$, $\Phi(m ,\varepsilon)=\dfrac{1}{4}\left(1-\sqrt{1-\exp\left(-\dfrac{m\varepsilon^2}{1-\varepsilon^2}\right)}\right)$
 ___
-***Proof***: 运用贝叶斯法则, 其最优准则是
+##### Proof:
+运用贝叶斯法则, 其最优准则是
 $$
 h(x) = \begin{cases}
 \alpha_{-}, &\quad \text{if the number of } 1 \text{ in } x \text{ is less than }\dfrac{m}{2} \\
@@ -141,7 +145,8 @@ $$
 \underset{\alpha}{\mathbb{E}}\left[\underset{S \sim \mathcal{D}_\alpha^m}{\mathbb{P}}[h(S) \neq \alpha]\right]
 $$
 利用[[../概率论/概率不等式/Lecture 5. Inequalities Based on Specific Distribution#1. Slud 不等式(二项分布尾界)]], 我们可以得到
-
+#####
+___
 ### 5.2. Lemma2
 设$Z$是在$[0,1]$上取值的随机变量, 那么对于任意的$\gamma\in [0, 1)$, 有
 $$
@@ -159,4 +164,5 @@ $$
 & =(1-\gamma) \mathbb{P}[Z>\gamma]+\gamma
 \end{aligned}
 $$
-
+#####
+___

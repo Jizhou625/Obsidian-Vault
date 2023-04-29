@@ -70,11 +70,11 @@ $$
 \mu((a, b])\le \sum\limits_{i=1}^{\infty}\mu((a_i, b_i])  \tag{2.1.2}
 $$
 结合$(2.1.1)$和$(2.1.2)$, 我们证明了$\mu$是可列可加的, 因此$\mu$是$\mathscr{E}$上的测度.
+#####
 ___
 
 ### 2.2. 半环上测度的性质
 半环上的测度具有单调性, 可减性, 半可列可加性, 下连续性和上连续性. 其中各个性质的严格定义分别为
-
 1. **单调性**: 如果对任何 $A, B \in \mathscr{E}$ 且 $A \subset B$, 均有 $\mu(A) \leq \mu(B)$, 则称 $\mu$ 具有单调性
 2. **可减性**: 如果对任何 $A, B \in \mathscr{E}, A\subset B$, $B\backslash A\in \mathscr{E}$, 只要$\mu(A)<\infty$, 就有
    $$
@@ -99,7 +99,7 @@ ___
 
 ___
 ##### Proof: 
- 设$A, B\in \mathscr{Q}$而且$A\subset B$, 则存在两两不交的集合$\{C_i\in \mathscr{Q}\}$, 使得$B\backslash A = \bigcup\limits_{i=1}^{n} C_i$, 于是
+设$A, B\in \mathscr{Q}$而且$A\subset B$, 则存在两两不交的集合$\{C_i\in \mathscr{Q}\}$, 使得$B\backslash A = \bigcup\limits_{i=1}^{n} C_i$, 于是
 $$
 B = A\cup (B\backslash A) = A \cup \bigcup\limits_{i=1}^{n} C_i
 $$
@@ -182,6 +182,8 @@ $$
    & = \sum\limits_{n=1}^{\infty} \mu(A_n)
 \end{aligned}
 $$
+#####
+___
 
 ### 2.3. 环上有限可加的非负集函数的性质
 对于环$\mathbb{R}$上的有限可加非负集函数$\mu$, 下面的几个命题是等价的:
@@ -221,6 +223,8 @@ ___
    \mu\left(\bigcup\limits_{n=1}^{\infty} A_n\right) = \sum\limits_{n=1}^{N}\mu(A_n) + \mu\left(\bigcup\limits_{n=N+1}^{\infty} A_n\right)
    $$
    由于$\mu$有限且在$\varnothing$上连续, 故$\bigcup\limits_{n=N+1}^{\infty} A_n\downarrow \varnothing$蕴含$\lim\limits_{N\to\infty} \mu\left(\bigcup\limits_{n=N+1}^{\infty} A_n\right) = 0$. 
+#####
+___
    
 ## 3. 外测度
 ### 3.1. 外测度的定义
@@ -247,7 +251,8 @@ $$
 \tau\left(\bigcup\limits_{n=1}^{\infty} A_n \right) \le \sum\limits_{n=1}^{\infty} \sum\limits_{k=1}^{\infty} \mu(B_{n,k})\le \sum\limits_{n=1}^{\infty} \tau(A_n) +\varepsilon
 $$
 由$\varepsilon$的任意性即得证
-
+#####
+___
 ### 3.3. $\tau$可测集和完全测度空间
 **$\tau$可测集**: 设$\tau$是$X$上的外测度, $\mathscr{T}$是由$X$的所有子集组成的集合系, 我们把满足
 $$
@@ -278,7 +283,8 @@ ___
    \end{aligned}
    $$
 4. 
-
+#####
+___
 
 ## 4. 测度的扩张
 ### 4.1. 扩张的定义

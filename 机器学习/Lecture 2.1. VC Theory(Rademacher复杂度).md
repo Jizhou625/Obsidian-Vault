@@ -78,6 +78,8 @@ $$
 $$
 \Phi(S) \le   2\widehat{\mathfrak{R}}_m(\mathcal{G}) +3\sqrt{\dfrac{\log \dfrac{2}{\delta}}{2m}}
 $$
+#####
+___
 
 ### 2.2. 二分类问题关于Rademacher复杂度的泛化界
 令$\mathcal{H}$为取值为$\{-1, +1\}$的某一函数族, 令$\mathcal{D}$为输入空间$\mathcal{X}$的分布, 那么, 对于规模为$m$, 分布为$\mathcal{D}$的某一样本集$S$和任意的$\delta>0$, 至少以概率$1-\delta$, 有
@@ -102,7 +104,6 @@ $$
 $$
 2\widehat{\mathfrak{R}}_m(\mathcal{G}) = \widehat{\mathfrak{R}}_s(\mathcal{H})
 $$
-
 ___
 
 ***Lemma***: 令$\mathcal{H}$为取值为$\{-1, +1\}$的某一函数族, $\mathcal{G}$为关于$\mathcal{H}$的$0-1$损失函数族: $\mathcal{G} = \{(x,y)\mapsto \mathbb{I}_{h(x)\neq y}: h\in \mathcal{H}\}$. 对于任意取值为$\mathcal{X}\times \{-1,+1\}$的样本集$S = \left((x_1, y_1), (x_2, y_2), \cdots, (x_m, y_m)\right)$, 令$S_{\mathcal{X}}$表示它在$\mathcal{X}$上的投影: $S_{\mathcal{X}} = (x_1, \cdots, x_m)$. 那么, 下面$\mathcal{G}$和$\mathcal{H}$的经验Rademacher复杂度满足下面的关系:
@@ -120,7 +121,8 @@ $$
 & = \dfrac{1}{2}\widehat{R}_{S_{\mathcal{X}}}(\mathcal{H})
 \end{aligned}
 $$
-
+#####
+___
 ## 3. 和Rademacher随机变量相关的不等式
 ### 3.1. Massart引理
 设$A\subset \mathbb{R}^m$是一个有限集, 以及$r = \max\limits_{\boldsymbol{x}\in A} \|\boldsymbol{x}\|_2$, 那么有
@@ -157,7 +159,8 @@ $$
 $$
 \operatorname*{\mathbb{E}}\limits_{\boldsymbol{\sigma}}\left[\sup\limits_{\boldsymbol{x}\in A}\sum\limits_{i=1}^{m} \sigma_ix_i  \right] \le r \sqrt{2\log |A|}
 $$
-
+#####
+___
 ### 3.2. Khintchine-Kahane不等式
 Let $(\mathbb{H},\|\cdot\|)$ be a normed vector space and let $\boldsymbol{x}_1, \ldots, \boldsymbol{x}_m$ be $m \geq 1$ elements of $\mathbb{H}$. Let $\boldsymbol{\sigma}=\left(\sigma_1, \ldots, \sigma_m\right)^{\top}$, $\sigma_i$ are independent Rademacher variables. Then, the following inequalities hold:
 $$
@@ -199,7 +202,7 @@ $$
 =& 2^m \sum_{\boldsymbol{\sigma} \in\{-1,+1\}^m}\|s_{\boldsymbol{\sigma}}\|^2+2^{m-1} \sum_{\boldsymbol{\sigma} \in\{-1,+1\}^m} \|s_{\boldsymbol{\sigma}}\|\left(\sum_{\boldsymbol{\sigma}^{\prime} \in B(\boldsymbol{\sigma}, 1)} \|s_{\boldsymbol{\sigma}^{\prime}}\| -(m-2) \|s_{\boldsymbol{\sigma}}\|^2\right)
 \end{aligned}
 $$
-这里, $B(\boldsymbol{\sigma}, 1)$代表与$\boldsymbol{\sigma}$Hamming距离为$1$的所有$\boldsymbol{\sigma}^{\prime}$的集合. 于是
+这里, $B(\boldsymbol{\sigma}, 1)$代表与$\boldsymbol{\sigma}$的Hamming距离为$1$的所有$\boldsymbol{\sigma}^{\prime}$的集合. 于是
 $$
 \sum_{\boldsymbol{\sigma}^{\prime} \in B(\boldsymbol{\boldsymbol{\sigma}}, 1)} s_{\boldsymbol{\sigma}}-s_{\boldsymbol{\sigma}^{\prime}}=2 s_{\boldsymbol{\sigma}}
 $$
@@ -221,3 +224,5 @@ $$
 $$
 \frac{1}{2} \sum_{i=1}^m\left\|\boldsymbol{x}_i\right\|_2^2 \leq\left(\underset{\boldsymbol{\sigma}}{\mathbb{E}}\left[\left\|\sum_{i=1}^m \sigma_i \boldsymbol{x}_i\right\|_2\right]\right)^2 \leq \sum_{i=1}^m\left\|\boldsymbol{x}_i\right\|_2^2
 $$
+#####
+___

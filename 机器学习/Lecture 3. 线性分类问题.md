@@ -23,6 +23,8 @@ $$
 ___
 ##### Proof: 
 Let $m_{i_0 j_0}=\min\limits_{i}\max\limits_{j} m_{ij}$ and $m_{i_1 j_1}=\max\limits_{j}\min\limits_{i} m_{ij}$. Then $m_{i_0 j_0}\geq m_{i_0 j_1}\geq m_{i_1 j_1}$.
+#####
+___
 
 ### 1.3. Mix Strategy and von Neumann's Minimax Theorem
 
@@ -127,7 +129,8 @@ If the primal optimization problem has a solution $x^*$ and its dual problem has
 
 KKT conditions are necessary conditions for $x^*$ and $(\lambda_i^*, \mu_j^*)$ to be solutions of the primal & dual problems. Given $f, g_1, \cdots, g_n$ convex and $h_1, \cdots, h_m$ linear, the KKT conditions are also sufficient conditions.
 ___
-**Example**: When applying the KKT conditions to the problem.
+##### Example
+When applying the KKT conditions to the problem.
 $$
 \begin{aligned}
 & \qquad(\boldsymbol{w}, b)=\arg \min _{\boldsymbol{w}, b} \frac{1}{2}\|\boldsymbol{w}\|_2^2 \\
@@ -142,3 +145,5 @@ $$
 \text { and } \sum_{i=1}^n \lambda_i y_i=0
 \end{gathered}
 $$
+#####
+___

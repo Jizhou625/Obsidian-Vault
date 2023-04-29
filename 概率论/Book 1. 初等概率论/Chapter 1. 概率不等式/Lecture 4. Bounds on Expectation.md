@@ -37,6 +37,8 @@ Finally, we have
 $$
 \mathbb{E} X_n \leq \sqrt{\mathbb{E} X_n^2} \leq \sqrt{\frac{1+\log \left(c_1\right)}{n c_2}}
 $$
+#####
+___
 
 ## 2. Maximal Inequality (Bounded MGF)
 ___
@@ -64,7 +66,7 @@ $$
 t \mathbb{E}\left(\max _{1 \leq j \leq n} X_j\right) \leq \log n+\psi(t)
 $$
 ___
-#### Sub-Gaussian Case
+##### Sub-Gaussian Case
 When $X_i$ is sub-Gaussian, which means there exists $\sigma$ such that
 $$
 e^{t X_i} \leq e^{\sigma^2 t^2 / 2}, \quad \forall t \in \mathbb{R}
@@ -104,3 +106,5 @@ Thus
 $$
 \mathbb{E}\left(\max _{1 \leq j \leq p} \exp \left\{t \varphi_j\right\}\right) \leq \exp \left\{t \max _{1 \leq j \leq p} \sum_{i=1}^n a_{i j}\right\}
 $$
+#####
+___

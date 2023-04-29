@@ -32,7 +32,7 @@ is included in $\mathcal{C}$.
 **Examples**:
 $$\{x \mid a<x<b\},\{\boldsymbol{x} \mid\|\boldsymbol{x}-\boldsymbol{a}\|<1\},\{\boldsymbol{x} \mid \boldsymbol{x}>\mathbf{0}\}, \mathbb{S}_{++}^n=\{X \mid X \succ \mathbf{0}\}$$
 
-**运算性质**
+**运算性质**:
 1. 任意多个开机的并集还是开集, 也就是说, 若$\{G_{\alpha}\mid \alpha\in I\}$是$\mathbb{R}^n$中的一个开集族, 则其并集$G = \bigcup\limits_{\alpha\in I}G_{\alpha}$是开集. 
 2. 有限个开集的交还是开集, 也就是说, 若$G_1, G_2, \cdots, G_k$是$\mathbb{R}^n$中的开集, 则$G = \bigcap\limits_{i=1}^kG_i$也是开集. 但是, 无限个开集的交不一定是开集. 考虑集合列$\left\{G_k = \left(0, 1 +\dfrac{1}{n}\right)\right\}$, 我们有$\bigcap\limits_{k=1}^{\infty}G_k = \left(0, 1\right]$不是开集
 
@@ -41,7 +41,6 @@ $$\{x \mid a<x<b\},\{\boldsymbol{x} \mid\|\boldsymbol{x}-\boldsymbol{a}\|<1\},\{
 2. $\mathbb{R}^n$中的非空开集$G$是由可列个互不相交的半开半闭方体的并集
 ___
 ##### Proof: 
-
 1. 设$G$是$\mathbb{R}$中的开集, 对于$G$中的任意一点$a$, 由于$a$是$G$的内点, 因此存在$\varepsilon>0$使得$(a-\varepsilon, a+\varepsilon)\subset G$. 现在设
    $$
    a^{\prime} = \inf\{x\mid (x, a)\subset G\}, \quad a^{\prime\prime} = \inf\{x\mid (a, x)\subset G\}
@@ -78,9 +77,7 @@ $$
 \{x \mid a \leq x \leq b\},\{\boldsymbol{x} \mid\|\boldsymbol{x}-\boldsymbol{a}\| \leq 1\},\{\boldsymbol{x} \mid \mathbf{1} \geq \boldsymbol{x} \geq \mathbf{0}\}, \mathbb{S}_{+}^n=\{X \mid I \succeq X \succeq \mathbf{0}\}
 $$
 
-**性质**: 
-
-设$E\in\mathbb{R}^n$, 则$E$的任意一个开覆盖都包含有限子覆盖的充要条件是$E$是紧集.
+**性质**:  设$E\in\mathbb{R}^n$, 则$E$的任意一个开覆盖都包含有限子覆盖的充要条件是$E$是紧集.
 ### 2.5. 内点集
 **Definition**: The interior of $\mathcal{C} \subseteq \mathbb{R}^n$ is defined as $\mathcal{C}^{\circ}=\left\{\boldsymbol{y} \mid \exists \varepsilon>0\right.$ such that $\left.\mathcal{B}_{\varepsilon}(\boldsymbol{y}) \subset \mathcal{C}\right\}$
 

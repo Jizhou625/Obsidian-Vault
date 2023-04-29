@@ -23,6 +23,8 @@ $$
 $$
 \mathfrak{R}_m(\mathcal{G}) \le \sqrt{\dfrac{2\log \Pi_\mathcal{G}(m)}{m}}
 $$
+#####
+___
 
 ## 2. 生长函数的泛化界
 ### 2.1. 二分类问题关于生长函数的泛化界
@@ -47,7 +49,8 @@ $$
 \end{aligned}
 $$
 其中, 第一行的不等式和第四行的不等式可以由下面的引理[[#2.2 Double Sample Trick]]给出, 随着$n$的增大, 常数可以改进为$4$.
-
+#####
+___
 ### 2.2 Double Sample Trick
 Let $x_1, x_2, \cdots, x_{2n}$ be i.i.d. samples from $\mathcal{X}$. Let $\nu_1 = \dfrac{1}{n}\sum\limits_{i=1}^{n}x_i$ , $\nu_2 = \dfrac{1}{n} \sum\limits_{i=n+1}^{2n} x_i$ and $p = \mathbb{E}X$. Then, when $n \ge \dfrac{\ln 2 }{\varepsilon^2}$
 $$
@@ -67,3 +70,5 @@ $$
 $$
 \dfrac{1}{2}\mathbb{P}(|\nu_1 - p|\ge 2\varepsilon) \le \mathbb{P}(|\nu_1 - \nu_2|\ge 2\varepsilon) \le 2\mathbb{P}(|\nu_1 - p|\ge \dfrac{1}{2}\varepsilon)
 $$
+#####
+___

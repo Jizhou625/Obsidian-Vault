@@ -88,7 +88,7 @@ r(\mathscr{Q})=\bigcup_{n=1}^{\infty}\left\{\bigcup_{k=1}^n A_k\ \Big|\ A_k \in 
 $$
 ___
 ##### Proof: 
- 记
+记
 $$
 r = \bigcup_{n=1}^{\infty}\left\{\bigcup_{k=1}^n A_k\ \Big|\ A_k \in \mathscr{Q}, A_i\cap A_j=\varnothing \right\}
 $$
@@ -117,6 +117,8 @@ A\cup B = B\cup (A\backslash B) = \left\{\bigcup\limits_{j=1}^m B_j \right\}\cup
 l_m= 1, \cdots, k_{i, m}}}\left(C_{l_1}^{(i, 1)} \cap \cdots \cap C_{l_m}^{(i, m)}\right)\right\} \in r
 $$
 这就证明了$r$是一个环.
+#####
+___
 
 ### 4.3. 域的生成单调系是$\sigma$域
 如果$\mathscr{A}$是域, 则 $\sigma(\mathscr{A}) = m(\mathscr{A})$. 
@@ -127,7 +129,7 @@ $$
 $$
 ___
 ##### Proof: 
- 显然, $\sigma(\mathscr{A})\supset m(\mathscr{A})$. 下面只要证明$m(\mathscr{A})$是一个$\sigma$域, 而$m(\mathscr{A})$已经是一个单调系, 因此只要证明$m(\mathscr{A})$是域. 又因为$X\in \mathscr{A}\subset m(\mathscr{A})$, 我们只要证明$m(\mathscr{A})$是环. 
+显然, $\sigma(\mathscr{A})\supset m(\mathscr{A})$. 下面只要证明$m(\mathscr{A})$是一个$\sigma$域, 而$m(\mathscr{A})$已经是一个单调系, 因此只要证明$m(\mathscr{A})$是域. 又因为$X\in \mathscr{A}\subset m(\mathscr{A})$, 我们只要证明$m(\mathscr{A})$是环. 
 
 对任意的$A\in \mathscr{A}$, 设
 $$
@@ -142,7 +144,8 @@ $$
 \mathscr{H}_B = \{A \in m(\mathscr{A})\mid A\cup B, A\backslash B\in m(\mathscr{A})\}
 $$
 这仍然是一个单调系. 我们又已经证明了$\mathscr{A}\subset \mathscr{H}_B$. 因此我们就得到了$\mathscr{H}_B\supset m(\mathscr{A})$, 即$m(\mathscr{A})$确实是一个环. 
-
+#####
+___
 
 ### 4.4 $\pi$系的生成$\lambda$系是$\sigma$域
 如果$\mathscr{P}$是$\pi$系, 则$\sigma(\mathscr{P}) = \lambda(\mathscr{P})$. 
@@ -153,7 +156,7 @@ $$
 $$
 ___
 ##### Proof: 
- 显然, $\sigma(\mathscr{P})\supset \lambda(\mathscr{P})$. 于是只要证明$\lambda(\mathscr{P})$是一个$\pi$系, 对于任意的$A\in \mathscr{P}$, 设
+显然, $\sigma(\mathscr{P})\supset \lambda(\mathscr{P})$. 于是只要证明$\lambda(\mathscr{P})$是一个$\pi$系, 对于任意的$A\in \mathscr{P}$, 设
 $$
 \mathscr{G}_A = \{B\in \lambda(\mathscr{P})\mid A\cap B\in \lambda(\mathscr{P})\}
 $$
@@ -170,6 +173,8 @@ $$
 A, B\in \lambda(\mathscr{P}) \Longrightarrow A\cap B\in \lambda(\mathscr{P})
 $$
 这就证明了$\lambda(\mathscr{P})$是一个$\pi$系.
+#####
+___
 
 ### 4.5. Borel集合系
 由简单集合系生成的$\sigma$域的一个重要的例子是

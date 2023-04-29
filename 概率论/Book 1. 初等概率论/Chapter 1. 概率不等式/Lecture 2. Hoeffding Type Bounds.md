@@ -6,7 +6,8 @@ $$
 \mathbb{E}\mathrm{e}^{\lambda X}\le\exp\left(\dfrac{\lambda^2(b-a)^2}{8}\right) 
 $$
 ___
-***Proof:*** Without loss of generality, by replacing $X$ by $X-\mathbb{E} X$, we can assume $\mathbb{E} X=0$, so that $a \leq 0 \leq b$. Since $\mathrm{e}^{\lambda x}$ is a convex function of $x$, we have that for all $x \in[a, b]$
+##### Proof: 
+Without loss of generality, by replacing $X$ by $X-\mathbb{E} X$, we can assume $\mathbb{E} X=0$, so that $a \leq 0 \leq b$. Since $\mathrm{e}^{\lambda x}$ is a convex function of $x$, we have that for all $x \in[a, b]$
 $$
 \mathrm{e}^{\lambda x} \leq \frac{b-x}{b-a} \mathrm{e}^{\lambda a}+\frac{x-a}{b-a} \mathrm{e}^{\lambda b}
 $$
@@ -38,6 +39,8 @@ Thus, we have proved that
 $$
 \mathbb{E} \mathrm{e}^{\lambda(X-\mathbb{E} X)} \leq \exp \left(\frac{\lambda^2(b-a)^2}{8}\right)
 $$
+#####
+___
 ## 2. Hoeffding Inequality
 ___
 Theorem: Suppose $X_i$ are bounded independent random variables with bound $\left[a_i, b_i\right]$. Let $S_n=\sum\limits_{i=1}^n X_i$, we have
@@ -45,7 +48,8 @@ $$
 \mathbb{P}\left(\left|S_n-\mathbb{E} S_n\right| \geq t\right) \leq 2 \exp \left(-\frac{2 t^2}{\sum\limits_{i=1}^n\left(b_i-a_i\right)^2}\right)
 $$
 ___
-***Proof:*** Using Chernoff Bound lemma, we know that
+##### Proof: 
+Using Chernoff Bound lemma, we know that
 $$
 \begin{aligned}
 \mathbb{P}\left(S_n-\mathbb{E} S_n \geq t\right) & \leq \exp \left\{s\left(S_n-\mathbb{E} S_n\right)-s t\right\} \\
@@ -64,6 +68,8 @@ $$
 \mathbb{E}\left(S_n-\mathbb{E} S_n \geq t\right) \leq \exp \left(-\frac{2 t^2}{\sum\limits_{i=1}^n\left(b_i-a_i\right)^2}\right)
 $$
 According to symmetry, we get the whole inequality
+#####
+___
 
 ## 3. McDiarmid's Inequality
 ___
@@ -105,15 +111,16 @@ It means $\left|Z_i-Z_{i-1}\right| \leq c_i$. Then we have
 $$
 \mathbb{P}\left(\left|\varphi\left(X_1, X_2, \cdots, X_n\right)-\mathbb{E} \varphi\left(X_1, X_2, \cdots, X_n\right)\right| \geq t\right)=\mathbb{P}\left(\left|Z_n-Z_0\right| \geq t\right) \leq 2 \exp \left(-\frac{2 t^2}{\sum\limits_{i=1}^n c_i^2}\right)
 $$
+#####
 ___
-
-#### Hoeffding Inequality is Specific Case of McDiarmid's Inequality
+##### Hoeffding Inequality is Specific Case of McDiarmid's Inequality
 When
 $$
 \varphi\left(z_1, z_2, \cdots, z_n\right)=\varphi_1\left(z_1\right)+\varphi_2\left(z_2\right)+\cdots+\varphi_n\left(z_n\right)
 $$
 Since $\left|\varphi_i\left(z_i\right)-\varphi_j\left(z_j\right)\right| \leq c_i$, we get Hoeffding Inequality.
-
+#####
+___
 
 
 ## 4. Chernoff Bound on Tail Distribution
@@ -162,8 +169,10 @@ Then we can get
 $$
 \mathbb{P}\left(\frac{1}{n}\sum\limits_{i=1}^{n}X_i - p \ge \varepsilon\right) \le \exp\left[-n D_B^{(e)}(p+\varepsilon\| p)\right]
 $$
+#####
 ___
-**Note**: 这个界要严格优于Hoeffding Inequality给出的界, 如果利用Hoeffding Inequality, 则
+##### 严格优于Hoeffding Inequality
+这个界要严格优于Hoeffding Inequality给出的界, 如果利用Hoeffding Inequality, 则
 $$
 \mathbb{P}\left(\frac{1}{n}\sum\limits_{i=1}^{n}X_i - p \ge \varepsilon\right)  \le \exp(-2n\varepsilon^2)
 $$
@@ -172,4 +181,5 @@ $$
 2\varepsilon^2 \le D_B^{(e)}(p+\varepsilon\|p) \implies \exp(-2n\varepsilon^2) \geq \exp\left[-n D_B^{(e)}(p+\varepsilon\| p)\right]
 $$
 等号成立当且仅当$\varepsilon=0$. 这个界能严格优于Hoeffding Inequality的原因是其不仅利用了随机变量的有界性, 而且利用了随机变量的均值性质. 
-
+#####
+___

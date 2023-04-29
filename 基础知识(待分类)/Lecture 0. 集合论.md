@@ -89,6 +89,8 @@ $$
 A_0\cap g(Y\backslash f(A_0)) = \varnothing
 $$
 这和$A$是$\Gamma$中的最大元矛盾! 于是我们得到了$A\cup A^{\sim} = X$. 
+#####
+___
 ### 2.3. Cantor-Bernstein 定理
 若集合$X$与$Y$的某个真子集对等, $Y$与$X$的某个真子集对等, 则$X\sim Y$
 ___
@@ -102,6 +104,8 @@ $$
 F(x) = \begin{cases} f(x), \quad & x\in A \\ g^{-1}(x), & x\in A^{\sim}  \end{cases}
 $$
 这说明了$X\sim Y$
+#####
+___
 
 ### 2.4. 可列集的性质
 1. 任何一个无限集$E$必然包含一个可列子集
@@ -129,6 +133,8 @@ $$
 2. 若$y\notin B$, 则根据$B$的定义可以得到, $y\in f(y) = B$, 矛盾!
    
 这导致了矛盾! 因此$A$与其幂集$\mathscr{P}(A)$不对等
+#####
+___
 
 ## 3. Borel集
 ### 3.1. $F_{\sigma}, G_{\delta}$集

@@ -27,7 +27,7 @@ $$
     $$
 ___
 ##### Proof: 
- 我们只证明结论5. 对$Y$上的任意集合系$\mathscr{E}$, 显然$f^{-1}(\sigma(\mathscr{E}))$是一个$\sigma$域, 故
+我们只证明结论5. 对$Y$上的任意集合系$\mathscr{E}$, 显然$f^{-1}(\sigma(\mathscr{E}))$是一个$\sigma$域, 故
 $$
 \sigma(f^{-1}(\mathscr{E}))\subset f^{-1}(\sigma(\mathscr{\mathscr{E}}))
 $$ 
@@ -40,6 +40,8 @@ $$
 f^{-1}(\sigma(\mathscr{E}))\subset f^{-1}(\mathscr{G})\subset \sigma(f^{-1}(\mathscr{E}))
 $$
 这就证明了结论5
+#####
+___
 
 ### 1.3. 可测映射
 给定可测空间$(X, \mathscr{F})$和$(Y, \mathscr{S})$以及$f:X\to Y$, 如果$f^{-1}(\mathscr{S})\subset \mathscr{F}$, 则称$f$是从$(X, \mathscr{F})$到$(Y, \mathscr{S})$的可测映射或随机元. 而$\sigma(f)=f^{-1}(\mathscr{S})$叫做使得映射$f$可测的最小$\sigma$域.
@@ -107,7 +109,8 @@ $$
 0\le f(x) - f_n(x) \le \dfrac{1}{2^n}, \quad \forall x\in X
 $$
 对于可测函数, 只需要用分解$f = f^+ - f^-$并且分别用1的结论即可
-
+#####
+___
 
 ### 2.5. 复合可测函数
 设 $g$ 是 $(X, \mathscr{F})$ 到 $(Y, \mathscr{S})$ 的可测映射. 则 $h$ 是 $\left(X, g^{-1} (\mathscr{S})\right)$ 上的可测函数 (或随机变量, 或有界可测函数) 当且仅当存在 $(Y, \mathscr{S})$ 上的可测函数 (或随机变量, 或有界可测函数) $f$ 使得 $h=f \circ g$
@@ -126,3 +129,5 @@ ___
     $$
     h(x) = \lim\limits_{n\to\infty} h_n(x) = \lim\limits_{n\to\infty} f_n(g(x)) = f(g(x))
     $$
+#####
+___

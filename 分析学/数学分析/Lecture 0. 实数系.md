@@ -23,7 +23,9 @@
    
 把所有满足上述条件的分划集合$\alpha$组成的集合族记作为$\mathscr{R}$, 我们定义在$\mathscr{R}$上的偏序关系为: 如果$\alpha\subsetneqq \beta$, 则$\alpha < \beta$. 根据分划的左传递性, 不难验证$\mathscr{R}$是一个有序集合. 此外, $\mathscr{R}$具有最小上界性
 ___
-**Proof**: 设$A$是$\mathscr{R}$的不空真子集, 且$A$上有界$\beta\in \mathscr{R}$. 设$\gamma = \bigcup\limits_{\alpha\in A}\alpha$. 显然$r$满足分划的三条性质, $r\in \mathscr{R}$. 又因为$\gamma$是$A$的最小上界, 因此$S$具有最小上界性
+##### Proof: 
+设$A$是$\mathscr{R}$的不空真子集, 且$A$上有界$\beta\in \mathscr{R}$. 设$\gamma = \bigcup\limits_{\alpha\in A}\alpha$. 显然$r$满足分划的三条性质, $r\in \mathscr{R}$. 又因为$\gamma$是$A$的最小上界, 因此$S$具有最小上界性
+#####
 ___
 
 ## 2. Cauchy序列构造实数

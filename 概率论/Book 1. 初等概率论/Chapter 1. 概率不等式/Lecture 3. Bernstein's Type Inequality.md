@@ -32,12 +32,16 @@ Hence,
 $$
 \mathbb{E} \mathrm{e}^{t X} \leq \exp \left(\frac{\mathrm{e}^{t c}-1-t c}{c^2} \sigma^2\right)
 $$
+#####
 ___
-**Note**: 和Hoeffding Lemma相比, 当 $t$ 非常小的时候
+##### 和Hoeffding Lemma的对比
+和Hoeffding Lemma相比, 当 $t$ 非常小的时候
 $$
 \exp \left(\frac{\mathrm{e}^{t c}-1-t c}{c^2} \sigma^2\right) \approx \exp \left(\frac{t^2 \sigma^2}{2}\right)<\exp \left(\frac{t^2 c^2}{2}\right)
 $$
 当 $t$ 值比较大时, 该上界不如Hoeffding Lemma给出的上界
+#####
+___
 
 ## 2. Bernstein's Inequality
 ___
@@ -87,7 +91,8 @@ $$
 $$
 where $\sigma^2=\dfrac{1}{n} \sum\limits_{i=1}^n \operatorname{Var}\left(X_i\right)$
 ___
-***Proof:*** Let $v_n^2=n \sigma^2$ and $\kappa=\dfrac{1}{3} c$. We can prove that
+##### Proof:
+Let $v_n^2=n \sigma^2$ and $\kappa=\dfrac{1}{3} c$. We can prove that
 $$
 \sum_{i=1}^n \mathbb{E}\left|X_i\right|^m \leq \frac{m !}{2} \nu_n^2 \kappa^{m-2}, \quad m=2,3, \cdots
 $$
@@ -99,7 +104,8 @@ Let $\varepsilon=\dfrac{r}{n}$, we know that
 $$
 \mathbb{P}\left(\left|\bar{X}_n-\mu\right|>\varepsilon\right) \leq 2 \exp \left(-\frac{n^2 \varepsilon^2}{2 n \sigma^2+2 \frac{1}{3} c n \varepsilon}\right)=2 \exp \left(-\frac{n \varepsilon^2}{2 \sigma^2+\frac{2 c \varepsilon}{3}}\right)
 $$
-
+#####
+___
 ## 4. Bennett's Inequality
 **Theorem**: If $\mathbb{P}(|X_i|\le c) = 1$ and $\mathbb{E}X_i =\mu_i$. Let $\mu = \dfrac{1}{n}\sum\limits_{i=1}^{n}\mu_i$. Then, for any $\varepsilon>0$, we have
 $$
@@ -107,7 +113,8 @@ $$
 $$
 where $\sigma^2=\dfrac{1}{n} \sum\limits_{i=1}^n \operatorname{Var}\left(X_i\right)$ and $\theta(x) = (1+x)\log(1+x) - x$
 ___
-**Proof**: 不失一般性, 我们假设 $c=1, \mu_i=0$. 否则可以进行scale和平移变换而不影响不等式成立的条件. 令$t = n\varepsilon, \nu = n\sigma^2$, 根据对称性, 我们只要证明
+##### Proof:
+不失一般性, 我们假设 $c=1, \mu_i=0$. 否则可以进行scale和平移变换而不影响不等式成立的条件. 令$t = n\varepsilon, \nu = n\sigma^2$, 根据对称性, 我们只要证明
 $$
 \mathbb{P}\left(S_n>r\right) \leq  \exp \left( - \nu\theta\left(\dfrac{r}{\nu}\right)\right) = \exp \left\{r - (r+\nu)\log \dfrac{\nu+r}{\nu}\right\}
 $$
@@ -139,3 +146,5 @@ $$
 $$
 \mathbb{P}\left(S_n>t\right) \leq \exp \left\{r - (r+\nu)\log \dfrac{\nu+r}{\nu}\right\}
 $$
+#####
+___

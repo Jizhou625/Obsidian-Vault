@@ -6,13 +6,14 @@ $$
 \mathbb{P}(X \geq a) \leq \mathbb{E}[\varphi(X)] \frac{1}{\varphi(a)}, \quad \forall a \in \mathbb{R}
 $$
 ___
-
-***Proof:***  For any random variable $X \geq 0$ We know that
+##### Proof:
+For any random variable $X \geq 0$ We know that
 $$
 \mathbb{P}(X \geq a)=\mathbb{E} I(X \geq a) \leq \frac{1}{a} \mathbb{E} X \mathbb{I}(X \geq a) \leq \frac{\mathbb{E} X}{a}
 $$
 Then for any real valued random variable $X$, since $\varphi(X)$ is a random variable which is larger than $0$, we know the inequality holds
-
+#####
+___
 
 
 ## 2. Chebyshev Inequality
@@ -22,13 +23,7 @@ ___
 $$
 \mathbb{P}(|X-\mu|>t) \leq \frac{\sigma^2}{t^2}
 $$
-
-
 ___
-
-##### Proof: 
-By letting $\varphi(x)=x^2$, the following Chebyshev's inequality is merely an application of Markov's Inequality. for $\|X-\mathbb{E} X\|$
-
 
 
 ## 3. Chernoff Bound
@@ -39,8 +34,6 @@ $$
 $$
 ___
 
-##### Proof: 
-By letting $\varphi(x)=e^{t x}(t>0)$ and minimize $t$ on $t>0$, we have the above Chernoff bound.
 
 
 

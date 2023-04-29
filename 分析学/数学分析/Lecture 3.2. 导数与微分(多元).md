@@ -58,10 +58,12 @@ $$
 D_{\boldsymbol{q}}\boldsymbol{f}(\boldsymbol{p})=\lim_{t\to \infty}\dfrac{\boldsymbol{f}(\boldsymbol{p}+t\boldsymbol{q})-\boldsymbol{f}(\boldsymbol{p})}{t}=\mathrm{d}\boldsymbol{g}_0(\boldsymbol{1})
 $$
 其中$\mathrm{d}\boldsymbol{g}_0(\boldsymbol{1})$表示线性映射$\mathrm{d}\boldsymbol{g}_0$作用在一维单位向量$\boldsymbol{1}$上的值
+
 2. **偏导数**: 设$U\subset \mathbb{R}^n$是开集, 映射$\boldsymbol{f}: U\to \mathbb{R}^m, \boldsymbol{p}\in U$, 则$\boldsymbol{f}$在点$\boldsymbol{p}$处沿$\boldsymbol{e}_k$方向的方向导数称为$\boldsymbol{f}$在点$\boldsymbol{p}$处的第$k$个偏导数, 记作
 $$
 \mathrm{D}_k\boldsymbol{f}(\boldsymbol{p})=\dfrac{\partial \boldsymbol{f}}{\partial x_k}(\boldsymbol{p})=\lim_{t\to\infty} \dfrac{\boldsymbol{f}(\boldsymbol{p}+t\boldsymbol{e}_k)-\boldsymbol{f}(\boldsymbol{p})}{t}
 $$
+
 3. **偏导数与方向导数**: 设$U\subset \mathbb{R}^n$是开集, 映射$\boldsymbol{f}: U\to\mathbb{R}^m, \boldsymbol{p}\in U, \boldsymbol{q}=(q_1,\cdots, q_n)\in \mathbb{R}^n$. 假如$\boldsymbol{f}$在点$\boldsymbol{p}$处是可微的, 则
 $$
 \mathrm{d}\boldsymbol{f_p}(\boldsymbol{q})=\sum_{k=1}^n q_k\mathrm{D}_k\boldsymbol{f}(\boldsymbol{p})=\sum_{k=1}^n q_k\dfrac{\partial \boldsymbol{f}}{\partial x_k}(\boldsymbol{p})
@@ -161,6 +163,7 @@ y_i=\begin{cases}
 \end{cases}
 $$
 换言之, 初等微分同胚像点与原像点之间最多除了一个坐标外, 其他坐标都是相同的, 恒等映射是初等微分同胚. 
+
 3. **微分同胚的初等微分同胚分解**: 设$G\subset \mathbb{R}^m$是开集, 映射$\boldsymbol{f}: G\to \boldsymbol{f}(G)\subset \mathbb{R}^m$是微分同胚, 则任意点$\boldsymbol{x}_0\in G$有个开邻域$U$, 使得
 	$$
 	\forall\boldsymbol{x}\in U, \boldsymbol{f}(\boldsymbol{x})=\boldsymbol{g}_1\circ\cdots \circ \boldsymbol{g}_m(\boldsymbol{x})

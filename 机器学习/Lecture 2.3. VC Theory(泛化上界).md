@@ -50,6 +50,7 @@ $$
 $$
 |\mathcal{G}| = |\mathcal{G}_1| + |\mathcal{G}_2| \le  \sum\limits_{i=0}^{d} \binom{m-1}{i}+ \sum\limits_{i=0}^{d-1} \binom{m-1}{i} = \sum\limits_{i=0}^{d} \binom{m}{i}
 $$
+#####
 ___
 **推论**: 如果$\mathcal{H}$是一个假设集, 且它的VC维 VCdim$(\mathcal{H}) = d$, 则对于所有的$m\ge d$
 $$
@@ -66,6 +67,8 @@ $$
 ___
 ##### Proof: 
 利用[[Lecture 2.2. VC Theory(生长函数)#2.1. 二分类问题关于生长函数的泛化界]]和[[#1.3. Sauer引理]], 即得到结论成立. 
+#####
+___
 
 ### 2.2. 可实现情形下VC维的泛化界
 如果一个假设$h$在样本$S\sim \mathcal{D}^m$上是一致的, 那么对于任意的$\varepsilon\ge \dfrac{8}{m}$, 有
@@ -78,3 +81,5 @@ ___
 $$
 \mathbb{P}\left(\hat{R}(h)\ge \dfrac{\varepsilon}{2}\right)
 $$
+#####
+___

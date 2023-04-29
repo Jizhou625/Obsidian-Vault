@@ -27,7 +27,8 @@ $$
    G(k, n, p) = \dfrac{b (k, n, p)}{1 - \dfrac{k-np}{2k(1-p)}} \dfrac{\sqrt{np(1-p)}
    }{\phi\left(\dfrac{k-np}{\sqrt{np(1-p)}}\right)} \ge 1
    $$
-
+   #####
+   ___
 
 ## 2. 正态分布的尾界
 如果$\mathcal{Z}$为服从标准正态分布的随机变量, 则对于$u>0$, 有下式成立
@@ -55,6 +56,8 @@ g^{\prime}(u) &\sim (1-u^2)e^{-\frac{1}{2}u^2}\sqrt{1-e^{-u^2}} - \dfrac{ue^{-u^
 \end{aligned}
 $$
 因此$f^{\prime}(u)$先大于0后小于0, 于是$f(u)$是先增再减的, 且$f(0) = 0, f(+\infty)=0$, 因此$f(u)\ge 0$. 这就证明了原来的结论. 
+#####
+___
 ## Appendix
 ### Lemma 1
 对任意的$0< k < n$, $\log G\left(k, n, \dfrac{k}{n}\right)\ge -\dfrac{1}{8\min \{k, n-k\}}$

@@ -93,6 +93,8 @@ $$
 \end{aligned}
 $$
 让右边等于$\delta$, 则原定理得证. 
+#####
+___
 
 **Note**: 这里, $\log|\mathcal{H}|$可以理解为表示$\mathcal{H}$所需要的二进制数位, 从这个角度而言, 上述定理得到的泛化保证由二进制表示位数$\log |\mathcal{H}|$和样本规模$m$控制
 
@@ -115,3 +117,5 @@ $$
 $$
 R(h) \le \hat{R}(h) + O\left(\sqrt{\dfrac{\log |\mathcal{H}|}{m}}\right)
 $$
+#####
+___

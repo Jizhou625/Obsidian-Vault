@@ -5,7 +5,8 @@ $\{p_n\}$是度量空间$X$中的序列, 如果$\exists p\in X$, 使得对于$\f
 ### 1.2. 序列收敛不等于极限存在
 若对任意的$a>0,b>0$, 均有$\lim\limits_{n \to \infty}f(a+bn)=0$, 仍可以不存在$\lim\limits_{n \to \infty}f(x)$
 ___
-**Example**: 考虑
+##### Example: 
+考虑
 $$
 f(x)=\left\{\begin{aligned}
 		&1,\quad x=n\sqrt[n]{2}\\
@@ -23,6 +24,7 @@ $$
 $$
 a=\dfrac{nl\sqrt[l]{2}-mk\sqrt[m]{2}}{n-k},\quad b=\dfrac{m\sqrt[m]{2}-l\sqrt[l]{2}}{n-k}$$
 容易证明, 对$\forall q\notin \{m,l\}$, 不存在$p \in \mathbb{N}$, 使得$a+bp=q\sqrt[q]{2}$, 这意味着$\lim\limits_{n \to \infty}f(a+bn)=0$, 但$\lim\limits_{n \to \infty}f(x)$不存在.
+#####
 ___
 
 ### 1.3. Stolz定理: 
@@ -35,7 +37,7 @@ ___
 ### Toeplitz定理
 设$n,k\in \mathbb{N},\ t_{nk}\ge 0$且有$\sum\limits_{k=1}^n t_{nk}=1,\ \lim\limits_{n\to \infty}t_{nk}=0$. 如果$\lim\limits_{n\to +\infty} a_n=a$, 则有$\lim\limits_{n\to +\infty}\sum\limits_{k=1}^{n}t_{nk}a_k=a$
 ___
-**proof**:
+##### Proof: 
 $$
 \begin{aligned}
 		\left|\sum_{k=1}^nt_{nk}a_n-a\right|&=\left|\sum_{k=1}^nt_{nk}(a_k-a)\right| \\ 
@@ -44,6 +46,7 @@ $$
         &=\varepsilon
 \end{aligned}
 $$
+#####
 ___
 
 ### 1.4. Heine归结原理
@@ -72,7 +75,10 @@ $$
 \lim\limits_{n\to +\infty}\left(\dfrac{(2n)!!}{(2n-1)!!}\right)^2\dfrac{1}{2n+1}=\dfrac{\pi}{2}
 $$
 ___
-**Proof**:  证明: 令$I_n=\displaystyle{\int_{0}^{\frac{\pi}{2}} \sin^nx \mathrm{d}x}$. 由$I_{2k+1}<I_{2k}<I_{2k-1}$可得, $\dfrac{2k!!}{(2k+1)!!}<\dfrac{(2k-1)!!}{2k!!}\dfrac{\pi}{2}<\dfrac{(2k-2)!!}{(2k-1)!!}$. 这就得到了结论. 
+##### Proof:
+证明: 令$I_n=\displaystyle{\int_{0}^{\frac{\pi}{2}} \sin^nx \mathrm{d}x}$. 由$I_{2k+1}<I_{2k}<I_{2k-1}$可得, $\dfrac{2k!!}{(2k+1)!!}<\dfrac{(2k-1)!!}{2k!!}\dfrac{\pi}{2}<\dfrac{(2k-2)!!}{(2k-1)!!}$. 这就得到了结论. 
+#####
+___
 
 ### 2.4. Stirling公式
 $$
@@ -83,7 +89,10 @@ $$
 n!=\sqrt{2\pi n}\left(\dfrac{n}{e}\right)^ne^{\theta_n}, \quad \theta_n<\dfrac{1}{n}
 $$
 ___
-**Proof**: 考虑$a_n=\dfrac{n!}{n^{n+\frac{1}{2}}e^{-n}}$, 不难证明$\{a_n\}$单调递减且$a_n>1$; 故$\{a_n\}$极限存在. 记$a_n$的极限为$A$, 由Wallis公式可得,  $\ \dfrac{\pi}{2}=\lim\limits_{n\to +\infty}\left(\dfrac{(2n)!!}{(2n-1)!!}\right)^2\dfrac{1}{2n+1}=\lim\limits_{n\to +\infty}\dfrac{2^{4n}\left[\dfrac{(n!)^2}{(2n)!}\right]^2}{2n+1}=\lim\limits_{n\to +\infty}\dfrac{2^{4n}A^22^{-4n-1}n}{2n+1}=\dfrac{A^2}{4}$, 故原命题成立.
+##### Proof:
+考虑$a_n=\dfrac{n!}{n^{n+\frac{1}{2}}e^{-n}}$, 不难证明$\{a_n\}$单调递减且$a_n>1$; 故$\{a_n\}$极限存在. 记$a_n$的极限为$A$, 由Wallis公式可得,  $\ \dfrac{\pi}{2}=\lim\limits_{n\to +\infty}\left(\dfrac{(2n)!!}{(2n-1)!!}\right)^2\dfrac{1}{2n+1}=\lim\limits_{n\to +\infty}\dfrac{2^{4n}\left[\dfrac{(n!)^2}{(2n)!}\right]^2}{2n+1}=\lim\limits_{n\to +\infty}\dfrac{2^{4n}A^22^{-4n-1}n}{2n+1}=\dfrac{A^2}{4}$, 故原命题成立.
+#####
+___
 
 ## 3. 实数系基本定理
 ### 3.1. 实数系基本定理
@@ -98,7 +107,10 @@ ___
 ### 3.2. 有限覆盖定理的加强(Lebesgue数定理)
 设$\mathscr{F}$是有界闭区间$[a,b]$上的一个开覆盖, 则必存在数$\lambda=\lambda({\mathscr{F}})>0$, 使得对$\forall A\subset[a,b]$满足$d(A)=\sup \{\rho(x',x'' | x',x''\in A)\}<\lambda=\lambda(\mathscr{F})$, 都存在$I\in \mathscr{F}$使得$A\subset I$, 我们称$\lambda=\lambda(\mathscr{F})$为$\mathscr{F}$的一个Lebesgue数
 ___
-**Proof**:  用反证法, 假设结论不成立, 则对$\forall n\in N$, $\exists A_n\subset [a,b], d(A_n)<\dfrac{1}{n}$, 使得对$\forall I\in \mathscr{F}$都有$A_n\notin I$. 取$a_n$为$A_n$区间中的任意一点, 由闭区间的紧性可得存在子列$\{a_{n_k}\}$收敛于$a_0\in [a,b]$. 由于$\mathscr{F}$是开覆盖, 故存在$I_0\in\mathscr{F}$使得$a_0\in I_0$. 因此必然存在$A_n$被$I_0$完全覆盖. 
+##### Proof:
+用反证法, 假设结论不成立, 则对$\forall n\in N$, $\exists A_n\subset [a,b], d(A_n)<\dfrac{1}{n}$, 使得对$\forall I\in \mathscr{F}$都有$A_n\notin I$. 取$a_n$为$A_n$区间中的任意一点, 由闭区间的紧性可得存在子列$\{a_{n_k}\}$收敛于$a_0\in [a,b]$. 由于$\mathscr{F}$是开覆盖, 故存在$I_0\in\mathscr{F}$使得$a_0\in I_0$. 因此必然存在$A_n$被$I_0$完全覆盖. 
+#####
+___
 
 ### 3.3. 压缩映射原理
 设函数$f$在区间$[a,b]$上定义, $f([a,b])\subset[a,b]$. 存在一个常数$k,\ 0<k<1$, 使得对一切$x,y \in [a,b]$成立不等式$|f(x)-f(y)|\le k|x-y|$, 则称$f$是$[a,b]$上的一个压缩映射,称常数$k$为压缩常数,  若$f$是$[a,b]$上的一个压缩映射,则
@@ -111,12 +123,13 @@ ___
 1.  $\varlimsup\limits_{n \to \infty} (x_n+y_n)\le \varlimsup\limits_{n \to \infty}x_n+\varlimsup\limits_{n \to \infty}y_n$, $\varliminf\limits_{n \to \infty} (x_n+y_n)\ge \varliminf\limits_{n \to \infty}x_n+\varliminf\limits_{n \to \infty}y_n$
 2.  $\varliminf\limits_{n \to \infty} (x_n+y_n)\le \varliminf\limits_{n \to \infty} x_n+\varlimsup\limits_{n \to \infty} y_n\le \varlimsup\limits_{n \to \infty} (x_n+y_n)$ ,该不等式在中间的和式有意义时成立
 3.  若数列$\{y_n\}$广义收敛, 则成立
-	$$
-	\begin{aligned}
-	\varliminf\limits_{n \to \infty} (x_n+y_n)=\varliminf\limits_{n \to \infty}x_n+\varliminf\limits_{n \to \infty} y_n \\ 
-	\varlimsup\limits_{n \to \infty} (x_n+y_n)= \varlimsup\limits_{n \to \infty}x_n+\varlimsup\limits_{n \to \infty}y_n
-	\end{aligned}
-	$$
+$$
+\begin{aligned}
+\varliminf\limits_{n \to \infty} (x_n+y_n)&=\varliminf\limits_{n \to \infty}x_n+\varliminf\limits_{n \to \infty} y_n \\ 
+\varlimsup\limits_{n \to \infty} (x_n+y_n)&= \varlimsup\limits_{n \to \infty}x_n+\varlimsup\limits_{n \to \infty}y_n
+\end{aligned}
+$$
+
 
 ### 4.2. 半连续
 设$f(x)$在$x_0$的邻域$U(x_0)$上定义
