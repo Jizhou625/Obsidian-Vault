@@ -9,7 +9,8 @@ $$
 \mathbb{E} X_n \leq \sqrt{\frac{C}{n}}, \quad \text { where } C=\frac{1+\log \left(c_1\right)}{c_2}
 $$
 ___
-***Proof***: Recall that for any nonnegative random variable $Y$, we have
+##### Proof: 
+Recall that for any nonnegative random variable $Y$, we have
 $$
 \mathbb{E} Y=\int_0^{\infty} \mathbb{P}(Y \geq t) \mathrm{d} t
 $$
@@ -48,7 +49,8 @@ $$
 \mathbb{E}\left(\max _{1 \leq i \leq n} X_i\right) \leq \inf _{\lambda \in\left(0, \frac{1}{b}\right)} \frac{\log n+\psi(\lambda)}{\lambda}
 $$
 ___
-***Proof***: By Jensen's inequality, we have
+##### Proof: 
+By Jensen's inequality, we have
 $$
 \begin{aligned}
 \exp \left\{t \mathbb{E}\left(\max _{1 \leq j \leq n} X_j\right)\right\} & \leq \mathbb{E}\left(\exp \left\{t \max _{1 \leq j \leq n} X_j\right\}\right) \\
@@ -83,7 +85,8 @@ $$
 \mathbb{E}\left(\max _{1 \leq j \leq p}\left|\sum_{i=1}^n f_j\left(X_i\right)\right|\right) \leq \sqrt{2 \log (2 p)} \max _{1 \leq j \leq p} \sqrt{\sum_{i=1}^n a_{i j}^2}
 $$
 ___
-***Proof***: Let
+##### Proof: 
+Let
 $$
 \varphi_j\left(X_1, \cdots, X_n\right)=\left|\sum_{i=1}^n f_j\left(X_i\right)\right|
 $$

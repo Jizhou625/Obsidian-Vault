@@ -7,7 +7,8 @@ $$
 where $\sigma^2=\operatorname{Var}(X)$
 
 ___
-***Proof***: Using Taylor expansion, we have
+##### Proof: 
+Using Taylor expansion, we have
 $$
 \mathbb{E} \mathrm{e}^{t X}=1+t^2 \sigma^2 \sum_{r=2}^{\infty} \frac{t^{r-2} \mathbb{E} X^r}{r ! \sigma^2}
 $$

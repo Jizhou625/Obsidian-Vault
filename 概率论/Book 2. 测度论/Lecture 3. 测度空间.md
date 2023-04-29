@@ -31,7 +31,8 @@ $$
 $$
 则$\mu$是$\mathscr{E}$上的测度. 当$F(\infty)=1$且$F(-\infty)=0$时, 这就是一个概率测度. 
 ___
-**Proof**: 不难证明$\mu(\varnothing)=0$, 因此我们只要验证$\mu$具有可列可加性. 
+##### Proof: 
+不难证明$\mu(\varnothing)=0$, 因此我们只要验证$\mu$具有可列可加性. 
 首先, 我们不难证明$\mu$是有限可加的, 其次, 如果$(a_i, b_i)\in \mathscr{Q}_{\mathbb{R}}$两两不交并且
 $$
 \bigcup\limits_{i=1}^{\infty} (a_i, b_i] \subset (a, b]
@@ -69,6 +70,7 @@ $$
 \mu((a, b])\le \sum\limits_{i=1}^{\infty}\mu((a_i, b_i])  \tag{2.1.2}
 $$
 结合$(2.1.1)$和$(2.1.2)$, 我们证明了$\mu$是可列可加的, 因此$\mu$是$\mathscr{E}$上的测度.
+___
 
 ### 2.2. 半环上测度的性质
 半环上的测度具有单调性, 可减性, 半可列可加性, 下连续性和上连续性. 其中各个性质的严格定义分别为
@@ -96,7 +98,8 @@ $$
    则称 $\mu$ 具有上连续性 
 
 ___
-**Proof**: 设$A, B\in \mathscr{Q}$而且$A\subset B$, 则存在两两不交的集合$\{C_i\in \mathscr{Q}\}$, 使得$B\backslash A = \bigcup\limits_{i=1}^{n} C_i$, 于是
+##### Proof: 
+ 设$A, B\in \mathscr{Q}$而且$A\subset B$, 则存在两两不交的集合$\{C_i\in \mathscr{Q}\}$, 使得$B\backslash A = \bigcup\limits_{i=1}^{n} C_i$, 于是
 $$
 B = A\cup (B\backslash A) = A \cup \bigcup\limits_{i=1}^{n} C_i
 $$
@@ -190,7 +193,7 @@ $\mu$是可列可加 $\iff \mu$半可列可加 $\iff \mu$下连续 $\implies\mu$
    $$
 如果$\mu$是有限的, 则上面的所有$\implies$全部变为$\iff$
 ___
-**Proof**: 我们只证明部分结论
+##### Proof:  我们只证明部分结论
 
 1. $\mu$半可列可加$\implies$ $\mu$可列可加: 如果$\{A_n\in \mathscr{R}\}$两两不交且$A = \bigcup\limits_{n=1}^{\infty} A_n\in \mathscr{R}$, 则由$\mu$的单调性和有限可加性知
    $$
@@ -234,7 +237,8 @@ $$
 $$
 则$\tau$是一个外测度, 称为由$\mu$生成的外测度. 其中, 空集的下确界定义为$\infty$
 ___
-**Proof**: 不难验证, 生成的外测度$\tau$满足条件1和2. 下面证明条件3. 我们只需要证明$\tau(A_n)<\infty$的情况. 取$\{B_{n,k}\in \mathscr{E}\}$使得$\bigcup\limits_{k=1}^{\infty} B_{n, k}\supset A_n$且
+##### Proof: 
+不难验证, 生成的外测度$\tau$满足条件1和2. 下面证明条件3. 我们只需要证明$\tau(A_n)<\infty$的情况. 取$\{B_{n,k}\in \mathscr{E}\}$使得$\bigcup\limits_{k=1}^{\infty} B_{n, k}\supset A_n$且
 $$
 \sum\limits_{k=1}^{\infty} \mu(B_{n, k}) < \tau(A_n)+ \dfrac{\varepsilon}{2^n}
 $$
@@ -260,7 +264,8 @@ $$
 ### 3.4. Caratheodory定理
 如果$\tau$是外测度, $\mathscr{F}_{\tau}$是由全体$\tau$可测集组成的集合系, 则$\mathscr{F}_{\tau}$是一个$\sigma$-代数, 且$(X, \mathscr{F}_{\tau}, \tau)$是完全测度空间. 
 ___
-**Proof**: 我们首先证明$\mathscr{F}_{\tau}$是一个$\sigma$-代数. 分为以下几个部分
+##### Proof: 
+ 我们首先证明$\mathscr{F}_{\tau}$是一个$\sigma$-代数. 分为以下几个部分
 1. $X \in \mathscr{F}_{\tau}$. 这是显然的, 因为$\tau(D\cap X) +\tau(D\cap \varnothing) = \tau(D) +\tau(\varnothing) = \tau(D)$
 2. 若$A\in \mathscr{F}_{\tau}$, 则$A^c\in \mathscr{F}_{\tau}$. 这是因为$\tau$可测集的定义关于$A$和$A^c$是对称的. 
 3. 若$A_1, A_2\in \mathscr{F}_{\tau}$, 则有$A_1\cap A_2\in \mathscr{F}_{\tau}$. 这是因为
@@ -282,3 +287,5 @@ $$
 \tau(A) = \mu(A)
 $$
 则称$\tau$为$\mu$在$\overline{\mathscr{E}}$上的扩张. 
+___
+**讨论**

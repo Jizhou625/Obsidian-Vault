@@ -65,7 +65,8 @@ X= A\cup A^{\sim}, \quad Y = B\cup B^{\sim}, \quad A\cap A^{\sim} = B\cap B^{\si
 $$
 其中$f(A) = B, g(B^{\sim}) = A^{\sim}$
 ___
-**Proof**: 对于$X$中的子集$E$(不妨假定$Y\backslash f(E)\neq \varnothing$), 若满足
+##### Proof: 
+对于$X$中的子集$E$(不妨假定$Y\backslash f(E)\neq \varnothing$), 若满足
 $$
 E\cap g(Y\backslash f(E)) = \varnothing
 $$
@@ -91,7 +92,8 @@ $$
 ### 2.3. Cantor-Bernstein 定理
 若集合$X$与$Y$的某个真子集对等, $Y$与$X$的某个真子集对等, 则$X\sim Y$
 ___
-**Proof**: 根据题设可以得到存在单射$f:X\to Y$和单射$g: Y\to X$, 根据[[#2.2. 集合在映射下的分解]], 存在分解
+##### Proof: 
+根据题设可以得到存在单射$f:X\to Y$和单射$g: Y\to X$, 根据[[#2.2. 集合在映射下的分解]], 存在分解
 $$
 X = A\cup A^{\sim},\quad  Y = B\cup B^{\sim}, \quad f(A) = B, \quad g(B^{\sim}) = A^{\sim}
 $$
@@ -117,7 +119,8 @@ $$
 ### 2.6. 无最大基数定理
 若$A$是非空集合, 则$A$与其幂集$\mathscr{P}(A)$不对等. 
 ___
-**Proof**: 假设$A$与其幂集$\mathscr{P}(A)$对等, 即存在一个一一映射$f: A\to\mathscr{P}(A)$, 我们作集合
+##### Proof: 
+假设$A$与其幂集$\mathscr{P}(A)$对等, 即存在一个一一映射$f: A\to\mathscr{P}(A)$, 我们作集合
 $$
 B = \{x\in A\mid x\notin f(x)\}
 $$

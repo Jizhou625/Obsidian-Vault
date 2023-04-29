@@ -222,7 +222,8 @@ For $A\in\mathbb{R}^{m\times n}$ and $\boldsymbol{b}\in \mathbb{R}^m$, the follo
 1. $\exists \boldsymbol{x}\in \mathbb{R}^n_+$ such that $A\boldsymbol{x}=\boldsymbol{b}$
 2. $\exists \boldsymbol{y} \in \mathbb{R}^m$ such that $A^{\top}\boldsymbol{y}\succeq 0$ and $\boldsymbol{b}^{\top}\boldsymbol{y}<0$
 ___
-**Proof**: First, we prove that $1\Longrightarrow \neg 2$: For $\boldsymbol{x}\in \mathbb{R}^n_+$ with $A\boldsymbol{x}=\boldsymbol{b}$ and $\boldsymbol{y}\in \mathbb{R}^m$ with $A^{\top}\boldsymbol{y}\succeq 0$ we have $\boldsymbol{b}^{\top}\boldsymbol{y} =\boldsymbol{x}^{\top} A^{\top}\boldsymbol{y}\ge 0$. 
+##### Proof: 
+First, we prove that $1\Longrightarrow \neg 2$: For $\boldsymbol{x}\in \mathbb{R}^n_+$ with $A\boldsymbol{x}=\boldsymbol{b}$ and $\boldsymbol{y}\in \mathbb{R}^m$ with $A^{\top}\boldsymbol{y}\succeq 0$ we have $\boldsymbol{b}^{\top}\boldsymbol{y} =\boldsymbol{x}^{\top} A^{\top}\boldsymbol{y}\ge 0$. 
 
 Then, we prove that $\neg 1\Longrightarrow 2$: Consider the closed convex cone $C = \mathrm{cone}(A)$. Here, $\mathrm{cone}(A)$ is the cone of the column space of $A$. $\neg 1$ means that $\boldsymbol{b}$ is not in  $\mathrm{cone}(A)$. By the separating hyperplane theorem we can get that there exist $\boldsymbol{y}\in \mathbb{R}^m$ and $\mu$ such that $\langle \boldsymbol{y}, \boldsymbol{z}\rangle \ge \mu > \langle \boldsymbol{y}, \boldsymbol{b}\rangle$ for all $\boldsymbol{z} \in C$. Then we can get that $\langle A^{\top}\boldsymbol{y}, \boldsymbol{x} \rangle \ge \mu, \forall \boldsymbol{x}\ge 0$, which implies $A^{\top}\boldsymbol{y}\ge 0$ and $\mu \le 0$.  
 

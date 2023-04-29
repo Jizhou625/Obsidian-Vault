@@ -77,7 +77,8 @@ $$
 \mathbb{P}\left(|\varphi(Z_1, Z_2,\cdots, Z_n) - \mathbb{E}\varphi(Z_1, Z_2, \cdots, Z_n)|\ge t\right) \le 2\exp\left(-\dfrac{2t^2}{\sum\limits_{i=1}^n c_i^2}\right)
 $$
 ___
-***Proof***: First, it's easy to see that $\varphi$ is bounded by $\sum\limits_{i=1}^n c_i$. Define the Doob martingale $\left\{Z_i\right\}$ as
+##### Proof: 
+First, it's easy to see that $\varphi$ is bounded by $\sum\limits_{i=1}^n c_i$. Define the Doob martingale $\left\{Z_i\right\}$ as
 $$
 \begin{gathered}
 Z_i:=\mathbb{E}\left[\varphi\left(X_1, X_2, \cdots, X_n\right) \mid \mathcal{F}_i\right] \\
@@ -124,7 +125,8 @@ $$
 Here, $D_B^{(e)}$ is the relative entropy of two Bernoulli random variables
 
 ___
-***Proof***: Since exponent function is convex, by Jensen inequality, we have for $X\in [0,1]$
+##### Proof: 
+Since exponent function is convex, by Jensen inequality, we have for $X\in [0,1]$
 $$
 \mathbb{E}\mathrm{e}^{tX} \le p \mathrm{e}^t+1-p
 $$

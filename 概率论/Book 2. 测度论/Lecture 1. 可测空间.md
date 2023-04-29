@@ -87,7 +87,8 @@ $$
 r(\mathscr{Q})=\bigcup_{n=1}^{\infty}\left\{\bigcup_{k=1}^n A_k\ \Big|\ A_k \in \mathscr{Q}, A_i\cap A_j=\varnothing \right\}
 $$
 ___
-**Proof**: 记
+##### Proof: 
+ 记
 $$
 r = \bigcup_{n=1}^{\infty}\left\{\bigcup_{k=1}^n A_k\ \Big|\ A_k \in \mathscr{Q}, A_i\cap A_j=\varnothing \right\}
 $$
@@ -125,7 +126,8 @@ $$
 \mathscr{A}\subset \mathscr{M}\Longrightarrow \sigma(\mathscr{A})\subset \mathscr{M}
 $$
 ___
-**Proof**: 显然, $\sigma(\mathscr{A})\supset m(\mathscr{A})$. 下面只要证明$m(\mathscr{A})$是一个$\sigma$域, 而$m(\mathscr{A})$已经是一个单调系, 因此只要证明$m(\mathscr{A})$是域. 又因为$X\in \mathscr{A}\subset m(\mathscr{A})$, 我们只要证明$m(\mathscr{A})$是环. 
+##### Proof: 
+ 显然, $\sigma(\mathscr{A})\supset m(\mathscr{A})$. 下面只要证明$m(\mathscr{A})$是一个$\sigma$域, 而$m(\mathscr{A})$已经是一个单调系, 因此只要证明$m(\mathscr{A})$是域. 又因为$X\in \mathscr{A}\subset m(\mathscr{A})$, 我们只要证明$m(\mathscr{A})$是环. 
 
 对任意的$A\in \mathscr{A}$, 设
 $$
@@ -150,7 +152,8 @@ $$
 \mathscr{P}\subset \mathscr{L}\Longrightarrow \sigma(\mathscr{P})\subset \mathscr{L}
 $$
 ___
-**Proof**: 显然, $\sigma(\mathscr{P})\supset \lambda(\mathscr{P})$. 于是只要证明$\lambda(\mathscr{P})$是一个$\pi$系, 对于任意的$A\in \mathscr{P}$, 设
+##### Proof: 
+ 显然, $\sigma(\mathscr{P})\supset \lambda(\mathscr{P})$. 于是只要证明$\lambda(\mathscr{P})$是一个$\pi$系, 对于任意的$A\in \mathscr{P}$, 设
 $$
 \mathscr{G}_A = \{B\in \lambda(\mathscr{P})\mid A\cap B\in \lambda(\mathscr{P})\}
 $$

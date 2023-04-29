@@ -5,7 +5,8 @@ $$
 \operatorname*{\mathbb{P}}\limits_{S\in \mathcal{\mathcal{D}}^m} \left(R_{\mathcal{\mathcal{D}}}(h_s, f)> \dfrac{d-1}{32m} \right) \ge \dfrac{1}{100}
 $$
 ___
-**Proof**: 令$X = \{x_0, x_1, \cdots, x_{d-1}\}\subset \mathcal{X}$是一个能被$\mathcal{H}$完全打散的集合. 对于任意的$\varepsilon>0$, 我们考虑
+##### Proof: 
+令$X = \{x_0, x_1, \cdots, x_{d-1}\}\subset \mathcal{X}$是一个能被$\mathcal{H}$完全打散的集合. 对于任意的$\varepsilon>0$, 我们考虑
 $$
 \operatorname*{\mathbb{P}}\limits_{\mathcal{\mathcal{D}}}(x_0) = 1 - 8\varepsilon,\quad  \forall i \in [1, d-1], \operatorname*{\mathbb{P}}\limits_{\mathcal{\mathcal{D}}}(x_i) = \dfrac{8\varepsilon}{d-1}
 $$
@@ -70,7 +71,8 @@ $$
 \operatorname*{\mathbb{P}}\limits_{S\in \mathcal{\mathcal{D}}^m} \left(R_{\mathcal{\mathcal{D}}}(h_s) - \inf\limits_{h\in \mathcal{H}}R_{\mathcal{\mathcal{D}}}(h) > \sqrt{\dfrac{d}{320m}} \right) \ge \dfrac{1}{64}
 $$
 ___
-**Proof**: 令$X = \{x_1, x_1, \cdots, x_{d}\}\subset \mathcal{X}$是一个能被$\mathcal{H}$完全打散的集合. 对于任意的$\alpha\in [0, 1]$以及任意的向量$\boldsymbol{\sigma}=(\sigma_1, \sigma_2, \cdots, \sigma_d)^{\top}\in \{-1, +1\}^d$, 我们定义一个在$\mathcal{X}\times \{0, 1\}$上的分布$\mathcal{D}_{\boldsymbol{\sigma}}$满足
+##### Proof: 
+令$X = \{x_1, x_1, \cdots, x_{d}\}\subset \mathcal{X}$是一个能被$\mathcal{H}$完全打散的集合. 对于任意的$\alpha\in [0, 1]$以及任意的向量$\boldsymbol{\sigma}=(\sigma_1, \sigma_2, \cdots, \sigma_d)^{\top}\in \{-1, +1\}^d$, 我们定义一个在$\mathcal{X}\times \{0, 1\}$上的分布$\mathcal{D}_{\boldsymbol{\sigma}}$满足
 $$
  \operatorname*{\mathbb{P}}\limits_{\mathcal{D}_{\boldsymbol{\sigma}}}(x_i, 1) =\dfrac{1}{d}\left(\dfrac{1}{2}+ \dfrac{\sigma_i \alpha}{2}\right), \quad \forall i \in [1, d]
 $$
@@ -146,7 +148,8 @@ $$
 \mathbb{P}[z>\gamma] \geq \frac{\mathbb{E}[Z]-\gamma}{1-\gamma}>\mathbb{E}[Z]-\gamma
 $$
 ___
-**Proof**: 由于$Z$是在$[0,1]$上取值的随机变量, 所以
+##### Proof: 
+由于$Z$是在$[0,1]$上取值的随机变量, 所以
 $$
 \begin{aligned}
 \mathbb{E}[Z] & =\sum_{z \leq \gamma} \mathbb{P}[Z=z] z+\sum_{z>\gamma} \mathbb{P}[Z=z] z \\

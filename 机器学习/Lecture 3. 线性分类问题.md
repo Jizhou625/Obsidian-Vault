@@ -21,7 +21,8 @@ $$
 \min\limits_{i}\max\limits_{j} m_{ij} \ge  \max\limits_{j}\min\limits_{i} m_{ij}
 $$
 ___
-**Proof**: Let $m_{i_0 j_0}=\min\limits_{i}\max\limits_{j} m_{ij}$ and $m_{i_1 j_1}=\max\limits_{j}\min\limits_{i} m_{ij}$. Then $m_{i_0 j_0}\geq m_{i_0 j_1}\geq m_{i_1 j_1}$.
+##### Proof: 
+Let $m_{i_0 j_0}=\min\limits_{i}\max\limits_{j} m_{ij}$ and $m_{i_1 j_1}=\max\limits_{j}\min\limits_{i} m_{ij}$. Then $m_{i_0 j_0}\geq m_{i_0 j_1}\geq m_{i_1 j_1}$.
 
 ### 1.3. Mix Strategy and von Neumann's Minimax Theorem
 

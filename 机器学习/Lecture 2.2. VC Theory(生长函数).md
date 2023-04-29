@@ -14,7 +14,8 @@ $$
 \mathfrak{R}_m(\mathcal{G}) \le \sqrt{\dfrac{2\log \Pi_\mathcal{G}(m)}{m}}
 $$
 ___
-**Proof**: 对于一个固定的样本集, 我们用$\mathcal{G}_s = \left\{(g(x_1), \cdots, g(x_m))^{\top}\mid g\in \mathcal{G}\right\}$表示定义在该样本集上的函数值向量的集合. 利用[[Lecture 2.1. VC Theory(Rademacher复杂度)#3.1. Massart引理]], 我们有
+##### Proof: 
+对于一个固定的样本集, 我们用$\mathcal{G}_s = \left\{(g(x_1), \cdots, g(x_m))^{\top}\mid g\in \mathcal{G}\right\}$表示定义在该样本集上的函数值向量的集合. 利用[[Lecture 2.1. VC Theory(Rademacher复杂度)#3.1. Massart引理]], 我们有
 $$
 \mathfrak{R}_m(\mathcal{G}) = \operatorname*{\mathbb{E}}\limits_s\left[\operatorname*{\mathbb{E}}\limits_{\boldsymbol{\sigma}}\left[\sup\limits_{\boldsymbol{u}\in \mathcal{G}_s} \dfrac{1}{m} \sum\limits_{i=1}^{m}  \sigma_i u_i \right]\right] \le \operatorname*{\mathbb{E}}\limits_s\left[\dfrac{\sqrt{m}\sqrt{2\log |\mathcal{G}_s|}}{m}\right]
 $$
@@ -34,7 +35,8 @@ $$
 \mathbb{P}\left[\left|R(h)-\widehat{R}_S(h)\right|>\varepsilon\right] \leq 8 \Pi_{\mathcal{H}}(2 m) \exp \left(-\frac{m \varepsilon^2}{8}\right)
 $$
 ___
-**Proof**: 我们使用Double sample trick. 定义$\phi_f(\mathcal{Z}) = \begin{cases}+1,\quad & y=f(x)  \\ -1,  &y\neq f(x)\end{cases}$, 这里$\mathcal{Z} = (x, y)$. 则
+##### Proof: 
+我们使用Double sample trick. 定义$\phi_f(\mathcal{Z}) = \begin{cases}+1,\quad & y=f(x)  \\ -1,  &y\neq f(x)\end{cases}$, 这里$\mathcal{Z} = (x, y)$. 则
 $$
 \begin{aligned}
 \mathbb{P}\left(\sup\limits_{f\in \mathcal{F}}\dfrac{1}{n}\sum\limits_{i=1}^{n} \phi(\mathcal{Z}_i) -\mathbb{E}\phi(\mathcal{Z}) \ge \varepsilon  \right) &\le 2\mathbb{P}\left(\sup\limits_{\phi}\left|\dfrac{1}{n}\sum\limits_{i=1}^{n} \phi(\mathcal{Z}_i) - \dfrac{1}{n}\sum\limits_{i=n+1}^{2n} \phi(\mathcal{Z}_i)\right|\ge {\varepsilon}  \right)\\
@@ -52,7 +54,8 @@ $$
 \dfrac{1}{2}\mathbb{P}(|\nu_1 - p|\ge 2\varepsilon) \le \mathbb{P}(|\nu_1 - \nu_2|\ge \varepsilon) \le 2\mathbb{P}(|\nu_1 - p|\ge \dfrac{1}{2}\varepsilon)
 $$
 ___
-**Proof**: 因为$|\nu_1-\nu_2|\ge\varepsilon \Longrightarrow |\nu_1 - p|\ge \dfrac{\varepsilon}{2} \cup |\nu_2 - p|\ge \dfrac{\varepsilon}{2}$. 所以
+##### Proof: 
+因为$|\nu_1-\nu_2|\ge\varepsilon \Longrightarrow |\nu_1 - p|\ge \dfrac{\varepsilon}{2} \cup |\nu_2 - p|\ge \dfrac{\varepsilon}{2}$. 所以
 $$
 \mathbb{P}(|\nu_1 - \nu_2|\ge \varepsilon) \le \mathbb{P}\left(|\nu_1 - p|\ge \dfrac{1}{2}\varepsilon\right) + \mathbb{P}\left(|\nu_2 - p|\ge \dfrac{1}{2}\varepsilon\right) = 2\mathbb{P}\left(|\nu_1 - p|\ge \dfrac{1}{2}\varepsilon\right)
 $$ 

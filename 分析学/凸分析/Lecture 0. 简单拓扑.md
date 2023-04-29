@@ -40,7 +40,8 @@ $$\{x \mid a<x<b\},\{\boldsymbol{x} \mid\|\boldsymbol{x}-\boldsymbol{a}\|<1\},\{
 1. $\mathbb{R}$中的非空开集是由可数个互不相交的开区间的并集, 这里的开区间也包括无穷开区间.
 2. $\mathbb{R}^n$中的非空开集$G$是由可列个互不相交的半开半闭方体的并集
 ___
-**Proof**: 
+##### Proof: 
+
 1. 设$G$是$\mathbb{R}$中的开集, 对于$G$中的任意一点$a$, 由于$a$是$G$的内点, 因此存在$\varepsilon>0$使得$(a-\varepsilon, a+\varepsilon)\subset G$. 现在设
    $$
    a^{\prime} = \inf\{x\mid (x, a)\subset G\}, \quad a^{\prime\prime} = \inf\{x\mid (a, x)\subset G\}

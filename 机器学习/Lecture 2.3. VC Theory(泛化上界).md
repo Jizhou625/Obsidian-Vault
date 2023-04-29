@@ -29,7 +29,8 @@ $$
 \Pi_\mathcal{H}(m) = 2^m
 $$
 ___
-**Proof**: 对$m+d$进行归纳. 首先当$m=1, d=0$或$m=0, d=1$时, 上式显然成立. 假设上式对于$(m-1, d-1)$和$(m-1, d)$成立. 固定一个集合$S = \{x_1, x_2, \cdots, x_m\}$, 用$\mathcal{G}  = \mathcal{H}_s$表示限制在$S$上由$\mathcal{H}$诱导的概念集. 考虑集合$S^{\prime}= \{x_1, x_2, \cdots, x_{m-1}\}$, 用$\mathcal{G}  = \mathcal{H}_{s^{\prime}}$表示限制在$S^{\prime}$上由$\mathcal{H}$诱导的概念集. 我们定义$\mathcal{G}_2$为
+##### Proof: 
+对$m+d$进行归纳. 首先当$m=1, d=0$或$m=0, d=1$时, 上式显然成立. 假设上式对于$(m-1, d-1)$和$(m-1, d)$成立. 固定一个集合$S = \{x_1, x_2, \cdots, x_m\}$, 用$\mathcal{G}  = \mathcal{H}_s$表示限制在$S$上由$\mathcal{H}$诱导的概念集. 考虑集合$S^{\prime}= \{x_1, x_2, \cdots, x_{m-1}\}$, 用$\mathcal{G}  = \mathcal{H}_{s^{\prime}}$表示限制在$S^{\prime}$上由$\mathcal{H}$诱导的概念集. 我们定义$\mathcal{G}_2$为
 $$
 \mathcal{G}_2 = \{g^{\prime}\subseteq S^{\prime}\mid (g^{\prime}\in \mathcal{G}) \wedge (g^{\prime}\cup \{x_m\}\in \mathcal{G})\}
 $$
@@ -63,7 +64,8 @@ $$
 R(h) \le \widehat{R}(h) + \sqrt{\dfrac{2d \log \dfrac{\mathrm{e}m}{d}}{m}} + \sqrt{\dfrac{\log \dfrac{1}{\delta}}{2m}} = \widehat{R}(h) + O\left(\sqrt{\dfrac{\log \dfrac{m}{d}}{\dfrac{m}{d}}}\right)
 $$
 ___
-**Proof**: 利用[[Lecture 2.2. VC Theory(生长函数)#2.1. 二分类问题关于生长函数的泛化界]]和[[#1.3. Sauer引理]], 即得到结论成立. 
+##### Proof: 
+利用[[Lecture 2.2. VC Theory(生长函数)#2.1. 二分类问题关于生长函数的泛化界]]和[[#1.3. Sauer引理]], 即得到结论成立. 
 
 ### 2.2. 可实现情形下VC维的泛化界
 如果一个假设$h$在样本$S\sim \mathcal{D}^m$上是一致的, 那么对于任意的$\varepsilon\ge \dfrac{8}{m}$, 有
@@ -71,7 +73,8 @@ $$
 \mathbb{P}()
 $$
 ___
-**Proof**: 设$H_s\subset H$是假设集中在样本集$S$上一致的假设构成的子集. 则
+##### Proof: 
+设$H_s\subset H$是假设集中在样本集$S$上一致的假设构成的子集. 则
 $$
 \mathbb{P}\left(\hat{R}(h)\ge \dfrac{\varepsilon}{2}\right)
 $$

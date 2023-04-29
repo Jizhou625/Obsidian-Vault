@@ -82,7 +82,8 @@ $$
 R(h_s) \le \dfrac{1}{m}\left(\log\left(\dfrac{1}{\delta}\right)+\log|\mathcal{H}|\right)
 $$
 ___
-**Proof**: 固定$\varepsilon>0$. 我们有
+##### Proof: 
+固定$\varepsilon>0$. 我们有
 $$
 \begin{aligned}
 \mathbb{P}\left(\exists h\in \mathcal{H}: \hat{R}(h) = 0 \wedge R(h)> \varepsilon\right) 
@@ -102,7 +103,8 @@ $$
 \forall h\in \mathcal{H}, \quad R(h) \le \hat{R}(h) + \sqrt{\dfrac{\log |\mathcal{H}| +\log\left(\dfrac{2}{\delta}\right) }{2m}}
 $$
 ___
-**Proof**: 设$h_1, \cdots, h_{|\mathcal{H}|}$是$\mathcal{H}$的组成元素, 利用\mathcal{H}oeffding不等式, 我们有
+##### Proof: 
+设$h_1, \cdots, h_{|\mathcal{H}|}$是$\mathcal{H}$的组成元素, 利用\mathcal{H}oeffding不等式, 我们有
 $$
 \begin{aligned}
 \mathbb{P}\left(\exists h\in \mathcal{H}: |\hat{R}(h) - R(h)|>\varepsilon\right)&\le \sum\limits_{h\in \mathcal{H}}^{} \mathbb{P}\left(|\hat{R}(h) - R(h)|> \varepsilon\right) \\ 

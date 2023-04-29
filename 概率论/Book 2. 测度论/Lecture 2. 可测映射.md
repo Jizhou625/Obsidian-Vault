@@ -26,7 +26,8 @@ $$
     \sigma\left(f^{-1} (\mathscr{E})\right)=f^{-1} (\sigma(\mathscr{E}))
     $$
 ___
-**Proof**: 我们只证明结论5. 对$Y$上的任意集合系$\mathscr{E}$, 显然$f^{-1}(\sigma(\mathscr{E}))$是一个$\sigma$域, 故
+##### Proof: 
+ 我们只证明结论5. 对$Y$上的任意集合系$\mathscr{E}$, 显然$f^{-1}(\sigma(\mathscr{E}))$是一个$\sigma$域, 故
 $$
 \sigma(f^{-1}(\mathscr{E}))\subset f^{-1}(\sigma(\mathscr{\mathscr{E}}))
 $$ 
@@ -95,7 +96,8 @@ $$
 1. 对任意的非负可测函数$f$, 存在非负简单函数列$\{f_n\mid n=1,2,\cdots\}$使得$f_n\uparrow f$, 如果$f$是非负有界可测的, 则存在非负简单函数列$\{f_n\mid n=1,2,\cdots\}$使得$f_n(x)\uparrow f(x)$对$x\in X$一致成立
 2. 对任何的可测函数$f$, 存在简单函数列$\{f_n\mid n=1,2, \cdots\}$使得$f_n\to f$. 如果$f$是有界可测的, 则存在简单函数列$\{f_n\mid n=1,2,\cdots\}$使得$f_n(x)\to f(x)$对$x\in X$一致成立. 
 ___
-**Proof**: 
+##### Proof: 
+ 
 设$f$非负可测, 对每个$n=1,2,\cdots$, 设
 $$
 f_n(x) = \sum\limits_{k=0}^{n2^n-1} \dfrac{k}{2^n}\mathbb{I}\left(\dfrac{k}{2^n}\le f(x)<\dfrac{k+1}{2^n}\right)
@@ -110,7 +112,8 @@ $$
 ### 2.5. 复合可测函数
 设 $g$ 是 $(X, \mathscr{F})$ 到 $(Y, \mathscr{S})$ 的可测映射. 则 $h$ 是 $\left(X, g^{-1} (\mathscr{S})\right)$ 上的可测函数 (或随机变量, 或有界可测函数) 当且仅当存在 $(Y, \mathscr{S})$ 上的可测函数 (或随机变量, 或有界可测函数) $f$ 使得 $h=f \circ g$
 ___
-**Proof**: 定理的当部分是[[#1.4. 可测映射的判定]]的特例, 于是我们只需要证明仅当部分. 
+##### Proof: 
+定理的当部分是[[#1.4. 可测映射的判定]]的特例, 于是我们只需要证明仅当部分. 
 1. 首先, 考虑$h$是$(X, g^{-1}(\mathscr{S}))$上的简单函数, 即存在$X$的有限分割$\{A_i\in g^{-1}(\mathscr{S})\}$和实数$\{a_i\}$使得$h=\sum\limits_{i=1}^{n} a_i\mathbb{I}_{A_i}$. 取$C_i\in \mathscr{S}$使得$A_i = g^{-1}(C_i)$, 则对$B_i= C_i\backslash \bigcup\limits_{k=1}^{i-1}C_k$, 有
     $$
     A_i = A_i\backslash \bigcup\limits_{k=1}^{i-1}A_k = g^{-1}(B_i)

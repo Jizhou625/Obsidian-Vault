@@ -35,7 +35,8 @@ $$
 \nabla ^2 f(\boldsymbol{x})\succeq \boldsymbol{0}
 $$
 ___
-**Proof**: If $f$ is convex, then 
+##### Proof: 
+If $f$ is convex, then 
 $$
 f((1-\alpha)\boldsymbol{x} +\alpha \boldsymbol{y}) \le (1-\alpha) f(\boldsymbol{x}) + \alpha f(\boldsymbol{y})
 $$
@@ -66,7 +67,8 @@ $$
 ### 1.5. Reduce to one Dimension
 $f(\boldsymbol{x}): \mathbb{R}^n \rightarrow \mathbb{R}$ is convex if and only if for all $\boldsymbol{x} \in$ $\mathrm{dom}f$ and $\boldsymbol{v} \in \mathbb{R}^n, g(t) = f(\boldsymbol{x}+t \boldsymbol{v})$ is convex on $\mathrm{dom} g=\{t \mid \boldsymbol{x} + t \boldsymbol{v} \in \operatorname{dom} f\}$.
 ___
-**Proof**: If $f$ is convex, then $\mathrm{dom}g$ is obviously convex. Moreover, for all $t, s\in \mathrm{dom} g$ and $\theta \in [0, 1]$
+##### Proof: 
+If $f$ is convex, then $\mathrm{dom}g$ is obviously convex. Moreover, for all $t, s\in \mathrm{dom} g$ and $\theta \in [0, 1]$
 $$
 \begin{aligned}
 g(\theta t+(1-\theta) s) &=f(\boldsymbol{x}+[\theta t+(1-\theta) s] \boldsymbol{v})\\ 
@@ -165,4 +167,5 @@ $$
 $$
 where $\|\cdot\|^*$ is the dual norm of $\|\cdot\|$.
 ___ 
-**Proof**: Let $S = \{\boldsymbol{y}\mid \langle \boldsymbol{y}, \boldsymbol{x}\rangle = \|\boldsymbol{x}\| \text{ and } \|\boldsymbol{y}\|^{*}\le 1\}$
+##### Proof: 
+Let $S = \{\boldsymbol{y}\mid \langle \boldsymbol{y}, \boldsymbol{x}\rangle = \|\boldsymbol{x}\| \text{ and } \|\boldsymbol{y}\|^{*}\le 1\}$

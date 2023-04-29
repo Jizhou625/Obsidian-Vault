@@ -47,7 +47,8 @@ $$
 
 满足上述4个条件的模型所得到的$\boldsymbol{\beta}$的估计量$\hat{\boldsymbol{\beta}}_{\mathrm{OLS}}$是无偏的. 
 ___
-**Proof**: 根据线性于参数的条件, 我们可以得到
+##### Proof: 
+根据线性于参数的条件, 我们可以得到
 $$
 \hat{\boldsymbol{\beta}}_{\mathrm{OLS}} = (X^{\top}X)^{-1}X^{\top}(X\boldsymbol{\beta} +\boldsymbol{u}) = \boldsymbol{\beta} + (X^{\top}X)^{-1}X^{\top}\boldsymbol{u}
 $$
@@ -76,7 +77,8 @@ ___
 
 满足上述4个条件的模型所得到的$\boldsymbol{\beta}$的估计量$\hat{\boldsymbol{\beta}}_{\mathrm{OLS}}$是一致的. 
 ___
-**Proof**:  根据线性于参数的条件, 我们可以得到
+##### Proof: 
+ 根据线性于参数的条件, 我们可以得到
 $$
 \hat{\boldsymbol{\beta}}_{\mathrm{OLS}} = (X^{\top}X)^{-1}X^{\top}(X\boldsymbol{\beta} +\boldsymbol{u}) = \boldsymbol{\beta} + (X^{\top}X)^{-1}X^{\top}\boldsymbol{u}
 $$

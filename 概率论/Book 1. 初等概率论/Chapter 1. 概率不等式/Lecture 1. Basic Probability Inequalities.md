@@ -26,7 +26,8 @@ $$
 
 ___
 
-***Proof***: By letting $\varphi(x)=x^2$, the following Chebyshev's inequality is merely an application of Markov's Inequality. for $\|X-\mathbb{E} X\|$
+##### Proof: 
+By letting $\varphi(x)=x^2$, the following Chebyshev's inequality is merely an application of Markov's Inequality. for $\|X-\mathbb{E} X\|$
 
 
 
@@ -38,7 +39,8 @@ $$
 $$
 ___
 
-***Proof***: By letting $\varphi(x)=e^{t x}(t>0)$ and minimize $t$ on $t>0$, we have the above Chernoff bound.
+##### Proof: 
+By letting $\varphi(x)=e^{t x}(t>0)$ and minimize $t$ on $t>0$, we have the above Chernoff bound.
 
 
 

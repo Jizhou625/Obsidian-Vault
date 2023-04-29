@@ -27,7 +27,8 @@ $$
 ### 2.1. 几乎必然收敛 $\to$ 依概率收敛
 设$\boldsymbol{x}^{(n)}, n\in \mathbb{N}$是一列随机向量，$\boldsymbol{x}$是一个随机向量，如果$\boldsymbol{x}^{(n)} \stackrel{\text { a.s. }}{\rightarrow} \boldsymbol{x}$, 则$\boldsymbol{x}^{(n)} \stackrel{p}{\rightarrow} \boldsymbol{x}$
 ___
-**Proof**: The event $\left(\boldsymbol{x}^{(n)} \stackrel{\text { as }}{\rightarrow} \boldsymbol{x}\right)^c$ is equivalent to the event $\bigcup\limits_{\varepsilon>0}\left\{\left\|\boldsymbol{x}^{(n)}-\boldsymbol{x}\right\| \geq \varepsilon\right.$ i.o. $\}$. 而
+##### Proof: 
+The event $\left(\boldsymbol{x}^{(n)} \stackrel{\text { as }}{\rightarrow} \boldsymbol{x}\right)^c$ is equivalent to the event $\bigcup\limits_{\varepsilon>0}\left\{\left\|\boldsymbol{x}^{(n)}-\boldsymbol{x}\right\| \geq \varepsilon\right.$ i.o. $\}$. 而
 $$
 \left\{\left\|\boldsymbol{x}^{(n)}-\boldsymbol{x}\right\| \geq \varepsilon \text { i.o. }\right\}=\left\{\limsup _{n\to\infty}\left\|\boldsymbol{x}^{(n)}-\boldsymbol{x}\right\| \geq \varepsilon\right\}
 $$

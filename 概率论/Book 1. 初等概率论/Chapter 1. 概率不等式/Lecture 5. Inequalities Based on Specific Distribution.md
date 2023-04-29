@@ -5,7 +5,8 @@ $$
 $$
 这里, $\mathcal{Z}$是标准正态分布. 
 ___
-**Proof**: 首先明确一些记号: 
+##### Proof: 
+首先明确一些记号: 
 $$
 \begin{aligned}
 b(k, n, p) &= \binom{n}{k}p^k(1-p)^{n-k} \\ 
@@ -34,7 +35,8 @@ $$
 \mathbb{P}\left(\mathcal{Z}\ge u\right) \ge \dfrac{1}{2}\left(1 - \sqrt{1 - e^{-u^2}}\right)
 $$
 ___
-**Proof**: 只要证明
+##### Proof: 
+只要证明
 $$
 f(u) = \dfrac{1}{2}\sqrt{1 - e^{-u^2}} - \left(\Phi(u) - \dfrac{1}{2}\right) \ge 0
 $$
@@ -57,7 +59,8 @@ $$
 ### Lemma 1
 对任意的$0< k < n$, $\log G\left(k, n, \dfrac{k}{n}\right)\ge -\dfrac{1}{8\min \{k, n-k\}}$
 ___
-**Proof**: 
+##### Proof: 
+
 $$
 \log G\left(k, n, \dfrac{k}{n}\right) = \log \left[\binom{n}{k}\sqrt{2\pi}k^{k+\frac{1}{2}}(n-k)^{n-k+\frac{1}{2}}n^{-n-\frac{1}{2}}\right]
 $$

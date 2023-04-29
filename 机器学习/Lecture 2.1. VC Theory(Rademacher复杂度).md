@@ -38,7 +38,8 @@ $$
 \mathbb{E}g(z) \le \dfrac{1}{m} \sum\limits_{i=1}^{m} g(z_i) + 2\widehat{\mathfrak{R}}_m (\mathcal{G}) +3\sqrt{\dfrac{\log \dfrac{2}{\delta}}{2m}}, \quad \forall g\in \mathcal{G}
 $$
 ___
-**Proof**: 对于任意的样本集$S=(z_1, z_2, \cdots, z_m)$和任意的$g\in \mathcal{G}$, 我们用$\widehat{\mathbb{E}}_s(g) = \dfrac{1}{m} \sum\limits_{i=1}^{m} g(z_i)$表示$g$在$S$上的平均经验期望. 定义
+##### Proof: 
+对于任意的样本集$S=(z_1, z_2, \cdots, z_m)$和任意的$g\in \mathcal{G}$, 我们用$\widehat{\mathbb{E}}_s(g) = \dfrac{1}{m} \sum\limits_{i=1}^{m} g(z_i)$表示$g$在$S$上的平均经验期望. 定义
 $$
 \Phi(S) = \sup\limits_{g\in \mathcal{G}} \left[ \mathbb{E}(g) - \widehat{\mathbb{E}}_s(g) \right]
 $$
@@ -89,7 +90,8 @@ $$
 
 **Note**: 第二个界是数据相关的, 因为经验Rademacher复杂度是依据特定样本集$S$的分布的. 因此, 该泛化界在我们能够计算出$\widehat{\mathfrak{R}}_s(\mathcal{H})$的情况下, 是更紧的泛化界.
 ___
-**Proof**: 根据[[Lecture 2. VC Theory#1.2. 损失函数的泛化界]]中的结论, 我们有
+##### Proof: 
+根据[[Lecture 2. VC Theory#1.2. 损失函数的泛化界]]中的结论, 我们有
 $$
 R(h) \le \widehat{R}(h) + 2\mathfrak{R}_m(\mathcal{G}) +\sqrt{\dfrac{\log \dfrac{1}{\delta}}{2m}}, \quad \forall h\in \mathcal{H}
 $$
@@ -128,7 +130,8 @@ $$
 其中, $\sigma_i$是Rachmacher随机变量, $x_1, x_2, \cdots, x_m$是向量$\boldsymbol{x}$的元素.
 ___
 
-**Proof**: 对于任意的$t>0$, 运用Jensen不等式, 我们有
+##### Proof: 
+对于任意的$t>0$, 运用Jensen不等式, 我们有
 $$
 \begin{aligned}
 \exp\left(t\operatorname*{\mathbb{E}}\limits_{\boldsymbol{\sigma}}\left[\sup\limits_{\boldsymbol{x}\in A}\sum\limits_{i=1}^{m} \sigma_ix_i  \right]\right) & \le \operatorname*{\mathbb{E}}\limits_{\boldsymbol{\sigma}}\left[\exp\left(t\sup\limits_{\boldsymbol{x}\in A}\sum\limits_{i=1}^{m} \sigma_ix_i  \right)\right]\\
@@ -161,7 +164,8 @@ $$
 \frac{1}{2} \underset{\boldsymbol{\sigma}}{\mathbb{E}}\left[\left\|\sum_{i=1}^m \sigma_i \boldsymbol{x}_i\right\|^2\right] \leq\left(\underset{\boldsymbol{\sigma}}{\mathbb{E}}\left[\left\|\sum_{i=1}^m \sigma_i \boldsymbol{x}_i\right\|\right]\right)^2 \leq \underset{\boldsymbol{\sigma}}{\mathbb{E}}\left[\left\|\sum_{i=1}^m \sigma_i \boldsymbol{x}_i\right\|^2\right]
 $$
 ___
-**Proof**: 右边的不等式可以由Jensen立刻得到. 下面证明左边的不等式. 
+##### Proof: 
+右边的不等式可以由Jensen立刻得到. 下面证明左边的不等式. 
 设$\boldsymbol{\alpha}= (\alpha_1, \alpha_2, \cdots, \alpha_m)\in \mathbb{R}^m$, 则有
 $$
 t^2 \prod_{i=1}^m\left(1+\dfrac{\alpha_i}{t}\right)=t^2 \sum_{\boldsymbol{\delta}\in\{0,1\}^m} \dfrac{\boldsymbol{\alpha}^{\boldsymbol{\delta}}}{t^{|\boldsymbol{\delta}|}}  =\sum_{\boldsymbol{\delta} \in\{0,1\}^m} t^{2-|\boldsymbol{\delta}|} \boldsymbol{\alpha}^{\boldsymbol{\delta}}

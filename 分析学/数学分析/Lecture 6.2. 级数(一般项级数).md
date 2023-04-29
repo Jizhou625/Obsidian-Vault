@@ -33,7 +33,8 @@ $$
 $$
 因此其Cauchy乘积的和不收敛. 
 ___
-**Proof**: 设$A_n = \sum\limits_{k=0}^{n} a_k$, $B_n = \sum\limits_{k=0}^{n} b_k$, $C_n = \sum\limits_{k=0}^{n} c_k$, 不妨设$\sum\limits_{k=0}^{\infty} a_n$绝对收敛, 于是我们有
+##### Proof: 
+设$A_n = \sum\limits_{k=0}^{n} a_k$, $B_n = \sum\limits_{k=0}^{n} b_k$, $C_n = \sum\limits_{k=0}^{n} c_k$, 不妨设$\sum\limits_{k=0}^{\infty} a_n$绝对收敛, 于是我们有
 $$
 C_n=\sum_{i=0}^n \sum_{k=0}^i a_k b_{i-k}=\sum_{i=0}^n B_i a_{n-i} = \sum_{i=0}^n\left(B_i-B\right) a_{n-i}+B A_n
 $$
