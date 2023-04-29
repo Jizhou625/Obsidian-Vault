@@ -29,7 +29,7 @@
 $$
 \mu((a, b]) = \begin{cases}  F(b) - F(a) , \quad & a<b \\ 0, \quad & a\ge b \end{cases}
 $$
-则$\mu$是$\mathscr{E}$上的测度. 当$F(\infty)=1$且$F(-\infty)=0$时, 这就是一个概率测度. 
+则$\mu$是$\mathscr{E}$上的测度. 当$F(\infty)=1$且$F(-\infty)=0$时, 这就是一个分布函数. 
 ___
 ##### Proof: 
 不难证明$\mu(\varnothing)=0$, 因此我们只要验证$\mu$具有可列可加性. 
@@ -330,5 +330,8 @@ ___
    $$
    \mu(A) = \tau(A)
    $$
-2. 
+2. 然后证明对任意的$A, D\in \mathscr{Q}$, 有
+   $$
+   \tau(D)\ge \tau(D\cap A) + \tau(D\cap A)
+   $$
 
