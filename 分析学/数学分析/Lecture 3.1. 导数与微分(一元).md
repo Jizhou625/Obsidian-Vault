@@ -12,7 +12,7 @@
 设$f(x)$在$(a,\infty)$上可导, 即使曲线$y=f(x)$在$x \to \infty$时有斜渐近线, 也不一定存在极限$\lim\limits_{x \to \infty}f'(x)$
 ___
 ##### Example: 
-$f(x)=x+\dfrac{\sin x^2}{x}$, 容易得到渐近线为$y=x$, 但由于$f'(x)=1+2\cos x^2-\dfrac{\sin x^2}{x^2}$, 所以$f'(x)$在$x \to +\infty $上无极限
+$f(x)=x+\dfrac{\sin x^2}{x}$, 容易得到渐近线为$y=x$, 但由于$f'(x)=1+2\cos x^2-\dfrac{\sin x^2}{x^2}$, 所以$f'(x)$在$x \to +\infty$上无极限
 #####
 ___
 
@@ -68,7 +68,7 @@ $$
 f(x)=f(x_0)+f'(x_0)(x-x_0)+\cdots+\dfrac{f^{(n)}(x_0)}{n!}(x-x_0)^n+o((x-x_0)^n)\quad (x \to x_0)
 $$
 
-**Lagrange余项**: 若函数$f$在点$x_0$的某个邻域$U(x_0)$中$n+1$次可微, 则对$\forall x \neq x_0\in U(x_0) $, 在$x_0$和$x$之间存在$\xi$, 使得
+**Lagrange余项**: 若函数$f$在点$x_0$的某个邻域$U(x_0)$中$n+1$次可微, 则对$\forall x \neq x_0\in U(x_0)$, 在$x_0$和$x$之间存在$\xi$, 使得
 $$
 f(x)=f(x_0)+f'(x_0)(x-x_0)+\cdots+\dfrac{f^{(n)}(x_0)}{n!}(x-x_0)^n+\dfrac{f^{n+1}(\xi)}{(n+1)!}(x-x_0)^{n+1}
 $$

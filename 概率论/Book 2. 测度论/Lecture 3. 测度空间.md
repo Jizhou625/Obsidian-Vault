@@ -294,4 +294,41 @@ $$
 $$
 则称$\tau$为$\mu$在$\overline{\mathscr{E}}$上的扩张. 
 ___
-**讨论**
+##### 利用外测度的扩张
+如果在集合系$\mathscr{E}$上有测度$\mu$, 就可以利用[[#3.2. 生成外测度]]在$X$上生成一个外测度$\tau$. 而根据[[#3.4. Caratheodory定理]], 把这个外测度限制在$\sigma$域$\mathscr{F}_{\tau}$上就得到了一个测度. 
+
+但是, $\mathscr{F}_{\tau}$未必比$\mathscr{E}$更大, 例如下面的例子: 
+
+**Example**: 设$X = \{a, b, c\}$, $\mathscr{E}=\{\varnothing, \{a, b\}, \{b, c\}, X\}$ 和
+$$
+\mu(\varnothing) = 0, \quad \mu(\{a, b\}) = \mu(\{b, c\}) = 1, \quad \mu(X) = 2
+$$
+显然$\mu$是$\mathscr{E}$上的测度. 根据生成外测度的算法, 我们有
+$$
+\tau(\varnothing) = 0, \quad \tau(X) = \tau(\{a, c\}) = 2, \tau(\{a\}) = \tau(\{b\}) = \tau(\{c\}) = \tau(\{a, b\}) = \tau(\{b, c\}) = 1
+$$
+再根据$\tau$可测集的性质可以得到$\mathscr{F}_{\tau}=\{\varnothing, X\}$. 
+
+这意味着我们必须对集合系$\mathscr{E}$做出一定的限制.
+#####
+___
+
+### 4.2. 测度扩张定理
+对于半环$\mathscr{Q}$上的测度$\mu$, 存在$\sigma(\mathscr{Q})$上的测度$\tau$使得对每个$A\in \mathscr{Q}$有
+$$
+\tau(A) = \mu(A)
+$$
+如果存在两两不交的$\{A_n\in \mathscr{Q}\}$使得$\bigcup\limits_{n=1}^{\infty} A_n = X$且$\mu(A_n)<\infty$, 则使得$\tau(A) = \mu(A)$的$\tau$唯一. 
+___
+##### Proof: 
+设$\tau$为$\mu$通过[[#3.2. 生成外测度]]产生的外测度. 我们按照下面的顺序来进行证明
+1. 首先证明$\tau(A) = \mu(A)$. 设$A\in \mathscr{Q}$, 对任何满足$\bigcup\limits_{n=1}^{\infty} A_n \supset A$的$\{A_n\in \mathscr{Q}\}$, 均有
+   $$
+   \mu(A) = \mu\left(\bigcup\limits_{n=1}^{\infty} (A\cap A_n)\right) \le \sum\limits_{n=1}^{\infty} \mu(A\cap A_n) \le \sum\limits_{n=1}^{\infty} \mu(A_n)
+   $$
+   因此
+   $$
+   \mu(A) = \tau(A)
+   $$
+2. 
+

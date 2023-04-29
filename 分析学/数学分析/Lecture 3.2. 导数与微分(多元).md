@@ -50,37 +50,39 @@ $$
 
 ### 1.4. 方向导数和偏导数
 1. **方向导数**: 设$U\subset \mathbb{R}^n$是开集, $\boldsymbol{f}: U\to \mathbb{R}^m, \boldsymbol{p}\in U,\boldsymbol{q}\in \mathbb{R}^n$, 且有$\varepsilon>0$, 使得$[\boldsymbol{p}-\varepsilon\boldsymbol{q}, \boldsymbol{p}+\varepsilon\boldsymbol{q}]\subset U$, 函数$\boldsymbol{g}(t)=\boldsymbol{f}(\boldsymbol{p}+t\boldsymbol{q})$在区间$[-\varepsilon, \varepsilon]$上有定义. 假如$\boldsymbol{g}$在$t=0$上可微, 即
-$$
-\boldsymbol{g}(t)=\boldsymbol{g}(0)+\mathrm{d}\boldsymbol{g}_0t+\boldsymbol{r}(t),\quad \lim_{t\to 0}\dfrac{|\boldsymbol{r}(t)|}{t}=0
-$$
-则称$\boldsymbol{f}$在点$\boldsymbol{p}$处沿$\boldsymbol{q}$方向是可微的, $\mathrm{d}\boldsymbol{g}_0$称为$\boldsymbol{f}$在点$\boldsymbol{p}$处沿着$\boldsymbol{q}$方向的方向微分或$\boldsymbol{f}$在点$\boldsymbol{p}$处沿$\boldsymbol{q}$方向的方向导数, 记作
-$$
-D_{\boldsymbol{q}}\boldsymbol{f}(\boldsymbol{p})=\lim_{t\to \infty}\dfrac{\boldsymbol{f}(\boldsymbol{p}+t\boldsymbol{q})-\boldsymbol{f}(\boldsymbol{p})}{t}=\mathrm{d}\boldsymbol{g}_0(\boldsymbol{1})
-$$
-其中$\mathrm{d}\boldsymbol{g}_0(\boldsymbol{1})$表示线性映射$\mathrm{d}\boldsymbol{g}_0$作用在一维单位向量$\boldsymbol{1}$上的值
+   $$
+   \boldsymbol{g}(t)=\boldsymbol{g}(0)+\mathrm{d}\boldsymbol{g}_0t+\boldsymbol{r}(t),\quad \lim_{t\to 0}\dfrac{|\boldsymbol{r}(t)|}{t}=0	
+   $$
+   则称$\boldsymbol{f}$在点$\boldsymbol{p}$处沿$\boldsymbol{q}$方向是可微的, $\mathrm{d}\boldsymbol{g}_0$称为$\boldsymbol{f}$在点$\boldsymbol{p}$处沿着$\boldsymbol{q}$方向的方向微分或$\boldsymbol{f}$在点$\boldsymbol{p}$处沿$\boldsymbol{q}$方向的方向导数, 记作
+   $$
+   D_{\boldsymbol{q}}\boldsymbol{f}(\boldsymbol{p})=\lim_{t\to \infty}\dfrac{\boldsymbol{f}(\boldsymbol{p}+t\boldsymbol{q})-\boldsymbol{f}(\boldsymbol{p})}{t}=\mathrm{d}\boldsymbol{g}_0(\boldsymbol{1})
+   $$
+   其中$\mathrm{d}\boldsymbol{g}_0(\boldsymbol{1})$表示线性映射$\mathrm{d}\boldsymbol{g}_0$作用在一维单位向量$\boldsymbol{1}$上的值
 
 2. **偏导数**: 设$U\subset \mathbb{R}^n$是开集, 映射$\boldsymbol{f}: U\to \mathbb{R}^m, \boldsymbol{p}\in U$, 则$\boldsymbol{f}$在点$\boldsymbol{p}$处沿$\boldsymbol{e}_k$方向的方向导数称为$\boldsymbol{f}$在点$\boldsymbol{p}$处的第$k$个偏导数, 记作
-$$
-\mathrm{D}_k\boldsymbol{f}(\boldsymbol{p})=\dfrac{\partial \boldsymbol{f}}{\partial x_k}(\boldsymbol{p})=\lim_{t\to\infty} \dfrac{\boldsymbol{f}(\boldsymbol{p}+t\boldsymbol{e}_k)-\boldsymbol{f}(\boldsymbol{p})}{t}
-$$
+   $$
+   \mathrm{D}_k\boldsymbol{f}(\boldsymbol{p})=\dfrac{\partial \boldsymbol{f}}{\partial x_k}(\boldsymbol{p})=\lim_{t\to\infty} \dfrac{\boldsymbol{f}(\boldsymbol{p}+t\boldsymbol{e}_k)-\boldsymbol{f}(\boldsymbol{p})}{t}
+   $$
 
 3. **偏导数与方向导数**: 设$U\subset \mathbb{R}^n$是开集, 映射$\boldsymbol{f}: U\to\mathbb{R}^m, \boldsymbol{p}\in U, \boldsymbol{q}=(q_1,\cdots, q_n)\in \mathbb{R}^n$. 假如$\boldsymbol{f}$在点$\boldsymbol{p}$处是可微的, 则
-$$
-\mathrm{d}\boldsymbol{f_p}(\boldsymbol{q})=\sum_{k=1}^n q_k\mathrm{D}_k\boldsymbol{f}(\boldsymbol{p})=\sum_{k=1}^n q_k\dfrac{\partial \boldsymbol{f}}{\partial x_k}(\boldsymbol{p})
-$$
+   $$
+   \mathrm{d}\boldsymbol{f_p}(\boldsymbol{q})=\sum_{k=1}^n q_k\mathrm{D}_k\boldsymbol{f}(\boldsymbol{p})=\sum_{k=1}^n q_k\dfrac{\partial \boldsymbol{f}}{\partial x_k}(\boldsymbol{p})
+   $$
+
 4. **Jacobi矩阵**: 设$U\subset \mathbb{R}^n$是开集, 映射$\boldsymbol{f}: U\to\mathbb{R}^m, \boldsymbol{p}\in U,\boldsymbol{f}=(f_1,\cdots , f_m)^T\in \mathbb{R}^m$. 假如$\boldsymbol{f}$在点$\boldsymbol{p}$处是可微的, 则
-$$
-\boldsymbol{f}'(\boldsymbol{p})=[D_1\boldsymbol{f}(\boldsymbol{p}),D_2\boldsymbol{f}(\boldsymbol{p}),\cdots, D_n\boldsymbol{f}(\boldsymbol{p})]=\begin{pmatrix}
-	\dfrac{\partial f_1}{\partial x_1}(\boldsymbol{p}) &  \dfrac{\partial f_1}{\partial x_2}(\boldsymbol{p})  &  \cdots  &  \dfrac{\partial f_1}{\partial x_n}(\boldsymbol{p})\\
-	\\
-	\dfrac{\partial f_2}{\partial x_1}(\boldsymbol{p}) &  \dfrac{\partial f_2}{\partial x_2}(\boldsymbol{p})  &  \cdots  &  \dfrac{\partial f_2}{\partial x_n}(\boldsymbol{p})\\
-	\\
-	\vdots   &  \vdots  &    &  \vdots \\
-	\\
-	\dfrac{\partial f_m}{\partial x_1}(\boldsymbol{p}) &  \dfrac{\partial f_m}{\partial x_2}(\boldsymbol{p})  &  \cdots  &  \dfrac{\partial f_m}{\partial x_n}(\boldsymbol{p})
-\end{pmatrix} 
-$$
-上式的矩阵便是用$\boldsymbol{f}$的分量的偏导数表示的$\boldsymbol{f}$的导数, 或称Jacobi矩阵
+   $$
+   \boldsymbol{f}'(\boldsymbol{p})=[D_1\boldsymbol{f}(\boldsymbol{p}),D_2\boldsymbol{f}(\boldsymbol{p}),\cdots, D_n\boldsymbol{f}(\boldsymbol{p})]=\begin{pmatrix}
+   \dfrac{\partial f_1}{\partial x_1}(\boldsymbol{p}) &  \dfrac{\partial f_1}{\partial x_2}(\boldsymbol{p})  &  \cdots  &  \dfrac{\partial f_1}{\partial x_n}(\boldsymbol{p})\\
+   \\
+   \dfrac{\partial f_2}{\partial x_1}(\boldsymbol{p}) &  \dfrac{\partial f_2}{\partial x_2}(\boldsymbol{p})  &  \cdots  &  \dfrac{\partial f_2}{\partial x_n}(\boldsymbol{p})\\
+   \\
+   \vdots   &  \vdots  &    &  \vdots \\
+   \\
+   \dfrac{\partial f_m}{\partial x_1}(\boldsymbol{p}) &  \dfrac{\partial f_m}{\partial x_2}(\boldsymbol{p})  &  \cdots  &  \dfrac{\partial f_m}{\partial x_n}(\boldsymbol{p})
+   \end{pmatrix} 
+   $$
+   上式的矩阵便是用$\boldsymbol{f}$的分量的偏导数表示的$\boldsymbol{f}$的导数, 或称Jacobi矩阵
+
 ### 1.5 中值定理
 **数值函数的中值定理**: 设$E\subset \mathbb{R}^n$是$\mathbb{R}^n$的开集, 若映射$f: E\to \mathbb{R}$在$E$的每一个点处都可微, 则对于任何$[\boldsymbol{a,b}]\subset E$, 有$\boldsymbol{c}\in [\boldsymbol{a,b}]$使得
 $$
@@ -156,15 +158,15 @@ $$
 ### 3.3. 微分同胚的分解
 1. **微分同胚**: 从$\mathbb{R}^m$中的开集$U$到$\mathbb{R}^m$中的开集$V$的双射$\boldsymbol{\varphi}$称为开集$U$到开集$V$的$\mathcal{C}^r$类微分同胚, 如果$\boldsymbol{\varphi}$和$\boldsymbol{\varphi}^{-1}$都是$\mathcal{C}^r$类的映射
 2. **初等微分同胚**:  定义在开集$U\subset \mathbb{R}^m$上的微分同胚$\boldsymbol{g}: U\to \boldsymbol{g}(U)\subset \mathbb{R}^m$称为初等微分同胚, 如果有某个$j\in \{1,\cdots ,m\}$, 使得映射$\boldsymbol{g}: \boldsymbol{x}=(x_1,\cdots , x_m)\to \boldsymbol{y}=(y_1,\cdots , y_m)$具有形式
-$$
-y_i=\begin{cases}
-	x_i,\qquad &i\neq j\\
-	g_j(x_1,\cdots, x_m), &i=j
-\end{cases}
-$$
-换言之, 初等微分同胚像点与原像点之间最多除了一个坐标外, 其他坐标都是相同的, 恒等映射是初等微分同胚. 
+   $$   
+   y_i=\begin{cases}	
+   x_i,\qquad &i\neq j\\		
+   g_j(x_1,\cdots, x_m), &i=j	
+   \end{cases}	
+   $$
+   换言之, 初等微分同胚像点与原像点之间最多除了一个坐标外, 其他坐标都是相同的, 恒等映射是初等微分同胚. 
 
-3. **微分同胚的初等微分同胚分解**: 设$G\subset \mathbb{R}^m$是开集, 映射$\boldsymbol{f}: G\to \boldsymbol{f}(G)\subset \mathbb{R}^m$是微分同胚, 则任意点$\boldsymbol{x}_0\in G$有个开邻域$U$, 使得
+1. **微分同胚的初等微分同胚分解**: 设$G\subset \mathbb{R}^m$是开集, 映射$\boldsymbol{f}: G\to \boldsymbol{f}(G)\subset \mathbb{R}^m$是微分同胚, 则任意点$\boldsymbol{x}_0\in G$有个开邻域$U$, 使得
 	$$
 	\forall\boldsymbol{x}\in U, \boldsymbol{f}(\boldsymbol{x})=\boldsymbol{g}_1\circ\cdots \circ \boldsymbol{g}_m(\boldsymbol{x})
 	$$
