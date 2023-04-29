@@ -1,14 +1,10 @@
 ## 1. 测度
 ### 1.1. 测度的公理化定义
-**可列可加性**: 给定空间 $X$ 上的集合系 $\mathscr{E}$. 定义在 $\mathscr{E}$ 上, 取值于 $[0, \infty]$ 的函数将称为非负集函数. 设 $\mu$ 是 $\mathscr{E}$ 上的非负集函数. 如果对任意可列个两两不交的集合 $A_1, A_2, \cdots, \in \mathscr{E}$, 只要 $\bigcup\limits_{n=1}^{\infty} A_n \in \mathscr{E}$, 就一定有
-$$
-\mu\left(\bigcup_{n=1}^{\infty} A_n\right)=\sum_{n=1}^{\infty} \mu\left(A_n\right)
-$$
-则称 $\mu$ 具有可列可加性
+设 $\mathscr{E}$ 是 $X$ 上的集合系且 $\varnothing \in \mathscr{E}$, 如果 $\mathscr{E}$ 上的非负集函数 $\mu$ 有可列可加性并且满足 $\mu(\varnothing)=0$, 则称$\mu$为 $\mathscr{E}$ 上的测度. 
 
-**测度**: 设 $\mathscr{E}$ 是 $X$ 上的集合系且 $\varnothing \in \mathscr{E}$, 如果 $\mathscr{E}$ 上的非负集函数 $\mu$ 有可列可加性并且满足 $\mu(\varnothing)=0$, 则称之为 $\mathscr{E}$ 上的测度. 
+如果对每个$A\in \mathscr{E}$还有$\mu(A)<\infty$, 则称测度$\mu$是有限的. 
 
-如果对每个$A\in \mathscr{E}$还有$\mu(A)<\infty$, 则称测度$\mu$是有限的. 如果对每个$A\in \mathscr{E}$存在满足$\mu(A_n)<\infty$的$\{A_n\in \mathscr{E}\}$, 使得$\bigcup\limits_{n=1}^{\infty}A_n\supset A$, 则称测度$\mu$是$\sigma$有限的. 
+如果对每个$A\in \mathscr{E}$存在满足$\mu(A_n)<\infty$的$\{A_n\in \mathscr{E}\}$, 使得$\bigcup\limits_{n=1}^{\infty}A_n\supset A$, 则称测度$\mu$是$\sigma$有限的. 
 
 ### 1.2. 测度的性质
 1. **有限可加性**: 设 $\mu$ 是 $\mathscr{E}$ 上的测度, 对$\mathscr{E}$中任意有限个两两不交且满足$\bigcup\limits_{i=1}^nA_i\in \mathscr{E}$的集合$A_1, A_2, \cdots, A_n$, 有
@@ -184,7 +180,7 @@ $$
 \end{aligned}
 $$
 
-### 2.3. 环上有限可加非负集函数
+### 2.3. 环上有限可加的非负集函数的性质
 对于环$\mathbb{R}$上的有限可加非负集函数$\mu$, 下面的几个命题是等价的:
 
 $\mu$是可列可加 $\iff \mu$半可列可加 $\iff \mu$下连续 $\implies\mu$上连续 $\implies \mu$在$\varnothing$上连续, 即对任何满足$A_n\downarrow \varnothing$和$\mu(A_1)<\infty$的
@@ -221,3 +217,68 @@ ___
    $$
    \mu\left(\bigcup\limits_{n=1}^{\infty} A_n\right) = \sum\limits_{n=1}^{N}\mu(A_n) + \mu\left(\bigcup\limits_{n=N+1}^{\infty} A_n\right)
    $$
+   由于$\mu$有限且在$\varnothing$上连续, 故$\bigcup\limits_{n=N+1}^{\infty} A_n\downarrow \varnothing$蕴含$\lim\limits_{N\to\infty} \mu\left(\bigcup\limits_{n=N+1}^{\infty} A_n\right) = 0$. 
+   
+## 3. 外测度
+### 3.1. 外测度的定义
+由$X$的所有子集组成的集合系$\mathscr{T}$到$\overline{\mathbb{R}}$的函数$\tau$称为$X$上的外测度, 如果它满足
+
+1. **空集测度为$\boldsymbol{0}$**: $\tau(\varnothing) = 0$
+2. **单调性**: 对任何$A\subset B \subset X$有$\tau(A)\le \tau(B)$
+3. **半可列可加性**: 对任何$\{A_n\in \mathscr{T}\}$有$\tau\left(\bigcup\limits_{n=1}^{\infty} A_n\right) \le \sum\limits_{n=1}^{\infty} \tau(A_n)$
+
+### 3.2. 生成外测度
+设$\mathscr{E}$是一个集合系且$\varnothing\in \mathscr{E}$, 如果$\mathscr{E}$上的非负集函数$\mu$满足$\mu(\varnothing)=0$. 对每个$A\in \mathscr{T}$, 设
+$$
+\tau(A) = \inf\left\{\sum\limits_{n=1}^{\infty} \mu(B_n)\mid B_n\in \mathscr{E}, \bigcup\limits_{n=1}^{\infty} B_n\supset A\right\}
+$$
+则$\tau$是一个外测度, 称为由$\mu$生成的外测度. 其中, 空集的下确界定义为$\infty$
+___
+**Proof**: 不难验证, 生成的外测度$\tau$满足条件1和2. 下面证明条件3. 我们只需要证明$\tau(A_n)<\infty$的情况. 取$\{B_{n,k}\in \mathscr{E}\}$使得$\bigcup\limits_{k=1}^{\infty} B_{n, k}\supset A_n$且
+$$
+\sum\limits_{k=1}^{\infty} \mu(B_{n, k}) < \tau(A_n)+ \dfrac{\varepsilon}{2^n}
+$$
+便有$\bigcup\limits_{n=1}^{\infty} \bigcup\limits_{k=1}^{\infty} B_{n, k}\supset \bigcup\limits_{n=1}^{\infty} A_n$, 从而
+$$
+\tau\left(\bigcup\limits_{n=1}^{\infty} A_n \right) \le \sum\limits_{n=1}^{\infty} \sum\limits_{k=1}^{\infty} \mu(B_{n,k})\le \sum\limits_{n=1}^{\infty} \tau(A_n) +\varepsilon
+$$
+由$\varepsilon$的任意性即得证
+
+### 3.3. $\tau$可测集和完全测度空间
+**$\tau$可测集**: 设$\tau$是$X$上的外测度, $\mathscr{T}$是由$X$的所有子集组成的集合系, 我们把满足
+$$
+\tau(D) = \tau(D\cap A) + \tau(D\cap A^c), \quad \forall D\in \mathscr{T}
+$$
+的$X$的子集$A$称为$\tau$可测集, 把由全体$\tau$可测集组成的集合系记为$\mathscr{F}_{\tau}$. 
+
+**完全测度空间**: 对于测度空间$(X, \mathscr{F}, \mu)$, 如果$\mu$的任意零测集合的子集还属于$\mathscr{F}$, 即
+$$
+A\in \mathscr{F}, \mu(A) = 0 \Longrightarrow B\subset \mathscr{F}, \forall B\subset A
+$$
+则称$(X, \mathscr{F}, \mu)$是完全测度空间. 
+
+### 3.4. Caratheodory定理
+如果$\tau$是外测度, $\mathscr{F}_{\tau}$是由全体$\tau$可测集组成的集合系, 则$\mathscr{F}_{\tau}$是一个$\sigma$-代数, 且$(X, \mathscr{F}_{\tau}, \tau)$是完全测度空间. 
+___
+**Proof**: 我们首先证明$\mathscr{F}_{\tau}$是一个$\sigma$-代数. 分为以下几个部分
+1. $X \in \mathscr{F}_{\tau}$. 这是显然的, 因为$\tau(D\cap X) +\tau(D\cap \varnothing) = \tau(D) +\tau(\varnothing) = \tau(D)$
+2. 若$A\in \mathscr{F}_{\tau}$, 则$A^c\in \mathscr{F}_{\tau}$. 这是因为$\tau$可测集的定义关于$A$和$A^c$是对称的. 
+3. 若$A_1, A_2\in \mathscr{F}_{\tau}$, 则有$A_1\cap A_2\in \mathscr{F}_{\tau}$. 这是因为
+   $$
+   \begin{aligned} 
+      \tau(D) &= \tau(D\cap A_1) + \tau(D\cap A_1^c) \\ 
+      & = \tau(D\cap A_1 \cap A_2) + \tau(D \cap A_1 \cap A_2^c) + \tau(D\cap A_1^c)\\ 
+      & = \tau(D\cap A_1 \cap A_2) + \tau(D \cap (A_1\cap A_2)^c \cap A_1) + \tau(D\cap (A_1\cap A_2)^c\cap A_1^c)\\ 
+      & = \tau(D\cap A_1 \cap A_2) + \tau(D\cap (A_1\cap A_2)^c)
+   \end{aligned}
+   $$
+4. 
+
+
+## 4. 测度的扩张
+### 4.1. 扩张的定义
+设$\mu$和$\tau$分别为集合系$\mathscr{E}$和集合系$\overline{\mathscr{E}}$上的测度, 而且$\mathscr{E}\subset \overline{\mathscr{E}}$. 如果对每个$A\subset \mathscr{E}$都有
+$$
+\tau(A) = \mu(A)
+$$
+则称$\tau$为$\mu$在$\overline{\mathscr{E}}$上的扩张. 
