@@ -83,18 +83,23 @@ $$
 3. $\mathop{\lim\inf}\limits_{n\to\infty}f_n$ 是可测函数.
 4. $\mathop{\lim\sup}\limits_{n\to\infty}f_n$ 是可测函数.
 
-### 2.3. 有限分割和简单函数
+### 2.3. 有限分割
 有限个两两不交的集合$\{A_i\subset X, i=1,2,\cdots,n\}$如满足$\bigcup\limits_{i=1}^nA_i =X$, 就把它称为空间$X$的一个有限分割. 
 
 如果对每个$i=1,2,\cdots,n$有$A_i\in \mathscr{\mathscr{F}}$, 则$X$的有限分割$\{A_i\mid i=1,2,\cdots\}$称为可测空间$(X, \mathscr{F})$的有限可测分割. 
 
+
+### 2.4. 简单函数
 对于可测空间$(X, \mathscr{F})$上的函数$f: X\to \mathbb{R}$, 如果存在有限可测分割$\{A_i\in \mathscr{F}\mid i=1,2\cdots, n\}$和实数$\{a_i\mid i=1,2,\cdots, n\}$使得
 $$
 f = \sum\limits_{i=1}^{n} a_i\mathbb{I}_{A_i}
 $$
 则称之为简单函数. 
 
-### 2.4. 对可测函数的简单函数逼近
+**简单函数的刻画**: 如果$f$是可测空间$(X, \mathscr{F})$上的可测函数, 则它是简单函数当且仅当其值域是有限个实数组成的集合. 
+
+
+### 2.5. 对可测函数的简单函数逼近
 1. 对任意的非负可测函数$f$, 存在非负简单函数列$\{f_n\mid n=1,2,\cdots\}$使得$f_n\uparrow f$, 如果$f$是非负有界可测的, 则存在非负简单函数列$\{f_n\mid n=1,2,\cdots\}$使得$f_n(x)\uparrow f(x)$对$x\in X$一致成立
 2. 对任何的可测函数$f$, 存在简单函数列$\{f_n\mid n=1,2, \cdots\}$使得$f_n\to f$. 如果$f$是有界可测的, 则存在简单函数列$\{f_n\mid n=1,2,\cdots\}$使得$f_n(x)\to f(x)$对$x\in X$一致成立. 
 ___

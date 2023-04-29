@@ -49,13 +49,39 @@ $$
 $$
 F(-\infty) = 0, \quad F(\infty) = 1
 $$
-则称$F$为分布函数
-### 1.5. 依分布收敛
-设$\{\boldsymbol{x}^{(n)}, n\in \mathbb{N}\}$是一列随机向量，$\boldsymbol{x}$是一个随机向量，如果对于所有使得$F_{\boldsymbol{x}}(\boldsymbol{t})$连续的点$\boldsymbol{t}$, 都有
+则称$F$为分布函数. 
+
+设$f$是从概率空间$(X, \mathscr{F}, \mathbb{P})$到可测空间$(Y, \mathscr{S})$的随机元. 它在$(Y, \mathscr{S})$上自然导出的概率测度
 $$
-\lim _{n \rightarrow \infty} F_{\boldsymbol{x}^{(n)}}(\boldsymbol{t})=F_{\boldsymbol{x}}(\boldsymbol{t})
+\mathbb{P}_{f^{-1}}(B) = \mathbb{P}(f^{-1}(B)), \quad \forall B\in \mathscr{S}
 $$
-则称$\boldsymbol{x}^{(n)}$依分布收敛于$\boldsymbol{x}$, 记为$\boldsymbol{x}^{(n)} \stackrel{d}{\rightarrow} \boldsymbol{x}$
+称为随机元$f$的概率分布. 
+
+
+不难验证, 如果$f$是概率空间$(X, \mathscr{F}, \mathbb{P})$上的随机变量. 对每个$x\in \mathbb{R}$, 设
+$$
+F(x) = \mathbb{P}(f\le x)
+$$
+则$F$是一个分布函数, 记为$f\sim F$.  容易看出, $f$的分布函数是它的概率分布在$\mathscr{B}_{\mathbb{R}}$中的$\pi$系$\mathscr{P}_{\mathbb{R}}$上的值. 
+
+### 2.2. 左连续逆
+设$F$是$\mathbb{R}$上的非降右连续的实值函数, 对每个$t\in (F(-\infty), F(\infty))$, 令
+$$
+F^{\gets}(t) = \inf\{x\in \mathbb{R}\ |\ F(x)\ge t\}
+$$
+我们称$F^{\gets}(t)$为$F$的左连续逆. 
+
+左连续逆有下列的性质
+1. $F^{\gets}(t)\in \mathbb{R}, \forall t\in (F(-\infty), F(\infty))$
+2. $F^{\gets}(t)$左连续
+3. 对任何$t\in (F(-\infty), F(\infty))$和$x\in \mathbb{R}$, 有
+   $$
+   F^{\gets}(t)\le x \Longleftrightarrow t\le F(x)
+   $$
+### 2.3. 弱收敛和依分布收敛
+设$\{F_n\}$和$F$都是非降实质函数, 如果$F_n(x)\to F(x)$对$F$的每一个连续点都成立, 则称$\{F_n\}$弱收敛到$F$, 记为$F_n\stackrel{w}{\longrightarrow}F$.
+
+设$\{\boldsymbol{x}^{(n)}, n\in \mathbb{N}\}$是一列随机向量，$\boldsymbol{x}$是一个随机向量，如果$F_n\stackrel{w}{\longrightarrow}F$,  则称$\boldsymbol{x}^{(n)}$依分布收敛于$\boldsymbol{x}$, 记为$\boldsymbol{x}^{(n)} \stackrel{d}{\rightarrow} \boldsymbol{x}$
 
 ## 2. 几种收敛模式的关系
 ### 2.1. 几乎必然收敛 $\to$ 依概率收敛
