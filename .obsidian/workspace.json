@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "概率论/Book 2. 测度论/Lecture 3. 测度空间.md",
-                "mode": "source",
+                "file": "概率论/Book 2. 测度论/Lecture 7. 独立随机变量序列(从测度论到概率论).md",
+                "mode": "preview",
                 "backlinks": true,
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "概率论/Book 2. 测度论/Lecture 3. 测度空间.md",
+                "file": "概率论/Book 2. 测度论/Lecture 7. 独立随机变量序列(从测度论到概率论).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "概率论/Book 2. 测度论/Lecture 3. 测度空间.md",
+                "file": "概率论/Book 2. 测度论/Lecture 7. 独立随机变量序列(从测度论到概率论).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "概率论/Book 2. 测度论/Lecture 3. 测度空间.md"
+                "file": "概率论/Book 2. 测度论/Lecture 7. 独立随机变量序列(从测度论到概率论).md"
               }
             }
           }
@@ -152,12 +152,14 @@
   },
   "active": "e4e30f26d5558813",
   "lastOpenFiles": [
+    "概率论/Book 2. 测度论/Lecture 6. 乘积空间.md",
     "概率论/Book 2. 测度论/Lecture 5. 符号测度.md",
+    "概率论/Book 2. 测度论/Lecture 7. 独立随机变量序列(从测度论到概率论).md",
+    "概率论/Book 2. 测度论/Lecture 3. 测度空间.md",
     "概率论/Book 2. 测度论/Lecture 4. 积分.md",
     "概率论/Book 2. 测度论/Lecture 3. 积分",
     "概率论/Book 2. 测度论/Lecture 2. 可测映射.md",
     "概率论/Book 2. 测度论/Lecture 1. 可测空间.md",
-    "概率论/Book 2. 测度论/Lecture 3. 测度空间.md",
     "分析学/数学分析/Lecture 6.3. 级数(函数项级数).md",
     "分析学/数学分析/Lecture 1. 极限.md",
     "分析学/数学分析/Lecture 0. 实数系.md",
@@ -177,8 +179,6 @@
     "机器学习/Lecture 1. PAC Learnable.md",
     "机器学习/Lecture 0. Introduction.md",
     "基础知识(待分类)/Lecture 0. 集合论.md",
-    "分析学/数学分析/Lecture 3.1. 导数与微分(一元).md",
-    "分析学/数学分析/Lecture 2. 函数.md",
     "概率论/测度论",
     "概率论/Book 2. 测度论",
     "概率论/Book 1. 初等概率论",
