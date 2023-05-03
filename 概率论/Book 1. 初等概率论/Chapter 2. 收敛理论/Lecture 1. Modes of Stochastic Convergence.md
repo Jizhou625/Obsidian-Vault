@@ -83,6 +83,8 @@ $$
 
 设$\{\boldsymbol{x}^{(n)}, n\in \mathbb{N}\}$是一列随机向量，$\boldsymbol{x}$是一个随机向量，如果$F_n\stackrel{w}{\longrightarrow}F$,  则称$\boldsymbol{x}^{(n)}$依分布收敛于$\boldsymbol{x}$, 记为$\boldsymbol{x}^{(n)} \stackrel{d}{\rightarrow} \boldsymbol{x}$
 
+### 2.4. 
+
 ## 2. 几种收敛模式的关系
 ### 2.1. 几乎必然收敛 $\to$ 依概率收敛
 设$\boldsymbol{x}^{(n)}, n\in \mathbb{N}$是一列随机向量，$\boldsymbol{x}$是一个随机向量，如果$\boldsymbol{x}^{(n)} \stackrel{\text { a.s. }}{\rightarrow} \boldsymbol{x}$, 则$\boldsymbol{x}^{(n)} \stackrel{p}{\rightarrow} \boldsymbol{x}$

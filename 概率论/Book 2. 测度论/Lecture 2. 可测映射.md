@@ -11,7 +11,7 @@ $$
 为集合系$\mathscr{E}$在映射$f$下的原像. 
 
 ### 1.2. 原像的性质
-1. $f^{-1} (\varnothing)=\varnothing, \quad f^{-1} (Y)=X$
+1. $f^{-1} (\varnothing)=\varnothing$, $f^{-1} (Y)=X$
 2. $B_1 \subset B_2 \Longrightarrow f^{-1} (B_1) \subset f^{-1} (B_2)$
 3. $\left(f^{-1} (B)\right)^c=f^{-1} (B^c), \quad \forall B \subset Y$
 4. 对任意集合 $T$, 有
@@ -21,7 +21,7 @@ $$
     f^{-1} \bigcap_{t \in T} A_t &= \bigcap_{t \in T} f^{-1} A_t, \quad &\forall\left\{A_t \subset Y, t \in T\right\} 
     \end{aligned}
     $$
-5. **原像和生成$\sigma$域可交换**: 对于 $Y$ 上的任何集合系 $\mathscr{E}$, 有
+5. 对于 $Y$ 上的任何集合系 $\mathscr{E}$, 有
     $$
     \sigma\left(f^{-1} (\mathscr{E})\right)=f^{-1} (\sigma(\mathscr{E}))
     $$
@@ -46,14 +46,12 @@ ___
 ### 1.3. 可测映射
 给定可测空间$(X, \mathscr{F})$和$(Y, \mathscr{S})$以及$f:X\to Y$, 如果$f^{-1}(\mathscr{S})\subset \mathscr{F}$, 则称$f$是从$(X, \mathscr{F})$到$(Y, \mathscr{S})$的可测映射或随机元. 而$\sigma(f)=f^{-1}(\mathscr{S})$叫做使得映射$f$可测的最小$\sigma$域.
 
-### 1.4. 可测映射的判定
-1. **简化判定**: 设$\mathscr{E}$是$Y$上的任意给定的集合系. 则$f$是$(X, \mathscr{F})$到$(Y, \sigma(\mathscr{E}))$的可测映射当且仅当
-   $$
-   f^{-1}(\mathscr{E})\subset \mathscr{F}
-   $$
-2. **复合映射**: 设$g$是可测空间$(X, \mathscr{F})$到$(Y, \mathscr{S})$的可测映射, $f$是$(Y, \mathscr{S})$到$(Z, \mathscr{Z})$的可测映射, 则$f\circ g$是$(X, \mathscr{F})$到$(Z, \mathscr{Z})$的可测映射
+设$\mathscr{E}$是$Y$上的任意给定的集合系. 则$f$是$(X, \mathscr{F})$到$(Y, \sigma(\mathscr{E}))$的可测映射当且仅当
+$$
+f^{-1}(\mathscr{E})\subset \mathscr{F}
+$$
 
-### 1.5. 可测函数
+### 1.4. 可测函数
 从可测空间$(X, \mathscr{F})$到$(\overline{\mathbb{R}}, \mathscr{B}_{\overline{\mathbb{R}}})$的可测映射称为$(X, \mathscr{F})$上的可测函数. 特别地, 从$(X, \mathscr{F})$到$(\mathbb{R}, \mathscr{B}_{\mathbb{R}})$的可测映射称为$(X, \mathscr{F})$上的有限值可测函数或随机变量. 
 
 根据Borel集的定义, 我们知道$f$是$(X, \mathscr{F})$上的可测函数当且仅当
@@ -83,10 +81,10 @@ $$
 3. $\mathop{\lim\inf}\limits_{n\to\infty}f_n$ 是可测函数.
 4. $\mathop{\lim\sup}\limits_{n\to\infty}f_n$ 是可测函数.
 
-### 2.3. 有限分割
-有限个两两不交的集合$\{A_i\subset X, i=1,2,\cdots,n\}$如满足$\bigcup\limits_{i=1}^nA_i =X$, 就把它称为空间$X$的一个有限分割. 
+### 2.3. 有限分割和可测分割
+**有限分割**: 有限个两两不交的集合$\{A_i\subset X\mid i=1,2,\cdots,n\}$如满足$\bigcup\limits_{i=1}^nA_i =X$, 就把它称为空间$X$的一个有限分割. 如果有$A_i\in \mathscr{\mathscr{F}}$, 则$X$的有限分割$\{A_i\mid i=1,2,\cdots, n\}$称为可测空间$(X, \mathscr{F})$的有限可测分割. 
 
-如果对每个$i=1,2,\cdots,n$有$A_i\in \mathscr{\mathscr{F}}$, 则$X$的有限分割$\{A_i\mid i=1,2,\cdots\}$称为可测空间$(X, \mathscr{F})$的有限可测分割. 
+**可测分割**: 两两不交的集合$\{A_i\subset X \mid i=1,2,\cdots\}$如满足$\bigcup\limits_{i=1}^{\infty}A_i =X$, 就把它称为空间$X$的一个可列分割. 特别地, 如果有$A_i\in \mathscr{F}$, 则$\{A_i\mid i=1,2,\cdots\}$称为可测空间$(X, \mathscr{F})$的可列可测分割. 简称可测分割.  
 
 
 ### 2.4. 简单函数
@@ -109,19 +107,19 @@ ___
 $$
 f_n(x) = \sum\limits_{k=0}^{n2^n-1} \dfrac{k}{2^n}\mathbb{I}\left(\dfrac{k}{2^n}\le f(x)<\dfrac{k+1}{2^n}\right)
 $$
-显然$f_n$非负非降, 并且$\lim\limits_{n\to\infty} f_n(x)=f(x)$. 根据构造也可以发现如果$f$有界则对充分大的$N$和任意$n>N$都成立
+显然$f_n$非负非降, 并且$\lim\limits_{n\to\infty} f_n(x)=f(x)$. 如果$f$有界, 则存在充分打的$N$, 对任意$n>N$都有
 $$
 0\le f(x) - f_n(x) \le \dfrac{1}{2^n}, \quad \forall x\in X
 $$
-对于可测函数, 只需要用分解$f = f^+ - f^-$并且分别用1的结论即可
+对于可测函数的清醒, 只需要用分解$f = f^+ - f^-$并且分别用1的结论即可
 #####
 ___
 
-### 2.5. 复合可测函数
+### 2.6. 复合可测函数
 设 $g$ 是 $(X, \mathscr{F})$ 到 $(Y, \mathscr{S})$ 的可测映射. 则 $h$ 是 $\left(X, g^{-1} (\mathscr{S})\right)$ 上的可测函数 (或随机变量, 或有界可测函数) 当且仅当存在 $(Y, \mathscr{S})$ 上的可测函数 (或随机变量, 或有界可测函数) $f$ 使得 $h=f \circ g$
 ___
 ##### Proof: 
-定理的当部分是[[#1.4. 可测映射的判定]]的特例, 于是我们只需要证明仅当部分. 
+定理的当部分显然成立, 我们只需要证明仅当部分. 
 1. 首先, 考虑$h$是$(X, g^{-1}(\mathscr{S}))$上的简单函数, 即存在$X$的有限分割$\{A_i\in g^{-1}(\mathscr{S})\}$和实数$\{a_i\}$使得$h=\sum\limits_{i=1}^{n} a_i\mathbb{I}_{A_i}$. 取$C_i\in \mathscr{S}$使得$A_i = g^{-1}(C_i)$, 则对$B_i= C_i\backslash \bigcup\limits_{k=1}^{i-1}C_k$, 有
     $$
     A_i = A_i\backslash \bigcup\limits_{k=1}^{i-1}A_k = g^{-1}(B_i)

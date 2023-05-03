@@ -94,4 +94,6 @@ $$
 $$
 \varphi(A) = \int_A f\mathrm{d}\mu , \quad \forall A\in \mathscr{F}
 $$
-成立, 则称$f$为$\varphi$对于$\mu$的Radon-Nikodym导数, 记为$\dfrac{\mathrm{d}\varphi}{\mathrm{d}\mu} = f$
+成立, 则称$f$为$\varphi$对于$\mu$的Radon-Nikodym导数, 记为$\dfrac{\mathrm{d}\varphi}{\mathrm{d}\mu} = f$. 
+
+### 5.2. 绝对连续

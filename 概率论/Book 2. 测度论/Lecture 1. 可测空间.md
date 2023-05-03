@@ -78,8 +78,15 @@ $$
 \mathscr{S}^{\prime} \supset \mathscr{E} \Longrightarrow \mathscr{S}^{\prime} \supset \mathscr{S}
 $$
 由集合系 $\mathscr{E}$ 生成的环 (或单调系, 或 $\lambda$ 系, 或 $\sigma$ 域), 也就是包含 $\mathscr{E}$ 的最小的环 (或单调系, 或 $\lambda$ 系, 或 $\sigma$ 域). 我们把由集合系 $\mathscr{E}$ 生成的环, 单调系, $\lambda$ 系和 $\sigma$ 域分别记作 $r(\mathscr{E}), m(\mathscr{E}), \lambda(\mathscr{E}), \sigma(\mathscr{E})$
+___
+##### 存在性
+我们只对环的存在性进行证明. 其他三种情况的证明可以完全类似. 
 
-**存在性**:  我们只对环的存在性进行证明. 其他三种情况的证明可以完全类似. 令$\mathscr{T}$是由$X$中的全体集合所组成的集合系. $\mathscr{T}$是一个$\sigma$域自然也是一个环. 用$A$表示包含集合系$\mathscr{E}$的环的全体, $A$非空, 不难看出, $\mathscr{S} = \bigcap\limits_{\mathscr{A}\in A}\mathscr{A}$还是一个环. 并且满足生成的两条性质. 该证明对于半环并不成立. 
+令$\mathscr{T}$是由$X$中的全体集合所组成的集合系. $\mathscr{T}$是一个$\sigma$域自然也是一个环. 用$A$表示包含集合系$\mathscr{E}$的环的全体, 则$A$非空.  
+
+不难看出, $\mathscr{S} = \bigcap\limits_{\mathscr{A}\in A}\mathscr{A}$还是一个环. 并且满足生成的两个条件. 
+#####
+___
 
 ### 4.2. 半环的生成环
 如果 $\mathscr{Q}$ 是半环, 则
@@ -181,7 +188,7 @@ ___
 $$
 \mathscr{B}_{\mathbb{R}} = \sigma(\mathscr{Q}_{\mathbb{R}}) = \sigma(\mathscr{P}_{\mathbb{R}})
 $$
-其中$\mathscr{Q}_{\mathbb{R}} = \{(a, b]\mid a, b\in \mathbb{R}\}$是由全体左开右闭区间全体组成的集合系, 是$\mathbb{R}$上的半环. $\mathscr{P}_{\mathbb{R}}=\{(-\infty, a]\mid a\in \mathbb{R}\}$是$\mathbb{R}$上的$\pi$系. 
+其中$\mathscr{Q}_{\mathbb{R}} = \{(a, b]\mid a, b\in \mathbb{R}\}$是$\mathbb{R}$上的半环. $\mathscr{P}_{\mathbb{R}}=\{(-\infty, a]\mid a\in \mathbb{R}\}$是$\mathbb{R}$上的$\pi$系. 
 
 用$\mathscr{O}_{\mathbb{R}}$表示$\mathbb{R}$中开集组成的集合系, 容易证明$\mathscr{B}_{\mathbb{R}} = \sigma(\mathscr{O}_{\mathbb{R}})$. 可以证明, 下列的等式成立
 $$

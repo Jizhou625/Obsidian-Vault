@@ -108,3 +108,5 @@ ___
 ## 2. 二维乘积可测空间上的测度
 ### 2.1. 测度转移函数
 定义在$\Omega\times \mathscr{F}$上的广义实值函数$p$称为是从可测空间$(\Omega, \mathscr{S})$到$(X, \mathscr{F})$的测度转移函数, 如果它满足下列条件
+1. 对每个$\omega\in \Omega$, $p(\omega, \cdot)$是$\mathscr{F}$上的测度
+2. 对每个$A\in\mathscr{F}$, $p(\cdot, A)$是$\mathscr{S}$上的可测函数. 
