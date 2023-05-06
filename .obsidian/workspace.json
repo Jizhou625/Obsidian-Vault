@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "概率论/Book 2. 测度论/Lecture 3.2. 测度空间(外测度与测度扩张).md",
+                "file": "统计学/计量经济学/Lecture 0. 数据表示.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": false
@@ -65,12 +65,21 @@
               "type": "starred",
               "state": {}
             }
+          },
+          {
+            "id": "7fb264b260c91e16",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "45b6cc51caac60ea",
@@ -86,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "概率论/Book 2. 测度论/Lecture 3.2. 测度空间(外测度与测度扩张).md",
+                "file": "统计学/计量经济学/Lecture 0. 数据表示.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "概率论/Book 2. 测度论/Lecture 3.2. 测度空间(外测度与测度扩张).md",
+                "file": "统计学/计量经济学/Lecture 0. 数据表示.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +135,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "概率论/Book 2. 测度论/Lecture 3.2. 测度空间(外测度与测度扩张).md"
+                "file": "统计学/计量经济学/Lecture 0. 数据表示.md"
               }
             }
           }
@@ -152,13 +161,17 @@
   },
   "active": "e4e30f26d5558813",
   "lastOpenFiles": [
+    "统计学/计量经济学/Lecture 1. 简单回归模型.md",
+    "统计学/计量经济学/Lecture 0. 数据表示.md",
+    "概率论/Book 1. 初等概率论/Chapter 2. 收敛理论/Lecture 1. Modes of Stochastic Convergence.md",
     "概率论/Book 2. 测度论/Lecture 3.3. 测度空间(完全化).md",
-    "概率论/Book 2. 测度论/Lecture 3.1. 测度空间(测度).md",
+    "概率论/Book 2. 测度论/Lecture 4. 积分.md",
     "概率论/Book 2. 测度论/Lecture 3.2. 测度空间(外测度与测度扩张).md",
+    "概率论/Book 2. 测度论/Lecture 3.1. 测度空间(测度).md",
+    "概率论/Book 2. 测度论/Lecture 1. 可测空间.md",
     "概率论/Book 2. 测度论/Lecture 3.2. 测度空间(外测度与测度扩张)",
     "概率论/Book 2. 测度论/Lecture 3.2. 测度空间(外测度)",
     "概率论/Book 2. 测度论/Lecture 3. 测度空间.md",
-    "概率论/Book 2. 测度论/Lecture 1. 可测空间.md",
     "分析学/数学分析/Lecture 6.1. 级数(收敛判别法).md",
     "概率论/Book 1. 初等概率论/Chapter 1. 概率不等式/Lecture 5. Inequalities Based on Specific Distribution.md",
     "概率论/Book 1. 初等概率论/Chapter 1. 概率不等式/Lecture 4. Bounds on Expectation.md",
@@ -170,10 +183,8 @@
     "概率论/Book 2. 测度论/Lecture 7. 独立随机变量序列(从测度论到概率论).md",
     "概率论/Book 2. 测度论/Lecture 6. 乘积空间.md",
     "概率论/Book 2. 测度论/Lecture 5. 符号测度.md",
-    "概率论/Book 2. 测度论/Lecture 4. 积分.md",
     "概率论/Book 2. 测度论/Lecture 2. 可测映射.md",
     "概率论/Book 2. 测度论",
-    "概率论/Book 1. 初等概率论/Chapter 2. 收敛理论/Lecture 1. Modes of Stochastic Convergence.md",
     "概率论/Book 1. 初等概率论/Chapter 2. 收敛理论",
     "概率论/Book 1. 初等概率论",
     "基础知识(待分类)/Lecture 0. 集合论.md",
@@ -183,8 +194,6 @@
     "分析学/数学分析/Lecture 6.4. 级数(幂级数).md",
     "分析学/数学分析/Lecture 6.5. 级数(Fourier级数).md",
     "分析学/数学分析/Lecture 5. 广义积分.md",
-    "分析学/数学分析/Lecture 4. Riemann积分.md",
-    "机器学习/Lecture 3. 线性分类问题.md",
     "机器学习/Lecture 2.1. VC Theory(Rademacher复杂度).md.crswap",
     "机器学习/Lecture 2.4. VC Theory(泛化下界).md.crswap",
     "机器学习/Lecture 2.3. VC Theory(泛化上界).md.crswap",

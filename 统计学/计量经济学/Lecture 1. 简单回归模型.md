@@ -52,14 +52,16 @@ ___
 $$
 \hat{\boldsymbol{\beta}}_{\mathrm{OLS}} = (X^{\top}X)^{-1}X^{\top}(X\boldsymbol{\beta} +\boldsymbol{u}) = \boldsymbol{\beta} + (X^{\top}X)^{-1}X^{\top}\boldsymbol{u}
 $$
-这里, 不完全共线性的条件保证了$(X^{\top}X)^{-1}$是存在的. 根据零条件均值假定, 我们有
+这里, 不完全共线性的条件保证了$(X^{\top}X)^{-1}$是存在的. 再根据零条件均值假定, 我们有
 $$
 \mathbb{E}\hat{\boldsymbol{\beta}}_{\mathrm{OLS}} = \boldsymbol{\beta}
 $$
 ___
-**Note**: 在证明里我们似乎没有用到随机抽样的条件, 这是因为这个条件隐含在了零条件均值假定里. 例如, 考虑总体模型$y = x+u$, 如果我们用$y>0$的条件来筛选样本, 则需要有$u>-x$. 当$x=-1$时, 自然地有$u>1$, 这就违背了零条件均值假定.
+**Note**: 在证明里我们似乎没有用到随机抽样的条件, 这是因为这个条件隐含在了零条件均值假定里. 例如, 考虑总体模型$y = x+u$, 如果我们用$y>0$的条件来筛选样本, 则要求$u>-x$. 当$x=-1$时, 自然地有$u>1$, 这就违背了零条件均值假定.
 
-换句话说, 随机抽样假定保证了样本概率分布 $y\mid \boldsymbol{x}$ 和总体相同. 
+换句话说, 随机抽样假定保证了样本概率分布 $y_{\mathrm{sample}}\mid \boldsymbol{x}_{\mathrm{sample}}$ 和总体概率分布$y_{\mathrm{total}}\mid \boldsymbol{x}_{\mathrm{total}}$相同. 
+#####
+___
 
 ### 2.2. OLS模型的一致性假定
 1. **线性于参数**: 在总体模型中, 因变量$y$和自变量$\boldsymbol{x}$, 误差项$u$的关系如下
@@ -82,11 +84,12 @@ ___
 $$
 \hat{\boldsymbol{\beta}}_{\mathrm{OLS}} = (X^{\top}X)^{-1}X^{\top}(X\boldsymbol{\beta} +\boldsymbol{u}) = \boldsymbol{\beta} + (X^{\top}X)^{-1}X^{\top}\boldsymbol{u}
 $$
-这里, 不完全共线性的条件保证了$(X^{\top}X)^{-1}$是存在的. 又因为
+这里, 不完全共线性的条件保证了$(X^{\top}X)^{-1}$是存在的. 设
 $$
-
+A = \dfrac{1}{n} X^{\top}X, \quad B = \dfrac{1}{n} X^{\top}\boldsymbol{u}
 $$
-
+#####
+___
 
 ## 2. 拟合优度
 ### 2.1. 几个平方和的定义
