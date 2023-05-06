@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "统计学/计量经济学/Lecture 0. 数据表示.md",
+                "file": "概率论/Book 2. 测度论/Lecture 4. 积分.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": false
@@ -95,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "统计学/计量经济学/Lecture 0. 数据表示.md",
+                "file": "概率论/Book 2. 测度论/Lecture 4. 积分.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "统计学/计量经济学/Lecture 0. 数据表示.md",
+                "file": "概率论/Book 2. 测度论/Lecture 4. 积分.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,7 +135,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "统计学/计量经济学/Lecture 0. 数据表示.md"
+                "file": "概率论/Book 2. 测度论/Lecture 4. 积分.md"
               }
             }
           }
@@ -161,8 +161,8 @@
   },
   "active": "e4e30f26d5558813",
   "lastOpenFiles": [
-    "统计学/计量经济学/Lecture 1. 简单回归模型.md",
     "统计学/计量经济学/Lecture 0. 数据表示.md",
+    "统计学/计量经济学/Lecture 1. 简单回归模型.md",
     "概率论/Book 1. 初等概率论/Chapter 2. 收敛理论/Lecture 1. Modes of Stochastic Convergence.md",
     "概率论/Book 2. 测度论/Lecture 3.3. 测度空间(完全化).md",
     "概率论/Book 2. 测度论/Lecture 4. 积分.md",

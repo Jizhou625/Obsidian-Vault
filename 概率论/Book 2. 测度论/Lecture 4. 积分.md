@@ -56,7 +56,7 @@ ___
 ### 1.3. 非负可测函数的积分
 对于测度空间$(X, \mathscr{F}, \mu)$上的非负可测函数$f$, 称
 $$
-\int_X f\mathrm{d}\mu = \sup \left\{\int_X g\mathrm{d}\mu\mid  0\le  g\le f, g\text{ is simple function}\right\}
+\int_X f\mathrm{d}\mu = \sup \left\{\int_X g\mathrm{d}\mu\ \Big|\  0\le  g\le f, g\text{ is simple function}.\right\}
 $$
 为它的积分. 
 
@@ -90,6 +90,32 @@ $$
 $$
 叫做$f$的积分或积分值. 
 
+设$A\in \mathscr{F}$, 只要可测函数$f\mathbb{I}_{A}$的积分存在或可积, 我们就分别说$f$再集合$A\in \mathscr{F}$上积分存在或可积. 并且把
+$$
+\int_{A}f\mathrm{d}\mu = \int_{X} f\mathbb{I}_{A}\mathrm{d}\mu
+$$
+叫做$f$在集合$A\in \mathscr{F}$上的积分. 
+
+### 1.6. L-S积分
+设$g$是对准分布函数$F$而言的L-S可测函数, 如果$g$对$\lambda_F$的积分存在, 则这个积分称为$g$对$F$的L-S积分, 记作
+$$
+\int_{\mathbb{R}} g\mathrm{d}F = \int_{\mathbb{R}} g(x)\mathrm{d}F(x) = \int_{\mathbb{R}} g(x)\mathrm{d}\lambda_F(x)
+$$
+如果$A\in \mathscr{F}_{\lambda_F}$, 则称
+$$
+\int_{A} g\mathrm{d}F = \int_{\mathbb{R}}g \mathbb{I}_{A}\mathrm{d}F
+$$
+为$g$在集合$A$上对$F$的L-S积分. 
+
+特别地, 如果$L$可测函数$g$对Lebesgue测度$\lambda$的积分存在, 则称之为L积分, 记为
+$$
+\int_{\mathbb{R}} g(x)\mathrm{d}x = \int_{\mathbb{R}} g \mathrm{d}\lambda
+$$
+如果$A\in \mathscr{F}_{\lambda}$, 则称
+$$
+\int_{A}g(x)\mathrm{d}x = \int_{\mathbb{R}}g(x)\mathbb{I}_A(x)\mathrm{d}x
+$$
+为$g$在集合$A$上的L积分. 
 ## 2. 积分的性质
 ### 2.1. 积分存在的性质
 设$f$是测度空间$(X, \mathscr{F}, \mu)$上的可测函数, 如果$f$的积分存在, 则
@@ -103,10 +129,76 @@ $$
    \int_X f\mathrm{d}\mu \ge \int_X g\mathrm{d}\mu
    $$
 4. 设$g$也是测度空间$(X, \mathscr{F}, \mu)$上的可测函数, 如果$f=g$ a.e., 则只要其中任何一个积分存在, 则另一个积分也存在并且两个积分值相等. 
+___
+##### Proof: 
+1. 我们可以得到
+   $$
+   \max\left\{\int_X f^+\mathrm{d}\mu, \int_X f^-\mathrm{d}\mu\right\} \le \int_X |f|\mathrm{d}\mu
+   $$
+   因此
+   $$
+   \left|\int_X f \mathrm{~d} \mu\right|=\left|\int_X f^{+} \mathrm{d} \mu-\int_X f^{-} \mathrm{d} \mu\right| \leqslant \int_X|f| \mathrm{d} \mu .
+   $$
+2. 如果$f$是非负简单函数, 可以被表示为$f=\sum\limits_{i=1}^{n} a_i\mathbb{I}_{A_i}$, 其中$\{A_i\in \mathscr{F}\}$是$(X, \mathscr{F}, \mu)$的有限可测分割. 
+   $$
+   \begin{aligned} 
+   \int_A f\mathrm{d}\mu & = \int_X f\mathbb{I}_A\mathrm{d}\mu \\
+   & = \int_X \left(\sum\limits_{i=1}^{n} a_i\mathbb{I}_{A_i\cap A}\right)\mathrm{d}\mu \\ 
+   & = \sum\limits_{i=1}^{n} a_i\mu(A_i\cap A) \\
+   & \le \mu(A) \sum\limits_{i=1}^{n} a_i \\
+   & = 0
+   \end{aligned}
+   $$
+   根据典型方法, 我们可以得到这个结论对非负可测函数和一般可测函数成立. 
+3. 先考虑$f, g\ge 0$的情况, 记$A = \{f< g\}$, 则
+   $$
+   \begin{aligned}
+   \int_X f \mathrm{~d} \mu & =\int_X f \mathbb{I}_A \mathrm{~d} \mu+\int_X f  \mathbb{I}_{A^c} \mathrm{~d} \mu=\int_X f  \mathbb{I}_{A^c} \mathrm{~d} \mu \\
+   & \geqslant \int_X g  \mathbb{I}_{A^c} \mathrm{~d} \mu=\int_X g  \mathbb{I}_A \mathrm{~d} \mu+\int_X g  \mathbb{I}_{A^c} \mathrm{~d} \mu \\
+   & =\int_X g \mathrm{~d} \mu,
+   \end{aligned}
+   $$
+   在讨论一般情况, 根据$f\ge g$ a.e., 容易得到$f^+\ge g^+$ a.e. 和$f^-\le g^-$ a.e., 因此
+   $$
+   \int_x f^{+} \mathrm{d} \mu \leqslant \int_x g^{+} \mathrm{d} \mu ; \quad \int_x f^{-} \mathrm{d} \mu \geqslant \int_x g^{-} \mathrm{d} \mu .
+   $$
+   合在一起可以得到对于一般的$f\ge g$ a.e., 有
+   $$
+   \int_X f\mathrm{d}\mu \ge \int_X g\mathrm{d}\mu
+   $$
+4. 根据$f=g$ a.e., 我们可以得到$f\ge g$ a.e. 和$f\le g$ a.e., 因此可以得到结论成立. 
+#####
+___
 
 ### 2.2. 积分可积的性质
 1. $f$可积当且仅当$|f|$可积
 2. 如果$f$可积, 则$|f|<\infty$ a.e.
+   
+___
+##### Proof:
+1. 因为
+   $$
+   \max\left\{\int_X f^+\mathrm{d}\mu, \int_X f^-\mathrm{d}\mu\right\} \le \int_X |f|\mathrm{d}\mu
+   $$
+   因此当$|f|$可积时, $f$可积. 而当$f$可积时, 有
+   $$
+   \max \left\{\int_X f^{+} d \mu, \int_X f^{-} \mathrm{d} \mu\right\}<\infty
+   $$
+   于是我们有
+   $$
+   \int_X|f| \mathrm{d} \mu=\int_X f^{+} \mathrm{d} \mu+\int_X f^{-} \mathrm{d} \mu<\infty
+   $$
+2. 由于$f$可积当且仅当$|f|$可积, 因此我们可以不妨设$f\ge 0$可积, 下面用反证法, 如果$\mu(f = \infty)>0$, 则我们可以得到
+   $$
+   \int_X f \mathrm{~d} \mu \geqslant \int_X f \mathbb{I}_{\left\{f = \infty\right\}} \mathrm{d} \mu \geqslant n \mu(f=\infty) 
+   $$
+   这意味着
+   $$
+   \int_X f \mathrm{~d} \mu = \infty
+   $$
+   矛盾!
+#####
+___
 
 ### 2.3. 积分的线性性质
 设$f$和$g$是测度空间$(X, \mathscr{F}, \mu)$上积分存在的可测函数, 则
@@ -114,15 +206,25 @@ $$
    $$
    \int_X(af)\mathrm{d}\mu = a\int_X f\mathrm{d}\mu
    $$
-2. 如果$\displaystyle{\int_X}f\mathrm{d}\mu + \displaystyle{\int_X}g\mathrm{d}\mu$, 则$f+g$ a.e. 有定义, 其积分存在并且
+2. 如果$\displaystyle{\int_X}f\mathrm{d}\mu + \displaystyle{\int_X}g\mathrm{d}\mu$有意义, 则$f+g$ a.e. 有定义, 其积分存在并且
    $$
    \int_X(f+g)\mathrm{d}\mu = \int_X f\mathrm{d}\mu + \int_X g\mathrm{d}\mu
    $$
-
-### 2.4. 积分的单调性质
+___
+##### Proof:
+结论1显然成立, 我们只需要证明结论2. 
+#####
+___
+### 2.4. 积分值相等与可积函数的几乎处处相等
 设$f$和$g$是测度空间$(X, \mathscr{F}, \mu)$上的可积函数
 1. 如果$\displaystyle{\int_A}f\mathrm{d}\mu \ge \displaystyle{\int_A}g\mathrm{d}\mu$对每个$A\in \mathscr{F}$成立, 则$f\ge g$ a.e.
 2. 如果$\displaystyle{\int_A}f\mathrm{d}\mu = \displaystyle{\int_A}g\mathrm{d}\mu$对每个$A\in \mathscr{F}$成立, 则$f =  g$ a.e.
+
+___
+##### Proof:
+显然1可以推出2, 因此我们只需要证明结论1.
+#####
+___
 
 ### 2.5. 积分的绝对连续性
 如果$f$可积, 则对任何$\varepsilon>0$, 存在$\delta>0$, 使得对任意满足$\mu(A)<\delta$的$A\in \mathscr{F}$, 有
