@@ -212,17 +212,99 @@ ___
    $$
 ___
 ##### Proof:
-结论1显然成立, 我们只需要证明结论2. 
+结论1显然成立, 我们只需要证明结论2. 证明分3步进行
+1. 如果$f, g\ge 0$ a.e., $\min\left\{\displaystyle{\int_X}f\mathrm{d}\mu, \displaystyle{\int_X}g\mathrm{d}\mu\right\}<\infty$且$f-g$ a.e. 有定义, 则$f-g$的积分存在并且
+   $$
+   \int_X (f-g)\mathrm{d}\mu  = \int_X f\mathrm{d}\mu - \int_X g\mathrm{d}\mu
+   $$
+   这是因为
+   $$
+   \begin{aligned} 
+   &f - g \le f \text{ a.e.} \Longrightarrow (f - g)^+ \le f \text{ a.e.} \\ 
+   & f - g \ge -g \text{ a.e.} \Longrightarrow (f - g)^- \le g \text{ a.e.}    
+   \end{aligned}
+   $$
+   于是我们得到
+   $$
+   \min \left\{\int_x(f-g)^{+} \mathrm{d} \mu, \int_x(f-g)^{-} \mathrm{d} \mu\right\} 
+    \leqslant \min \left\{\int_x f \mathrm{~d} \mu, \int_X g \mathrm{~d} \mu\right\}<\infty
+   $$
+   因此$f-g$的积分存在. 
+   $$
+   f-g = (f-g)^+ - (f-g)^- \text{ a.e.}
+   $$
+   则
+   $$
+   f+(f-g)^{-}=g+(f-g)^{+} \text {  a.e.}
+   $$
+   于是我们有
+   $$
+   \int_X f \mathrm{~d} \mu+\int_X(f-g)^{-} \mathrm{d} \mu=\int_X g \mathrm{~d} \mu+\int_X(f-g)^{+} \mathrm{d} \mu 
+   $$
+   这就得到了
+   $$
+   \begin{aligned}
+   \int_X(f-g) \mathrm{d} \mu & =\int_X(f-g)^{+} \mathrm{d} \mu-\int_X(f-g)^{-} \mathrm{d} \mu \\
+   & =\int_X f \mathrm{~d} \mu-\int_X g \mathrm{~d} \mu 
+   \end{aligned}
+   $$
+2. 如果$\displaystyle{\int_X}f\mathrm{d}\mu + \displaystyle{\int_X}g\mathrm{d}\mu$有意义, 则$\left(f^{+}+g^{+}\right)-\left(f^{-}+g^{-}\right)$a.e. 有意义, 而且
+   $$
+   \min \left\{\int_X\left(f^{+}+g^{+}\right) \mathrm{d} \mu, \int_X\left(f^{-}+g^{-}\right) \mathrm{d} \mu\right\}<\infty
+   $$
+   我们只需要证明
+   $$
+   \begin{aligned}
+   & \int_X\left(f^{+}+g^{+}\right) \mathrm{d} \mu=\infty \Longrightarrow \int_X\left(f^{-}+g^{-}\right) \mathrm{d} \mu<\infty \\
+   & \int_X\left(f^{-}+g^{-}\right) \mathrm{d} \mu=\infty \Longrightarrow \int_X\left(f^{+}+g^{+}\right) \mathrm{d} \mu<\infty
+   \end{aligned}
+   $$
+   根据对称性, 我们只需要证明第一个结论. 事实上, 如果$\displaystyle{\int_X}(f^++g^+)\mathrm{d}\mu =\infty$, 于是我们知道$\displaystyle{\int_X}f^+\mathrm{d}\mu =\infty$和$\displaystyle{\int_X}g^+\mathrm{d}\mu =\infty$之一成立. 不妨设$\displaystyle{\int_X}f^+\mathrm{d}\mu =\infty$, 因为$f$的积分存在, 故必有$\displaystyle{\int_X}f^-\mathrm{d}\mu <\infty$. 此外, 因为$\displaystyle{\int_X}f\mathrm{d}\mu + \displaystyle{\int_X}g\mathrm{d}\mu$有意义, 故$\displaystyle{\int_X}g^{-}\mathrm{d}\mu <\infty$. 从而, 我们有$\displaystyle{\int_X}(f^{-}+g^{-})\mathrm{d}\mu <\infty$
+3. 如果$\displaystyle{\int_X}f\mathrm{d}\mu + \displaystyle{\int_X}g\mathrm{d}\mu$有意义, 则$f+g$ a.e. 有定义, 其积分存在并且
+   $$
+   \int_X(f+g)\mathrm{d}\mu = \int_X f\mathrm{d}\mu + \int_X g\mathrm{d}\mu
+   $$
+   这是因为
+   $$
+   \begin{aligned}
+   & (f+g)^{+} \leqslant f^{+}+g^{+} \text { a.e. } \\
+   & (f+g)^{-} \leqslant f^{-}+g^{-} \text { a.e. }
+   \end{aligned}
+   $$
+   根据2中的结果, 我们知道$f+g$ a.e. 有意义并且$f+g$的积分存在, 于是
+   $$
+   \begin{aligned} 
+      \int_X(f+g)\mathrm{d}\mu &= \int_X (f^+ - f^- + g^+ - g^-)\mathrm{d}\mu \\ 
+      &= \int_X ((f^+ +  g^+) -(f^- + g^-))\mathrm{d}\mu \\ 
+      & = \int_X\left(f^{+}+g^{+}\right) \mathrm{d} \mu-\int_X\left(f^{-}+g^{-}\right) \mathrm{d} \mu \\ 
+      & =\left(\int_X f^{+} \mathrm{d} \mu+\int_X g^{+} \mathrm{d} \mu\right)-\left(\int_X f^{-} \mathrm{d} \mu+\int_X g^{-} \mathrm{d} \mu\right) \\ 
+      & = \int_X f\mathrm{d}\mu + \int_X g\mathrm{d}\mu 
+   \end{aligned}
+   $$
 #####
 ___
 ### 2.4. 积分值相等与可积函数的几乎处处相等
 设$f$和$g$是测度空间$(X, \mathscr{F}, \mu)$上的可积函数
 1. 如果$\displaystyle{\int_A}f\mathrm{d}\mu \ge \displaystyle{\int_A}g\mathrm{d}\mu$对每个$A\in \mathscr{F}$成立, 则$f\ge g$ a.e.
 2. 如果$\displaystyle{\int_A}f\mathrm{d}\mu = \displaystyle{\int_A}g\mathrm{d}\mu$对每个$A\in \mathscr{F}$成立, 则$f =  g$ a.e.
-
 ___
 ##### Proof:
-显然1可以推出2, 因此我们只需要证明结论1.
+显然1可以推出2, 因此我们只需要证明结论1. 设$B=\{f<g\}$. 则我们有
+$$
+\int_B (g-f)\mathrm{d}\mu = \int_X (g-f)\mathbb{I}_B\mathrm{d}\mu \ge 0
+$$
+根据条件$\displaystyle{\int_A}f\mathrm{d}\mu \ge \displaystyle{\int_A}g\mathrm{d}\mu, \forall A\in\mathscr{F}$. 根据积分的线性性, 我们有
+$$
+\int_B(g-f) \mathrm{d} \mu=\int_B g \mathrm{~d} \mu-\int_B f \mathrm{~d} \mu \leqslant 0
+$$
+于是我们有
+$$
+\int_X(g-f) \mathbb{I}_B \mathrm{~d} \mu=\int_B(g-f) \mathrm{d} \mu=0 .
+$$
+这意味着$(g-f)\mathbb{I}_b=0$ a.e., 但因为在$B$上$g>f$, 因此我们有$\mathbb{I}_B= 0$ a.e. 这就意味着
+$$
+\mu(f<g) = \mu(B) = 0
+$$ 
 #####
 ___
 
@@ -231,6 +313,23 @@ ___
 $$
 \int_A |f|\mathrm{d}\mu < \varepsilon
 $$
+___
+##### Proof: 
+首先, 根据[[#2.2. 积分可积的性质]], $f$可积意味着$|f|$可积. 由于$|f|$是非负可测函数, 因此可以取非负简单函数
+$$
+g_n \uparrow |f| \Longrightarrow\lim\limits_{n\to\infty} \int_X g_n\mathrm{d}\mu = \int_X |f|\mathrm{d}\mu 
+$$
+对任意给定的$\varepsilon>0$, 存在正整数$N$使得
+$$
+\int_X|f| \mathrm{d} \mu-\int_X g_N \mathrm{~d} \mu<\frac{\varepsilon}{2} 
+$$
+设$M = \max\limits_{x\in X}g_N(x)$, 则
+$$
+\int_A|f| \mathrm{d} \mu<\frac{\varepsilon}{2}+\int_A g_N \mathrm{~d} \mu \leqslant \frac{\varepsilon}{2}+M \mu(A)
+$$
+于是我们只要取$\delta = \dfrac{\varepsilon}{2M}$, 即可得到结论. 
+#####
+___
 
 ## 3. 可测函数列的积分性质
 ### 3.1. 单调收敛定理(Levi定理)
@@ -238,6 +337,11 @@ $$
 $$
 \int_X f_n\mathrm{d}\mu \uparrow \int_X f\mathrm{d}\mu
 $$
+___
+##### Proof:
+
+#####
+___
 
 ### 3.2. Fatou引理
 对任意a.e.非负可测函数的序列$\{f_n\}$, 有

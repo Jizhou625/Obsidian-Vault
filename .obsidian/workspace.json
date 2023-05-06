@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "45b6cc51caac60ea",
@@ -161,13 +160,14 @@
   },
   "active": "e4e30f26d5558813",
   "lastOpenFiles": [
+    "概率论/Book 2. 测度论/Lecture 3.2. 测度空间(外测度与测度扩张).md",
+    "概率论/Book 2. 测度论/Lecture 3.3. 测度空间(完全化).md",
+    "概率论/Book 2. 测度论/Lecture 4. 积分.md",
+    "概率论/Book 2. 测度论/Lecture 2. 可测映射.md",
+    "概率论/Book 2. 测度论/Lecture 3.1. 测度空间(测度).md",
     "统计学/计量经济学/Lecture 0. 数据表示.md",
     "统计学/计量经济学/Lecture 1. 简单回归模型.md",
     "概率论/Book 1. 初等概率论/Chapter 2. 收敛理论/Lecture 1. Modes of Stochastic Convergence.md",
-    "概率论/Book 2. 测度论/Lecture 3.3. 测度空间(完全化).md",
-    "概率论/Book 2. 测度论/Lecture 4. 积分.md",
-    "概率论/Book 2. 测度论/Lecture 3.2. 测度空间(外测度与测度扩张).md",
-    "概率论/Book 2. 测度论/Lecture 3.1. 测度空间(测度).md",
     "概率论/Book 2. 测度论/Lecture 1. 可测空间.md",
     "概率论/Book 2. 测度论/Lecture 3.2. 测度空间(外测度与测度扩张)",
     "概率论/Book 2. 测度论/Lecture 3.2. 测度空间(外测度)",
@@ -183,7 +183,6 @@
     "概率论/Book 2. 测度论/Lecture 7. 独立随机变量序列(从测度论到概率论).md",
     "概率论/Book 2. 测度论/Lecture 6. 乘积空间.md",
     "概率论/Book 2. 测度论/Lecture 5. 符号测度.md",
-    "概率论/Book 2. 测度论/Lecture 2. 可测映射.md",
     "概率论/Book 2. 测度论",
     "概率论/Book 1. 初等概率论/Chapter 2. 收敛理论",
     "概率论/Book 1. 初等概率论",
