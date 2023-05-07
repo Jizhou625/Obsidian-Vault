@@ -433,7 +433,7 @@ ___
 设$(X, \mathscr{F}, \mu)$是测度空间
 1. $1\le p < \infty$, 我们将所有满足下列条件的$(X, \mathscr{F}, \mu)$上的可测函数$f$
    $$
-   \int_X |f|^p\mathrm{d}\mu < \infty
+   \int_X |f|^p\mathrm{d}\mu < \infty, \quad \|f\|_p = \left(\displaystyle{\int_X}|f|^p\mathrm{d}\mu\right)^{\frac{1}{p}}
    $$
    组成的集合记作$L_p(X, \mathscr{F}, \mu)$
 2. $p=\infty$时, 我们将$(X, \mathscr{F}, \mu)$上a.e. 有界的可测函数的全体记为$L_{\infty}(X, \mathscr{F}, \mu)$. 
@@ -447,11 +447,103 @@ ___
 
 
 
-### 4.2. 赋范线性空间
-如果视$L_p$中a.e.相等的函数为同一个$L_p$中的元($1\le p\le \infty$), 则根据$\|f\|_p = \left(\displaystyle{\int_X}|f|^p\mathrm{d}\mu\right)^{\frac{1}{p}}$定义的$\|\cdot\|_p$是$L_p$上的范数, 在此观点下, $L_p$是一个赋范线性空间. 
+### 4.2. $L_p$是完备距离空间
+对任意的$f, g\in L_p$, 定义$L_p$上的距离为
+$$
+\rho(f, g) = \|f-g\|_p
+$$
+$L_p$在这个距离下是完备的. 也就是说, 如果$\{f_n\}\subset L_p$满足
+$$
+\lim\limits_{n, m\to\infty}  \|f_n - f_m\|_p = 0 
+$$
+则存在$f\in L_p$使得
+$$
+\lim\limits_{n\to\infty} \|f_n - f\|_p = 0
+$$
+我么称$\{f_n\}$($p$阶)平均收敛到$f$., 记为$f_n \overset{L_p}{\longrightarrow} f$
 ___
-##### Proof:
-根据$\|\cdot\|_p$的定义, 可以验证$\|\cdot\|_p$具有半正定性和绝对一次齐次性. 而使用[[../../代数学/Chapter 0. 代数不等式/Lecture 1. 基础不等式#1.3. Minkowski不等式|Minkowski不等式]], 我们可以得到$\|\cdot\|$也具有次可加性. 因此$\|\cdot\|$是$L_p$上的范数, 从而$L_p$是一个赋范线性空间.
+##### Proof
+对每个$k=1,2,\cdots$, 取正整数$n_k$使得$n_1<n_2<\cdots$而且
+$$
+\left\|f_{n_{k+1}}-f_{n_k}\right\|_p< \dfrac{1}{2^k}
+$$
+对每个$k=1,2,\cdots$, 令
+$$
+g_k = |f_{n_1}| + \sum\limits_{i=1}^{k} |f_{n_{i+1}} - f_{n_i}| 
+$$
+根据Minkowski不等式, 我们有
+$$
+\left\|g_k\right\|_p \leqslant\left\|f_{n_1}\right\|_p+\sum_{i=1}^k\left\|f_{n_{i+1}}-f_{n_i}\right\|_p \le \|f_{n_1}\|_p + 1
+$$
+设
+$$
+g=\left|f_{n_1}\right|+\sum_{i=1}^{\infty}\left|f_{n_{i+1}}-f_{n_i}\right|
+$$
+容易看出, $g_k\uparrow g$, 从而由单调收敛定理推出
+$$
+\int_X g^p \mathrm{~d} \mu=\lim _{k \rightarrow \infty} \int_X g_k^p \mathrm{d} \mu \leqslant\left(\left\|f_{n_1}\right\|_p+1\right)^p<\infty
+$$
+故$g\in L_p$, 这蕴含$g<\infty$ a.e. 从而我们知道级数$f_{n_1} +\sum\limits_{i=1}^{\infty} (f_{n_{i+1}} - f_{n_i})$ a.e. 收敛, 即$f = \lim\limits_{k\to\infty} f_{n_k}$ a.e. 有定义. 由于
+$$
+|f|=\lim _{k \rightarrow \infty}\left|f_{n_1}+\sum_{i=1}^k\left(f_{n_{1+1}}-f_{n_i}\right)\right| \leqslant \lim _{k \rightarrow \infty} g_k=g \text { a. e. }
+$$
+因为$g\in L_p$, 因此$f\in L_p$. 由于
+$$
+\lim\limits_{n, m\to\infty}  \|f_n - f_m\|_p = 0 
+$$
+因此对任意给定的$\varepsilon>0$, 可以取充分大的$N$, 使得对一切$n, m\ge N$, 由
+$$
+\|f_n - f_m\|_p < \varepsilon
+$$
+则由[[#3.2. Fatou引理]], 当$n\ge N$, 则
+$$
+\int_X|f_n-f|^p \mathrm{d}\mu =\int_X \lim\limits_{k\to\infty} |f_n-f_{n_k}|^p\mathrm{d}\mu  \leqslant \liminf _{m \rightarrow \infty} \int_X\left|f_n-f_{n_k}\right|^p \mathrm{d}\mu \leqslant \varepsilon
+$$
+这就证明了$\lim\limits_{n\to\infty} \|f_n - f\|_p = 0$.
 #####
 ___
 
+### 4.3. $p$阶平均收敛和其他收敛
+设$0<p<\infty$, $\{f_n\}\subset L_p$和$f\in L_p$
+1. 如果$f_n\overset{L_p}{\longrightarrow}f$, 则$f_n\overset{\mu}{\longrightarrow} f$和$\lim\limits_{n\to\infty} \|f_n\|_p\longrightarrow \|f\|_p$
+2. 如果$f_n\overset{\mathrm{a.e.}}{\longrightarrow} f$或$f_n\overset{\mu}{\longrightarrow} f$, 则
+   $$
+   \|f_n\|_p \to \|f\|_p \iff f_n\overset{L_p}{\longrightarrow} f
+   $$
+
+___
+##### Proof:
+1. 设$f_n\overset{L_p}{\longrightarrow}f$, 对任意给定的$\varepsilon>0$有
+   $$
+   \begin{aligned}
+   \mu\left(\left|f_n-f\right| \geqslant \varepsilon\right) & \leqslant \frac{1}{\varepsilon^p} \int_{\left\{\left|f_n-f\right| \geqslant \varepsilon \right\}}\left|f_n-f\right|^p \mathrm{~d} \mu \\
+   & \leqslant \frac{1}{\varepsilon^p} \int_X\left|f_n-f\right|^p \mathrm{~d} \mu \\
+   & =\frac{1}{\varepsilon^p}\left\|f_n-f\right\|_p^p \rightarrow 0,
+   \end{aligned}
+   $$
+   因此我们有$f\overset{\mu}{\longrightarrow} f$. 此外由Minkowski不等式, 我们有
+   $$
+   \left|\left\|f_n\right\|_p-\|f\|_p\right| \leqslant\left\|f_n-f\right\|_p \rightarrow 0 
+   $$
+2. 只需要证明$\Longrightarrow$部分, 如果$f_n\overset{\mu}{\longrightarrow}f$, 则对$\{f_n\}$的任意一个子列, 存在其子列$\{f_{n^{\prime}}\}$使得$f_{n^{\prime}}\overset{\mathrm{a.e.}}{\longrightarrow}f$, 令
+   $$
+   g_{n^{\prime}}=C_p\left(\left|f_{n^{\prime}}\right|^p+|f|^p\right)-\left|f_{n^{\prime}}-f\right|^p,\quad C_p = \begin{cases}  2^{p-1},\quad &1\le p\le \infty \\ 1, &0<p<1\end{cases}
+   $$
+   于是
+   $$
+   \lim _{n^{\prime} \rightarrow \infty} g_{n^{\prime}} =C_p\left(\lim _{n^{\prime} \rightarrow \infty}\left|f_{n^{\prime}}\right|^p+|f|^p\right)-\lim _{n^{\prime} \rightarrow \infty}\left|f_{n^{\prime}}-f\right|^p  =2 C_p|f|^p \text { a. e. . }
+   $$
+   当$\|f_n\|_p\to \|f\|_p$成立时, 由[[#3.2. Fatou引理]], 我们有
+   $$
+   \begin{aligned}
+   \int_X\left(2 C_p|f|^p\right) \mathrm{d} \mu & =\int_X\left(\lim _{n^{\prime} \rightarrow \infty} g_{n^{\prime}}\right) \mathrm{d} \mu \leqslant \liminf _{n^{\prime}\to\infty} \int_X g_{n^{\prime}} \mathrm{d} \mu \\
+   & =\int_X\left(2 C_p|f|^p\right) \mathrm{d} \mu-\limsup _{n^{\prime} \rightarrow \infty} \int_X\left|f_{n^{\prime}}-f\right|^p \mathrm{~d} \mu 
+   \end{aligned}
+   $$
+   这样我们就得到了
+   $$
+   \lim\limits_{n^{\prime}\to\infty} \int_X\left|f_{n^{\prime}}-f\right|^p \mathrm{~d} \mu = 0
+   $$
+   于是对$\{\|f_n-f\|_p\}$的任意一个子列, 都进一步存在一个趋于$0$的子列, 这意味着$f_n\overset{L_p}{\longrightarrow}f$
+#####
+___

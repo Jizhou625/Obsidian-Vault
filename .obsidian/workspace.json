@@ -11,13 +11,8 @@
             "id": "e4e30f26d5558813",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "代数学/Chapter 0. 代数不等式/Lecture 1. 基础不等式.md",
-                "mode": "preview",
-                "backlinks": true,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -94,7 +89,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "代数学/Chapter 0. 代数不等式/Lecture 1. 基础不等式.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +105,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "代数学/Chapter 0. 代数不等式/Lecture 1. 基础不等式.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,9 +126,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "代数学/Chapter 0. 代数不等式/Lecture 1. 基础不等式.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -158,8 +149,26 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "e4e30f26d5558813",
+  "active": "1540de2207820773",
   "lastOpenFiles": [
+    "其他内容/生物进化论.assets/image_5.1037528f.png",
+    "其他内容/生物进化论.assets/image_4.abf31d1a.png",
+    "其他内容/生物进化论.assets/image_3.b6672735.png",
+    "其他内容/生物进化论.assets/image_2.4b9a5489.png",
+    "其他内容/生物进化论.assets/image_1.15016023.png",
+    "其他内容/生物进化论.assets",
+    "其他内容/生物进化论.md",
+    "其他内容/生物进化论 Notes.assets/image_1.15016023.png",
+    "其他内容/生物进化论 Notes.assets",
+    "分析学/数学分析/Lecture 1. 极限.md",
+    "其他内容/image_5.1037528f.png",
+    "其他内容/image_4.abf31d1a.png",
+    "其他内容/image_3.b6672735.png",
+    "其他内容/image_2.4b9a5489.png",
+    "其他内容/image_1.15016023.png",
+    "其他内容/生物进化论 Notes.md",
+    "其他内容",
+    "New folder",
     "概率论/Book 2. 测度论/Lecture 4. 积分.md",
     "代数学/Chapter 0. 代数不等式/Lecture 1. 基础不等式.md",
     "分析学/凸分析/Lecture 2. Convex Function.md",
@@ -188,24 +197,6 @@
     "概率论/Book 2. 测度论",
     "概率论/Book 1. 初等概率论/Chapter 2. 收敛理论",
     "概率论/Book 1. 初等概率论",
-    "基础知识(待分类)/Lecture 0. 集合论.md",
-    "基础知识(待分类)",
-    "分析学/数学分析/Lecture 6.2. 级数(一般项级数).md",
-    "分析学/数学分析/Lecture 6.3. 级数(函数项级数).md",
-    "分析学/数学分析/Lecture 6.4. 级数(幂级数).md",
-    "机器学习/Lecture 2.1. VC Theory(Rademacher复杂度).md.crswap",
-    "机器学习/Lecture 2.4. VC Theory(泛化下界).md.crswap",
-    "机器学习/Lecture 2.3. VC Theory(泛化上界).md.crswap",
-    "未命名.canvas",
-    "重要方法/Normalization of Neural Network.assets/image-20230408131146636.png",
-    "深度学习与强化学习/Lecture 5. Transformer.assets/image-20230404135705974.png",
-    "深度学习与强化学习/Lecture 5. Transformer.assets/image-20230404135248179.png",
-    "深度学习与强化学习/Lecture 5. Transformer.assets/image-20230404133515600.png",
-    "深度学习与强化学习/Lecture 4. RNN.assets/image-20230403003612017.png",
-    "深度学习与强化学习/Lecture 4. RNN.assets/image-20230403002414466.png",
-    "深度学习与强化学习/Lecture 4. RNN.assets/image-20230403001612554.png",
-    "深度学习与强化学习/Lecture 4. RNN.assets/image-20230402235402584.png",
-    "深度学习与强化学习/Lecture 4. RNN.assets/image-20230402181813599.png",
-    "深度学习与强化学习/Lecture 4. RNN.assets/image-20230401192832430.png"
+    "未命名.canvas"
   ]
 }
