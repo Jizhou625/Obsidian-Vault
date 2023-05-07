@@ -339,7 +339,45 @@ $$
 $$
 ___
 ##### Proof:
+不妨设$\{f_n\}$和$f$是处处非负的可测函数并且对每个$x\in X$有
+$$
+f_n(x) \uparrow f(x)
+$$
+对每个$n=1,2,\cdots$, 作非负函数列$\{f_{n, k}, k=1,2,\cdots\}$使得当$k\to\infty$时$f_{n, k}\uparrow f_n$. 再设$g_k = \max\limits_{1\le n\le k}f_{n,k}$, 则
+1. 对每个$k$, 都有$g_k$都是非负简单函数
+2. 对每个$k$, 都有
+   $$
+   g_k = \max_{1\le n\le k}f_{n,k} \le \max_{1\le n\le k}f_{n,k+1} \le \max_{1\le n\le k+1}f_{n,k+1} = g_{k+1}
+   $$
+   这表明$g_k\uparrow$
+3. 由于$g_k =\max\limits_{1\le n\le k}f_{n, k} \le \max\limits_{1\le n\le k}f_n = f_k$, 因此
+   $$
+   \int_X g_k\mathrm{d}\mu \le \int_X f_k\mathrm{d}\mu \le \int_X f\mathrm{d}\mu
+   $$
+   $$
+   \lim\limits_{k\to\infty} g_k \le \lim\limits_{k\to\infty} f_k = f 
+   $$
+4. 由于对每个$n=1,2,\cdots, k$都有$g_k=\max\limits_{1\le n\le k}f_{n, k}\ge f_{n, k}$, 我们有
+   $$
+   \lim\limits_{k\to\infty} g_k\ge \lim\limits_{k\to\infty} f_{n, k} = f_n , \quad n=1,2,\cdots
+   $$
+   则
+   $$
+   \lim\limits_{k\to\infty}g_k \ge \lim\limits_{n\to\infty}  f_n = f
+   $$
 
+结合2,3,4我们得到了$g_k\uparrow f$. 于是我们有
+$$
+\int_X g_k \mathrm{d}\mu \uparrow  \int_X f\mathrm{d}\mu
+$$
+结合
+$$
+g_k = \max_{1\le n\le k}f_{n,k} \le \max_{1\le n\le k}f_{n,k+1} \le \max_{1\le n\le k+1}f_{n,k+1} = g_{k+1}
+$$
+这就得到了
+$$
+\int_X f_n \mathrm{d}\mu \uparrow  \int_X f\mathrm{d}\mu
+$$
 #####
 ___
 
@@ -348,14 +386,40 @@ ___
 $$
 \int_X (\liminf\limits_{n\to\infty} f_n)\mathrm{d}\mu \le \liminf\limits_{n\to\infty} \int_X f_n\mathrm{d}\mu
 $$
+___
+##### Proof:
+设$g_k =\inf\limits_{n\ge k} f_n$, 则我们有$g_k\uparrow \liminf\limits_{n\to\infty} f_n$, 因此根据[[#3.1. 单调收敛定理(Levi定理)]], 我们有
+$$
+\int_X(\liminf_{n\to\infty}f_n)\mathrm{d}\mu = \lim\limits_{k\to\infty}\int_X g_k\mathrm{d}\mu = \lim\limits_{k\to\infty} \int_X \left(\inf\limits_{n\ge k}f_n\right) \mathrm{d}\mu \le \liminf\limits_{n\to\infty} \int_X f_n\mathrm{d}\mu
+$$
+#####
+___
 
 ### 3.3. Lebesgue控制收敛定理
 设$\{f_n\}$和$f$均为可测函数, 且存在可积函数$g$, 使得$|f_n|\le g$ a.e.,  则$f_n\overset{\text{a.e.}}{\longrightarrow} f$或$f_n\overset{\mu}{\longrightarrow} f$意味着
 $$
 \lim\limits_{n\to\infty} \int_X f_n\mathrm{d}\mu  = \int_X f\mathrm{d}\mu
 $$
+___
+##### Proof: 
+先考虑$f_n \overset{\mathrm{a.e.}}{\longrightarrow} f$的情况, 我们有
+$$
+\begin{aligned} 
+   \int_X f\mathrm{d}\mu & = \int_X \left(\lim\limits_{n\to\infty} f_n\right)\mathrm{d}\mu \\ 
+   & \le \liminf_{n\to\infty} \int_X f_n\mathrm{d}\mu \\ 
+   & \le  \limsup_{n\to\infty} \int_X f_n\mathrm{d}\mu \\ 
+   & \le  \int_X \left(\lim\limits_{n\to\infty} f_n\right)\mathrm{d}\mu\\ 
+   & = \int_X f\mathrm{d}\mu 
+\end{aligned}
+$$
+从而我们有结论成立. 再考虑$f_n \overset{\mu}{\longrightarrow} f$的情况, 根据[[../Book 1. 初等概率论/Chapter 2. 收敛理论/Lecture 1. Modes of Stochastic Convergence#3.3. 几种收敛的关系|几种收敛的关系]], 我们知道对$\{f_n\}$的任意一个子序列, 存在一个子子列$\{f_{n^{\prime}}\}$使得$f_{n^{\prime}}\overset{\mathrm{a.e.}}{\longrightarrow} f$. 从而根据已经证明的结论有
+$$
+\lim _{n^{\prime} \rightarrow \infty} \int_X f_{n^{\prime}} \mathrm{d} \mu=\int_X f \mathrm{~d} \mu .
+$$
+#####
+___
 
-### 3.4. 积分的变数变换
+### 3.4. 积分的变数替换
 设$g$是测度空间$(X, \mathscr{F}, \mu)$到可测空间$(Y, \mathscr{S})$的可测映射
 1. 对每个$B \in \mathscr{S}$, 令$\nu(B) = \mu(g^{-1}(B))$, 则$(Y, \mathscr{S}, \nu)$还是一个测度空间
 2. 对$(Y, \mathscr{S}, \nu)$上的任何可测函数$f$, 只要等式
@@ -366,8 +430,28 @@ $$
 
 ## 4. 空间$L_p(X, \mathscr{F}, \mu)$
 ### 4.1. $L_p$空间的定义
-设$(X, \mathscr{F}, \mu)$是测度空间而且$1\le p < \infty$, 我们将所有满足下列条件的$(X, \mathscr{F}, \mu)$上的可测函数$f$
-$$
-\int_X |f|^p\mathrm{d}\mu < \infty
-$$
-组成的集合记作$L_p(X, \mathscr{F}, \mu)$, 由于我们只讨论给定的测度空间$(X, \mathscr{F}, \mu)$上集合$L_p(X, \mathscr{F}, \mu)$, 因此$L_p(X, \mathscr{F}, \mu)$也可以简记为$L_p$
+设$(X, \mathscr{F}, \mu)$是测度空间
+1. $1\le p < \infty$, 我们将所有满足下列条件的$(X, \mathscr{F}, \mu)$上的可测函数$f$
+   $$
+   \int_X |f|^p\mathrm{d}\mu < \infty
+   $$
+   组成的集合记作$L_p(X, \mathscr{F}, \mu)$
+2. $p=\infty$时, 我们将$(X, \mathscr{F}, \mu)$上a.e. 有界的可测函数的全体记为$L_{\infty}(X, \mathscr{F}, \mu)$. 
+3. $0<p<1$, 以$L_p$记测度空间$(X, \mathscr{F}, \mu)$上满足
+   $$
+   \|f\|_p = \int_X|f|^p\mathrm{d}\mu <\infty
+   $$
+   的可测函数的全体
+
+由于我们只讨论给定的测度空间$(X, \mathscr{F}, \mu)$上集合$L_p(X, \mathscr{F}, \mu)$, 因此$L_p(X, \mathscr{F}, \mu)$也可以简记为$L_p$
+
+
+
+### 4.2. 赋范线性空间
+如果视$L_p$中a.e.相等的函数为同一个$L_p$中的元($1\le p\le \infty$), 则根据$\|f\|_p = \left(\displaystyle{\int_X}|f|^p\mathrm{d}\mu\right)^{\frac{1}{p}}$定义的$\|\cdot\|_p$是$L_p$上的范数, 在此观点下, $L_p$是一个赋范线性空间. 
+___
+##### Proof:
+根据$\|\cdot\|_p$的定义, 可以验证$\|\cdot\|_p$具有半正定性和绝对一次齐次性. 而使用[[../../代数学/Chapter 0. 代数不等式/Lecture 1. 基础不等式#1.3. Minkowski不等式|Minkowski不等式]], 我们可以得到$\|\cdot\|$也具有次可加性. 因此$\|\cdot\|$是$L_p$上的范数, 从而$L_p$是一个赋范线性空间.
+#####
+___
+
