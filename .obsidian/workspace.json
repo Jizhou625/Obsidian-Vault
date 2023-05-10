@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "其他内容/生物进化论/Lecture 5. 自然选择.md",
+                "file": "其他内容/生物进化论/Lecture 13. 家养动物和现代智人的起源.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": false
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "其他内容/生物进化论/Lecture 5. 自然选择.md",
+                "file": "其他内容/生物进化论/Lecture 13. 家养动物和现代智人的起源.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "其他内容/生物进化论/Lecture 5. 自然选择.md",
+                "file": "其他内容/生物进化论/Lecture 13. 家养动物和现代智人的起源.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "其他内容/生物进化论/Lecture 5. 自然选择.md"
+                "file": "其他内容/生物进化论/Lecture 13. 家养动物和现代智人的起源.md"
               }
             }
           }
@@ -160,23 +160,33 @@
   },
   "active": "e4e30f26d5558813",
   "lastOpenFiles": [
-    "其他内容/生物进化论/Lecture 6. 适应.md",
+    "其他内容/生物进化论/Lecture 12. 鸟类的起源和早期演化.md",
+    "其他内容/生物进化论/Lecture 12. 鸟类的起源和早期演化.assets/image_5.1037528f.png",
+    "其他内容/生物进化论/Lecture 12. 鸟类的起源和早期演化.assets/image_4.abf31d1a.png",
+    "其他内容/生物进化论/Lecture 12. 鸟类的起源和早期演化.assets",
+    "其他内容/生物进化论/Lecture 11. 生命的起源和演化.md",
+    "其他内容/生物进化论/Lecture 10. 系统发生(发育)的重建.md",
+    "其他内容/生物进化论/Lecture 9. 物种灭绝.md",
+    "其他内容/生物进化论/Lecture 13. 家养动物和现代智人的起源.md",
+    "其他内容/生物进化论/Lecture 8. 核酸的演化速率.md",
+    "其他内容/生物进化论/Lecture 7. 蛋白质的演化水平.md",
+    "其他内容/生物进化论/Lecture 6. 中性演化理论.md",
+    "其他内容/生物进化论/Lecture 7. 蛋白质的演化水平.assets/image_1.15016023.png",
+    "其他内容/生物进化论/Lecture 7. 蛋白质的演化水平.assets",
+    "生物进化论.assets/image_1.15016023.png.md",
+    "生物进化论.assets",
+    "其他内容/生物进化论/Lecture 7. 中性演化理论.md",
     "其他内容/生物进化论/Lecture 5. 自然选择.md",
+    "其他内容/生物进化论/Lecture 6. 适应.md",
     "其他内容/生物进化论/Lecture 4. 达尔文的演化理论.md",
     "其他内容/生物进化论/Lecture 3. 拉马克的演化思想.md",
     "其他内容/生物进化论/Lecture 2. 间断平衡学说.md",
     "其他内容/生物进化论/Lecture 1.物种形成.md",
-    "其他内容/生物进化论/Lecture 14. 家养动物和现代智人的起源.md",
-    "其他内容/生物进化论/Lecture 13. 鸟类的起源和早期演化.md",
-    "其他内容/生物进化论/Lecture 12. 生命的起源和演化.md",
     "其他内容/生物进化论/Lecture 12. 生命的起源和演化",
-    "其他内容/生物进化论/Lecture 11. 系统发生(发育)的重建.md",
     "其他内容/生物进化论/Lecture 11. 系统发生(发育)的重建",
-    "其他内容/生物进化论/Lecture 10. 物种灭绝.md",
     "其他内容/生物进化论/Lecture 9. 核酸的演化速率.md",
     "其他内容/生物进化论/Lecture 8. 蛋白质的演化水平.md",
     "其他内容/生物进化论/Lecture 8. 蛋白质的演化水平",
-    "其他内容/生物进化论/Lecture 7. 中性演化理论.md",
     "其他内容/生物进化论/物种形成.md",
     "其他内容/生物进化论 Notes.md",
     "其他内容/生物进化论/物种形成",
@@ -192,20 +202,9 @@
     "其他内容/生物进化论 Notes.assets",
     "分析学/数学分析/Lecture 1. 极限.md",
     "其他内容/image_5.1037528f.png",
-    "其他内容/image_4.abf31d1a.png",
-    "其他内容/image_3.b6672735.png",
-    "其他内容/image_2.4b9a5489.png",
-    "其他内容",
-    "New folder",
     "概率论/Book 2. 测度论/Lecture 4. 积分.md",
     "代数学/Chapter 0. 代数不等式/Lecture 1. 基础不等式.md",
     "分析学/凸分析/Lecture 2. Convex Function.md",
-    "概率论/Book 1. 初等概率论/Chapter 2. 收敛理论/Lecture 1. Modes of Stochastic Convergence.md",
-    "概率论/Book 2. 测度论/Lecture 3.2. 测度空间(外测度与测度扩张).md",
-    "概率论/Book 2. 测度论/Lecture 3.3. 测度空间(完全化).md",
-    "概率论/Book 2. 测度论/Lecture 2. 可测映射.md",
-    "概率论/Book 2. 测度论/Lecture 3.1. 测度空间(测度).md",
-    "概率论/Book 2. 测度论/Lecture 3.2. 测度空间(外测度与测度扩张)",
     "未命名.canvas"
   ]
 }
