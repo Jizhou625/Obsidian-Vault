@@ -1,6 +1,10 @@
 ## 1. L-S测度
 ### 1.1. L-S测度
-$\mathbb{R}$上非降右连续实值函数$F$在半环$\mathscr{Q}_{\mathbb{R}}$上定义了一个有限测度$\mu$, $\mu$的外测度$\lambda_F$在由它的全体可测集组成的$\sigma$域$\mathscr{F}_{\lambda_F}$上也是一个测度. 我们把$\mathscr{F}_{\lambda_F}$中的集合叫做L-S可测集, 并把$(\mathbb{R}, \mathscr{F}_{\lambda_F})$上的可测函数叫做L-S可测函数. 把$\mathscr{F}_{\lambda_F}$上的测度$\lambda_F$叫做$\mathbb{R}$上的L-S测度.
+$\mathbb{R}$上非降右连续实值函数$F$在半环$\mathscr{Q}_{\mathbb{R}}$上定义了一个有限测度$\mu$
+$$
+\mu((a, b]) = \begin{cases}  F(b) - F(a) , \quad & a<b \\ 0, \quad & a\ge b \end{cases}
+$$
+$\mu$的外测度$\lambda_F$在由它的全体可测集$\lambda_F$组成的$\sigma$域$\mathscr{F}_{\lambda_F}$上也是一个测度. 我们把$\mathscr{F}_{\lambda_F}$中的集合叫做L-S可测集, 并把$(\mathbb{R}, \mathscr{F}_{\lambda_F})$上的可测函数叫做L-S可测函数. 把$\mathscr{F}_{\lambda_F}$上的测度$\lambda_F$叫做$\mathbb{R}$上的L-S测度.
 
 ### 1.2. L测度
 特别地, 当$F(x)= x, \forall x\in \mathbb{R}$时, $\mathscr{F}_{\lambda_F}$中的集合叫做$\mathbb{R}$上的L可测集. $(\mathbb{R}, \mathscr{F}_{\lambda_F})$上的可测函数叫做L可测函数, $\mathscr{F}_{\lambda_F}$上的测度$\lambda_F$叫做$\mathbb{R}$上的L测度.
@@ -70,9 +74,9 @@ ___
 特别地, 测度空间$(\mathbb{R}, \mathscr{F}_{\lambda_F}, \lambda_F)$是测度空间$(\mathbb{R}, \mathscr{B}_{\mathbb{R}}, \lambda_F)$的完全化. 
 ___
 ##### Proof:
-根据[[Lecture 3.3. 测度空间(完全化)#2.1. 每个测度空间都可以被完全化]], 设$\mathscr{F} = \sigma(\mathscr{Q})$, 只需要证明$\widetilde{\mathscr{F}} = \mathscr{F}_{\tau}$. 
+根据[[#2.1. 每个测度空间都可以被完全化]], 设$\mathscr{F} = \sigma(\mathscr{Q})$, 只需要证明$\widetilde{\mathscr{F}} = \mathscr{F}_{\tau}$. 
 
-设$A\in \mathscr{F}_{\tau}$, 根据[[Lecture 3.2. 测度空间(外测度与测度扩张)#2.3. $ sigma( mathscr{Q})$上的测度$ tau$和$ mathscr{F}_{ tau}$上的测度$ tau$的关系]]知道, 存在 $C\in\mathscr{F}$使得$C\supset A$且$\tau(C\backslash A) =0$. 对$C\backslash A\in \mathscr{F}_{\tau}$, 同样有, 存在 $B\in \mathscr{F}$ 使得$B\supset C\backslash A$且$\tau(B) = \tau(C\backslash A)=0$. 从而
+设$A\in \mathscr{F}_{\tau}$, 根据[[Lecture 3.2. 测度空间(外测度与测度扩张)#2.3. $ sigma( mathscr{Q})$上的测度$ tau$和$ mathscr{F}_{ tau}$上的测度$ tau$的关系|sigma域上的测度和tau可测集上的测度的关系]]知道, 存在 $C\in\mathscr{F}$使得$C\supset A$且$\tau(C\backslash A) =0$. 对$C\backslash A\in \mathscr{F}_{\tau}$, 同样有, 存在 $B\in \mathscr{F}$ 使得$B\supset C\backslash A$且$\tau(B) = \tau(C\backslash A)=0$. 从而
 $$
 \begin{aligned} 
     A &= (A\cap B^c) \cup (A\cap B) \\ 

@@ -18,7 +18,7 @@ $$
 A, B \in \mathscr{R} \Longrightarrow A \cup B, A \backslash B \in \mathscr{R}
 $$ 
 则称 $\mathscr{R}$ 为环.
-
+___
 **环一定是半环**: 由于 
 $$
 A \cap B=A \cup B \backslash[(A \backslash B) \cup(B \backslash A)] \in \mathscr{R}
@@ -26,10 +26,11 @@ $$
 故环必然是半环
 
 ### 1.4. 域
-满足下列条件的 $\pi$ 系 $\mathscr{A}$ 称为域, 也称为代数(algebra)
+满足下列条件的集合系 $\mathscr{A}$ 称为域, 也称为代数(algebra)
 1. $X \in \mathscr{A}$
-2. $A \in \mathscr{A} \Longrightarrow A^c \in \mathscr{A}$
-
+2. $A, B \in \mathscr{A} \Longrightarrow A \cap B \in \mathscr{A}$
+3. $A \in \mathscr{A} \Longrightarrow A^c \in \mathscr{A}$
+___
 **域一定是环**: 不难证明
 $$
 A\cup B = (A^c \cap B^c)^c \in \mathscr{A}, \quad A\backslash B = A \cap B^c \in \mathscr{A}
@@ -99,7 +100,9 @@ ___
 $$
 r = \bigcup_{n=1}^{\infty}\left\{\bigcup_{k=1}^n A_k\ \Big|\ A_k \in \mathscr{Q}, A_i\cap A_j=\varnothing \right\}
 $$
-由于环对有限并的封闭性, 我们可以得到$r(\mathscr{Q})\supset r$. 于是只要证明$r(\mathscr{Q})\subset r$, 也就是说, 只要证明$r$是一个环. 设$A, B\in r$, 则存在两两不交的$\{A_i\in \mathscr{Q}, i=1,2,\cdots, n\}$和两两不交的$\{B_j\in \mathscr{Q}, j=1,2,\cdots, m\}$, 使得
+由于环对有限并的封闭性, 我们可以得到$r(\mathscr{Q})\supset r$. 
+
+于是只要证明$r(\mathscr{Q})\subset r$, 也就是说, 只要证明$r$是一个环. 设$A, B\in r$, 则存在两两不交的$\{A_i\in \mathscr{Q}, i=1,2,\cdots, n\}$和两两不交的$\{B_j\in \mathscr{Q}, j=1,2,\cdots, m\}$, 使得
 $$
 A=\bigcup\limits_{i=1}^n A_i,\quad  B=\bigcup\limits_{j=1}^m B_j 
 $$

@@ -503,7 +503,7 @@ $$
 #####
 ___
 
-### 4.3. $p$阶平均收敛和其他收敛
+### 4.3. $p$阶平均收敛和其他收敛的关系
 设$0<p<\infty$, $\{f_n\}\subset L_p$和$f\in L_p$
 1. 如果$f_n\overset{L_p}{\longrightarrow}f$, 则$f_n\overset{\mu}{\longrightarrow} f$和$\lim\limits_{n\to\infty} \|f_n\|_p\longrightarrow \|f\|_p$
 2. 如果$f_n\overset{\mathrm{a.e.}}{\longrightarrow} f$或$f_n\overset{\mu}{\longrightarrow} f$, 则
@@ -545,5 +545,28 @@ ___
    \lim\limits_{n^{\prime}\to\infty} \int_X\left|f_{n^{\prime}}-f\right|^p \mathrm{~d} \mu = 0
    $$
    于是对$\{\|f_n-f\|_p\}$的任意一个子列, 都进一步存在一个趋于$0$的子列, 这意味着$f_n\overset{L_p}{\longrightarrow}f$
+#####
+___
+
+### 4.4. 弱收敛
+如果当 $1<p<\infty$ 时或当 $p=1$ 且 $(X, \mathscr{F}, \mu)$ 为 $\sigma$ 有限测度空间时, 对某个 $f \in L_p$ 有
+$$
+\lim _{n \rightarrow \infty} \int_{X} f_n g \mathrm{~d} \mu=\int_{X} f g \mathrm{~d} \mu, \quad \forall g \in L_q
+$$
+(和前面一样, $\dfrac{1}{q}+ \dfrac{1}{p} =1$), 则称 $\left\{f_n\right\}$ 在 $L_p$ 中弱收敛到 $f$, 记为
+$$
+f_n \stackrel{(w) L_p}{\longrightarrow} f 
+$$
+
+
+### 4.5. 弱收敛和其他收敛的关系
+1. 设 $1<p<\infty$. 如果 $\left\{f_n\right\}$ 是 $L_p$ 中的有界序列(也就是说 $\sup\left\|f_n\right\|_p<\infty$)而且 $f_n \stackrel{\mu}{\longrightarrow} f$ 或者 $f_n \stackrel{\text { a.e. }}{\longrightarrow} f$ 对某个可测函数 $f$ 成立, 则 $f \in L_p$ 且 $f_n \stackrel{(w) L_p}{\longrightarrow} f$.
+2. 设 $\left\{f_n\right\} \subset L_1$ 和 $f \in L_1$ 如果 $\left\|f_n\right\| \rightarrow\|f\|$ 而且 $f_n \stackrel{\mu}{\longrightarrow} f$ 或者 $f_n \stackrel{\text { a.e. }}{\longrightarrow} f$ 成立, 则
+   - $f_n \stackrel{L_1}{\longrightarrow} f$
+   - $f_n \stackrel{(w) L_1}{\longrightarrow} f$
+   - $\displaystyle{\int_A} f_n \mathrm{~d} \mu \rightarrow \displaystyle{\int_A} f \mathrm{~d} \mu, \forall A \in \mathscr{F}$.
+___
+##### Proof
+1. 我们只需要证明$f_n \stackrel{\text { a.e. }}{\longrightarrow} f$的情况, $f_n \stackrel{\mu}{\longrightarrow} f$可以用任意子序列存在一致收敛的子序列来进行证明. 我们分下面的
 #####
 ___
