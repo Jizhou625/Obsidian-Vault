@@ -13,14 +13,54 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "概率论/Book 2. 测度论/Lecture 3.2. 测度空间(外测度与测度扩张).md",
+                "file": "代数学/Book 2. 抽象代数/Lecture 1. 群、环、域的基本概念.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "19aaad7841944e5a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "代数学/Book 2. 抽象代数/Lecture 3. 同构和同态.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9afe8256868868d2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "代数学/Book 2. 抽象代数/Lecture 4. 群在集合上的作用.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "09626003533bc27f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "代数学/Book 2. 抽象代数/Lecture 5. 子群.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -78,7 +118,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "45b6cc51caac60ea",
@@ -94,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "概率论/Book 2. 测度论/Lecture 3.2. 测度空间(外测度与测度扩张).md",
+                "file": "代数学/Book 2. 抽象代数/Lecture 4. 群在集合上的作用.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +152,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "概率论/Book 2. 测度论/Lecture 3.2. 测度空间(外测度与测度扩张).md",
+                "file": "代数学/Book 2. 抽象代数/Lecture 4. 群在集合上的作用.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,12 +175,20 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "概率论/Book 2. 测度论/Lecture 3.2. 测度空间(外测度与测度扩张).md"
+                "file": "代数学/Book 2. 抽象代数/Lecture 4. 群在集合上的作用.md"
               }
+            }
+          },
+          {
+            "id": "50e0d03ce6fe455a",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -158,8 +207,23 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "324abd96d578fd15",
+  "active": "9afe8256868868d2",
   "lastOpenFiles": [
+    "代数学/Book 2. 抽象代数/Lecture 5. 子群.md",
+    "代数学/Book 2. 抽象代数/Lecture 4. 群在集合上的作用.md",
+    "代数学/Book 2. 抽象代数/Lecture 3. 同构和同态.md",
+    "代数学/Book 2. 抽象代数/Lecture 1. 群、环、域的基本概念.md",
+    "代数学/Book 2. 抽象代数/Lecture 2. 置换与共轭.md",
+    "代数学/Book 2. 抽象代数/Lecture 3. 子群.md",
+    "代数学/Book 2. 抽象代数/Lecture 1. 群的同态定理.md",
+    "代数学/Book 2. 抽象代数/Lecture 2. 有限群.md",
+    "代数学/Book 2. 抽象代数/Chapter 1. 代数基本概念/Lecture 2. 环的基本概念.md",
+    "代数学/Book 2. 抽象代数/Lecture 1. 群的基本概念.md",
+    "代数学/Book 2. 抽象代数/Chapter 1. 代数基本概念/Lecture 1. 群的基本概念.md",
+    "代数学/Book 2. 抽象代数/Lecture 2. 循环群.md",
+    "代数学/Book 2. 抽象代数/Chapter 1. 代数基本概念/群的基本概念.md",
+    "概率论/Book 2. 测度论/Lecture 3.2. 测度空间(外测度与测度扩张).md",
+    "代数学/Book 2. 抽象代数/Chapter 1. 代数基本概念/群.md",
     "代数学/Book 2. 抽象代数/Chapter 2. 群",
     "代数学/Book 2. 抽象代数/Chapter 1. 代数基本概念",
     "代数学/Book 2. 抽象代数/未命名.md",
@@ -168,7 +232,6 @@
     "代数学/Book 1. 线性代数",
     "代数学/Book 2. 抽象代数",
     "概率论/Book 2. 测度论/Lecture 3.3. 测度空间(完全化).md",
-    "概率论/Book 2. 测度论/Lecture 3.2. 测度空间(外测度与测度扩张).md",
     "概率论/Book 1. 初等概率论/Chapter 2. 收敛理论/Lecture 1. Modes of Stochastic Convergence.md",
     "概率论/Book 2. 测度论/Lecture 3.1. 测度空间(测度).md",
     "概率论/Book 2. 测度论/Lecture 4. 积分.md",
@@ -176,29 +239,15 @@
     "概率论/Book 2. 测度论/Lecture 2. 可测映射.md",
     "凸分析与最优化/Convergence Rate.md",
     "其他内容/生物进化论/Lecture 13. 家养动物和现代智人的起源.md",
-    "其他内容/生物进化论/Lecture 12. 鸟类的起源和早期演化.md",
     "其他内容/生物进化论/Lecture 12. 鸟类的起源和早期演化.assets/image_5.1037528f.png",
     "其他内容/生物进化论/Lecture 12. 鸟类的起源和早期演化.assets/image_4.abf31d1a.png",
     "其他内容/生物进化论/Lecture 12. 鸟类的起源和早期演化.assets",
-    "其他内容/生物进化论/Lecture 11. 生命的起源和演化.md",
-    "其他内容/生物进化论/Lecture 10. 系统发生(发育)的重建.md",
-    "其他内容/生物进化论/Lecture 9. 物种灭绝.md",
-    "其他内容/生物进化论/Lecture 8. 核酸的演化速率.md",
-    "其他内容/生物进化论/Lecture 7. 蛋白质的演化水平.md",
-    "其他内容/生物进化论/Lecture 6. 中性演化理论.md",
     "其他内容/生物进化论/Lecture 7. 蛋白质的演化水平.assets/image_1.15016023.png",
     "其他内容/生物进化论/Lecture 7. 蛋白质的演化水平.assets",
-    "生物进化论.assets/image_1.15016023.png.md",
     "生物进化论.assets",
-    "其他内容/生物进化论/Lecture 7. 中性演化理论.md",
-    "其他内容/生物进化论/Lecture 5. 自然选择.md",
-    "其他内容/生物进化论/Lecture 6. 适应.md",
-    "其他内容/生物进化论/Lecture 4. 达尔文的演化理论.md",
-    "其他内容/生物进化论/Lecture 3. 拉马克的演化思想.md",
     "其他内容/生物进化论/Lecture 12. 生命的起源和演化",
     "其他内容/生物进化论/Lecture 11. 系统发生(发育)的重建",
     "其他内容/生物进化论/Lecture 8. 蛋白质的演化水平",
-    "其他内容/生物进化论/物种形成",
     "其他内容/生物进化论.assets/image_5.1037528f.png",
     "其他内容/生物进化论.assets/image_4.abf31d1a.png",
     "其他内容/生物进化论.assets/image_3.b6672735.png",

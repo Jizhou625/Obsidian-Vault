@@ -3,7 +3,7 @@
   "theme": "system",
   "interfaceFontFamily": "Times New Roman",
   "textFontFamily": "Times New Roman,楷体",
-  "baseFontSize": 15,
+  "baseFontSize": 13,
   "nativeMenus": true,
   "translucency": true,
   "cssTheme": "Things"
