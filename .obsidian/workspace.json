@@ -34,12 +34,12 @@
             }
           },
           {
-            "id": "9afe8256868868d2",
+            "id": "09626003533bc27f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "代数学/Book 2. 抽象代数/Lecture 4. 群在集合上的作用.md",
+                "file": "代数学/Book 2. 抽象代数/Lecture 5. 子群.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": false
@@ -47,20 +47,20 @@
             }
           },
           {
-            "id": "09626003533bc27f",
+            "id": "858ed979a38019eb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "代数学/Book 2. 抽象代数/Lecture 5. 子群.md",
-                "mode": "source",
+                "file": "其他内容/心理学与生活/Lecture 1. 心理学的研究方法.md",
+                "mode": "preview",
                 "backlinks": true,
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -135,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "代数学/Book 2. 抽象代数/Lecture 4. 群在集合上的作用.md",
+                "file": "其他内容/心理学与生活/Lecture 1. 心理学的研究方法.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -152,7 +152,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "代数学/Book 2. 抽象代数/Lecture 4. 群在集合上的作用.md",
+                "file": "其他内容/心理学与生活/Lecture 1. 心理学的研究方法.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -175,7 +175,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "代数学/Book 2. 抽象代数/Lecture 4. 群在集合上的作用.md"
+                "file": "其他内容/心理学与生活/Lecture 1. 心理学的研究方法.md"
               }
             }
           },
@@ -207,12 +207,16 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "9afe8256868868d2",
+  "active": "858ed979a38019eb",
   "lastOpenFiles": [
-    "代数学/Book 2. 抽象代数/Lecture 5. 子群.md",
     "代数学/Book 2. 抽象代数/Lecture 4. 群在集合上的作用.md",
-    "代数学/Book 2. 抽象代数/Lecture 3. 同构和同态.md",
+    "其他内容/心理学与生活/Lecture 1. 心理学的研究方法.md",
+    "其他内容/心理学与生活",
+    "代数学/Book 2. 抽象代数/Lecture 5. 子群.md",
     "代数学/Book 2. 抽象代数/Lecture 1. 群、环、域的基本概念.md",
+    "代数学/Book 2. 抽象代数/Lecture 3. 同构和同态.md",
+    "其他内容/A note for a stochastic model for order book dynamics.md",
+    "其他内容/A note for China A-shares market TAQ data.md",
     "代数学/Book 2. 抽象代数/Lecture 2. 置换与共轭.md",
     "代数学/Book 2. 抽象代数/Lecture 3. 子群.md",
     "代数学/Book 2. 抽象代数/Lecture 1. 群的同态定理.md",
@@ -236,9 +240,6 @@
     "概率论/Book 2. 测度论/Lecture 3.1. 测度空间(测度).md",
     "概率论/Book 2. 测度论/Lecture 4. 积分.md",
     "概率论/Book 2. 测度论/Lecture 1. 可测空间.md",
-    "概率论/Book 2. 测度论/Lecture 2. 可测映射.md",
-    "凸分析与最优化/Convergence Rate.md",
-    "其他内容/生物进化论/Lecture 13. 家养动物和现代智人的起源.md",
     "其他内容/生物进化论/Lecture 12. 鸟类的起源和早期演化.assets/image_5.1037528f.png",
     "其他内容/生物进化论/Lecture 12. 鸟类的起源和早期演化.assets/image_4.abf31d1a.png",
     "其他内容/生物进化论/Lecture 12. 鸟类的起源和早期演化.assets",
@@ -247,7 +248,6 @@
     "生物进化论.assets",
     "其他内容/生物进化论/Lecture 12. 生命的起源和演化",
     "其他内容/生物进化论/Lecture 11. 系统发生(发育)的重建",
-    "其他内容/生物进化论/Lecture 8. 蛋白质的演化水平",
     "其他内容/生物进化论.assets/image_5.1037528f.png",
     "其他内容/生物进化论.assets/image_4.abf31d1a.png",
     "其他内容/生物进化论.assets/image_3.b6672735.png",
