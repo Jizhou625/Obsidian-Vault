@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "b84cfa4335826dfb",
+            "id": "fb8ab448e4a8dfec",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 1. 子群.md",
+                "file": "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 4. 群在集合上的作用.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": false
@@ -21,33 +21,20 @@
             }
           },
           {
-            "id": "67ce5e72a3878adc",
+            "id": "04362b5eb0dd5016",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 3. 循环群.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "96725ba82365eeb0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 2. 同构和同态.md",
-                "mode": "source",
+                "file": "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 3. 循环群与阶.md",
+                "mode": "preview",
                 "backlinks": true,
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -122,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 2. 同构和同态.md",
+                "file": "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 3. 循环群与阶.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 2. 同构和同态.md",
+                "file": "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 3. 循环群与阶.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 2. 同构和同态.md"
+                "file": "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 3. 循环群与阶.md"
               }
             }
           },
@@ -194,17 +181,18 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "96725ba82365eeb0",
+  "active": "04362b5eb0dd5016",
   "lastOpenFiles": [
-    "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 3. 循环群.md",
-    "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 1. 子群.md",
+    "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 4. 群在集合上的作用.md",
     "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 2. 同构和同态.md",
+    "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 3. 循环群.md",
+    "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 3. 循环群与阶.md",
+    "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 1. 子群.md",
     "代数学/Book 2. 抽象代数/Chapter 0. 代数学基本概念/Lecture 2. 置换和共轭.md",
     "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 5. 子群.md",
     "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 1. 同构和同态.md",
     "代数学/Book 2. 抽象代数/Lecture 5. 子群.md",
     "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 3. 同构和同态.md",
-    "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 4. 群在集合上的作用.md",
     "代数学/Book 2. 抽象代数/Chapter 1. 群",
     "代数学/Book 2. 抽象代数/Chapter 1. 群在集合上的作用/Lecture 4. 群在集合上的作用.md",
     "代数学/Book 2. 抽象代数/Lecture 3. 同构和同态.md",
@@ -227,7 +215,6 @@
     "代数学/Book 2. 抽象代数/Chapter 1. 代数基本概念/Lecture 2. 环的基本概念.md",
     "代数学/Book 2. 抽象代数/Lecture 1. 群的基本概念.md",
     "代数学/Book 2. 抽象代数/Chapter 1. 代数基本概念/Lecture 1. 群的基本概念.md",
-    "代数学/Book 2. 抽象代数/Lecture 2. 循环群.md",
     "代数学/Book 2. 抽象代数/Chapter 2. 群",
     "代数学/Book 2. 抽象代数/Chapter 1. 代数基本概念",
     "代数学/Book 1. 线性代数",
