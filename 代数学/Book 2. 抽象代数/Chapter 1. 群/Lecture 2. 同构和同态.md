@@ -4,9 +4,9 @@
 $$
 \sigma(xy) = \sigma(x)\sigma(y)
 $$
-那么就称$G$同构于$G^{\prime}$, 记为$G\cong G^{\prime}$. 一一对应$\sigma$称为从$G$到$G^{\prime}$的一个同构映射. 
+那么就称$G$同构于$G^{\prime}$, 记为$G\cong G^{\prime}$. 双射$\sigma$称为从$G$到$G^{\prime}$的一个同构映射. 
 
-群$G$到自身的同构映射称为$G$的一个自同构. 
+**自同构**: 群$G$到自身的同构映射称为$G$的一个自同构. 群$G$的所有自同构在映射的复合下构成一个群, 称为$G$的自同构群, 记为$\mathrm{Aut}(G)$.
 
 
 ### 1.2. 同构的性质
@@ -18,8 +18,14 @@ $$
 这是一个等价关系. 
 
 ### 1.3. 同构的例子
-1. **可逆线性变换群和一般线性群**: 设$V$是数域$\mathbb{F}$上的$n$维线性空间. $V$上全体可逆线性变换的群$\mathrm{GL}(V)$与$\mathrm{GL}_n(\mathbb{F})$是同构的.
-2. **整数加法群**: 对于$n\in \mathbb{Z}$, 记$n\mathbb{Z} = \{nk\mid k\in \mathbb{Z}\}$, 容易验证$n\mathbb{Z}$是$\mathbb{Z}$的子群. 而$\sigma: \mathbb{Z} \to n\mathbb{Z}$为$\sigma(k) = nk$是一个同构. 
+#### 1.3.1. 可逆线性变换和一般线性群
+设$V$是数域$\mathbb{F}$上的$n$维线性空间. $V$上全体可逆线性变换的群$\mathrm{GL}(V)$与一般线性群$\mathrm{GL}_n(\mathbb{F})$是同构的. 
+#### 1.3.2. 整数加法群与整数群
+对于$n\in \mathbb{Z}$, 记$n\mathbb{Z} = \{nk\mid k\in \mathbb{Z}\}$, 容易验证$n\mathbb{Z}$是$\mathbb{Z}$的子群. 而
+$$
+\sigma: \mathbb{Z} \to n\mathbb{Z},\quad\sigma(k) = nk
+$$
+是一个同构. 
 
 ### 1.4. Cayley定理
 任何一个群都同构于某一集合上的变换群

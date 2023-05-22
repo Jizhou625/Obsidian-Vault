@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "19aaad7841944e5a",
+            "id": "b84cfa4335826dfb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "代数学/Book 2. 抽象代数/Lecture 3. 同构和同态.md",
+                "file": "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 1. 子群.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": false
@@ -21,26 +21,26 @@
             }
           },
           {
-            "id": "09626003533bc27f",
+            "id": "67ce5e72a3878adc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "代数学/Book 2. 抽象代数/Lecture 5. 子群.md",
-                "mode": "preview",
+                "file": "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 3. 循环群.md",
+                "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           },
           {
-            "id": "b0c20b39aee6f123",
+            "id": "96725ba82365eeb0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "代数学/Book 2. 抽象代数/Lecture 4. 群在集合上的作用.md",
-                "mode": "preview",
+                "file": "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 2. 同构和同态.md",
+                "mode": "source",
                 "backlinks": true,
                 "source": false
               }
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "代数学/Book 2. 抽象代数/Lecture 4. 群在集合上的作用.md",
+                "file": "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 2. 同构和同态.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "代数学/Book 2. 抽象代数/Lecture 4. 群在集合上的作用.md",
+                "file": "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 2. 同构和同态.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "代数学/Book 2. 抽象代数/Lecture 4. 群在集合上的作用.md"
+                "file": "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 2. 同构和同态.md"
               }
             }
           },
@@ -194,16 +194,30 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "b0c20b39aee6f123",
+  "active": "96725ba82365eeb0",
   "lastOpenFiles": [
-    "代数学/Book 2. 抽象代数/Lecture 1. 代数学基本概念.md",
-    "代数学/Book 2. 抽象代数/Lecture . 单群.md",
+    "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 3. 循环群.md",
+    "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 1. 子群.md",
+    "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 2. 同构和同态.md",
+    "代数学/Book 2. 抽象代数/Chapter 0. 代数学基本概念/Lecture 2. 置换和共轭.md",
+    "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 5. 子群.md",
+    "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 1. 同构和同态.md",
     "代数学/Book 2. 抽象代数/Lecture 5. 子群.md",
+    "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 3. 同构和同态.md",
+    "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 4. 群在集合上的作用.md",
+    "代数学/Book 2. 抽象代数/Chapter 1. 群",
+    "代数学/Book 2. 抽象代数/Chapter 1. 群在集合上的作用/Lecture 4. 群在集合上的作用.md",
+    "代数学/Book 2. 抽象代数/Lecture 3. 同构和同态.md",
+    "代数学/Book 2. 抽象代数/Chapter 0. 代数学基本概念/Lecture 1. 代数学基本概念.md",
+    "代数学/Book 2. 抽象代数/Chapter 0. 代数学基本概念",
+    "代数学/Book 2. 抽象代数/Chapter 1. 群在集合上的作用",
+    "代数学/Book 2. 抽象代数/Chapter 0. Introduction",
+    "代数学/Book 2. 抽象代数/Chapter",
+    "代数学/Book 2. 抽象代数/Chapter 0. Introduction/Lecture 1. 代数学基本概念.md",
+    "代数学/Book 2. 抽象代数/Lecture . 单群.md",
     "其他内容/心理学与生活/Lecture 1. 心理学的研究方法.md",
-    "代数学/Book 2. 抽象代数/Lecture 4. 群在集合上的作用.md",
     "其他内容/心理学与生活",
     "代数学/Book 2. 抽象代数/Lecture 1. 群、环、域的基本概念.md",
-    "代数学/Book 2. 抽象代数/Lecture 3. 同构和同态.md",
     "其他内容/A note for a stochastic model for order book dynamics.md",
     "其他内容/A note for China A-shares market TAQ data.md",
     "代数学/Book 2. 抽象代数/Lecture 2. 置换与共轭.md",
@@ -214,27 +228,13 @@
     "代数学/Book 2. 抽象代数/Lecture 1. 群的基本概念.md",
     "代数学/Book 2. 抽象代数/Chapter 1. 代数基本概念/Lecture 1. 群的基本概念.md",
     "代数学/Book 2. 抽象代数/Lecture 2. 循环群.md",
-    "代数学/Book 2. 抽象代数/Chapter 1. 代数基本概念/群的基本概念.md",
-    "概率论/Book 2. 测度论/Lecture 3.2. 测度空间(外测度与测度扩张).md",
-    "代数学/Book 2. 抽象代数/Chapter 1. 代数基本概念/群.md",
     "代数学/Book 2. 抽象代数/Chapter 2. 群",
     "代数学/Book 2. 抽象代数/Chapter 1. 代数基本概念",
-    "代数学/Book 2. 抽象代数/未命名.md",
-    "代数学/Book 2. 抽象代数/群的基本概念.md",
-    "分析学/数学分析/Lecture 0. 实数系.md",
     "代数学/Book 1. 线性代数",
     "代数学/Book 2. 抽象代数",
-    "概率论/Book 2. 测度论/Lecture 3.3. 测度空间(完全化).md",
-    "概率论/Book 1. 初等概率论/Chapter 2. 收敛理论/Lecture 1. Modes of Stochastic Convergence.md",
-    "概率论/Book 2. 测度论/Lecture 3.1. 测度空间(测度).md",
     "其他内容/生物进化论/Lecture 12. 鸟类的起源和早期演化.assets/image_5.1037528f.png",
     "其他内容/生物进化论/Lecture 12. 鸟类的起源和早期演化.assets/image_4.abf31d1a.png",
-    "其他内容/生物进化论/Lecture 12. 鸟类的起源和早期演化.assets",
     "其他内容/生物进化论/Lecture 7. 蛋白质的演化水平.assets/image_1.15016023.png",
-    "其他内容/生物进化论/Lecture 7. 蛋白质的演化水平.assets",
-    "生物进化论.assets",
-    "其他内容/生物进化论/Lecture 12. 生命的起源和演化",
-    "其他内容/生物进化论/Lecture 11. 系统发生(发育)的重建",
     "其他内容/生物进化论.assets/image_5.1037528f.png",
     "其他内容/生物进化论.assets/image_4.abf31d1a.png",
     "其他内容/生物进化论.assets/image_3.b6672735.png",
