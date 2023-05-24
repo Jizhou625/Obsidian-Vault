@@ -76,7 +76,7 @@ $$
 $$
 我们称这个集合为元素$a^{\prime}$的完全反像, 记为$\sigma^{-1}(a^{\prime})$. 
 
-特别地, 单位元素的完全反像$\sigma^{-1}(e^{\prime})$称为同态$\sigma$的核, 记为$\ker(\sigma)$. 显然$\ker (\sigma)\le G$
+特别地, 单位元素的完全反像$\sigma^{-1}(e^{\prime})$称为同态$\sigma$的核, 记为$\ker(\sigma)$. 
 
 ### 2.3. 同态核与完全反像
 如果$\sigma(a)=a^{\prime}$, 那么
