@@ -8,7 +8,7 @@ $$
 \boldsymbol{h}^{(t)}=f\left(\boldsymbol{h}^{(t-1)}, \boldsymbol{x}^{(t)} ; \boldsymbol{\theta}\right)
 $$
 
-![image-20230401112350952](./Lecture%204.%20RNN.assets/image-20230401112350952.png)
+![image-20230401112350952](Lecture%204.%20RNN.assets/image-20230401112350952.png)
 
 我们可以用一个函数 $g^{(t)}$ 代表经 $t$ 步展开后的循环:
 $$
@@ -27,7 +27,7 @@ $$
 
 1. 每个时间步都有输出, 并且隐藏单元之间有循环连接的循环神经网络
 
-   ![image-20230401113259698](./Lecture%204.%20RNN.assets/image-20230401113259698.png)
+   ![image-20230401113259698](Lecture%204.%20RNN.assets/image-20230401113259698.png)
 
    **更新方程**:
 
@@ -50,7 +50,7 @@ $$
 
 2. 每个时间步都产生一个输出, 只有当前时刻的输出到下个时刻的隐藏单元之间有循环连接的循环网络
 
-   ![image-20230401113417853](./Lecture%204.%20RNN.assets/image-20230401113417853.png)
+   ![image-20230401113417853](Lecture%204.%20RNN.assets/image-20230401113417853.png)
 
    **更新方程**:
 
@@ -70,12 +70,12 @@ $$
    $$
    因此最大似然在训练时指定正确反馈，而不是将自己的输出反馈到模型, 如下图所示。这意味着任何基于比较时刻$t$的预测和时刻$t$的训练目标的损失函数中的所有时间步都解耦了。可以通过并行化进行训练
    
-   ![image-20230401184854100](./Lecture%204.%20RNN.assets/image-20230401184854100.png)
+   ![image-20230401184854100](Lecture%204.%20RNN.assets/image-20230401184854100.png)
    
    **缺点**: 不能模拟通用图灵机。因为输出单元明确地训练成匹配训练集的目标，它们不太能捕获关于过去输入历史的必要信息，除非用户知道如何描述系统的全部状态，并将它作为训练目标的一部分。
 3. 隐藏单元之间存在循环连接，但读取整个序列后产生单个输出的循环网络
 
-   ![image-20230401113454486](./Lecture%204.%20RNN.assets/image-20230401113454486.png)
+   ![image-20230401113454486](Lecture%204.%20RNN.assets/image-20230401113454486.png)
 
 ### 1.3. RNN梯度的计算
 
@@ -88,7 +88,7 @@ $$
 & \hat{\boldsymbol{y}}^{(t)}=\operatorname{softmax}\left(\boldsymbol{o}^{(t)}\right)
 \end{aligned}
 $$
-![image-20230401113259698](./Lecture%204.%20RNN.assets/image-20230401113259698.png)
+![image-20230401113259698](Lecture%204.%20RNN.assets/image-20230401113259698.png)
 
 对于每一个时间点$t$
 $$
@@ -158,26 +158,26 @@ $$
 
 双向RNN结合时间上从序列起点开始移动的RNN和另一个时间上从序列末尾开始移动的RNN。
 
-![image-20230401191944796](./Lecture%204.%20RNN.assets/image-20230401191944796.png)
+![image-20230401191944796](Lecture%204.%20RNN.assets/image-20230401191944796.png)
 
 这个想法可以自然拓展到2维输入, 如图像, 可以用4个RNN组成, 每一个沿着4个方向中的一个计算.
 
 ### 2.2. 基于编码-解码的序列到序列架构
 
-![image-20230401192832430](./Lecture%204.%20RNN.assets/image-20230401192832430.png)
+![image-20230401192832430](Lecture%204.%20RNN.assets/image-20230401192832430.png)
 
 1. 编码器(encoder)RNN处理输入序列, 并输出上下文$C$, $C$通常是最终隐藏层的简单函数
 
 2. 解码器(decoder)RNN以固定长度的向量$C$为条件产生输出序列$Y = \left(\boldsymbol{y}^{(1)}, \ldots, \boldsymbol{y}^{\left(n_y\right)}\right)$
   
-   ![image-20230402181813599](./Lecture%204.%20RNN.assets/image-20230402181813599.png)
+   ![image-20230402181813599](Lecture%204.%20RNN.assets/image-20230402181813599.png)
 
 这种架构的创新之处在于, 序列长度$n_x$和$n_y$可以彼此不同. 此架构的一个明显不足是, 编码器 RNN 输出的上下文 $C$ 的维度太小而难以适当地概括一个长序列。这种现象由Bahdanau et al. (2015) 在机器翻译中观察到。
 
 ## 3. 长短期记忆和其他门控RNN
 ### 3.1. 长短期记忆(LSTM)
 
-![image-20230402235402584](./Lecture%204.%20RNN.assets/image-20230402235402584.png)
+![image-20230402235402584](Lecture%204.%20RNN.assets/image-20230402235402584.png)
 
 LSTM块如上图所示, 相比于普通的RNN, LSTM增加了3个门控机制, 分别是输入门(input gate), 遗忘门(forget gate)和输出门(output gate). 这些门控机制可以控制信息的流动, 从而解决了梯度消失和梯度爆炸的问题. 我们用$\sigma(\cdot)$表示sigmoid函数, 则几个门控单元可以定义为
 1. **遗忘门(forget gate)**: $\boldsymbol{f}^{(t)}=\sigma\left(W_f \boldsymbol{h}^{(t-1)}+U_f \boldsymbol{x}^{(t)}+\boldsymbol{b}_f\right)$
@@ -196,7 +196,7 @@ $$
 $$
 下面是一个更清楚的图示, 这里用$\boldsymbol{c}$来表示状态单元
 
-![image-20230403002414466](./Lecture%204.%20RNN.assets/image-20230403002414466.png)
+![image-20230403002414466](Lecture%204.%20RNN.assets/image-20230403002414466.png)
 
 ### 3.2. GRU
 门控循环单元(Gated Recurrent Unit, GRU)是另一种门控RNN, 它的设计目标是简化LSTM, 但是在实践中效果也很好. GRU的设计思路是, 通过一个门控单元来同时控制遗忘因子和更新状态单元的决定
@@ -209,7 +209,7 @@ $$
 $$
 可以理解为, 复位单元$\boldsymbol{r}^{(t)}$用于选择之前的隐藏层中的有效状态, 而更新单元$\boldsymbol{u}^{(t)}$用于同时接受新的输入信息和遗忘过去的信息.
 
-![image-20230403003612017](./Lecture%204.%20RNN.assets/image-20230403003612017.png)
+![image-20230403003612017](Lecture%204.%20RNN.assets/image-20230403003612017.png)
 
 ### 3.3. LSTM如何解决长期依赖的梯度消失和梯度爆炸
 考虑状态单元的更新公式

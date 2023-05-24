@@ -66,7 +66,7 @@ R(h) \le \widehat{R}(h) + \sqrt{\dfrac{2d \log \dfrac{\mathrm{e}m}{d}}{m}} + \sq
 $$
 ___
 ##### Proof: 
-利用[[Lecture 2.2. VC Theory(生长函数)#2.1. 二分类问题关于生长函数的泛化界]]和[[#1.3. Sauer引理]], 即得到结论成立. 
+利用[[Book 1. 理论机器学习/Lecture 2.2. VC Theory(生长函数)#2.1. 二分类问题关于生长函数的泛化界]]和[[#1.3. Sauer引理]], 即得到结论成立. 
 #####
 ___
 

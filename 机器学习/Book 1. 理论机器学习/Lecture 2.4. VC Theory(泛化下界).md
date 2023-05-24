@@ -44,7 +44,7 @@ $$
 $$
 \operatorname*{\mathbb{P}}\limits_{S}\left[R_{\mathcal{\mathcal{D}}}(h_s, f_0)\ge \varepsilon\right] \ge \operatorname*{\mathbb{P}}\limits_{S\in \mathcal{S}}\left[R_{\mathcal{\mathcal{D}}}(h_s, f_0)\ge \varepsilon\right] \mathbb{P}(\mathcal{S}) \ge \dfrac{1}{7} \mathbb{P}(\mathcal{S})
 $$
-下面对$\mathbb{P}(\mathcal{S})$进行估计: 简单起见, 我们估计$\{x_1, x_2, \cdots, x_{d-1}\}$出现的次数$C_m$. 设$p= 8\varepsilon$. 利用[[../概率论/Book 1. 初等概率论/Chapter 1. 概率不等式/Lecture 3. Bernstein's Type Inequality#3. Bernstein's Inequality (Variance Version)]]
+下面对$\mathbb{P}(\mathcal{S})$进行估计: 简单起见, 我们估计$\{x_1, x_2, \cdots, x_{d-1}\}$出现的次数$C_m$. 设$p= 8\varepsilon$. 利用[[../../概率论/Book 1. 初等概率论/Chapter 1. 概率不等式/Lecture 3. Bernstein's Type Inequality#3. Bernstein's Inequality (Variance Version)]]
 $$
 \mathbb{P}\left(\dfrac{1}{m}C_m - p\ge \gamma p \right) \le \exp\left( - \dfrac{m\gamma^2 p^2}{2p(1-p) + \dfrac{2}{3}\gamma p}\right)
 $$

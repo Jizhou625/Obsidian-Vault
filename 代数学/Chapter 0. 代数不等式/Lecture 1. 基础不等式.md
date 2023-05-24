@@ -1,4 +1,4 @@
-## 1. 基础代数不等式
+## 1. $L_p$空间中的不等式
 ### 1.1. Young不等式
 若$a, b\ge 0$, $p, q>0$且$\dfrac{1}{p} + \dfrac{1}{q}=1$, 则
 $$
@@ -104,7 +104,7 @@ $$
 #####
 ___
 
-### 1.3. Minkowski不等式($0 < p < 1$)
+### 1.4. Minkowski不等式($0 < p < 1$)
 为简便起见, 定义$\|f\|_p=\displaystyle{\int_X}|f|^p\mathrm{d}\mu (0<p<1)$, 则我们有当$0<p<1$时, 有
 $$
 \|f+g\|_p \le \|f\|_p + \|g\|_p
@@ -124,4 +124,30 @@ $$
 \|f+g\|_p \le \|f\|_p + \|g\|_p
 $$
 #####
+___
+
+
+## 2. 对数相关的不等式
+### 2.1. 对数和不等式
+对于非负数$a_1, a_2, \cdots, a_n$和$b_1, b_2, \cdots, b_n$. 则有
+$$
+\sum\limits_{i=1}^{n} a_i \log \dfrac{a_i}{b_i} \ge \left(\sum\limits_{i=1}^{n} a_i\right) \log \dfrac{\sum\limits_{i=1}^{n} a_i}{\sum\limits_{i=1}^{n} b_i}
+$$
+当且仅当$\dfrac{a_i}{b_i} = c$是个常数时, 等号成立. 
+___
+##### Proof
+考虑函数$f(t) = t\log t$, 则$f''(t) = \dfrac{1}{t} > 0$, 因此$f(t)$是严格凸函数. 于是根据Jensen不等式, 我们有
+$$
+\sum\limits_{i=1}^{n} \alpha_i f(t_i) \ge f\left(\sum\limits_{i=1}^{n} \alpha_i t_i\right)
+$$
+其中$\alpha_i\ge 0$, $\sum\limits_{i=1}^{n} \alpha_i = 1$, $t_i\ge 0$. 令$\alpha_i = \dfrac{b_i}{\sum\limits_{j=1}^{n} b_j}$, $t_i = \dfrac{a_i}{b_i}$, 则有
+$$
+\sum\limits_{i=1}^{n} \dfrac{b_i}{\sum\limits_{j=1}^{n} b_j} \left(\dfrac{a_i}{b_i}\log \dfrac{a_i}{b_i}\right) \ge \left(\sum\limits_{i=1}^{n} \dfrac{b_i}{\sum\limits_{j=1}^{n} b_j} \dfrac{b_i}{a_i}\right) \log \left(\sum\limits_{i=1}^{n} \dfrac{b_i}{\sum\limits_{j=1}^{n} b_j} \dfrac{b_i}{a_i}\right)
+$$
+于是我们有
+$$
+\sum\limits_{i=1}^{n} a_i \log \dfrac{a_i}{b_i} \ge \left(\sum\limits_{i=1}^{n} a_i\right) \log \dfrac{\sum\limits_{i=1}^{n} a_i}{\sum\limits_{i=1}^{n} b_i}
+$$
+等号成立当且仅当$\dfrac{a_i}{b_i} = c$是个常数
+##### 
 ___

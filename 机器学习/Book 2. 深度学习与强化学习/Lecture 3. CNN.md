@@ -41,7 +41,7 @@
 ### 3.2. 全局平均池化层
 在GAP被提出之前，常用的方式是将feature map直接拉平成一维向量（下图左），但是GAP不同，是将每个通道的二维图像做平均，最后也就是每个通道对应一个均值（下图右）
 
-![v2-2cf5f9802fe6b0f675ffc35b7d57c3e6_r](./Lecture%203.%20CNN.assets/v2-2cf5f9802fe6b0f675ffc35b7d57c3e6_r.jpg)
+![v2-2cf5f9802fe6b0f675ffc35b7d57c3e6_r](Lecture%203.%20CNN.assets/v2-2cf5f9802fe6b0f675ffc35b7d57c3e6_r.jpg)
 
 
 **全局池化层的优势**: 

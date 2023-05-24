@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 6. 单群.md",
-                "mode": "source",
+                "mode": "preview",
                 "backlinks": true,
                 "source": false
               }
@@ -45,8 +45,35 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "d82fa52cd4cb667b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "信息论/Lecture 1. 熵、相对熵和互信息.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a20e01ab910113d8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "代数学/Chapter 0. 代数不等式/Lecture 1. 基础不等式.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -121,7 +148,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 6. 单群.md",
+                "file": "信息论/Lecture 1. 熵、相对熵和互信息.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -138,7 +165,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 6. 单群.md",
+                "file": "信息论/Lecture 1. 熵、相对熵和互信息.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -161,7 +188,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 6. 单群.md"
+                "file": "信息论/Lecture 1. 熵、相对熵和互信息.md"
               }
             }
           },
@@ -193,12 +220,19 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "fb8ab448e4a8dfec",
+  "active": "d82fa52cd4cb667b",
   "lastOpenFiles": [
-    "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 2. 同构和同态.md",
-    "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 4. 稳定化子、中心化子和正规化子.md",
-    "代数学/Book 2. 抽象代数/Chapter 0. 代数学基本概念/Lecture 2. 置换和共轭.md",
+    "代数学/Chapter 0. 代数不等式/Lecture 1. 基础不等式.md",
+    "信息论/Lecture 1. 熵、相对熵和互信息.md",
+    "信息论/Lecture 1..md",
+    "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 5. 群的直积.md",
+    "信息论",
+    "机器学习/Book 1. 理论机器学习",
+    "机器学习/理论机器学习",
     "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 6. 单群.md",
+    "代数学/Book 2. 抽象代数/Chapter 0. 代数学基本概念/Lecture 2. 置换和共轭.md",
+    "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 4. 稳定化子、中心化子和正规化子.md",
+    "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 2. 同构和同态.md",
     "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 5. 循环群与阶.md",
     "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 1. 子群.md",
     "金融相关/投资学",
@@ -224,13 +258,6 @@
     "代数学/Book 2. 抽象代数/Chapter",
     "代数学/Book 2. 抽象代数/Chapter 0. Introduction/Lecture 1. 代数学基本概念.md",
     "代数学/Book 2. 抽象代数/Lecture . 单群.md",
-    "其他内容/心理学与生活/Lecture 1. 心理学的研究方法.md",
-    "其他内容/心理学与生活",
-    "代数学/Book 2. 抽象代数/Lecture 1. 群、环、域的基本概念.md",
-    "其他内容/A note for a stochastic model for order book dynamics.md",
-    "其他内容/A note for China A-shares market TAQ data.md",
-    "代数学/Book 2. 抽象代数/Chapter 2. 群",
-    "代数学/Book 2. 抽象代数/Chapter 1. 代数基本概念",
     "其他内容/生物进化论/Lecture 12. 鸟类的起源和早期演化.assets/image_5.1037528f.png",
     "其他内容/生物进化论/Lecture 12. 鸟类的起源和早期演化.assets/image_4.abf31d1a.png",
     "其他内容/生物进化论/Lecture 7. 蛋白质的演化水平.assets/image_1.15016023.png",

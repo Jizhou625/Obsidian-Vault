@@ -3,11 +3,11 @@
 ### 1.1. Intuition
 从本质上理解，Attention是从大量信息中有筛选出少量重要信息，并聚焦到这些重要信息上，忽略大多不重要的信息。
 
-![img](./Lecture%205.%20Transformer.assets/v2-a9bf4f074f460a501ecbe4e5c68a7aff_r.jpg)
+![img](Lecture%205.%20Transformer.assets/v2-a9bf4f074f460a501ecbe4e5c68a7aff_r.jpg)
 
 至于Attention机制的具体计算过程，如果对目前大多数方法进行抽象的话，可以将其归纳为两个过程：第一个过程是根据Query和Key计算权重系数，第二个过程根据权重系数对Value进行加权求和
 
-![image-20230408110359763](./Lecture%205.%20Transformer.assets/image-20230408110359763.png)
+![image-20230408110359763](Lecture%205.%20Transformer.assets/image-20230408110359763.png)
 
 ### 1.2. 注意力评分函数
 
@@ -56,7 +56,7 @@ $$
 ## 2. Transformer
 ### 2.1. Transformer的架构
 
-![image-20230405112246287](./Lecture%205.%20Transformer.assets/image-20230405112246287.png)
+![image-20230405112246287](Lecture%205.%20Transformer.assets/image-20230405112246287.png)
 
 ### 2.2. 编码器
 1. **Input**: Positional Encoding 和 word embedding 相加
