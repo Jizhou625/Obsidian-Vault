@@ -4,38 +4,28 @@
 $$
 H(X)=-\sum_{x\in\mathcal{X}} p(x)\log p(x)=-\mathbb{E}_{p(x)}\log p(X)
 $$
-从直观上讲, 随机变量的熵度量了随机变量的不确定性, 熵的越大, 不确定性就越强. 
-
-### 1.2. 联合熵(joint entropy)和条件熵(conditional entropy)
-对于服从联合分布为$p(x,y)$的一对离散随机变量$(X,Y)$
-
-联合熵$H(X,Y)$定义为
+对于任意$n$个随机变量$X_1, X_2, \cdots, X_n$, 其联合熵(joint entropy)定义为
 $$
-H(X,Y)=-\sum_{x\in \mathcal{X}}\sum_{y\in\mathcal{Y}}p(x,y)\log p(x,y)=-\mathbb{E}_{p(x,y)}\log {p(X,Y)}
+H(X_1, X_2, \cdots, X_n) = - \mathbb{E}_{p(x_1, x_2, \cdots, x_n)} \log p(X_1, X_2, \cdots, X_n)
 $$
+从直观上讲, 随机变量的熵度量了随机变量的不确定性, 熵越大, 不确定性就越强. 
 
-条件熵$H(Y\mid X)$定义为
+### 1.2. 条件熵(conditional entropy)
+对于任意$n$个随机变量$X_1, X_2, \cdots, X_n$和$m$个随机变量$Y_1, Y_2, \cdots, Y_m$, 其条件熵(conditional entropy)定义为
 $$
 \begin{aligned} 
-H(Y\mid X)& =\sum_{x\in\mathcal{X}}p(x)H(Y\mid X=x) \\ 
-&=- \sum\limits_{x\in \mathcal{X}}^{}p(x) \sum\limits_{y\in \mathcal{Y}}^{} p(y\mid x)\log p(y\mid x)  \\ 
-& = -\sum\limits_{x\in \mathcal{X}}^{}\sum\limits_{y\in \mathcal{Y}}^{} p(x, y) \log p(y\mid x)\\  
-&=-\mathbb{E}_{p(x,y)}\log p(Y\mid X)
+      H(Y_1, Y_2, \cdots, Y_m\mid X_1, X_2, \cdots, X_n) = - \mathbb{E}_{p(x_1, x_2, \cdots, x_n, y_1, y_2, \cdots, y_m)} \log p(Y_1, Y_2, \cdots, Y_m\mid X_1, X_2, \cdots, X_n) 
 \end{aligned}
 $$
 
 ### 1.3. 条件熵的链式法则
-条件熵具有链式法则, 对于只有两个随机变量的简单情形, 我们有
-$$
-H(X, Y) = H(X) + H(Y \mid X)
-$$
-对于有$n$个随机变量$X_1, X_2, \cdots, X_n$的情形, 可以得到
+条件熵具有链式法则, 对于任意$n$个随机变量$X_1, X_2, \cdots, X_n$, 我们有
 $$
 H(X_1,X_2,\cdots, X_n)=\sum_{i=1}^n H(X_i\mid X_{i-1},\cdots, X_1)\le \sum_{i=1}^nH(X_i)
 $$
 ___
 ##### Proof
-只要证明$n$个随机变量的情况. 根据条件概率公式, 我们有
+根据条件概率公式, 我们有
 $$
 p(x_1, x_2,\cdots, x_n) = p(x_1)p(x_2\mid x_1)p(x_3\mid x_1, x_2)\cdots p(x_n\mid x_1, x_2,\cdots, x_{n-1})
 $$
@@ -96,7 +86,25 @@ $$
 $$
 的熵, 即$H(\boldsymbol{p}_1) \le H(\boldsymbol{p}_2)$. 更进一步, 任何使得概率分布更加均匀的变换都会使得熵增加. 
 
+### 1.5. 熵的公理化定义
+若对称函数序列$H_m(p_1, p_2, \cdots, p_m)$满足下列性质
+1. 标准化: $H_2\left(\dfrac{1}{2}, \dfrac{1}{2}\right) = 1$
+2. 连续性: $H_2(p, 1-p)$是$p$的连续函数
+3. 组合法则: $H_m(p_1, p_2, \cdots, p_m) = H_{m-1}(p_1 + p_2, p_3, \cdots, p_m) + (p_1+p_2) H_2\left(\dfrac{p_1}{p_1+p_2}, \dfrac{p_2}{p_1+p_2}\right)$
 
+则$H_m$必然具有如下的形式
+$$
+H_m (p_1, p_2,\cdots, p_m) = - \sum\limits_{i=1}^{m} p_i\log p_i, \quad m=2,3,\cdots
+$$
+___
+##### Proof
+我们首先对组合法则进行拓展. 令$\boldsymbol{p} = (p_1, p_2, \cdots, p_m)$且$\boldsymbol{q} = (q_1, q_2, \cdots, q_n)$. 设$p = \sum\limits_{i=1}^{m} p_i$, $q=\sum\limits_{j=1}^{n} q_i$, 其中$p+q=1$. 则我们有
+$$
+H_{m+n}(\boldsymbol{p}, \boldsymbol{q}) = H_{n+1}(p, \boldsymbol{q}) +  p H_{m}\left(\dfrac{1}{p}\boldsymbol{p}\right) = H_2(p,q) + p H_{m}\left(\dfrac{1}{p}\boldsymbol{p}\right) + q H_{n}\left(\dfrac{1}{q}\boldsymbol{q}\right)
+$$
+我们证明$H_{m+n}$
+#####
+___
 
 ## 2. 相对熵
 ### 2.1. 相对熵的定义
@@ -163,7 +171,7 @@ $$
 #####
 ___
 
-### 2.5. 相对熵的信息处理不等式
+### 2.5. 相对熵的数据处理不等式
 如果$X\to Y\to Z$是Markov链, 则
 $$
 D(p(X)\mid \mid p(Y))\ge D(p(X)\mid \mid p(Z))
@@ -174,13 +182,95 @@ D(p(X)\mid \mid p(Y))\ge D(p(Z)\mid \mid p(Y))
 $$
 ___
 ##### Proof
-根据[[#2.3. 相对熵的链式法则]]
+根据[[#2.3. 相对熵的链式法则]], 我们可以将$D(p(x\mid y)p(z\mid y)p(x)\mid \mid p(x, y, z))$用两种方式展开
+$$
+\begin{aligned}
+D(p(x\mid y)p(z\mid y)p(x)\mid\mid p(x,y,z))&=D(p(x\mid y)p(z\mid y)\mid\mid p(x,y\mid z))+D(p(x)\mid\mid p(z))\\
+&=D(p(x\mid y)p(z\mid y)\mid\mid p(x,z\mid y))+D(p(x)\mid\mid p(y))\\
+\end{aligned}
+$$
+在给定$Y$的条件下, $X, Z$是条件独立的. 因此$D(p(x\mid y)p(z\mid y)\mid\mid p(x,z\mid y)) = 0$. 这就意味着
+$$
+D(p(X)\mid\mid p(Y))\ge D(p(X)\mid\mid p(Z))
+$$
+我们将$D(\cdot\mid\mid \cdot)$两个参数位置互换, 可以得到另一个式子的证明. 
 #####
 ___
 
 
+### 2.6. Pythageorean不等式(分布的逼近)
+对于闭凸集$E\subset \mathcal{P}$以及分布$Q\notin E$, 设$P^*\in E$是与$Q$的距离达到最小值的分布, 也就是说
+$$
+D(P^*\mid \mid Q)=\min_{P\in E}D(P\mid \mid Q)
+$$
+则对于任意的$P\in E$, 我们有
+$$
+D(P \| Q) \geq D\left(P \| P^{*}\right)+D\left(P^{*} \| Q\right)
+$$
+该定理的主要用途是, 假定有一列$P_n\in E$使得$D(P_n\mid \mid Q)\to D(P^*\mid \mid Q)$, 则由Pythageorean不等式可知$D(P_n\mid \mid P^*)\to 0$.
+___
+##### Proof
+对任意的$P\in E$, 设
+$$
+P_{\lambda} = \lambda P + (1-\lambda) P^*
+$$
+则当$\lambda \to 0$时, $P_{\lambda}\to P^*$. 又因为$E$是凸集, 则对于任意的$\lambda\in [0,1]$, $P_{\lambda}\in E$. 因为$D(p^*\mid\mid Q)$为$D(P_{\lambda}\mid \mid Q)$沿路径$P^*\to P$上的最小值, 从而$D_{\lambda}=D(P_{\lambda}\mid \mid Q)$关于$\lambda$的导数在$\lambda = 0$的时候非负. 
+$$
+\frac{\mathrm{d} D_{\lambda}}{\mathrm{d} \lambda}=\sum\left(\left(P(x)-P^{*}(x)\right) \log \frac{P_{\lambda}(x)}{Q(x)}+\left(P(x)-P^{*}(x)\right)\right)
+$$
+令$\lambda=0$, 可以得到
+$$
+\left(\frac{\mathrm{d} D_{\lambda}}{\mathrm{d} \lambda}\right)_{\lambda=0}=D(P \| Q)-D\left(P \| P^{*}\right)-D\left(P^{*} \| Q\right)\ge 0
+$$
+这就证明了Pythageorean不等式.
+#####
+___
+
+### 2.7. Pinsker不等式(相对熵收敛蕴含范数收敛)
+设$P_1,P_2$是两个概率分布, 则有
+$$
+D(P_1\mid\mid P_2)\ge \dfrac{1}{2}\|P_1-P_2\|_1^2
+$$ 
+Pinsker不等式意味着相对熵的收敛性蕴含$\mathcal{L}_1$范数的收敛性
+___
+##### Proof
+从简单的情形出发. 先证明两个伯努利分布的情况. 令
+$$f(q)=p\log\dfrac{p}{q}+(1-p)\log\dfrac{1-p}{1-q}-2(p-q)^2
+$$
+对$q$求导可以得到
+$$
+f^{\prime} =-\dfrac{p}{q}+\dfrac{1-p}{1-q}-4(q-p)=(q-p)\left(\dfrac{1}{q(1-q)}-4\right)
+$$
+于是当$q\in (0,p]$时, $f$单调递减, 而$q\ge p$时, $f$单调递增. 因此$f$的最小值在$q=p$处取到. 
+
+而当$p=q$时, 我们有$f(p)=0$. 因此这也就意味着$f(q)\ge 0, q\in (0,1)$. 这样, 我们就有
+$$
+p\log\dfrac{p}{q}+(1-p)\log\dfrac{1-p}{1-q}\ge 2(p-q)^2
+$$
+对于一般的情形, 考虑两个任意的分布$P_1, P_2$, 设
+$$
+A=\{x \mid P_1(x)>P_2(x)\}
+$$
+定义一个新的二元随机变量$Y=\phi(X)$为$A$的示性函数. 设$\hat{P}_1$和$\hat{P}_2$构成$Y$的分布. 利用[[../代数学/Chapter 0. 代数不等式/Lecture 1. 基础不等式#2.1. 对数和不等式|对数和不等式]], 可以得到
+$$
+\begin{aligned} 
+      D(P_1\mid\mid P_2) &= \sum\limits_{x\in A}  P_1(x)\log \dfrac{P_1(x)}{P_2(x)} + \sum\limits_{x\notin A}  P_1(x)\log \dfrac{P_1(x)}{P_2(x)} \\ 
+      & \ge \left(\sum\limits_{x\in A}  P_1(x)\right)\log \dfrac{\sum\limits_{x\in A}  P_1(x)}{\sum\limits_{x\in A}  P_2(x)} + \left(\sum\limits_{x\notin A}  P_1(x)\right)\log \dfrac{\sum\limits_{x\notin A}  P_1(x)}{\sum\limits_{x\notin A}  P_2(x)} \\ 
+      & = P_1(A)\log \dfrac{P_1(A)}{P_2(A)} + (1-P_1(A))\log \dfrac{1-P_1(A)}{1-P_2(A)} \\
+      & = D(\hat{P}_1\mid\mid \hat{P}_2) \\
+      & \ge 2(P_1(A)-P_2(A))^2 \\
+      & = 2\|P_1-P_2\|_1^2
+\end{aligned}
+$$
+#####
+___
+
+
+
+
 ## 3. 互信息(mutual information)
 ### 3.1. 互信息的定义
+对于任意$n$个随机变量, 
 考虑两个随机变量$X$和$Y$, 它们的联合概率密度函数为$p(x,y)$, 其边际概率密度函数分别是$p_X(x)$和$p_Y(y)$. 互信息$I(X,Y)$为联合分布$p(x,y)$和乘积分布$p(x)p(y)$之间的相对熵, 也即
 $$
 I(X,Y)=\sum_{x\in \mathcal{X}}\sum_{y\in\mathcal{Y}}p(x,y)\log \dfrac{p(x,y)}{p(x)p(y)}=D(p(x,y)\mid \mid p(x)p(y))=\mathbb{E}_{p(x,y)}\log \dfrac{p(x,y)}{p(x)p(y)}
