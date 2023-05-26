@@ -102,7 +102,11 @@ ___
 $$
 H_{m+n}(\boldsymbol{p}, \boldsymbol{q}) = H_{n+1}(p, \boldsymbol{q}) +  p H_{m}\left(\dfrac{1}{p}\boldsymbol{p}\right) = H_2(p,q) + p H_{m}\left(\dfrac{1}{p}\boldsymbol{p}\right) + q H_{n}\left(\dfrac{1}{q}\boldsymbol{q}\right)
 $$
-我们证明$H_{m+n}$
+
+接下来, 令$f(n) = H_n\left(\dfrac{1}{n}, \dfrac{1}{n}, \cdots, \dfrac{1}{n}\right)$, 显然, 
+$$
+f(mn) = f(m) + f(n)
+$$ 
 #####
 ___
 
