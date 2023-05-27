@@ -93,7 +93,40 @@ ___
 ##### Proof
 证明较长, 我们分为以下的几个部分来证明. 首先证明充分性
 1. 当$n=1,2,4$时, 不难验证原根存在
-2. 当$n=p$为奇素数时,
+2. 当$n=p$为奇素数时, 用$S(d)$表示群$U(p)$中所有阶为$d$的元素的集合, 则我们有
+   $$
+   \sum\limits_{d\mid p-1}^{} |S(d)| = p-1 =  \sum\limits_{d\mid p-1} \varphi(d)  \tag{1}
+   $$
+   考虑同余方程
+   $$
+   x^d \equiv 1 \mod p
+   $$
+   其至多有$d$个根. 
+   
+   如果$S_d\neq \varnothing$, 则$a^d\equiv 1\mod p$, 则我们有$a, a^2, \cdots, a^{p-1}$是该方程互不相同的$d$个根, 因此也是全部根. 于是$a, a^2, \cdots, a^{p-1}$包含了$U(n)$中全部阶为$d$的元素. 显然可以得到此时$|S_d|=\varphi(d)$. 因此我们得到了$|S_d|$的取值只可能是$0$或$\varphi(d)$. 结合$(1)$知道$|S_d|=\varphi(d)$, 因此有$|S_{p-1}|=\varphi(p-1)$. 因此奇素数的原根存在. 
+3. 当$n = p^{\alpha}, 2p^{\alpha}$时. 根据$U(2p^{\alpha})\cong U(2)\times U(p^{\alpha})\cong U(p^{\alpha})$, 我们只需要证明$n=p^{\alpha}$的情形. 我们采用数学归纳法, 假设当幂次为$\alpha$的时候成立, 即存在$g$, 使得$U(p^{\alpha}) = \langle g\rangle$. 设$g$在$U(p^{\alpha+1})$中的阶为$r$, 显然有$r\mid \varphi(p^{\alpha+1})$. 又显然有$\varphi(p^{\alpha}) \mid r$. 这意味着$r=\varphi(p^{\alpha})$或$\varphi(p^{\alpha+1})$. 如果$r=\varphi(p^{\alpha})$, 考虑$g+p$. 设$r_1$为$g+p$的阶, 因为
+   $$
+    \left(g+ p\right)^{p^{\alpha-1}(p-1)} \equiv 1 + (p-1)p^{\alpha}g^{p^{\alpha-1}(p-1)-1}\not\equiv 1 \mod p^{\alpha+1}
+   $$
+   因此有$r_1 \nmid \varphi(p^{\alpha})$. 又因为$r_1\mid \varphi(p^{\alpha+1})$, 故$r_1 =k p^{\alpha_0}$, 其中$k\mid p-1$. 于是
+   $$
+   1\equiv (g + ip)^{kp^{\alpha}} \equiv g^{kp^{\alpha}} \mod p^{\alpha+1}
+   $$
+   因此$(p-1)p^{\alpha-1}\mid kp^{\alpha-1}$. 这意味着$k=p-1$. 故$g$和$g+p$中必然有某一个为$U(p^{\alpha+1})$的原根. 
+
+下面证明必要性. 用反证法, 假设$U(n)$有原根, 但$n$不满足任意题设中的形式. 那么, 一定有
+$$
+n = 2^{\alpha}(\alpha\ge 3), \quad n = 2^{\alpha}p_1^{\alpha_1}\cdots p_s^{\alpha_s}(\alpha\ge 2, s\ge 1), \quad n = 2^{\alpha}p_1^{\alpha_1}\cdots p_s^{\alpha_s}(\alpha\ge 0, s\ge 2)
+$$ 
+中的某一个成立. 也就是说
+$$
+\begin{aligned} 
+U(n)&\cong U(2^{\alpha})(\alpha\ge 3)\\ 
+ U(n)&\cong U(2^{\alpha})\times U(p_1^{\alpha_1})\times\cdots\times U(p_s^{\alpha_s})(\alpha\ge 2, s\ge 1)\\ 
+U(n)& \cong U(2^{\alpha})\times U(p_1^{\alpha_1})\times\cdots\times U(p_s^{\alpha_s})(\alpha\ge 0, s\ge 2)
+\end{aligned}
+$$
+中有一个成立. 显然当$\alpha\ge 3$时, 在$U(2^{\alpha})$中, 任意奇数的阶至多为$2^{\alpha-2}$. 而$2\mid \varphi(p_i^{\alpha_i})$. 无论如何, 都有$U(n)$中的最大阶小于$\varphi(n)$. 这与$U(n)$有原根矛盾. 因此必要性得证.
 #####
 ___
 

@@ -8,13 +8,13 @@
         "type": "tabs",
         "children": [
           {
-            "id": "25f13ba4a369a3a0",
+            "id": "75d63b76015a76b2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 1. 子群.md",
-                "mode": "preview",
+                "mode": "source",
                 "backlinks": true,
                 "source": false
               }
@@ -60,13 +60,13 @@
             }
           },
           {
-            "id": "f714d56dd5a99bab",
+            "id": "be638bff374b3d78",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 5. 群的直积.md",
-                "mode": "preview",
+                "mode": "source",
                 "backlinks": true,
                 "source": false
               }
@@ -98,7 +98,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -173,7 +174,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 1. 子群.md",
+                "file": "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 5. 群的直积.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -190,7 +191,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 1. 子群.md",
+                "file": "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 5. 群的直积.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -213,7 +214,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 1. 子群.md"
+                "file": "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 5. 群的直积.md"
               }
             }
           },
@@ -245,15 +246,18 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "25f13ba4a369a3a0",
+  "active": "be638bff374b3d78",
   "lastOpenFiles": [
     "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 2. 同构和同态.md",
-    "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 6. 循环群与阶.md",
-    "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 1. 子群.md",
-    "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 3. 群在集合上的作用与轨道.md",
     "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 5. 群的直积.md",
-    "README.md",
+    "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 10. Sylow子群.md",
+    "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 9. 可解群.md",
+    "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 8. 换位子群.md",
+    "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 1. 子群.md",
     "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 4. 稳定化子、中心化子和正规化子.md",
+    "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 6. 循环群与阶.md",
+    "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 3. 群在集合上的作用与轨道.md",
+    "README.md",
     "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 7. 单群.md",
     "信息论/Lecture 5. 信道传输.md",
     "信息论/Lecture 3. 微分熵.md",
@@ -290,8 +294,6 @@
     "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 5. 正规化子.md",
     "代数学/Book 2. 抽象代数/Chapter 0. 代数学基本概念/Lecture 3. 群的基本概念.md",
     "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 4. 循环群与阶.md",
-    "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 3. 循环群.md",
-    "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 5. 子群.md",
     "未命名.canvas"
   ]
 }

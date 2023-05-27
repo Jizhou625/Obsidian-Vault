@@ -30,3 +30,22 @@ $$
 因此$\sigma$保持运算. 这就证明了同构. 
 #####
 ___
+
+
+## 2. 半直积
+### 2.1. 半直积
+设$A, B$是两个群, $\theta: B\to \mathrm{Aut}(A)$为群同态, 在集合$A\times B$上定义运算如下
+$$
+(a, b)(a^{\prime}, b^{\prime}) = (a\theta(b)(a^{\prime}), bb^{\prime})
+$$
+则它成为一个群, 称为群 $A$ 和 $B$ (关于 $\theta$) 的半直积, 记为 $A \rtimes_\theta B$.
+
+### 2.2. 半直积的性质
+$A$ 同构于 $A \rtimes_\theta B$ 的一个正规子群, $B$ 同构于 $A \rtimes_\theta B$ 的一个子群.
+___
+##### Proof
+显然, $A\times \{e\}$是$A\rtimes_\theta B$的一个正规子群, 且$A\cong A\times \{e\}$. 
+
+对于$B$
+#####
+___
