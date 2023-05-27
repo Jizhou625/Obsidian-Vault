@@ -75,8 +75,11 @@ H(X_1,X_2,\cdots ,X_n)\ge H(\boldsymbol{g}(X_1,X_2,\cdots ,X_n))
 $$
 成立, 即函数变换不增加原始随机变量的熵. 
 
-#### 1.4.4. 混合使熵变大
-概率分布
+
+#### 1.4.4. 熵的凹性(混合使熵增大)
+$H(p)$时关于$p$的凹函数. 
+
+这表明相同熵的两种概率分布混合时, 其熵必然增大. 也就是说, 概率分布
 $$
 \boldsymbol{p}_1 = (p_1,\cdots ,p_i,\cdots ,p_j,\cdots, p_m)
 $$
@@ -84,8 +87,7 @@ $$
 $$
 \boldsymbol{p}_2 =\left(p_1,\cdots ,\dfrac{p_i+p_j}{2},\cdots, \dfrac{p_i+p_j}{2},\cdots, p_m\right)
 $$
-的熵, 即$H(\boldsymbol{p}_1) \le H(\boldsymbol{p}_2)$. 更进一步, 任何使得概率分布更加均匀的变换都会使得熵增加. 
-
+的熵, 即$H(\boldsymbol{p}_1) \le H(\boldsymbol{p}_2)$. 更进一步, 任何使得概率分布更加均匀的变换都会使得熵增加.  
 ### 1.5. 熵的公理化定义
 若对称函数序列$H_m(p_1, p_2, \cdots, p_m)$满足下列性质
 1. 标准化: $H_2\left(\dfrac{1}{2}, \dfrac{1}{2}\right) = 1$
@@ -107,6 +109,51 @@ $$
 $$
 f(mn) = f(m) + f(n)
 $$ 
+下面, 我们证明当$m\to\infty$时, 有$f(m+1) - f(m)\to 0$
+$$
+\begin{aligned}
+f(m+1) & =H_{m+1}\left(\frac{1}{m+1}, \ldots, \frac{1}{m+1}\right) \\
+& =H_2\left(\frac{1}{m+1}, \frac{m}{m+1}\right)+\frac{m}{m+1} H_m\left(\frac{1}{m}, \ldots, \frac{1}{m}\right) \\
+& =H_2\left(\frac{1}{m+1}, \frac{m}{m+1}\right)+\frac{m}{m+1} f(m)
+\end{aligned}
+$$
+因此
+$$
+f(m+1) - \dfrac{m}{m+1}f(m) = H_2\left(\frac{1}{m+1}, \frac{m}{m+1}\right)
+$$
+
+令$a_{n+1} = f(n+1) - f(n)$并且$b_n = H_2\left(\dfrac{1}{n},\dfrac{n-1}{n}\right)$. 则我们有(记$a_1=1$)
+$$
+a_{n+1} = -\dfrac{1}{n+1}f(n) + b_{n+1} = - \dfrac{1}{n+1}\sum\limits_{i=2}^{n} a_i + b_{n+1} 
+$$
+因此, 我们有
+$$
+(n+1)b_{n+1} = (n+1)a_{n+1} + \sum\limits_{i=2}^{n} a_i 
+$$
+对$n$求和, 可以得到
+$$
+\sum\limits_{n=2}^{N} nb_n = \sum\limits_{n=2}^{N} (na_n + \sum\limits_{i=2}^{n-1} a_i) = N \sum\limits_{n=2}^{N} a_i
+$$
+在两边同时除以$\dfrac{N(N+1)}{2}$, 我们得到
+$$
+\lim\limits_{N\to\infty} \dfrac{2}{N+1} \sum\limits_{n=2}^{N} a_n = \lim\limits_{N\to\infty} \dfrac{\sum\limits_{n=2}^{N} nb_n}{\sum\limits_{n=2}^{N} n}  = \lim\limits_{N\to\infty} b_N 
+$$
+由于
+$$
+H_3(p,q, 0) = H_2(1, 0) + H_2(p, q) = H_2(p,q) + qH(1, 0)\Longrightarrow H_2(1, 0)=0
+$$
+因此可以得到
+$$
+\lim\limits_{N\to\infty} b_N=0 \Longrightarrow\lim\limits_{N\to\infty} \dfrac{2}{N+1} \sum\limits_{n=2}^{N} a_n = 0
+$$
+再根据
+$$
+\lim\limits_{n\to\infty} a_{n+1} =  - \lim\limits_{n\to\infty} \dfrac{1}{n+1}\sum\limits_{i=2}^{n} a_i +\lim\limits_{n\to\infty}  b_{n+1} =0
+$$
+可以得到$\lim\limits_{n\to\infty} f(n+1) -f(n) = 0$. 利用[[../专题/函数方程/Lecture 1. 柯西方程#2.2. $ lim limits_{n to infty} f(n+1) - f(n) =0$|引理]]. 我们可以得到$f(n) = \log_2 n$. 再利用柯西方法和数学归纳法, 可以得到
+$$
+H_m\left(p_1, \ldots, p_m\right)=-\sum p_i \log p_i
+$$
 #####
 ___
 
@@ -274,7 +321,6 @@ ___
 
 ## 3. 互信息(mutual information)
 ### 3.1. 互信息的定义
-对于任意$n$个随机变量, 
 考虑两个随机变量$X$和$Y$, 它们的联合概率密度函数为$p(x,y)$, 其边际概率密度函数分别是$p_X(x)$和$p_Y(y)$. 互信息$I(X,Y)$为联合分布$p(x,y)$和乘积分布$p(x)p(y)$之间的相对熵, 也即
 $$
 I(X,Y)=\sum_{x\in \mathcal{X}}\sum_{y\in\mathcal{Y}}p(x,y)\log \dfrac{p(x,y)}{p(x)p(y)}=D(p(x,y)\mid \mid p(x)p(y))=\mathbb{E}_{p(x,y)}\log \dfrac{p(x,y)}{p(x)p(y)}
@@ -294,7 +340,7 @@ $$
 ### 3.3. 互信息的链式法则
 互信息也具有链式法则
 $$
-I(X_1,X_2,\cdots ,X_n, Y)=\sum_{i=1}^n I(X_i, Y\mid X_{i-1}, X_{i-2},\cdots , X_1)
+I(X_1,X_2,\cdots ,X_n; Y)=\sum_{i=1}^n I(X_i, Y\mid X_{i-1}, X_{i-2},\cdots , X_1)
 $$
 ___
 ##### Proof
@@ -308,7 +354,22 @@ $$
 #####
 ___
 
-### 3.4. 数据处理不等式
+### 3.4. 互信息的凹凸性
+设$(X, Y)\sim p(x, y) = p(x)p(y\mid x)$. 如果固定$p(y\mid x)$, 则互信息$I(X; Y)$是$p(x)$的凹函数. 而如果固定$p(x)$, 则互信息$I(X; Y)$是关于$p(y\mid x)$的凸函数. 
+___
+##### Proof
+为了证明第一部分, 我们可以将互信息展开
+$$
+I(X; Y) = H(Y) - H(Y\mid X) = H(Y) - \sum\limits_{x}^{} p(x)H(Y\mid X=x)
+$$
+如果固定$p(y\mid x)$, 则$p(y)$是关于$p(x)$的线性函数. 因此, 关于$p(y)$的凹函数$H(Y)$的凹函数. 此外, 第二项是关于$p(x)$的线性函数. 因此它们的差仍是关于$p(x)$的凹函数.
+
+而对于第二部分, 利用相对熵的凸性, 显然可以得到互信息$I(X; Y)$关于$p(y\mid x)$的凸性. 
+#####
+___
+
+
+### 3.5. 数据处理不等式
 若$X\to Y\to Z$为马尔科夫链, 则有
 $$
 I(X,Y)\ge I(X,Z)

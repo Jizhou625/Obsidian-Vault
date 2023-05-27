@@ -71,7 +71,7 @@ $H\triangleleft G$也等价于, 对任意的$g\in G$, $h\in H$, 都有
 $$
 ghg^{-1} \in H
 $$
-显然, 对任意的$H\le G$, 都有$H\triangleleft N(H)$
+显然, 对任意的$H\le G$, 都有$H\triangleleft N_G(H)$
 
 
 ### 2.3. 商群
@@ -127,6 +127,7 @@ $$
 $$
 ab = g^i x g^j y = g^j y g^i x = ba
 $$
+这就证明了$G$是交换群
 #####
 ___
 
