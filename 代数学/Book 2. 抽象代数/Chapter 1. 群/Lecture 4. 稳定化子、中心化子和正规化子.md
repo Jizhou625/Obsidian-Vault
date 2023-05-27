@@ -52,7 +52,7 @@ $$
 #####
 ___
 
-## 2. 正规化子
+## 2. 正规化子与正规子群
 ### 2.1. 正规化子
 若$H\le G$, 则对任意的$g\in G$, $gHg^{-1}$称为$H$的一个共轭子群, 令$M_H = \{gHg^{-1}\mid g\in G\}$为$H$的所有共轭子群的集合. 对于$H\in M_H$, $H$的稳定化子为
 $$
@@ -63,23 +63,63 @@ $$
 ### 2.2. 正规子群
 设$H$为群$G$的子群, 如果对任意的$g\in G$, 都有$gH=Hg$. 那么称$H$为$G$的正规子群, 记为$H\triangleleft G$. 
 
-$H\triangleleft G$等价于对任意的$g\in G$, 有
+### 2.3. 正规子群的例子
+#### 2.3.1. 同态核都是正规子群
+设$G$与$G^{\prime}$是两个群, $\sigma$是群$G$到群$G^{\prime}$的一个同态, 则$\ker(\sigma)\triangleleft G$.
+___
+##### Proof
+设$\ker(\sigma) = H$, 而$aH$为一个左陪集. 如果$x\in aH$, 即$x=ah$, 则
+$$
+\sigma(x) = \sigma(ah) = \sigma(a)\sigma(h) = \sigma(a)
+$$
+这就表明, 陪集$aH$中元素全有相同的像. 反之, 如果$\sigma(x) = \sigma(a)$, 那么
+$$
+\sigma(x)\sigma^{-1}(a) = e^{\prime}, \quad\sigma(xa^{-1}) = e^{\prime}
+$$
+即
+$$
+xa^{-1}\in  H, \quad x\in aH
+$$
+这就说明, 所有以$\sigma(a)$为像的元素全在陪集$aH$中. 综上所述, 我们有, 如果$\sigma(a)=a^{\prime}$, 那么
+$$
+\sigma^{-1}(a^{\prime}) = aH
+$$
+同理可得
+$$
+\sigma^{-1}(a^{\prime}) = Ha
+$$
+这就证明了对任意的$a\in G$. 有
+$$
+Ha = aH
+$$
+于是$H = \ker (\sigma)\triangleleft G$
+#####
+___
+#### 2.3.2. $H$是$N_G(H)$的正规子群
+设$H\le G$, 则$H\triangleleft N_G(H)$
+___
+##### Proof
+对任意的$g\in H$, 我们有$gHg^{-1} = H$. 因此$H \le N_G(H)$. 另一方面, 对于任意的$g\in N_G(H)$, 根据定义, 总有
 $$
 gHg^{-1} = H
 $$
-$H\triangleleft G$也等价于, 对任意的$g\in G$, $h\in H$, 都有
-$$
-ghg^{-1} \in H
-$$
-显然, 对任意的$H\le G$, 都有$H\triangleleft N_G(H)$
+因此$H\triangleleft N_G(H)$
+#####
+___
 
-
-### 2.3. 商群
+### 2.4. 商群
 设$H\triangleleft G$, 在集合$G/H$上定义运算如下
 $$
 (g_1H)(g_2H) = (g_1g_2)H
 $$
 容易验证$G/H$在上面定义的运算下构成一个群. 称$G/H$为群$G$关于正规子群$H$的商群. 
+
+### 2.5. 自然同态
+设$G$是一个群, $N\triangleleft G$, 则可以定义商群$\overline{G} = G / N$, 它的元素为陪集$gN = \overline{g}$, $\overline{G}$中的运算为
+$$
+\overline{g_1} \cdot \overline{g_2} = \overline{g_1g_2}
+$$
+做映射$\eta: G\to \overline{G}$为$\eta(g) = \overline{g}$, 容易验证这是一个满同态, 称为$G$到商群$\overline{G}$的自然同态, 并且$N = \ker \eta$.
 
 ## 3. 中心化子
 ### 3.1. 共轭类
@@ -97,7 +137,7 @@ $$
 $$
 Z(G) = \bigcap\limits_{x\in G} C_G(x) = \{g\in G\mid gx=xg,\ \forall x\in G\}
 $$
-称$Z(G)$为群$G$的中心. $Z(G)$是与$G$中所有元素都可交换的$G$中元素组成的集合, $Z(G)$是$G$的子群. 
+称$Z(G)$为群$G$的中心. $Z(G)$是与$G$中所有元素都可交换的$G$中元素组成的集合, $Z(G)\triangleleft G$. 
 
 ### 3.3. 类方程
 共轭类的类长$|C_x|$等于$C_G(x)$在$G$中的指数, 也就是说
@@ -128,13 +168,5 @@ $$
 ab = g^i x g^j y = g^j y g^i x = ba
 $$
 这就证明了$G$是交换群
-#####
-___
-
-### 3.5. $p^2$阶群交换
-设$p$为素数, 则$p^2$阶群是交换群
-___
-##### Proof
-根据类方程, 可以得到$p\mid Z(G)$, 因此$|Z(G)| = p^2$或者$|Z(G)|=p$. 无论是哪一种情况, $G / Z(G)$都是循环群, 因此$G$是交换群.
 #####
 ___

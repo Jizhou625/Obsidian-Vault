@@ -16,5 +16,17 @@ $$
 2. $H\cap K = \{e\}$
 3. $H$中的每个元素与$K$中的每个元素可交换
    
-则$G\cong H\times K$
+则$G\cong H\times K$. 称群$G$为它的子群$H$与$K$的内直积. 习惯上也可以记$G = H\times K$
+___
+##### Proof
+考虑映射
+$$
+\sigma: H\times K \to G, \quad \sigma(h, k) = hk
+$$
+根据条件1得到, $\sigma$为满射. 若$\sigma(h_1, k_1) = \sigma(h_2, k_2)$, 则有$h_2^{-1}h_1 = k_2 k_1^{-1}\in H\cap K$. 根据条件2可以得到, $h_2^{-1}h_1 = k_2 k_1^{-1} = e$, 即$h_1 = h_2, k_1 = k_2$. 因此$\sigma$为单射. 由此可知$\sigma$为双射. 进一步, 根据3, 我们有
+$$
+\sigma((h_1, k_1)(h_2, k_2)) = \sigma(h_1h_2, k_1k_2) = h_1h_2k_1k_2 = h_1k_1h_2k_2 = \sigma(h_1, k_1)\sigma(h_2, k_2)
+$$
+因此$\sigma$保持运算. 这就证明了同构. 
+#####
 ___

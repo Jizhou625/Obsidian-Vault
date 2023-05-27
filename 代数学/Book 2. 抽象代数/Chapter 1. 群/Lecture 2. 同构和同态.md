@@ -15,7 +15,7 @@ $$
 2. **对称性**: $G\cong G^{\prime}\Longrightarrow G^{\prime}\cong G$
 3. **传递性**: $G\cong G^{\prime}, G^{\prime}\cong G^{\prime\prime} \Longrightarrow G\cong G^{\prime\prime}$
 
-这是一个等价关系. 
+因此同构是一个等价关系. 
 
 ### 1.3. 同构的例子
 #### 1.3.1. 可逆线性变换群和一般线性群
@@ -78,28 +78,7 @@ $$
 
 特别地, 单位元素的完全反像$\sigma^{-1}(e^{\prime})$称为同态$\sigma$的核, 记为$\ker(\sigma)$. 
 
-### 2.3. 同态核与完全反像
-如果$\sigma(a)=a^{\prime}$, 那么
-$$
-\sigma^{-1}(a^{\prime}) = a\cdot \ker(\sigma)  = \ker(\sigma)\cdot  a,\quad \forall a\in G
-$$
-___
-##### Proof
-设$\ker(\sigma) = H$, 而$aH$为一个左陪集. 如果$x\in aH$, 即$x=ah$, 则
-$$
-\sigma(x) = \sigma(ah) = \sigma(a)\sigma(h) = \sigma(a)
-$$
-这就表明, 陪集$aH$中元素全有相同的像. 反之, 如果$\sigma(x) = \sigma(a)$, 那么
-$$
-\sigma(x)\sigma^{-1}(a) = e^{\prime}, \quad\sigma(xa^{-1}) = e^{\prime}
-$$
-即
-$$
-xa^{-1}\in  H, \quad x\in aH
-$$
-这就说明, 所有以$\sigma(a)$为像的元素全在陪集$aH$中. 综上所述, 我们有, 如果$\sigma(a)=a^{\prime}$, 那么
-$$
-\sigma^{-1}(a^{\prime}) = aH
-$$
-#####
-___
+
+
+## 3. 同构定理
+### 3.1. 
