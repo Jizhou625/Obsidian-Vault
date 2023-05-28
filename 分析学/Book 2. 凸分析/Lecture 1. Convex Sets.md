@@ -68,7 +68,7 @@ is called the dual cone of $K$.
 1. **Half Spaces**: $\{\boldsymbol{x} \mid \boldsymbol{a}^{\top}\boldsymbol{x}\le b\}$
 2. **Norm Cone**: $\{(\boldsymbol{x}, t)\mid \|\boldsymbol{x}\|\le t\}$, when we use second-order norm $\|\cdot\|_2$, we get the second-order cone. 
 
-	![image-20230319153718348](./Lecture%201.%20Convex%20Sets.assets/image-20230319153718348.png)
+	![image-20230319153718348](Lecture%201.%20Convex%20Sets.assets/image-20230319153718348.png)
 3. **Normal Cone**: Given any convex set $C\subset \mathbb{R}^n$ and $\boldsymbol{x}\in C$, $N(\boldsymbol{x}, C) = \{\boldsymbol{g} \in \mathbb{R}^n\mid \boldsymbol{g}^{\top}\boldsymbol{x}\ge \boldsymbol{g}^{\top}\boldsymbol{y}, \forall \boldsymbol{y}\in C\}$.  When $\boldsymbol{x}$ is interior point, we have $N(\boldsymbol{x}, C) = \{\boldsymbol{0}\}$
 
 ## 3. Affine Sets
@@ -161,7 +161,7 @@ ___
 ### 4.4. Perspective Functions
 The perspective function $P: \mathbb{R}^{n+1}\to \mathbb{R}^n$ with domain $\mathrm{dom} P = \mathbb{R}^n\times \mathbb{R}_{++}$, is defined as $P(\boldsymbol{z}, t) = \dfrac{\boldsymbol{z}}{t}$. 
 
-![Pasted image 20230319151029](./Lecture%201.%20Convex%20Sets.assets/Pasted%20image%2020230319151029.png)
+![Pasted image 20230319151029](Lecture%201.%20Convex%20Sets.assets/Pasted%20image%2020230319151029.png)
 
 The inverse image of a convex set under the perspective function is also convex: if $C\subset \mathbb{R}^n$ is convex, then
 $$
@@ -205,7 +205,7 @@ Now $\boldsymbol{a}^{\top} \boldsymbol{x} \geq b$ for all $\boldsymbol{x} \in D$
 
 Thus we conclude that there exists $\boldsymbol{a} \neq 0$ such that $F^{\top} \boldsymbol{a}=\boldsymbol{0}$ and $\boldsymbol{a}^{\top} \boldsymbol{x} \leq \boldsymbol{a}^{\top} \boldsymbol{g}$ for all $\boldsymbol{x} \in C$.
 
-![image-20230319192022011](./Lecture%201.%20Convex%20Sets.assets/image-20230319192022011.png)
+![image-20230319192022011](Lecture%201.%20Convex%20Sets.assets/image-20230319192022011.png)
 
 ### 5.2. Strict Separation:
 If the separating hyperplane satisfies the stronger condition that $\boldsymbol{a}^{\top} \boldsymbol{x}<b$ for all $\boldsymbol{x} \in C$ and $\boldsymbol{a}^{\top} \boldsymbol{x}>b$ for all $\boldsymbol{x} \in D$, then the sets $C$ and $D$ are called strictly separated. Disjoint convex sets need not to be strictly separated by a hyperplane, even when the sets are closed. 

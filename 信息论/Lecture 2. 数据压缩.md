@@ -36,7 +36,7 @@ H'(\mathcal{X})=\lim\limits_{n\to\infty} H(X_n\mid X_{n-1},X_{n-2},\cdots , X_1)
 $$
 存在. 
 
-而根据[[../分析学/数学分析/Lecture 1. 极限#1.3. Stolz定理|Stolz定理]]和[[Lecture 1. 熵、相对熵和互信息#1.3. 条件熵的链式法则|条件熵的链式法则]]. 
+而根据[[../分析学/Book 1. 数学分析/Chapter 1. 基础知识/Lecture 2. 极限#1.3. Stolz定理|Stolz定理]]和[[Lecture 1. 熵、相对熵和互信息#1.3. 条件熵的链式法则|条件熵的链式法则]]. 
 $$
 \lim_{n\to\infty}\frac{H\left(X_{1}, X_{2}, \ldots, X_{n}\right)}{n}=\lim_{n\to\infty}\frac{1}{n} \sum_{i=1}^{n} H\left(X_{i} \mid X_{i-1}, \ldots, X_{1}\right)=\lim\limits_{n\to\infty} H(X_n\mid X_{n-1},X_{n-2},\cdots , X_1)
 $$

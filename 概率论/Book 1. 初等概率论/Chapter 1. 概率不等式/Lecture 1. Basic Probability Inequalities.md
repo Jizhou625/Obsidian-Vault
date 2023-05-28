@@ -1,5 +1,5 @@
 
-## 1\. Markov Inequality
+## 1. Markov Inequality
 ___
 **Theorem**: Let $\varphi(x): \mathbb{R} \rightarrow \mathbb{R}^{+}$be any non-decreasing positive function. For any real valued andom variable $X$,
 $$

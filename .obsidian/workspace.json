@@ -13,14 +13,28 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "机器学习/Book 1. 理论机器学习/Chapter 1. 泛化误差理论/Lecture 5. VC Theory(泛化下界).md",
+                "file": "机器学习/Book 1. 理论机器学习/Chapter 1. 泛化误差理论/Lecture 1. PAC Learnable.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "464b1658edc1ccfe",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "分析学/Book 1. 数学分析/Chapter 1. 基础知识/Lecture 3. 函数.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -78,8 +92,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "45b6cc51caac60ea",
@@ -95,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "机器学习/Book 1. 理论机器学习/Chapter 1. 泛化误差理论/Lecture 5. VC Theory(泛化下界).md",
+                "file": "分析学/Book 1. 数学分析/Chapter 1. 基础知识/Lecture 3. 函数.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +125,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "机器学习/Book 1. 理论机器学习/Chapter 1. 泛化误差理论/Lecture 5. VC Theory(泛化下界).md",
+                "file": "分析学/Book 1. 数学分析/Chapter 1. 基础知识/Lecture 3. 函数.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,7 +148,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "机器学习/Book 1. 理论机器学习/Chapter 1. 泛化误差理论/Lecture 5. VC Theory(泛化下界).md"
+                "file": "分析学/Book 1. 数学分析/Chapter 1. 基础知识/Lecture 3. 函数.md"
               }
             }
           },
@@ -167,12 +180,29 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "e2a7e92b4a25a85e",
+  "active": "464b1658edc1ccfe",
   "lastOpenFiles": [
-    "机器学习/Book 1. 理论机器学习/Chapter 1. 泛化误差理论/Lecture 4. VC Theory(泛化上界).md",
-    "机器学习/Book 1. 理论机器学习/Chapter 1. 泛化误差理论/Lecture 3. 生长函数.md",
-    "机器学习/Book 1. 理论机器学习/Chapter 1. 泛化误差理论/Lecture 2. Rademacher复杂度.md",
+    "分析学/Book 1. 数学分析/Chapter 1. 基础知识/Lecture 2. 极限.md",
+    "分析学/Book 1. 数学分析/Chapter 1. 基础知识/Lecture 1. 实数系.md",
+    "分析学/Book 1. 数学分析/Chapter 4. 积分/Lecture 4. Riemann积分.md",
+    "分析学/Book 1. 数学分析/Chapter 4. 积分",
+    "分析学/Book 1. 数学分析/Chapter 3. 导数和微分",
+    "分析学/Book 1. 数学分析/Chapter 4. 积分/Lecture 5. 广义积分.md",
+    "分析学/Book 1. 数学分析/Chapter 3. 导数和微分/Lecture 3.2. 导数与微分(多元).md",
+    "分析学/Book 1. 数学分析/Chapter 3. 导数和微分/Lecture 3.1. 导数与微分(一元).md",
+    "分析学/Book 1. 数学分析/Chapter 2. 级数",
+    "分析学/Book 1. 数学分析/Chapter 1. 基础知识/Lecture 3. 函数.md",
+    "分析学/Book 1. 数学分析/Chapter 2. 级数/Lecture 6.5. 级数(Fourier级数).md",
+    "分析学/Book 1. 数学分析/Chapter 1. 基础知识",
+    "分析学/Book 1. 数学分析/未命名.md",
+    "机器学习/Book 1. 理论机器学习/Chapter 1. 泛化误差理论/Lecture 2. PAC-Bayesian Theory.md",
+    "概率论/Book 1. 初等概率论/Chapter 1. 概率不等式/Lecture 2. Hoeffding Type Bounds.md",
     "机器学习/Book 1. 理论机器学习/Chapter 1. 泛化误差理论/Lecture 1. PAC Learnable.md",
+    "概率论/Book 1. 初等概率论/Chapter 1. 概率不等式/Lecture 1. Basic Probability Inequalities.md",
+    "机器学习/Book 1. 理论机器学习/Chapter 1. 泛化误差理论/Lecture 6. VC Theory(泛化下界).md",
+    "机器学习/Book 1. 理论机器学习/Chapter 1. 泛化误差理论/Lecture 5. VC Theory(泛化上界).md",
+    "机器学习/Book 1. 理论机器学习/Chapter 1. 泛化误差理论/Lecture 4. 生长函数.md",
+    "机器学习/Book 1. 理论机器学习/Chapter 1. 泛化误差理论/Lecture 3. Rademacher复杂度.md",
     "机器学习/Book 1. 理论机器学习/Chapter 1. 泛化误差理论",
     "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 10. 自由群.md",
     "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 9. Sylow子群.md",
@@ -182,39 +212,21 @@
     "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 4. 稳定化子、中心化子和正规化子.md",
     "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 3. 群在集合上的作用与轨道.md",
     "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 8. 换位子群.md",
-    "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 2. 同构和同态.md",
-    "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 9. 可解群.md",
-    "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 1. 子群.md",
-    "README.md",
-    "信息论/Lecture 5. 信道传输.md",
-    "信息论/Lecture 3. 微分熵.md",
-    "信息论/Lecture 2. 数据压缩.md",
-    "随机过程论/Book 1. 马尔科夫链/Lecture 1. Introduction.md",
     "随机过程论/Book 1. 马尔科夫链/Lecture 1. Introduction.assets/image-20230527160737582.png",
     "随机过程论/Book 1. 马尔科夫链/Lecture 1. Introduction.assets/image-20230527160640924.png",
     "随机过程论/Book 1. 马尔科夫链/Lecture 1. Introduction.assets/image-20230527154631349.png",
     "随机过程论/Book 1. 马尔科夫链/Lecture 1. Introduction.assets/image-20230527154602330.png",
     "随机过程论/Book 1. 马尔科夫链/Lecture 1. Introduction.assets/image-20230527154458490.png",
     "随机过程论/Book 1. 马尔科夫链/Lecture 1. Introduction.assets",
-    "信息论/Lecture 1. 熵、相对熵和互信息.md",
     "随机过程论/Book 1. 马尔科夫链/Lecture 1. Introduction.,d",
     "随机过程论/Book 1. 马尔科夫链",
     "随机过程论",
-    "信息论/Lecture 4. 渐进均分性.md",
     "信息论/Lecture 5. 信道传输.assets/image-20230527000557535.png",
     "信息论/Lecture 5. 信道传输.assets/image-20230527000130806.png",
     "信息论/Lecture 5. 信道传输.assets/image-20230526235454408.png",
     "信息论/Lecture 5. 信道传输.assets/image-20230526222421413.png",
     "信息论/Lecture 5. 信道传输.assets",
     "信息论/Lecture 2. 数据压缩.assets/image-20230526202041547.png",
-    "信息论/Lecture 2. 数据压缩.assets",
-    "代数学/Book 2. 抽象代数/Chapter 0. 代数学基本概念/Lecture 2. 置换和共轭.md",
-    "专题/函数方程/Lecture 1. 柯西方程.md",
-    "专题/函数方程",
-    "专题",
-    "分析学/数学分析/Lecture 1. 极限.md",
-    "代数学/Chapter 0. 代数不等式/Lecture 1. 基础不等式.md",
-    "信息论",
     "未命名.canvas"
   ]
 }
