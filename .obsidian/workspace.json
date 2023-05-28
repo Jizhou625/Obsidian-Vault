@@ -11,8 +11,13 @@
             "id": "e2a7e92b4a25a85e",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "机器学习/Book 1. 理论机器学习/Chapter 1. 泛化误差理论/Lecture 5. VC Theory(泛化下界).md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": false
+              }
             }
           }
         ]
@@ -90,6 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "机器学习/Book 1. 理论机器学习/Chapter 1. 泛化误差理论/Lecture 5. VC Theory(泛化下界).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,6 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "机器学习/Book 1. 理论机器学习/Chapter 1. 泛化误差理论/Lecture 5. VC Theory(泛化下界).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +134,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "机器学习/Book 1. 理论机器学习/Chapter 1. 泛化误差理论/Lecture 5. VC Theory(泛化下界).md"
+              }
             }
           },
           {
@@ -160,6 +169,11 @@
   },
   "active": "e2a7e92b4a25a85e",
   "lastOpenFiles": [
+    "机器学习/Book 1. 理论机器学习/Chapter 1. 泛化误差理论/Lecture 4. VC Theory(泛化上界).md",
+    "机器学习/Book 1. 理论机器学习/Chapter 1. 泛化误差理论/Lecture 3. 生长函数.md",
+    "机器学习/Book 1. 理论机器学习/Chapter 1. 泛化误差理论/Lecture 2. Rademacher复杂度.md",
+    "机器学习/Book 1. 理论机器学习/Chapter 1. 泛化误差理论/Lecture 1. PAC Learnable.md",
+    "机器学习/Book 1. 理论机器学习/Chapter 1. 泛化误差理论",
     "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 10. 自由群.md",
     "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 9. Sylow子群.md",
     "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 7. 单群.md",
@@ -200,12 +214,7 @@
     "专题",
     "分析学/数学分析/Lecture 1. 极限.md",
     "代数学/Chapter 0. 代数不等式/Lecture 1. 基础不等式.md",
-    "信息论/Lecture 1..md",
     "信息论",
-    "机器学习/Book 1. 理论机器学习",
-    "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 4. 稳定化子.md",
-    "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 5. 正规化子.md",
-    "代数学/Book 2. 抽象代数/Chapter 0. 代数学基本概念/Lecture 3. 群的基本概念.md",
     "未命名.canvas"
   ]
 }

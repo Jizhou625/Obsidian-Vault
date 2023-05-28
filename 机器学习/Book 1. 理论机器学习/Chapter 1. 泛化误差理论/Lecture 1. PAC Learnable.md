@@ -1,6 +1,6 @@
 ## 1. 基本概念
 ### 1.1. 泛化误差
-**确定性问题**: Given a hypothesis $h\in \mathcal{H}$, a target concept $c(x)$ and a hidden distribution $\mathcal{D}$, the generalization error (risk) is defined as
+**确定性问题**: 给定一个假设 $h\in \mathcal{H}$, 一个目标概念 $c(x)$ 和一个隐藏分布 $\mathcal{D}$, 泛化误差 (generalization risk) 定义为
 $$
 R(h) = \operatorname*{\mathbb{P}}\limits_{x\sim \mathcal{D}}(h(x)\neq c(x)) = \operatorname*{\mathbb{E}}\limits_{x\sim \mathcal{D}}\mathbb{I}(h(x)\neq c(x))
 $$

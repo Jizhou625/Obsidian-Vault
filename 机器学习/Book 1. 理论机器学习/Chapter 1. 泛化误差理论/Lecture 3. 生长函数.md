@@ -15,7 +15,7 @@ $$
 $$
 ___
 ##### Proof: 
-对于一个固定的样本集, 我们用$\mathcal{G}_s = \left\{(g(x_1), \cdots, g(x_m))^{\top}\mid g\in \mathcal{G}\right\}$表示定义在该样本集上的函数值向量的集合. 利用[[Book 1. 理论机器学习/Lecture 2.1. VC Theory(Rademacher复杂度)#3.1. Massart引理]], 我们有
+对于一个固定的样本集, 我们用$\mathcal{G}_s = \left\{(g(x_1), \cdots, g(x_m))^{\top}\mid g\in \mathcal{G}\right\}$表示定义在该样本集上的函数值向量的集合. 利用[[Lecture 2. Rademacher复杂度#3.1. Massart引理]], 我们有
 $$
 \mathfrak{R}_m(\mathcal{G}) = \operatorname*{\mathbb{E}}\limits_s\left[\operatorname*{\mathbb{E}}\limits_{\boldsymbol{\sigma}}\left[\sup\limits_{\boldsymbol{u}\in \mathcal{G}_s} \dfrac{1}{m} \sum\limits_{i=1}^{m}  \sigma_i u_i \right]\right] \le \operatorname*{\mathbb{E}}\limits_s\left[\dfrac{\sqrt{m}\sqrt{2\log |\mathcal{G}_s|}}{m}\right]
 $$
