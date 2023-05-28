@@ -46,6 +46,6 @@ ___
 ##### Proof
 显然, $A\times \{e\}$是$A\rtimes_\theta B$的一个正规子群, 且$A\cong A\times \{e\}$. 
 
-对于$B$
+对于$B$, 
 #####
 ___
