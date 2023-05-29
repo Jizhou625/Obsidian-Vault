@@ -137,14 +137,3 @@ $$
 2. 若$\varliminf\limits_{x \to x_0}f(x)\ge f(x_0)$, 则称$f(x)$在$x=x_0$处是下半连续的
 
 ## 5. 多元函数的极限
-### 5.1. 重极限
-设$E\in \mathbb{R}^n,\ f: E\to \mathbb{R}^m,\ \boldsymbol{x}_0\in E',\ \boldsymbol{y}_0\in \mathbb{R}^m$, 对任意$\varepsilon>0, \exists \delta>0$, 使得||$f(\boldsymbol{x})-\boldsymbol{y}_0||<\varepsilon\quad (0<||\boldsymbol{x}-\boldsymbol{x}_0||<\delta)$, 则称$f(\boldsymbol{x})$在$\boldsymbol{x}\to \boldsymbol{x}_0$时有极限$\boldsymbol{y}_0$, 记为$\lim\limits_{\boldsymbol{x}\to \boldsymbol{x}_0}f(\boldsymbol{x})=\boldsymbol{y}_0$
-### 5.2. 累次极限
-设$f(x,y)$在$0<|x-x_0|<a,\ 0<|y-y_0|<b$上定义, 若对任意固定值$y$, 当$x\to x_0$时, 函数$f(x,y)$的极限存在, 记作$\lim\limits_{x\to x_0}f(x,y)=\varphi(y)$. 又当$y\to y_0$时, 函数$\varphi(y)$的极限存在, 记作$\lim\limits_{y\to y_0}\varphi(y)=A$. 则称$A$是函数$f(x,y)$的先对$x$后对$y$的累次极限, 记作$\lim\limits_{y\to y_0}\lim\limits_{x\to x_0} f(x,y)=A$
-
-### 5.3. 路径极限
-以$f(x,y)$在$(x_0,y_0)$处的情形为例, 设$\begin{cases}  x=\varphi(t) \\ y=\psi(t) \end{cases}$是过$(x_0,y_0)$的任意一条连续曲线, 若有
-$$
-\lim\limits_{t\to t_0}f(\varphi(t),\psi(t))=A 
-$$
-则称$f(x,y)$在动点$(x,y)$沿着路径$(\varphi(t),\psi(t))$趋于$(x_0,y_0)$时有极限$A$. 特别地, 在路径为$x=x,\ y=kx$时, 称该极限为方向(向径)极限

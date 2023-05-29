@@ -4,37 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "f2d30b2be3a1ced0",
+        "id": "8e2531bbfff426d2",
         "type": "tabs",
         "children": [
           {
-            "id": "e2a7e92b4a25a85e",
+            "id": "7146a1fa7da1dd20",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "机器学习/Book 1. 理论机器学习/Chapter 1. 泛化误差理论/Lecture 1. PAC Learnable.md",
-                "mode": "preview",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "464b1658edc1ccfe",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "分析学/Book 1. 数学分析/Chapter 1. 基础知识/Lecture 3. 函数.md",
+                "file": "分析学/Chapter 1. 极限/Lecture 1. 极限的基本概念.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -92,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "45b6cc51caac60ea",
@@ -108,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "分析学/Book 1. 数学分析/Chapter 1. 基础知识/Lecture 3. 函数.md",
+                "file": "分析学/Chapter 1. 极限/Lecture 1. 极限的基本概念.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "分析学/Book 1. 数学分析/Chapter 1. 基础知识/Lecture 3. 函数.md",
+                "file": "分析学/Chapter 1. 极限/Lecture 1. 极限的基本概念.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -148,7 +135,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "分析学/Book 1. 数学分析/Chapter 1. 基础知识/Lecture 3. 函数.md"
+                "file": "分析学/Chapter 1. 极限/Lecture 1. 极限的基本概念.md"
               }
             }
           },
@@ -180,53 +167,54 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "464b1658edc1ccfe",
+  "active": "7146a1fa7da1dd20",
   "lastOpenFiles": [
-    "分析学/Book 1. 数学分析/Chapter 1. 基础知识/Lecture 2. 极限.md",
+    "分析学/Chapter 1. 极限/Lecture 2. 极限.md",
+    "分析学/Chapter 1. 极限/Lecture 1. 极限的基本概念.md",
+    "分析学/Book 2. 凸分析/Lecture 0. 简单拓扑.md",
+    "分析学/Book 2. 凸分析/Lecture 1. Convex Sets.md",
+    "分析学/Book 2. 凸分析/Lecture 2. Convex Function.md",
+    "分析学/Book 1. 数学分析/Chapter 1. 极限/Lecture 3. 函数.md",
     "分析学/Book 1. 数学分析/Chapter 1. 基础知识/Lecture 1. 实数系.md",
-    "分析学/Book 1. 数学分析/Chapter 4. 积分/Lecture 4. Riemann积分.md",
-    "分析学/Book 1. 数学分析/Chapter 4. 积分",
-    "分析学/Book 1. 数学分析/Chapter 3. 导数和微分",
-    "分析学/Book 1. 数学分析/Chapter 4. 积分/Lecture 5. 广义积分.md",
-    "分析学/Book 1. 数学分析/Chapter 3. 导数和微分/Lecture 3.2. 导数与微分(多元).md",
-    "分析学/Book 1. 数学分析/Chapter 3. 导数和微分/Lecture 3.1. 导数与微分(一元).md",
-    "分析学/Book 1. 数学分析/Chapter 2. 级数",
-    "分析学/Book 1. 数学分析/Chapter 1. 基础知识/Lecture 3. 函数.md",
-    "分析学/Book 1. 数学分析/Chapter 2. 级数/Lecture 6.5. 级数(Fourier级数).md",
-    "分析学/Book 1. 数学分析/Chapter 1. 基础知识",
-    "分析学/Book 1. 数学分析/未命名.md",
-    "机器学习/Book 1. 理论机器学习/Chapter 1. 泛化误差理论/Lecture 2. PAC-Bayesian Theory.md",
-    "概率论/Book 1. 初等概率论/Chapter 1. 概率不等式/Lecture 2. Hoeffding Type Bounds.md",
-    "机器学习/Book 1. 理论机器学习/Chapter 1. 泛化误差理论/Lecture 1. PAC Learnable.md",
-    "概率论/Book 1. 初等概率论/Chapter 1. 概率不等式/Lecture 1. Basic Probability Inequalities.md",
-    "机器学习/Book 1. 理论机器学习/Chapter 1. 泛化误差理论/Lecture 6. VC Theory(泛化下界).md",
-    "机器学习/Book 1. 理论机器学习/Chapter 1. 泛化误差理论/Lecture 5. VC Theory(泛化上界).md",
-    "机器学习/Book 1. 理论机器学习/Chapter 1. 泛化误差理论/Lecture 4. 生长函数.md",
-    "机器学习/Book 1. 理论机器学习/Chapter 1. 泛化误差理论/Lecture 3. Rademacher复杂度.md",
-    "机器学习/Book 1. 理论机器学习/Chapter 1. 泛化误差理论",
-    "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 10. 自由群.md",
-    "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 9. Sylow子群.md",
-    "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 7. 单群.md",
-    "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 6. 循环群与阶.md",
-    "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 5. 群的直积.md",
-    "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 4. 稳定化子、中心化子和正规化子.md",
-    "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 3. 群在集合上的作用与轨道.md",
-    "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 8. 换位子群.md",
+    "数值计算/Lecture 1. 误差.md",
+    "数值方法/Chapter 1. 多项式插值/Lecture 5. 有理函数逼近.md",
+    "数值方法/Chapter 1. 多项式插值/Lecture 4. 样条方法.md",
+    "数值方法/Chapter 1. 多项式插值/Lecture 3. 牛顿插值方法.md",
+    "数值方法/Chapter 1. 多项式插值/Lecture 2. Lagrange插值方法.md",
+    "数值方法/Chapter 1. 多项式插值/Lecture 1. 多项式逼近.md",
+    "数值方法/Lecture 1. 误差.md",
+    "数值方法/Chapter 6. 常微分方程",
+    "数值方法/Chapter 5. 数值积分与数值微分",
+    "数值方法/Chapter 3. 线性方程组求解",
+    "数值方法/Chapter 4. 特征值",
+    "数值方法/Chapter 2. 非线性方程(组)求解",
+    "数值方法/Chapter 1. 多项式插值",
+    "数值方法",
+    "数值计算/Lecture 2. 非线性方程求解.md",
+    "数值计算/Chapter 6. 常微分方程",
+    "数值计算/Chapter 5. 数值积分与数值微分",
+    "数值计算/Chapter 4. 特征值",
+    "数值计算/Chapter 1. 多项式插值/Lecture 5. 有理函数逼近.md",
+    "数值计算/Chapter 1. 多项式插值/Lecture 4. 样条方法.md",
+    "数值计算/Chapter 1. 多项式插值/Lecture 3. 牛顿插值方法.md",
+    "数值计算/Chapter 1. 多项式插值/Lecture 2. Lagrange插值方法.md",
+    "数值计算/Chapter 1. 多项式插值/Lecture 1. 多项式逼近.md",
+    "数值计算/Chapter 1. 多项式插值/Lecture 3. 多项式插值.md",
+    "数值计算/Lecture 3. 多项式插值.md",
+    "数值计算/Lecture 1. 误差.assets/image-20230529000153166.png",
+    "数值计算/Lecture 1. 误差.assets/image-20230529000138386.png",
+    "分析学/Chapter 4. 积分/Lecture 4. Riemann积分.md",
+    "分析学/Chapter 4. 积分/Lecture 5. 广义积分.md",
+    "分析学/Chapter 3. 导数和微分/Lecture 3.2. 导数与微分(多元).md",
+    "分析学/Chapter 3. 导数和微分/Lecture 3.1. 导数与微分(一元).md",
     "随机过程论/Book 1. 马尔科夫链/Lecture 1. Introduction.assets/image-20230527160737582.png",
     "随机过程论/Book 1. 马尔科夫链/Lecture 1. Introduction.assets/image-20230527160640924.png",
     "随机过程论/Book 1. 马尔科夫链/Lecture 1. Introduction.assets/image-20230527154631349.png",
     "随机过程论/Book 1. 马尔科夫链/Lecture 1. Introduction.assets/image-20230527154602330.png",
     "随机过程论/Book 1. 马尔科夫链/Lecture 1. Introduction.assets/image-20230527154458490.png",
-    "随机过程论/Book 1. 马尔科夫链/Lecture 1. Introduction.assets",
-    "随机过程论/Book 1. 马尔科夫链/Lecture 1. Introduction.,d",
-    "随机过程论/Book 1. 马尔科夫链",
-    "随机过程论",
     "信息论/Lecture 5. 信道传输.assets/image-20230527000557535.png",
     "信息论/Lecture 5. 信道传输.assets/image-20230527000130806.png",
     "信息论/Lecture 5. 信道传输.assets/image-20230526235454408.png",
-    "信息论/Lecture 5. 信道传输.assets/image-20230526222421413.png",
-    "信息论/Lecture 5. 信道传输.assets",
-    "信息论/Lecture 2. 数据压缩.assets/image-20230526202041547.png",
     "未命名.canvas"
   ]
 }

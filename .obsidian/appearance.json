@@ -3,8 +3,9 @@
   "theme": "system",
   "interfaceFontFamily": "Times New Roman",
   "textFontFamily": "Times New Roman,楷体",
-  "baseFontSize": 14,
+  "baseFontSize": 17,
   "nativeMenus": true,
   "translucency": true,
-  "cssTheme": "Things"
+  "cssTheme": "Things",
+  "monospaceFontFamily": "JetBrains Mono"
 }
