@@ -1,4 +1,4 @@
-## 1. 集合系($\pi$系族)
+## 1. $\pi$系族
 ### 1.1. $\pi$系
 如果 $X$ 上的非空集合系 $\mathscr{F}$ 对交的运算是封闭的, 即
 $$
@@ -17,60 +17,135 @@ $$
 $$
 A, B \in \mathscr{R} \Longrightarrow A \cup B, A \backslash B \in \mathscr{R}
 $$ 
-则称 $\mathscr{R}$ 为环.
+则称 $\mathscr{R}$ 为环. 显然, 环一定是半环. 
 ___
-**环一定是半环**: 由于 
+##### Proof 
+由于 
 $$
 A \cap B=A \cup B \backslash[(A \backslash B) \cup(B \backslash A)] \in \mathscr{R}
 $$
-故环必然是半环
+故环必然是半环. 
+#####
+___
 
 ### 1.4. 域
 满足下列条件的集合系 $\mathscr{A}$ 称为域, 也称为代数(algebra)
 1. $X \in \mathscr{A}$
 2. $A, B \in \mathscr{A} \Longrightarrow A \cap B \in \mathscr{A}$
 3. $A \in \mathscr{A} \Longrightarrow A^c \in \mathscr{A}$
+
+显然, 域一定是环
 ___
-**域一定是环**: 不难证明
+##### Proof  
+不难证明
 $$
 A\cup B = (A^c \cap B^c)^c \in \mathscr{A}, \quad A\backslash B = A \cap B^c \in \mathscr{A}
 $$
 因此域一定是环
+#####
+___
 
-## 2. 集合系(单调系族)
+## 2. 单调系族
 ### 2.1. 单调系
 如果对集合系 $\mathscr{M}$ 中的任何单调序列 $\left\{A_n, n=1,2, \cdots\right\}$, 均有 $\lim\limits _{n \rightarrow \infty} A_n \in \mathscr{M}$, 则把 $\mathscr{M}$ 称为单调系
 
-### 2.2. $\lambda$系
+### 2.2. $\lambda$ system
 集合系 $\mathscr{L}$ 称为 $\lambda$ 系, 如果它满足下列条件
 1. $X \in \mathscr{L}$
 2. $A, B \in \mathscr{L}$ 且 $A \supset B \Longrightarrow A \backslash B \in \mathscr{L}$
 3. $A_n \in \mathscr{L}$ 且 $A_n \uparrow \Longrightarrow \bigcup\limits_{n=1}^{\infty} A_n \in \mathscr{L}$
 
-**$\boldsymbol{\lambda}$系是单调系**: 根据条件1和2, 可以得到若$A\in \mathscr{L}$, 则有$A^c\in \mathscr{L}$. 因此若$A_n\downarrow$, 则有$A_n^c\uparrow$
+显然, $\lambda$系一定是单调系
+___
+##### Proof
+根据条件1和2, 可以得到若$A\in \mathscr{L}$, 则有$A^c\in \mathscr{L}$. 因此若$A_n\downarrow$, 则有$A_n^c\uparrow$
 $$
 \bigcap\limits_{n=1}^{\infty} A_n = \left(\bigcup\limits_{n=1}^{\infty} A_n^c\right)^c\in \mathscr{L} 
 $$
+因此$\lambda$系一定是单调系
+#####
+___
 
-## 3. $\sigma$-代数($\sigma$域)
+### 2.3. Dynkin system
+集合系 $\mathscr{D}$ 称为 Dynkin 系, 如果它满足下列条件
+1. $X \in \mathscr{D}$
+2. $A \in \mathscr{D} \Longrightarrow A^c \in \mathscr{D}$
+3. 如果$A_1, A_2, \cdots \in \mathscr{D}$并且$A_i\cap A_j = \varnothing$对任意的$i\neq j$成立, 则$\bigcup\limits_{n\in \mathbb{N}}^{} A_n\in \mathscr{D}$
+
+Dynkin系是$\lambda$系的等价定义
+___
+##### Proof
+1. 首先证明Dynkin系是$\lambda$系. 设$\mathscr{D}$是一个Dynkin系. 显然$\mathscr{D}$满足$\lambda$系的第一个条件. 而对于$A, B\in \mathscr{L}$且$A\supset B$, 我们有
+   $$
+   A \backslash B = A \cap B^c = (A^c \cup B)^c \in \mathscr{D}
+   $$
+   因此$\mathscr{D}$也满足$\lambda$系的第二个条件. 最后, 对于$A_n\in \mathscr{D}$且$A_n \uparrow$. 令$B_1 = A_1$, $B_i = A_i\backslash A_{i-1},\ i\ge 2$. 显然$B_i$两两不交. 运用性质$3$即可以得到
+   $$
+   \bigcup\limits_{n=1}^{\infty} A_n = \bigcup\limits_{n=1}^{\infty} B_n \in \mathscr{D}
+   $$
+   这就证明了Dynkin系是$\lambda$系.
+2. 再证明$\lambda$系也是一个Dynkin系. 设$\mathscr{L}$是一个$\lambda$系. 不难验证$\mathscr{L}$满足Dynkin系的前2个条件. 对于任意的$A\cap B = \varnothing$, 我们有
+   $$
+   (A\cup B)^c = A^c \cap B^c = A^c \backslash B \in \mathscr{L}
+   $$
+   因此有$A\cup B \in\mathscr{L}$. 对任意的$A_1, A_2, \cdots \in \mathscr{L}$并且$A_i\cap A_j = \varnothing$对任意的$i\neq j$成立, 设
+   $$
+   D_n = A_1\cup \cdots \cup A_n \in \mathscr{L}
+   $$
+   则$D_n\uparrow$, 根据$\lambda$系的第三条性质可以得到
+   $$
+   D_1\cup D_2\cup\cdots = A_1\cup A_2\cup \cdots \in \mathscr{L}
+   $$
+   这就证明了$\lambda$系也是一个Dynkin系.
+#####
+___
+## 3. $\sigma$-代数
 ### 3.1. $\sigma$-代数
 集合系 $\mathscr{F}$ 称为 $\sigma$ 域, 如果它满足下列条件
 1. $X \in \mathscr{F}$
 2. $A \in \mathscr{F} \Longrightarrow A^c \in \mathscr{F}$
 3.  $A_n \in \mathscr{F} \Longrightarrow \bigcup\limits_{n=1}^{\infty} A_n \in \mathscr{F}$
 
-**$\boldsymbol{\sigma}$-代数是代数**: 由于$X\in\mathscr{F}$, 故$\varnothing\in F$. 因此$\bigcup\limits_{k=1}^nA_k\in \mathscr{F}$. 利用德摩根律, 可以得到$\bigcap\limits_{k=1}^nA_k\in \mathscr{F}$, 这就证明了$\sigma$-代数是代数
+可以证明, $\sigma$-代数一定是代数, 也一定是$\lambda$系. 
+___
+##### Proof
+1. 首先证明$\sigma$代数是一个代数. 由于$X\in\mathscr{F}$, 故$\varnothing\in F$. 因此$\bigcup\limits_{k=1}^nA_k\in \mathscr{F}$. 利用德摩根律, 可以得到$\bigcap\limits_{k=1}^nA_k\in \mathscr{F}$, 这就证明了$\sigma$-代数是代数
+2. 再证明$\sigma$代数是一个$\lambda$系: 由于$A\backslash B = A\cap B^c$, 因此这就证明了$\sigma$-代数是$\lambda$系. 
+#####
+___
 
-**$\boldsymbol{\sigma}$-代数是$\boldsymbol{\lambda}$系**: 由于$A\backslash B = A\cap B^c$, 因此这就证明了$\sigma$-代数是$\lambda$系. 
 
-### 3.2. $\sigma$域的判定
-1. 一个既是单调系又是域的集合系必然是$\sigma$域
-2. 一个既是$\lambda$系又是$\pi$系的集合系必然是$\sigma$域
 
-### 3.3. 可测空间
-我们把非空集合$X$和它上面的一个$\sigma$域$\mathscr{F}$放在一起称为可测空间. 记为$(X, \mathscr{F})$
+### 3.2. $\sigma$代数的判定
+1. 一个既是单调系又是域的集合系必然是$\sigma$代数
+2. 一个既是$\lambda$系又是$\pi$系的集合系必然是$\sigma$代数
 
-## 4. $\sigma$域的生成
+___
+##### Proof
+1. 用$\mathscr{F}$表示这个集合系, 由于$\mathscr{F}$是域, 因此只要证明
+   $$
+   A_n\in \mathscr{F} \Longrightarrow \bigcup\limits_{n=1}^{\infty} A_n \in \mathscr{F}
+   $$
+   设$B_n = \bigcup\limits_{k=1}^{n}A_k\in \mathscr{F}$, 则我们有
+   $$
+   \bigcup\limits_{n=1}^{\infty}A_n = \bigcup\limits_{n=1}^{\infty}\bigcup\limits_{k=1}^{n}A_k = \lim\limits_{n\rightarrow\infty}B_n\in \mathscr{F}  
+   $$
+   这就证明了$\mathscr{F}$是$\sigma$代数
+2. 用$\mathscr{F}$表示这个集合系, 由于$\mathscr{F}$是$\lambda$系, 因此
+   $$
+   \begin{aligned} 
+        & X\in \mathscr{F} \\ 
+        & A\in\mathscr{F} \Longrightarrow A^c = X \backslash A \in \mathscr{F}
+   \end{aligned}
+   $$
+   再加上$\mathscr{F}$是$\pi$系, 因此$\mathscr{F}$是域. 再加上$\mathscr{F}$是$\lambda$系因此一定也是单调系, 我们得到了$\mathscr{F}$是一个$\sigma$代数. 
+
+#####
+___
+
+
+
+## 4. $\sigma$代数的生成
 ### 4.1. 集合的生成
 称 $\mathscr{S}$ 是由集合系 $\mathscr{E}$ 生成的环 (或单调系, 或 $\lambda$ 系, 或 $\sigma$ 域), 如果下列条件被满足
 1. $\mathscr{S} \supset \mathscr{E}$
@@ -79,17 +154,20 @@ $$
 \mathscr{S}^{\prime} \supset \mathscr{E} \Longrightarrow \mathscr{S}^{\prime} \supset \mathscr{S}
 $$
 由集合系 $\mathscr{E}$ 生成的环 (或单调系, 或 $\lambda$ 系, 或 $\sigma$ 域), 也就是包含 $\mathscr{E}$ 的最小的环 (或单调系, 或 $\lambda$ 系, 或 $\sigma$ 域). 我们把由集合系 $\mathscr{E}$ 生成的环, 单调系, $\lambda$ 系和 $\sigma$ 域分别记作 $r(\mathscr{E}), m(\mathscr{E}), \lambda(\mathscr{E}), \sigma(\mathscr{E})$
+
+### 4.2. 集合生成的存在性
+对于任意集合系 $\mathscr{E}$, 一定存在由 $\mathscr{E}$ 生成的环, 单调系, $\lambda$ 系和 $\sigma$ 域.
 ___
-##### 存在性
+##### Proof
 我们只对环的存在性进行证明. 其他三种情况的证明可以完全类似. 
 
 令$\mathscr{T}$是由$X$中的全体集合所组成的集合系. $\mathscr{T}$是一个$\sigma$域自然也是一个环. 用$A$表示包含集合系$\mathscr{E}$的环的全体, 则$A$非空.  
 
-不难看出, $\mathscr{S} = \bigcap\limits_{\mathscr{A}\in A}\mathscr{A}$还是一个环. 并且满足生成的两个条件. 
+不难看出, $\mathscr{S} = \bigcap\limits_{\mathscr{A}\in A}\mathscr{A}$还是一个环(区别于$\pi$系和半环的核心). 并且满足生成的两个条件. 
 #####
 ___
 
-### 4.2. 半环的生成环
+### 4.3. 半环的生成环
 如果 $\mathscr{Q}$ 是半环, 则
 $$
 r(\mathscr{Q})=\bigcup_{n=1}^{\infty}\left\{\bigcup_{k=1}^n A_k\ \Big|\ A_k \in \mathscr{Q}, A_i\cap A_j=\varnothing \right\}
@@ -130,7 +208,7 @@ $$
 #####
 ___
 
-### 4.3. 域的生成单调系是$\sigma$域
+### 4.4. 域的生成单调系是$\sigma$代数
 如果$\mathscr{A}$是域, 则 $\sigma(\mathscr{A}) = m(\mathscr{A})$. 
 
 或者, 我们也可以写成, 如果$\mathscr{A}$是域, $\mathscr{M}$是单调系, 则
@@ -157,7 +235,7 @@ $$
 #####
 ___
 
-### 4.4 $\pi$系的生成$\lambda$系是$\sigma$域
+### 4.5 $\pi$系的生成$\lambda$系是$\sigma$代数(Dynkin's $\pi-\lambda$ Theorem)
 如果$\mathscr{P}$是$\pi$系, 则$\sigma(\mathscr{P}) = \lambda(\mathscr{P})$. 
 
 或者, 我们也可以写成, 如果$\mathscr{P}$是$\pi$系, $\mathscr{L}$是$\lambda$系, 则
@@ -186,23 +264,3 @@ $$
 #####
 ___
 
-### 4.5. Borel集合系
-由简单集合系生成的$\sigma$域的一个重要的例子是
-$$
-\mathscr{B}_{\mathbb{R}} = \sigma(\mathscr{Q}_{\mathbb{R}}) = \sigma(\mathscr{P}_{\mathbb{R}})
-$$
-其中$\mathscr{Q}_{\mathbb{R}} = \{(a, b]\mid a, b\in \mathbb{R}\}$是$\mathbb{R}$上的半环. $\mathscr{P}_{\mathbb{R}}=\{(-\infty, a]\mid a\in \mathbb{R}\}$是$\mathbb{R}$上的$\pi$系. 
-
-用$\mathscr{O}_{\mathbb{R}}$表示$\mathbb{R}$中开集组成的集合系, 容易证明$\mathscr{B}_{\mathbb{R}} = \sigma(\mathscr{O}_{\mathbb{R}})$. 可以证明, 下列的等式成立
-$$
-\begin{aligned} 
-    \mathscr{B}_{\mathbb{R}} &= \sigma(\{(-\infty, a)\mid a\in \mathbb{R}\}) = \sigma(\{(-\infty, a]\mid a\in \mathbb{R}\}) \\ 
-    & = \sigma(\{(a, +\infty)\mid a\in \mathbb{R}\}) = \sigma(\{[a, +\infty)\mid a\in \mathbb{R}\}) \\
-\end{aligned}
-$$
-
-将Borel集的概念一般化, 对于拓扑空间$X$, 以$\mathscr{O}$记其开集系, 我们把
-$$
-\mathscr{B} = \sigma(\mathscr{O})
-$$
-称为$X$上的Borel集合系, 其中的集合称为$X$中的Borel集, 而$(X, \mathscr{B})$叫做拓扑可测空间. 

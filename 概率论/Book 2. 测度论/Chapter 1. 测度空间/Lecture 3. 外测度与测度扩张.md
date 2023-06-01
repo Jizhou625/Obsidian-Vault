@@ -22,23 +22,24 @@ $$
 $$
 \tau\left(\bigcup\limits_{n=1}^{\infty} A_n \right) \le \sum\limits_{n=1}^{\infty} \sum\limits_{k=1}^{\infty} \mu(B_{n,k})\le \sum\limits_{n=1}^{\infty} \tau(A_n) +\varepsilon
 $$
-由$\varepsilon$的任意性即得证
+由$\varepsilon$的任意性即得证. 
 #####
 ___
-### 1.3. $\tau$可测集和完全测度空间
-**$\tau$可测集**: 设$\tau$是$X$上的外测度, $\mathscr{T}$是由$X$的所有子集组成的集合系, 我们把满足
+### 1.3. $\tau$可测集
+设$\tau$是$X$上的外测度, $\mathscr{T}$是由$X$的所有子集组成的集合系, 我们把满足
 $$
 \tau(D) = \tau(D\cap A) + \tau(D\cap A^c), \quad \forall D\in \mathscr{T}
 $$
 的$X$的子集$A$称为$\tau$可测集, 把由全体$\tau$可测集组成的集合系记为$\mathscr{F}_{\tau}$. 
 
-**完全测度空间**: 对于测度空间$(X, \mathscr{F}, \mu)$, 如果$\mu$的任意零测集合的子集还属于$\mathscr{F}$, 即
+### 1.4. 完全测度空间
+对于测度空间$(X, \mathscr{F}, \mu)$, 如果$\mu$的任意零测集合的子集还属于$\mathscr{F}$, 即
 $$
 A\in \mathscr{F}, \mu(A) = 0 \Longrightarrow B\subset \mathscr{F}, \quad\forall B\subset A
 $$
 则称$(X, \mathscr{F}, \mu)$是完全测度空间. 
 
-### 1.4. Caratheodory定理
+### 1.5. Caratheodory定理
 如果$\tau$是外测度, $\mathscr{F}_{\tau}$是由全体$\tau$可测集组成的集合系, 则$\mathscr{F}_{\tau}$是一个$\sigma$代数, 且$(X, \mathscr{F}_{\tau}, \tau)$是完全测度空间. 
 ___
 ##### Proof: 
@@ -133,7 +134,7 @@ $$
 则称$\tau$为$\mu$在$\overline{\mathscr{E}}$上的扩张. 
 ___
 ##### 利用外测度的扩张
-如果在集合系$\mathscr{E}$上有测度$\mu$, 就可以利用[[#1.2. 生成外测度]]在$X$上生成一个外测度$\tau$. 而根据[[#1.4. Caratheodory定理]], 这个外测度限制在$\sigma$域$\mathscr{F}_{\tau}$上就得到了一个测度. 
+如果在集合系$\mathscr{E}$上有测度$\mu$, 就可以利用[[#1.2. 生成外测度]]在$X$上生成一个外测度$\tau$. 而根据[[#1.5. Caratheodory定理]], 这个外测度限制在$\sigma$域$\mathscr{F}_{\tau}$上就得到了一个测度. 
 
 但是, $\mathscr{F}_{\tau}$未必比$\mathscr{E}$更大, 例如下面的例子: 
 
@@ -151,7 +152,64 @@ $$
 #####
 ___
 
-### 2.2. 测度扩张定理
+### 2.2. 测度的唯一性
+设$\mathscr{P}$是一个$\pi$系, 如果$\sigma(\mathscr{P})$上的测度$\mu, \nu$满足
+1. 对每个$A\in \mathscr{P}$, 有$\mu(A) = \nu(A)$
+2. 存在两两不交的$\{A_n\in \mathscr{P}\}$使得$\bigcup\limits_{n=1}^{\infty} A_n=X$且$\mu(A_n)<\infty$对每个$n=1,2,\cdots$成立
+   
+则对任何$A\in \sigma(\mathscr{P})$有
+$$
+\mu(A) = \nu(A)
+$$
+___
+##### Proof
+设
+$$
+\mathscr{S} = \{A\in \sigma(\mathscr{P})\mid \mu(A\cap B) = \nu(A\cap B), \forall B\in \mathscr{P}, \mu(B)<\infty\}
+$$
+根据$\pi$系的性质, 显然有$\mathscr{P}\subset \mathscr{S}$. 下面证明$\mathscr{S}$是一个$\lambda$系, 这是因为
+1. $X\in \mathscr{S}$
+2. 对于$A_1, A_2\in \mathscr{S}$且$A_1\supset A_2$, 根据可列可加性, 我们有
+   $$
+   \mu(A_1\cap B) = \mu(A_2\cap B) + \mu((A_1\backslash A_2)\cap B)
+   $$
+   $$
+   \nu(A_1\cap B) = \nu(A_2\cap B) + \nu((A_1\backslash A_2)\cap B) 
+   $$
+   这样, 我们有
+   $$
+   \mu((A_1\backslash A_2)\cap B) = \nu((A_1\backslash A_2)\cap B) 
+   $$
+   这表明$A_1\backslash A_2\in \mathscr{S}$
+3. 对于$A_n \in \mathscr{L}$ 且 $A_n \uparrow$, 根据条件2我们有
+   $$
+   \begin{aligned} 
+   \mu\left(\left(\bigcup\limits_{n=1}^{\infty} A_n\right)\cap B\right) &= \mu\left(\left(\bigcup\limits_{n=1}^{\infty} (A_n\backslash A_{n-1})\right)\cap B\right) \\ 
+   & = \sum\limits_{n=1}^{\infty} \mu\left((A_n\backslash A_{n-1})\cap B\right) \\
+   & = \sum\limits_{n=1}^{\infty}\nu\left((A_n\backslash A_{n-1})\cap B\right) \\
+   & = \nu\left(\left(\bigcup\limits_{n=1}^{\infty} (A_n\backslash A_{n-1})\right)\cap B\right) \\ 
+   & =  \nu\left(\left(\bigcup\limits_{n=1}^{\infty} A_n\right)\cap B\right)
+   \end{aligned}
+   $$
+
+这就证明了$\mathscr{L}$是$\lambda$系. 又因为$\mathscr{L}\supset \mathscr{P}$, 根据[[../../../专题/集合论/Lecture 2. 集合类#4.5 $ pi$系的生成$ lambda$系是$ sigma$代数(Dynkin's $ pi- lambda$ Theorem)|Dynkin's Theorem]], 有 $\mathscr{L}\supset \sigma(\mathscr{P})$.  即对每个$A\in \sigma(\mathscr{P})$和满足$\mu(B)<\infty$的$B\in \mathscr{P}$有
+$$
+\mu(A\cap B) = \nu(A\cap B)
+$$
+于是, 取$\{A_n\in\mathscr{P}\}$使得$\bigcup\limits_{n=1}^{\infty} A_n = X$, 对任意的$A\in \sigma(\mathscr{P})$有
+$$
+\begin{aligned} 
+\mu(A) &= \mu\left(A\cap\left(\bigcup\limits_{n=1}^{\infty} A_n\right)\right) \\ 
+    & = \sum\limits_{n=1}^{\infty} \mu(A\cap A_n) \\
+    & = \sum\limits_{n=1}^{\infty} \nu(A\cap A_n) \\ 
+    & = \nu\left(A\cap \left(\bigcup\limits_{n=1}^{\infty} A_n\right)\right) \\
+    & = \nu(A)
+\end{aligned}
+$$
+#####
+___
+
+### 2.3. 测度扩张定理
 对于半环$\mathscr{Q}$上的测度$\mu$, 存在$\sigma(\mathscr{Q})$上的测度$\tau$使得对每个$A\in \mathscr{Q}$有
 $$
 \tau(A) = \mu(A)
@@ -208,64 +266,14 @@ ___
    \tau(D) = \tau(D\cap A) + \tau(D\cap A^c)
    $$
 4. $\tau$是$\sigma(\mathscr{Q})$上的测度. 这是因为$\mathscr{F}_{\tau}$是$\sigma$域, 故$\mathscr{Q}\subset \mathscr{F}_{\tau}\Longrightarrow \sigma(\mathscr{Q})\subset\mathscr{F}_{\tau}$. 但$\tau$限制在$\mathscr{F}_{\tau}$上是测度, 因此$\tau$是$\sigma(\mathscr{Q})$上的测度. 
-5. 如果存在两两不交的$\{A_n\in \mathscr{Q}\}$使得$\bigcup\limits_{n=1}^{\infty} A_n = X$且$\mu(A_n)<\infty$, 则使得$\tau(A) = \mu(A)$的$\tau$唯一. 这是我们有因为下面的引理成立(半环也是一个$\pi$系)
-___
-**引理**: 设$\mathscr{P}$是一个$\pi$系, 如果$\sigma(\mathscr{P})$上的测度$\mu, \nu$满足
-1. 对每个$A\in \mathscr{P}$, 有$\mu(A) = \nu(A)$
-2. 存在两两不交的$\{A_n\in \mathscr{P}\}$使得$\bigcup\limits_{n=1}^{\infty} A_n=X$且$\mu(A_n)<\infty$对每个$n=1,2,\cdots$成立
-   
-则对任何$A\in \sigma(\mathscr{P})$有
-$$
-\mu(A) = \nu(A)
-$$
-___
-**Proof**: 设
-$$
-\mathscr{S} = \{A\in \sigma(\mathscr{P})\mid \mu(A\cap B) = \nu(A\cap B), \forall B\in \mathscr{P}, \mu(B)<\infty\}
-$$
-根据$\pi$系的性质, 显然有$\mathscr{P}\subset \mathscr{S}$. 下面证明$\mathscr{S}$是一个$\lambda$系, 这是因为
-1. $X\in \mathscr{S}$
-2. 对于$A_1, A_2\in \mathscr{S}$且$A_1\supset A_2$, 根据可列可加性, 我们有
-   $$
-   \mu(A_1\cap B) = \mu(A_2\cap B) + \mu((A_1\backslash A_2)\cap B)
-   $$
-   $$
-   \nu(A_1\cap B) = \nu(A_2\cap B) + \nu((A_1\backslash A_2)\cap B) 
-   $$
-   这样, 我们有
-   $$
-   \mu((A_1\backslash A_2)\cap B) = \nu((A_1\backslash A_2)\cap B) 
-   $$
-   这表明$A_1\backslash A_2\in \mathscr{S}$
-3. 对于$A_n \in \mathscr{L}$ 且 $A_n \uparrow$, 根据条件2我们有
-   $$
-   \begin{aligned} 
-   \mu\left(\left(\bigcup\limits_{n=1}^{\infty} A_n\right)\cap B\right) &= \mu\left(\left(\bigcup\limits_{n=1}^{\infty} (A_n\backslash A_{n-1})\right)\cap B\right) \\ 
-   & = \sum\limits_{n=1}^{\infty} \mu\left((A_n\backslash A_{n-1})\cap B\right) \\
-   & = \sum\limits_{n=1}^{\infty}\nu\left((A_n\backslash A_{n-1})\cap B\right) \\
-   & = \nu\left(\left(\bigcup\limits_{n=1}^{\infty} (A_n\backslash A_{n-1})\right)\cap B\right) \\ 
-   & =  \nu\left(\left(\bigcup\limits_{n=1}^{\infty} A_n\right)\cap B\right)
-   \end{aligned}
-   $$
 
-因为$\mathscr{L}$是$\lambda$系且$\mathscr{L}\supset \mathscr{P}$, [[Lecture 1. 可测空间#4.4 $ pi$系的生成$ lambda$系是$ sigma$域]], 这说明 $\mathscr{L}\supset \sigma(\mathscr{P})$.  即对每个$A\in \sigma(\mathscr{P})$和满足$\mu(B)<\infty$的$B\in \mathscr{P}$有
-$$
-\mu(A\cap B) = \nu(A\cap B)
-$$
-于是, 取$\{A_n\in\mathscr{P}\}$使得$\bigcup\limits_{n=1}^{\infty} A_n = X$, 对任意的$A\in \sigma(\mathscr{P})$有
-$$
-\begin{aligned} 
-\mu(A) &= \mu\left(A\cap\left(\bigcup\limits_{n=1}^{\infty} A_n\right)\right) \\ 
-    & = \sum\limits_{n=1}^{\infty} \mu(A\cap A_n) \\
-    & = \sum\limits_{n=1}^{\infty} \nu(A\cap A_n) \\ 
-    & = \nu\left(A\cap \left(\bigcup\limits_{n=1}^{\infty} A_n\right)\right) \\
-    & = \nu(A)
-\end{aligned}
-$$
+因为半环也是一个$\pi$系, 根据[[#2.2. 测度的唯一性]], 如果存在两两不交的$\{A_n\in \mathscr{Q}\}$使得$\bigcup\limits_{n=1}^{\infty} A_n = X$且$\mu(A_n)<\infty$, 则使得$\tau(A) = \mu(A)$的$\tau$唯一. 
+
 #####
 ___
 
-### 2.3. $\sigma(\mathscr{Q})$上的测度$\tau$和$\mathscr{F}_{\tau}$上的测度$\tau$的关系
+
+### 2.4. $\sigma(\mathscr{Q})$上的测度$\tau$和$\mathscr{F}_{\tau}$上的测度$\tau$的关系
 设$\tau$是半环$\mathscr{Q}$上测度$\mu$生成的外测度
 1. 对每个$A\in \mathscr{F}_{\tau}$, 存在$B\in \sigma(\mathscr{Q})$使得$B\supset A$且$\tau(A) = \tau(B)$
 2. 如果存在两两不交的$\{A_n\in \mathscr{Q}\}$使得$\bigcup\limits_{n=1}^{\infty} A_n = X$且$\mu(A_n)<\infty$, 则对每个$A\in \mathscr{F}_{\tau}$存在$B\in \sigma(\mathscr{Q})$使得$B\supset A$且$\tau(B\backslash A) = 0$
@@ -299,7 +307,7 @@ ___
 #####
 ___
 
-### 2.4. 域$\mathscr{A}$上的测度对$\sigma(\mathscr{A})$上测度的逼近
+### 2.5. 域$\mathscr{A}$上的测度对$\sigma(\mathscr{A})$上测度的逼近
 设$\mathscr{A}$是一个域, $\mu$是$\sigma(\mathscr{A})$上的测度且在$\mathscr{A}$上$\sigma$有限. 如果$A\in \sigma(\mathscr{A})$且$\mu(A)<\infty$, 则对任意的$\varepsilon>0$,  存在$B\in \mathscr{A}$使得$\mu(A\Delta B)<\varepsilon$
 ___
 ##### Proof: 

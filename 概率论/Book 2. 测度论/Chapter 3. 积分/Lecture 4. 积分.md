@@ -412,7 +412,7 @@ $$
    & = \int_X f\mathrm{d}\mu 
 \end{aligned}
 $$
-从而我们有结论成立. 再考虑$f_n \overset{\mu}{\longrightarrow} f$的情况, 根据[[../Book 1. 初等概率论/Chapter 2. 收敛理论/Lecture 1. Modes of Stochastic Convergence#3.3. 几种收敛的关系|几种收敛的关系]], 我们知道对$\{f_n\}$的任意一个子序列, 存在一个子子列$\{f_{n^{\prime}}\}$使得$f_{n^{\prime}}\overset{\mathrm{a.e.}}{\longrightarrow} f$. 从而根据已经证明的结论有
+从而我们有结论成立. 再考虑$f_n \overset{\mu}{\longrightarrow} f$的情况, 根据[[../../Book 1. 初等概率论/Chapter 2. 收敛理论/Lecture 1. Modes of Stochastic Convergence#3.3. 几种收敛的关系|几种收敛的关系]], 我们知道对$\{f_n\}$的任意一个子序列, 存在一个子子列$\{f_{n^{\prime}}\}$使得$f_{n^{\prime}}\overset{\mathrm{a.e.}}{\longrightarrow} f$. 从而根据已经证明的结论有
 $$
 \lim _{n^{\prime} \rightarrow \infty} \int_X f_{n^{\prime}} \mathrm{d} \mu=\int_X f \mathrm{~d} \mu .
 $$

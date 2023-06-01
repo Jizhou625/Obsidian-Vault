@@ -8,7 +8,7 @@
 $$
 ||f(\boldsymbol{x})-\boldsymbol{y}_0||<\varepsilon\quad (0<||\boldsymbol{x}-\boldsymbol{x}_0||<\delta)
 $$
-则称$f(\boldsymbol{x})$在$\boldsymbol{x}\to \boldsymbol{x}_0$时有极限$\boldsymbol{y}_0$, 记为$\lim\limits_{\boldsymbol{x}\to \boldsymbol{x}_0}f(\boldsymbol{x})=\boldsymbol{y}_0$
+则称$f(\boldsymbol{x})$在$\boldsymbol{x}\to \boldsymbol{x}_0$时有极限$\boldsymbol{y}_0$, 记为$\lim\limits_{\boldsymbol{x}\to \boldsymbol{x}_0}f(\boldsymbol{x})=\boldsymbol{y}_0$. 
 
 ### 1.3. 累次极限
 设$f(x,y)$在$0<|x-x_0|<a,\ 0<|y-y_0|<b$上定义, 若对任意固定值$y$, 当$x\to x_0$时, 函数$f(x,y)$的极限存在, 记作$\lim\limits_{x\to x_0}f(x,y)=\varphi(y)$. 又当$y\to y_0$时, 函数$\varphi(y)$的极限存在, 记作$\lim\limits_{y\to y_0}\varphi(y)=A$. 则称$A$是函数$f(x,y)$的先对$x$后对$y$的累次极限, 记作$\lim\limits_{y\to y_0}\lim\limits_{x\to x_0} f(x,y)=A$

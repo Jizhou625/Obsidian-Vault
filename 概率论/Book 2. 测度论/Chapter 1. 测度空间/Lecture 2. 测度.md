@@ -1,13 +1,13 @@
 ## 1. 测度
 ### 1.1. 测度的公理化定义
-设 $\mathscr{E}$ 是 $X$ 上的集合系且$\varnothing \in \mathscr{E}$, 如果$\mu$满足
+设 $\mathscr{E}$ 是 $X$ 上的集合系且$\varnothing \in \mathscr{E}$, 如果$\mu$具有下列性质: 
 1. $\mu(\cdot)\ge 0$
 2. $\mu(\varnothing)=0$
 3. $\mu$ 具有可列可加性
    
-则称$\mu$为 $\mathscr{E}$ 上的测度. 如果对每个$A\in \mathscr{E}$还有$\mu(A)<\infty$, 则称测度$\mu$是有限的. 
+则称$\mu$为 $\mathscr{E}$ 上的测度. 
 
-如果对每个$A\in \mathscr{E}$存在满足$\mu(A_n)<\infty$的$\{A_n\in \mathscr{E}\}$, 使得$\bigcup\limits_{n=1}^{\infty}A_n\supset A$, 则称测度$\mu$是$\sigma$有限的. 
+如果对每个$A\in \mathscr{E}$还有$\mu(A)<\infty$, 则称测度$\mu$是有限的. 如果对每个$A\in \mathscr{E}$存在满足$\mu(A_n)<\infty$的$\{A_n\in \mathscr{E}\}$, 使得$\bigcup\limits_{n=1}^{\infty}A_n\supset A$, 则称测度$\mu$是$\sigma$有限的. 
 
 ### 1.2. 测度的性质
 1. **有限可加性**: 设 $\mu$ 是 $\mathscr{E}$ 上的测度, 对$\mathscr{E}$中任意有限个两两不交且满足$\bigcup\limits_{i=1}^nA_i\in \mathscr{E}$的集合$A_1, A_2, \cdots, A_n$, 有
@@ -20,11 +20,12 @@
    $$
    
 ### 1.3. 测度空间
-**测度空间**: 空间$X$, 加上由它的子集形成的一个$\sigma$域$\mathscr{F}$, 再加上$\mathscr{F}$上的一个测度$\mu$, 三位一体形成的$(X, \mathscr{F}, \mu)$被称为测度空间. 
+空间$X$, 加上由它的子集形成的一个$\sigma$域$\mathscr{F}$, 再加上$\mathscr{F}$上的一个测度$\mu$, 三位一体形成的$(X, \mathscr{F}, \mu)$被称为测度空间. 
 
-**零测集**: 如果 $N \in \mathscr{F}$ 并且 $\mu(N)=0$, 则称 $N$ 为 $\mu$ 的零测集.
+如果测度空间 $(X, \mathscr{F}, \mathbb{P})$ 满足 $\mathbb{P}(X)=1$, 则称它为概率空间, 对应的 $\mathbb{P}$ 叫作概率测度. 在概率空间 $(X, \mathscr{F}, \mathbb{P})$ 中, $\mathscr{F}$ 中的集合 $A$ 又称为事件, 而 $\mathbb{P}(A)$ 称为事件 $A$ 发生的概率. 
 
-**概率空间**: 如果测度空间 $(X, \mathscr{F}, \mathbb{P})$ 满足 $\mathbb{P}(X)=1$, 则称它为概率空间, 对应的 $\mathbb{P}$ 叫作概率测度. 在概率空间 $(X, \mathscr{F}, \mathbb{P})$ 中, $\mathscr{F}$ 中的集合 $A$ 又称为事件, 而 $\mathbb{P}(A)$ 称为事件 $A$ 发生的概率. 
+### 1.4. 零测集
+如果 $N \in \mathscr{F}$ 并且 $\mu(N)=0$, 则称 $N$ 为 $\mu$ 的零测集.
 
 ## 2. 半环上的测度
 ### 2.1. 准分布函数$F$构造的测度
@@ -211,12 +212,11 @@ ___
 ### 2.3. 环上有限可加的非负集函数的性质
 对于环$\mathscr{R}$上的有限可加非负集函数$\mu$, 有下面的结论成立:
 
-$\mu$是可列可加 $\iff \mu$半可列可加 $\iff \mu$下连续 $\implies\mu$上连续 $\implies \mu$在$\varnothing$上连续, 即对任何满足$A_n\downarrow \varnothing$和$\mu(A_1)<\infty$的
-   $\{A_n\in \mathscr{R}\}$有
+$\mu$是可列可加 $\iff \mu$半可列可加 $\iff \mu$下连续 $\implies\mu$上连续 $\implies \mu$在$\varnothing$上连续, 即对任何满足$A_n\downarrow \varnothing$和$\mu(A_1)<\infty$的$\{A_n\in \mathscr{R}\}$有
    $$
    \lim\limits_{n\to\infty} \mu(A_n) = 0
    $$
-如果$\mu$是有限的, 则上面的所有$\implies$全部变为$\iff$
+如果$\mu$还是有限的, 则上面的所有$\implies$全部变为$\iff$
 ___
 ##### Proof:  我们只证明部分结论
 

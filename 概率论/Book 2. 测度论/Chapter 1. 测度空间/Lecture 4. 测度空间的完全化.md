@@ -76,7 +76,7 @@ ___
 ##### Proof:
 根据[[#2.1. 每个测度空间都可以被完全化]], 设$\mathscr{F} = \sigma(\mathscr{Q})$, 只需要证明$\widetilde{\mathscr{F}} = \mathscr{F}_{\tau}$. 
 
-设$A\in \mathscr{F}_{\tau}$, 根据[[Lecture 3.2. 测度空间(外测度与测度扩张)#2.3. $ sigma( mathscr{Q})$上的测度$ tau$和$ mathscr{F}_{ tau}$上的测度$ tau$的关系|sigma域上的测度和tau可测集上的测度的关系]]知道, 存在 $C\in\mathscr{F}$使得$C\supset A$且$\tau(C\backslash A) =0$. 对$C\backslash A\in \mathscr{F}_{\tau}$, 同样有, 存在 $B\in \mathscr{F}$ 使得$B\supset C\backslash A$且$\tau(B) = \tau(C\backslash A)=0$. 从而
+设$A\in \mathscr{F}_{\tau}$, 根据[[Lecture 3. 外测度与测度扩张#2.4. $ sigma( mathscr{Q})$上的测度$ tau$和$ mathscr{F}_{ tau}$上的测度$ tau$的关系|sigma域上的测度和tau可测集上的测度的关系]]知道, 存在 $C\in\mathscr{F}$使得$C\supset A$且$\tau(C\backslash A) =0$. 对$C\backslash A\in \mathscr{F}_{\tau}$, 同样有, 存在 $B\in \mathscr{F}$ 使得$B\supset C\backslash A$且$\tau(B) = \tau(C\backslash A)=0$. 从而
 $$
 \begin{aligned} 
     A &= (A\cap B^c) \cup (A\cap B) \\ 

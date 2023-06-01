@@ -1,40 +1,48 @@
-## 1. Convex Sets
+## 1. 凸集
 
-### 1.1. Definition
-A set $C$ is convex if the line segment between any two points in $C$ lies in $C$, i.e. if for any $\boldsymbol{x}_1, \boldsymbol{x}_2\in C$ and any $\theta$ with $0\le \theta\le 1$, we have
+### 1.1. 凸集的定义
+集合 $C$ 被称为是凸的, 如果以$C$中的任意两个点组成的线段上的所有点都在 $C$上. 即对于任意的$\boldsymbol{x}_1, \boldsymbol{x}_2\in C$ 和$0\le \theta\le 1$, 我们有
 $$
 \theta \boldsymbol{x}_1 + (1-\theta)\boldsymbol{x}_2\in C
 $$
 
-### 1.2. Convex Hull
-The convex hull of a set $C$, denoted as $\mathrm{conv}C$, is the set of all convex combinations of points in $C$:
-$$
-\mathrm{conv}C = \{\theta_1\boldsymbol{x}_1+\cdots+\theta_k\boldsymbol{x}_k\mid \boldsymbol{x}_i\in C, \theta_i\ge 0, i=1,2,\cdots,k, \theta_1+\theta_2+\cdots+\theta_k=1\}
-$$
-$\mathrm{conv}C$ is always convex. It is the smallest convex set that contains $C$
-
-### 1.3. General convex combination
-
-Suppose $\theta_1, \theta_2,\cdots$ satisfy
-$$
-\theta_i\ge 0, \quad i=1,2,\cdots,\quad \sum\limits_{i=1}^{\infty}\theta_i = 1
-$$
-and $\boldsymbol{x}_1, \boldsymbol{x}_2, \cdots\in C$, where $C\subseteq \mathbb{R}^n$ is convex. Then 
-$$
-\sum\limits_{i=1}^{\infty}\theta_i\boldsymbol{x}_i \in C \quad \text{ If the series converges. }
-$$
-More generally, suppose $p: \mathbb{R}^n\to \mathbb{R}$ satisfies $p(\boldsymbol{x})\ge 0$ for all $\boldsymbol{x}\in C$ and $\int p(\boldsymbol{x}) \, \mathrm{d}\boldsymbol{x}=1$, where $C\subset \mathbb{R}^n$ is convex.  Then
-$$
-\int \boldsymbol{x}p(\boldsymbol{x}) \, \mathrm{d}\boldsymbol{x} \in C\implies \mathbb{E}\boldsymbol{x}\in C,\quad \text{If the integral exists. }
-$$
-
-### 1.4. Examples
+### 1.2. 凸集的例子
 1. **Empty Set**: $\varnothing$
 2. **Norm Ball**: $\{\boldsymbol{x}\mid \|\boldsymbol{x}\|\le r\}$
 3. **Hyperplane**: $\{\boldsymbol{x}\mid \boldsymbol{a}^{\top}\boldsymbol{x} = b\}$
 4. **Halfspace**: $\{\boldsymbol{x} \mid \boldsymbol{a}^{\top}\boldsymbol{x}\le b\}$
 5. **Affine Space**: $\{\boldsymbol{x}\mid \mathcal{A}(\boldsymbol{x}) = \boldsymbol{b}\}$
 6. **Polyhedron**: $\{\boldsymbol{x}\mid A\boldsymbol{x}\le \boldsymbol{b}\}$
+
+### 1.3. 广义凸组合(Generalized Convex Combination)
+设$C\subseteq \mathbb{R}^n$是一个凸集,  $\boldsymbol{x}_1, \boldsymbol{x}_2, \cdots\in C$. 假设$\theta_1, \theta_2,\cdots$ 满足
+$$
+\theta_i\ge 0, \quad i=1,2,\cdots,\quad \sum\limits_{i=1}^{\infty}\theta_i = 1
+$$
+如果$\sum\limits_{i=1}^{\infty}\theta_i\boldsymbol{x}_i$收敛, 则有$\sum\limits_{i=1}^{\infty}\theta_i\boldsymbol{x}_i \in C$. 
+
+更一般地, 假设 $p: \mathbb{R}^n\to \mathbb{R}$ 满足 $p(\boldsymbol{x})\ge 0, \forall \boldsymbol{x}\in C$ 和 $\displaystyle{\int} p(\boldsymbol{x}) \, \mathrm{d}\boldsymbol{x}=1$, 则有
+$$
+\mathbb{E}\boldsymbol{x} = \int \boldsymbol{x}p(\boldsymbol{x}) \, \mathrm{d}\boldsymbol{x} \in C \quad \text{If the integral exists. }
+$$
+
+### 1.4. 凸包(Convex Hull)
+集合 $C$ 的凸包是$C$中所有点的凸组合,  记为$\mathrm{conv}C$ 
+$$
+\mathrm{conv}C = \{\theta_1\boldsymbol{x}_1+\cdots+\theta_k\boldsymbol{x}_k\mid \boldsymbol{x}_i\in C, \theta_i\ge 0, i=1,2,\cdots,k, \theta_1+\theta_2+\cdots+\theta_k=1\}
+$$
+$\mathrm{conv}C$ 是包含$C$的最小凸集.
+
+### 1.5. 凸包的例子
+1. $\operatorname{conv}\left\{\boldsymbol{e}_i \boldsymbol{e}_j^{\top}, i=1, \cdots, n, j=1, \cdots, m\right\} = A$, 满足$A>0$且$\boldsymbol{1}^{\prime}A \boldsymbol{1} = 1$. 
+2. $\operatorname{conv}\left\{\boldsymbol{u u}^{\top} \mid\|\boldsymbol{u}\|=1\right\} = A$, 满足$\mathrm{tr}\left(A\right)=1$且$A$为实对称矩阵. 
+$$
+\begin{aligned} 
+   \operatorname{conv}\left\{\boldsymbol{u v}^{\top} \mid\|\boldsymbol{u}\|=1,\|\boldsymbol{v}\|=1\right\}
+\end{aligned}
+$$
+
+
 
 
 ## 2. Cones

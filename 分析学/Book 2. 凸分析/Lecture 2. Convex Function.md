@@ -1,3 +1,31 @@
+## 3. 函数的closedness
+### 3.1. 函数闭的定义
+A function $f: \mathbb{R}^n \rightarrow \mathbb{R}$ is said to be closed if, for each $\alpha \in \mathbb{R}$, the sublevel set
+$$
+\{\boldsymbol{x} \in \operatorname{dom} f \mid f(\boldsymbol{x}) \leq \alpha\}
+$$
+is closed. This is equivalent to the condition that the epigraph of $f$
+$$
+\text { epi } f=\left\{(\boldsymbol{x}, t) \in \mathbb{R}^{n+1} \mid \boldsymbol{x} \in \operatorname{dom} f, f(\boldsymbol{x}) \leq t\right\}
+$$
+is closed.
+
+### 3.2. 函数闭的判定
+1. If $f: \mathbb{R}^n \rightarrow \mathbb{R}$ is continuous, and $\operatorname{dom} f$ is closed, then $f$ is closed.
+
+2. If $f: \mathbb{R}^n \rightarrow \mathbb{R}$ is continuous, with $\operatorname{dom} f$ open, then $f$ is closed iff $f$ converges to $\infty$ along every sequence converging to a boundary point of $\operatorname{dom} f$. In other words
+   $$
+   \lim _{n \rightarrow \infty} \boldsymbol{x}_n=\boldsymbol{x} \in \partial(\operatorname{dom} f), \quad \boldsymbol{x}_n \in \operatorname{dom} f
+   $$
+   Then
+   $$
+   \lim _{n \rightarrow \infty} f\left(\boldsymbol{x}_n\right)=\infty
+   $$
+   
+
+
+
+
 ## 1. Convex Function
 ### 1.1. Definition
 A function $f: \mathbb{R}^n\to \mathbb{R}$ is convex if $\mathrm{dom} f$ is a convex set and if for all $\boldsymbol{x}, \boldsymbol{y}\in \mathrm{dom} f$, and $\theta$ with $0\le \theta\le 1$, we have

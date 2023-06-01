@@ -4,23 +4,37 @@
     "type": "split",
     "children": [
       {
-        "id": "8e2531bbfff426d2",
+        "id": "864983186ee27802",
         "type": "tabs",
         "children": [
           {
-            "id": "7146a1fa7da1dd20",
+            "id": "3040acfbaef00222",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "分析学/Chapter 1. 极限/Lecture 1. 极限的基本概念.md",
+                "file": "概率论/Book 2. 测度论/Chapter 1. 测度空间/Lecture 2. 测度.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8bdc35f243bcff8a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "概率论/Book 2. 测度论/Chapter 1. 测度空间/Lecture 3. 外测度与测度扩张.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -49,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "overline",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -78,7 +92,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
+    "width": 291.5086555480957,
     "collapsed": true
   },
   "right": {
@@ -95,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "分析学/Chapter 1. 极限/Lecture 1. 极限的基本概念.md",
+                "file": "概率论/Book 2. 测度论/Chapter 1. 测度空间/Lecture 3. 外测度与测度扩张.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "分析学/Chapter 1. 极限/Lecture 1. 极限的基本概念.md",
+                "file": "概率论/Book 2. 测度论/Chapter 1. 测度空间/Lecture 3. 外测度与测度扩张.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "分析学/Chapter 1. 极限/Lecture 1. 极限的基本概念.md"
+                "file": "概率论/Book 2. 测度论/Chapter 1. 测度空间/Lecture 3. 外测度与测度扩张.md"
               }
             }
           },
@@ -167,46 +181,46 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "7146a1fa7da1dd20",
+  "active": "8bdc35f243bcff8a",
   "lastOpenFiles": [
-    "分析学/Chapter 1. 极限/Lecture 2. 极限.md",
+    "专题/集合论/Lecture 2. 集合类.md",
+    "概率论/Book 2. 测度论/Chapter 1. 测度空间/Lecture 3. 外测度与测度扩张.md",
+    "概率论/Book 2. 测度论/Chapter 1. 测度空间/Lecture 4. 测度空间的完全化.md",
+    "概率论/Book 2. 测度论/Chapter 1. 测度空间/Lecture 2. 测度.md",
+    "概率论/Book 2. 测度论/Chapter 1. 测度空间/Lecture 1. 可测空间和可测映射.md",
+    "专题/集合论/Lecture 1. 集合的运算.md",
+    "代数学/Book 1. 线性代数/Chapter 1. 线性代数/Lecture 1. 矩阵范数.md",
+    "代数学/Book 1. 线性代数/Chapter 1. 线性代数/Lecture 3. 奇异值分析.md",
+    "专题/集合论/Lecture 5. 凸集.md",
+    "专题/集合论/Lecture 4. Borel集.md",
+    "专题/集合论/Lecture 3. 实数上的简单拓扑.md",
+    "专题/集合论/Lecture 3. 简单拓扑.md",
+    "专题/集合论/Lecture 1. 集合论.md",
+    "专题/集合论/Lecture 1. 集合类.md",
+    "专题/集合论/Lecture 0. 简单拓扑.md",
+    "概率论/Book 2. 测度论/Chapter 1. 可测空间与可测映射/Lecture 2. 可测映射.md",
+    "统计学/计量经济学/Lecture 0. 数据表示.md",
+    "概率论/Book 2. 测度论/Chapter 1. 可测空间与可测映射/Lecture 2. 可测空间.md",
+    "专题/集合论/Lecture 0. 集合论.md",
+    "专题/集合论",
+    "概率论/Book 2. 测度论/Chapter 1. 可测空间与可测映射/Lecture 2. 可测空间",
+    "概率论/Book 2. 测度论/Chapter 1. 可测空间与可测映射/Lecture 1. 可测空间.md",
     "分析学/Chapter 1. 极限/Lecture 1. 极限的基本概念.md",
-    "分析学/Book 2. 凸分析/Lecture 0. 简单拓扑.md",
-    "分析学/Book 2. 凸分析/Lecture 1. Convex Sets.md",
+    "概率论/Book 1. 初等概率论/Chapter 1. 概率不等式/Lecture 3. Bernstein's Type Inequality.md",
+    "概率论/Book 2. 测度论/Lecture 1. 可测空间.md",
+    "概率论/Book 2. 测度论/Chapter 3. 积分",
+    "概率论/Book 2. 测度论/Chapter 1. 测度空间",
+    "概率论/Book 2. 测度论/Chapter 1. 可测空间与可测映射",
+    "分析学/Chapter 1. 极限/Lecture 2. 极限.md",
     "分析学/Book 2. 凸分析/Lecture 2. Convex Function.md",
     "分析学/Book 1. 数学分析/Chapter 1. 极限/Lecture 3. 函数.md",
-    "分析学/Book 1. 数学分析/Chapter 1. 基础知识/Lecture 1. 实数系.md",
-    "数值计算/Lecture 1. 误差.md",
-    "数值方法/Chapter 1. 多项式插值/Lecture 5. 有理函数逼近.md",
-    "数值方法/Chapter 1. 多项式插值/Lecture 4. 样条方法.md",
-    "数值方法/Chapter 1. 多项式插值/Lecture 3. 牛顿插值方法.md",
-    "数值方法/Chapter 1. 多项式插值/Lecture 2. Lagrange插值方法.md",
-    "数值方法/Chapter 1. 多项式插值/Lecture 1. 多项式逼近.md",
-    "数值方法/Lecture 1. 误差.md",
     "数值方法/Chapter 6. 常微分方程",
     "数值方法/Chapter 5. 数值积分与数值微分",
     "数值方法/Chapter 3. 线性方程组求解",
     "数值方法/Chapter 4. 特征值",
     "数值方法/Chapter 2. 非线性方程(组)求解",
-    "数值方法/Chapter 1. 多项式插值",
-    "数值方法",
-    "数值计算/Lecture 2. 非线性方程求解.md",
-    "数值计算/Chapter 6. 常微分方程",
-    "数值计算/Chapter 5. 数值积分与数值微分",
-    "数值计算/Chapter 4. 特征值",
-    "数值计算/Chapter 1. 多项式插值/Lecture 5. 有理函数逼近.md",
-    "数值计算/Chapter 1. 多项式插值/Lecture 4. 样条方法.md",
-    "数值计算/Chapter 1. 多项式插值/Lecture 3. 牛顿插值方法.md",
-    "数值计算/Chapter 1. 多项式插值/Lecture 2. Lagrange插值方法.md",
-    "数值计算/Chapter 1. 多项式插值/Lecture 1. 多项式逼近.md",
-    "数值计算/Chapter 1. 多项式插值/Lecture 3. 多项式插值.md",
-    "数值计算/Lecture 3. 多项式插值.md",
     "数值计算/Lecture 1. 误差.assets/image-20230529000153166.png",
     "数值计算/Lecture 1. 误差.assets/image-20230529000138386.png",
-    "分析学/Chapter 4. 积分/Lecture 4. Riemann积分.md",
-    "分析学/Chapter 4. 积分/Lecture 5. 广义积分.md",
-    "分析学/Chapter 3. 导数和微分/Lecture 3.2. 导数与微分(多元).md",
-    "分析学/Chapter 3. 导数和微分/Lecture 3.1. 导数与微分(一元).md",
     "随机过程论/Book 1. 马尔科夫链/Lecture 1. Introduction.assets/image-20230527160737582.png",
     "随机过程论/Book 1. 马尔科夫链/Lecture 1. Introduction.assets/image-20230527160640924.png",
     "随机过程论/Book 1. 马尔科夫链/Lecture 1. Introduction.assets/image-20230527154631349.png",
