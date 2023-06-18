@@ -28,62 +28,8 @@
 如果 $N \in \mathscr{F}$ 并且 $\mu(N)=0$, 则称 $N$ 为 $\mu$ 的零测集.
 
 ## 2. 半环上的测度
-### 2.1. 准分布函数$F$构造的测度
-设$X=\mathbb{R}$, $\mathscr{E} = \mathscr{Q}_{\mathbb{R}}$, 而$F$是$\mathbb{R}$上的非降右连续的实值函数(准分布函数). 对任意的$a, b\in \mathbb{R}$, 设
-$$
-\mu((a, b]) = \begin{cases}  F(b) - F(a) , \quad & a<b \\ 0, \quad & a\ge b \end{cases}
-$$
-则$\mu$是$\mathscr{E}$上的测度.
-___
-##### Proof: 
-不难证明$\mu(\varnothing)=0$, 因此我们只要验证$\mu$具有可列可加性. 
-1. 首先, 我们不难证明$\mu$是有限可加的
-2. 其次, 如果$(a_i, b_i)\in \mathscr{Q}_{\mathbb{R}}$两两不交并且
-   $$
-   \bigcup\limits_{i=1}^{\infty} (a_i, b_i] \subset (a, b]
-   $$
-   容易证明对任意的$n\ge 1$, 都有
-   $$
-   \mu((a, b])\ge \sum\limits_{i=1}^{n} \mu((a_i, b_i])
-   $$
-   取$n\to\infty$可以得到
-   $$
-   \mu((a, b])\ge \sum\limits_{i=1}^{\infty} \mu((a_i, b_i])\tag{2.1.1}
-   $$
-3. 如果$(a_i, b_i)\in \mathscr{Q}_{\mathbb{R}}$两两不交并且
-   $$
-   \bigcup\limits_{i=1}^{\infty} (a_i, b_i] = (a, b]
-   $$
-   对任意的$\varepsilon>0$, 根据$F$的右连续性, 我们可以找到$\delta_i>0$, 使得
-   $$
-   F(b_i+\delta_i) - F(b_i) < \frac{\varepsilon}{2^i}
-   $$
-   于是, 对任意的$\eta>0$, 开区间列$\{(a_i, b_i+\delta_i)\}$形成了闭区间$[a+\eta, b]$的一个开覆盖, 因此, 存在$n$使得
-   $$
-   \bigcup\limits_{i=1}^{n} (a_i, b_i+\delta_i]\supset [a+\eta, b]\supset (a+\eta, b]
-   $$
-   于是, 我们有
-   $$
-   \begin{aligned} 
-      F(b) - F(a+\eta)&\le  \sum\limits_{i=1}^{n}[F(b_i+\delta_i) - F(a_i)] \\ 
-      & \le \sum\limits_{i=1}^{n}[F(b_i) - F(a_i)] +  \varepsilon \\ 
-      &\le \sum\limits_{i=1}^{\infty}\mu((a_i, b_i]) +\varepsilon  
-   \end{aligned}
-   $$
-   在这里, 先令$\eta\to 0$, 由$F$的右连续性, 可以得到
-   $$
-   \mu((a, b]) = F(b) - F(a)\le \sum\limits_{i=1}^{\infty}\mu((a_i, b_i]) +\varepsilon
-   $$
-   再令$\varepsilon\to 0$, 可以得到
-   $$
-   \mu((a, b])\le \sum\limits_{i=1}^{\infty}\mu((a_i, b_i])  \tag{2.1.2}
-   $$
-   结合$(2.1.1)$和$(2.1.2)$, 我们证明了$\mu$是可列可加的, 因此$\mu$是$\mathscr{E}$上的测度.
-#####
-___
-
-### 2.2. 半环上测度的性质
-半环上的测度具有单调性, 可减性, 半可列可加性, 下连续性和上连续性. 其中各个性质的严格定义分别为
+### 2.1. 半环上测度的性质
+半环$\mathscr{Q}$上的测度具有单调性, 可减性, 半可列可加性, 下连续性和上连续性. 其中各个性质的严格定义分别为
 1. **单调性**: 如果对任何 $A, B \in \mathscr{E}$ 且 $A \subset B$, 均有 $\mu(A) \leq \mu(B)$, 则称 $\mu$ 具有单调性
 2. **可减性**: 如果对任何 $A, B \in \mathscr{E}, A\subset B$, $B\backslash A\in \mathscr{E}$, 只要$\mu(A)<\infty$, 就有
    $$
@@ -209,7 +155,7 @@ ___
 #####
 ___
 
-### 2.3. 环上有限可加的非负集函数的性质
+### 2.2. 环上有限可加的非负集函数的性质
 对于环$\mathscr{R}$上的有限可加非负集函数$\mu$, 有下面的结论成立:
 
 $\mu$是可列可加 $\iff \mu$半可列可加 $\iff \mu$下连续 $\implies\mu$上连续 $\implies \mu$在$\varnothing$上连续, 即对任何满足$A_n\downarrow \varnothing$和$\mu(A_1)<\infty$的$\{A_n\in \mathscr{R}\}$有

@@ -27,7 +27,7 @@ $$
 $$
 \mathrm{Var}(\boldsymbol{z}_i)=\mathrm{Var}(\boldsymbol{x})\prod\limits_{j=0}^{i-1}n_j \mathrm{Var}(W_j) 
 $$
-对于一个有$d$层隐藏层的神经网络, 根据[[../机器学习/Book 2. 深度学习与强化学习/Lecture 3. CNN#5.1. 全连接神经网络的梯度计算]]中的结果, 我们可以得到
+对于一个有$d$层隐藏层的神经网络, 根据[[../机器学习/Book 2. 深度学习/Lecture 3. CNN#5.1. 全连接神经网络的梯度计算]]中的结果, 我们可以得到
 $$
 \mathrm{Var}\left(\dfrac{\partial \mathrm{Cost} }{\partial W_i^{\top} } \right) = \mathrm{Var}(\boldsymbol{z}_i)\mathrm{Var}\left(\dfrac{\partial \mathrm{Cost} }{\partial \boldsymbol{s}^{\top}_i } \right) =  \mathrm{Var}(\boldsymbol{z}_i)\mathrm{Var}\left(\dfrac{\partial \mathrm{Cost} }{\partial \boldsymbol{s}_d^{\top} } \right)\prod\limits_{j=i}^{d-1}n_{j+2} \mathrm{Var}(W_{j+1}) 
 $$
@@ -98,7 +98,7 @@ $$
 ### 4. 正交初始化(RNN)
 [RNN 中学习长期依赖的三种机制 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/34490114)
 
-考虑RNN的梯度的计算[[../机器学习/Book 2. 深度学习与强化学习/Lecture 4. RNN#1.3. RNN梯度的计算]]
+考虑RNN的梯度的计算[[../机器学习/Book 2. 深度学习/Lecture 4. RNN#1.3. RNN梯度的计算]]
 $$
 \prod\limits_{j=k+1}^t \dfrac{\partial \boldsymbol{h}^{(j)}}{\partial \boldsymbol{h}^{(j-1)\top} } = \prod\limits_{j=k+1}^t\mathrm{diag}\left\{g^{\prime}\left(\boldsymbol{b} + W\boldsymbol{h}^{(j-1)} + U \boldsymbol{x}^{(j)} \right) \right\} W
 $$

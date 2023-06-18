@@ -1,69 +1,69 @@
-## 1. 一元函数的黎曼积分
+## 1. Riemann-Stieltjes 积分
 ### 1.1. Riemann积分的定义
- 设$f:\ [a,b]\to \mathbb{R}(\mathbb{C})$是有界闭区间$[a,b]$上的实值函数. 闭区间$[a,b]$上的$n+1$个点
+设函数$f$在区间$[a,b]$上有界.  $P=\{x_0,x_1,\cdots,x_n\}$为$[a,b]$的一个分划, 对$i=1,2,\cdots,n$, 记
 $$
-\mathcal{C}:\ a=x_0<x_1<\cdots<x_{n-1}<x_n=b
+\begin{aligned} 
+M_i &= \sup\{f(x)\mid x\in [x_{i-1},x_i]\} \\  
+m_i &= \inf \{f(x) \mid  x\in [x_{i-1},x_i]\}
+\end{aligned}
 $$
-称为闭区间$[a,b]$的一个分划, 闭区间$[a,b]$因此被分划成了$n$个小区间
+其达布上和和达布下和分别记为
 $$
-[a,b]=\bigcup_{k=1}^n[x_{i-1},x_i]
+\begin{aligned} 
+    U(P, f) &= \sum_{i=1}^n M_i\Delta x_i \\ 
+    L(P, f) &= \sum_{i=1}^n m_i\Delta x_i
+\end{aligned}
 $$
-其中两个不同的小区间之交至多为单点集. 在每个小区间上任选一点$\xi_i\in [x_{i-1},x_i]$, 并构造函数$f$相对于分划$\mathcal{C}$和选点组$\boldsymbol{\xi}=\{\xi_1,\cdots,\xi\}$的Riemann和
+最后, 定义$f$在$[a, b]$上的Riemann上积分和Riemann下积分为
 $$
-\mathcal{R}(f;\mathcal{C},\boldsymbol{\xi})=\sum_{i=1}^nf(\xi_i)(x_i-x_{i-1})
+\begin{aligned} 
+  \overline{\int_a^b}f(x)\mathrm{d}x  = \inf U(P, f) \\ 
+  \underline{\int_a^b}f(x)\mathrm{d}x  = \sup L(P, f)
+\end{aligned}
 $$
-假若当小区间$[x_{i-1},x_i](1\le i\le n)$的长度的最大者趋于零时, 对任意满足条件$\xi_i\in [x_{i-1},x_i]$的选点组$\boldsymbol{\xi}=\{\xi_1,\cdots,\xi_n\}$, Riemann和收敛于某个实(复)数$I\in \mathbb{R}(\mathbb{C})$. 则称$f$在$[a,b]$上Riemann可积, $f$在区间$[a,b]$上的Riemann积分, 记作
+如果上积分和下积分相等, 则称$f$在$[a, b]$上Riemann可积, 记为$f\in \mathscr{R}$
 $$
-I=\int_a^bf(x)\mathrm{d}x
-$$
-$f(x)$称为上述积分的被积函数, $[a,b]$称为积分区间, $a$称为积分下限, $b$称为积分上限
-
-### 1.2. 达布和
-设函数$f$在区间$[a,b]$上有界, $P=\{x_0,x_1,\cdots,x_n\}$为$[a,b]$的一个分划, 对$i=1,2,\cdots,n$, 记
-$$
-M_i=\sup\{f(x)| x\in [x_{i-1},x_i]\}\quad m_i=\inf\{f(x)| x\in [x_{i-1},x_i]\}
-$$
-称$w_i=M_i-m_i$为$f$在$[x_{i-1},x_i]$上的振幅,$\quad \displaystyle{\sum_{i=1}^n w_i\Delta x_i}$为$f$的振幅面积.  称$\displaystyle{\sum_{i=1}^n m_i\Delta x_i}$为$f$在$[a,b]$上的达布下和, 记为$\underline{S}_{\Delta'}$, 称$\displaystyle{\sum_{i=1}^n M_i\Delta x_i}$为$f$在$[a,b]$上的达布上和, 记为$\overline{S}_{\Delta'}$
-
-达布和具有下述的性质
-1. $\displaystyle{\sum_{i=1}^n m_i\Delta x_i\le \sum_{i=1}^n f(\xi_i)\Delta x_i\le \sum_{i=1}^n M_i\Delta x_i}$
-2.  若$\Delta''$为$\Delta'$的加细分划, 则有$\underline{S}_{\Delta'}\le\underline{S}_{\Delta''}\le\overline{S}_{\Delta''}\le\overline{S}_{\Delta'}$
-3. 设$\Delta',\Delta''$是$[a,b]$的任意两个分划, 则有$\underline{S}_{\Delta''}\le\overline{S}_{\Delta'}$, 即达布上和大于等于达布下和恒成立
-   
-### 1.3. 达布定理
-设函数$f$在区间$[a,b]$上有界, 对$[a,b]$的一切分划$\Delta$, 作相应的达布上和数集$\{\overline{S}_{\Delta}\}$与达布下和数集$\{\underline{S}_{\Delta}\}$, 且记其下,上确界分别为
-$$
-\inf\limits_{\Delta}\{\overline{S}_{\Delta}\}=\overline{\int_a^b}f(x)\mathrm{d}x,\quad \sup\limits_{\Delta}\{\underline{S}_{\Delta}\}=\underline{\int_a^b}f(x)\mathrm{d}x
-$$ 
-并分别称它们为$f(x)$在$[a,b]$上的达布上积分和达布下积分, 我们有
-$$
-\underline{S}_{\Delta}\le \underline{\int_a^b}f(x)\mathrm{d}x\le \overline{\int_a^b}f(x)\mathrm{d}x\le\overline{S}_{\Delta}
-$$
-并且
-$$
-\lim\limits_{||\Delta|| \to 0}\overline{S}_{\Delta }=\overline{\int_a^b}f(x)\mathrm{d}x, \quad\lim\limits_{||\Delta|| \to 0}\underline{S}_{\Delta }=\underline{\int_a^b}f(x)\mathrm{d}x
-$$
-设$f$是有界函数, 则$f \in R([a,b])$当且仅当其上下积分相等, 此时有
-$$
-\overline{\int_a^b}f(x)\mathrm{d}x=\underline{\int_a^b}f(x)\mathrm{d}x=\int_a^b f(x)\mathrm{d}x
+\int_a^b f(x)\mathrm{d}x = \overline{\int_a^b}f(x)\mathrm{d}x=\underline{\int_a^b}f(x)\mathrm{d}x
 $$
 
+### 1.2. Riemann-Stieltjes 积分的定义
+设函数$f$在区间$[a,b]$上有界, $\alpha$是$[a, b]$上的一个单调递增函数, $P=\{x_0,x_1,\cdots,x_n\}$为$[a,b]$的一个分划, 对$i=1,2,\cdots,n$, 记
+$$
+\Delta \alpha_i = \alpha(x_i) - \alpha(x_{i-1})
+$$
+设
+$$
+\begin{aligned} 
+    U(P, f, \alpha) &= \sum_{i=1}^n M_i\Delta \alpha_i \\ 
+    L(P, f, \alpha) &= \sum_{i=1}^n m_i\Delta \alpha_i
+\end{aligned}
+$$
+并且定义上积分和下积分分别为
+$$
+\begin{aligned} 
+  \overline{\int_a^b}f(x)\mathrm{d}\alpha  = \inf U(P, f, \alpha) \\ 
+  \underline{\int_a^b}f(x)\mathrm{d}\alpha  = \sup L(P, f, \alpha)
+\end{aligned}
+$$
+如果上积分和下积分相等, 则称$f$关于$\alpha$在Riemann意义上可积. 记为$f\in\mathscr{R}(\alpha)$
+$$
+\int_a^b f(x)\mathrm{d}\alpha = \overline{\int_a^b}f(x)\mathrm{d}\alpha=\underline{\int_a^b}f(x)\mathrm{d}\alpha
+$$
 
-### 1.4. Riemann可积定理
-设$f(x)$是$[a,b]$上的有界函数, 则$f\in R([a,b])$的充分必要条件为下面的任意一条
-1. 对$\forall \varepsilon>0, \exists\delta >0$, 使得当分划$\Delta$满足$||\Delta||\le \delta$时, 满足$\sum w_i\Delta x_i<\varepsilon$, 也即
-	$$
-    \lim\limits_{||\Delta|| \to 0}\sum_{i=1}^nw_i\Delta x_i=0
-    $$
-2. 对$\forall \varepsilon>0$, 存在区间$[a,b]$的一个分划$\Delta$, 使得
-	$$
-    \sum_{\Delta } w_i\Delta x_i<\varepsilon
-    $$
-3. 对$\forall \varepsilon>0,\sigma>0$, 存在分划$\Delta: a=x_0<x_1<\cdots<x_n=b$, 其满足$w_i\ge \varepsilon$的子区间的长度总和小于$\sigma$, 也即
+
+
+
+### 1.3. Riemann可积定理
+设$f(x)$是$[a,b]$上的有界函数, 则$f\in \mathscr{R}$的充分必要条件为下面的任意一条
+1. 对$\forall \varepsilon>0, \exists\delta >0$, 使得当分划$\Delta$满足$||\Delta||\le \delta$时, 满足
+   $$
+   \sum w_i\Delta x_i<\varepsilon
+   $$
+2. 对$\forall \varepsilon>0,\sigma>0$, 存在分划$\Delta: a=x_0<x_1<\cdots<x_n=b$, 其满足$w_i\ge \varepsilon$的子区间的长度总和小于$\sigma$, 也即
 	$$
     \sum_{w_i\ge \varepsilon}\Delta x_i<\sigma 
     $$
-4. $f$在$[a,b]$上有界, 且$f$的所有不连续点可以用总长度任意小的至多可列个开区间覆盖
+3. $f$在$[a,b]$上有界, 且$f$的所有不连续点可以用总长度任意小的至多可列个开区间覆盖
    
 ## 2. Riemann积分的局限性
 ### 

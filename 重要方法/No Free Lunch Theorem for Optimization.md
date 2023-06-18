@@ -17,7 +17,7 @@ Here, $m$ is the iteration times
 $$
 a: d \in \mathcal{D} \mapsto\left\{x \mid x \notin d^x\right\}
 $$
-我们的算法没有revisit
+也就是说, 算法中不存在revisit
 
 **Prior Distribution**:
 $$
@@ -43,8 +43,9 @@ $$
 \mathbb{P}\left(\Phi\left(\boldsymbol{d}_m^y\right) \mid f, m, a\right) \text { is independent of } a
 $$
 ---
-***Proof***: We prove the result by induction
-For $m=1$, it's easy to show that
+
+##### Proof
+We prove the result by induction. For $m=1$, it's easy to show that
 $$
 \sum_f \mathbb{P}\left(d_1^y \mid f, m=1, a\right)=\sum_f \delta\left(d_1^y, f\left(d_1^x\right)\right)=|\mathcal{Y}|^{|\mathcal{X}|-1}
 $$

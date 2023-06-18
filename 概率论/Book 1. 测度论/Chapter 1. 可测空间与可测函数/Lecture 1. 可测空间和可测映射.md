@@ -65,16 +65,45 @@ $$
 3. $\{f>a\}\in \mathscr{F},\ \forall a\in \mathbb{R}$
 4. $\{f\ge a\}\in \mathscr{F},\ \forall a\in \mathbb{R}$
 
+## 2. 简单函数
+### 2.1. 简单函数的定义
+对于可测空间$(X, \mathscr{F})$上的函数$f: X\to \mathbb{R}$, 如果存在有限可测分割$\{A_i\in \mathscr{F}\mid i=1,2\cdots, n\}$和实数$\{a_i\mid i=1,2,\cdots, n\}$使得
+$$
+f = \sum\limits_{i=1}^{n} a_i\mathbb{I}_{A_i}
+$$
+则称之为简单函数. 
 
-## 2. 可测函数的运算
-### 2.1. 可测函数的四则运算
+**简单函数的刻画**: 如果$f$是可测空间$(X, \mathscr{F})$上的可测函数, 则它是简单函数当且仅当其值域是有限个实数组成的集合. 
+
+
+### 2.2. 对可测函数的简单函数逼近
+1. 对任意的非负可测函数$f$, 存在非负简单函数列$\{f_n\mid n=1,2,\cdots\}$使得$f_n\uparrow f$, 如果$f$是非负有界可测的, 则存在非负简单函数列$\{f_n\mid n=1,2,\cdots\}$使得$f_n(x)\uparrow f(x)$对$x\in X$一致成立
+2. 对任何的可测函数$f$, 存在简单函数列$\{f_n\mid n=1,2, \cdots\}$使得$f_n\to f$. 如果$f$是有界可测的, 则存在简单函数列$\{f_n\mid n=1,2,\cdots\}$使得$f_n(x)\to f(x)$对$x\in X$一致成立. 
+___
+##### Proof: 
+ 
+设$f$非负可测, 对每个$n=1,2,\cdots$, 设
+$$
+f_n(x) = \sum\limits_{k=0}^{n2^n-1} \dfrac{k}{2^n}\mathbb{I}\left(\dfrac{k}{2^n}\le f(x)<\dfrac{k+1}{2^n}\right)
+$$
+显然$f_n$非负非降, 并且$\lim\limits_{n\to\infty} f_n(x)=f(x)$. 如果$f$有界, 则存在充分打的$N$, 对任意$n>N$都有
+$$
+0\le f(x) - f_n(x) \le \dfrac{1}{2^n}, \quad \forall x\in X
+$$
+对于可测函数的情形, 只需要用分解$f = f^+ - f^-$并且分别用1的结论即可
+#####
+___
+
+
+## 3. 可测函数的运算
+### 3.1. 可测函数的四则运算
 如果$f, g$是可测函数, 则
 1. 对于任何$a\in \overline{\mathbb{R}}$, $af$是可测函数. 
 2. 如果对每个$x\in X$, $f(x)+g(x)$均有意义, 则它是可测函数.
 3. $f\cdot g$是可测函数.
 4. 如果$g(x)\neq 0, \forall x\in X$, 则$\dfrac{f}{g}$是可测函数. 
    
-### 2.2. 可测函数的极限
+### 3.2. 可测函数的极限
 如果$\{f_n\mid n=1,2,\cdots\}$是可测函数序列, 则
 1. $\inf\limits_{n}f_n$是可测函数.
 2. $\sup\limits_{n}f_n$是可测函数.
@@ -97,35 +126,7 @@ $$
 ___
 
 
-### 2.3. 简单函数
-对于可测空间$(X, \mathscr{F})$上的函数$f: X\to \mathbb{R}$, 如果存在有限可测分割$\{A_i\in \mathscr{F}\mid i=1,2\cdots, n\}$和实数$\{a_i\mid i=1,2,\cdots, n\}$使得
-$$
-f = \sum\limits_{i=1}^{n} a_i\mathbb{I}_{A_i}
-$$
-则称之为简单函数. 
-
-**简单函数的刻画**: 如果$f$是可测空间$(X, \mathscr{F})$上的可测函数, 则它是简单函数当且仅当其值域是有限个实数组成的集合. 
-
-
-### 2.4. 对可测函数的简单函数逼近
-1. 对任意的非负可测函数$f$, 存在非负简单函数列$\{f_n\mid n=1,2,\cdots\}$使得$f_n\uparrow f$, 如果$f$是非负有界可测的, 则存在非负简单函数列$\{f_n\mid n=1,2,\cdots\}$使得$f_n(x)\uparrow f(x)$对$x\in X$一致成立
-2. 对任何的可测函数$f$, 存在简单函数列$\{f_n\mid n=1,2, \cdots\}$使得$f_n\to f$. 如果$f$是有界可测的, 则存在简单函数列$\{f_n\mid n=1,2,\cdots\}$使得$f_n(x)\to f(x)$对$x\in X$一致成立. 
-___
-##### Proof: 
- 
-设$f$非负可测, 对每个$n=1,2,\cdots$, 设
-$$
-f_n(x) = \sum\limits_{k=0}^{n2^n-1} \dfrac{k}{2^n}\mathbb{I}\left(\dfrac{k}{2^n}\le f(x)<\dfrac{k+1}{2^n}\right)
-$$
-显然$f_n$非负非降, 并且$\lim\limits_{n\to\infty} f_n(x)=f(x)$. 如果$f$有界, 则存在充分打的$N$, 对任意$n>N$都有
-$$
-0\le f(x) - f_n(x) \le \dfrac{1}{2^n}, \quad \forall x\in X
-$$
-对于可测函数的清醒, 只需要用分解$f = f^+ - f^-$并且分别用1的结论即可
-#####
-___
-
-### 2.5. 复合可测函数
+### 3.3. 复合可测函数
 设 $g$ 是 $(X, \mathscr{F})$ 到 $(Y, \mathscr{S})$ 的可测映射. 则 $h$ 是 $\left(X, g^{-1} (\mathscr{S})\right)$ 上的可测函数 (或随机变量, 或有界可测函数) 当且仅当存在 $(Y, \mathscr{S})$ 上的可测函数 (或随机变量, 或有界可测函数) $f$ 使得 $h=f \circ g$
 ___
 ##### Proof: 

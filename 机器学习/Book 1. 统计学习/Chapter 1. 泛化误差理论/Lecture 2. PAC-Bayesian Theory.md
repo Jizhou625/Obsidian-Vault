@@ -53,7 +53,7 @@ $$
 $$
 \mathbb{P}_{S\sim D^n}\left[\mathbb{E}_{h\sim \mathcal{P}} \left[e^{n\Delta^2}\right] \ge \dfrac{3}{\delta} \right] \le \delta \tag{1}
 $$
-使用[[../../../概率论/Book 1. 初等概率论/Chapter 1. 概率不等式/Lecture 2. Hoeffding Type Bounds#2. Hoeffding Inequality|Lecture 2. Hoeffding Inequality]], 我们可以得到
+使用[[../../../概率论/Book 2. 概率论/Chapter 1. 概率不等式/Lecture 2. Hoeffding Type Bounds#2. Hoeffding Inequality|Lecture 2. Hoeffding Inequality]], 我们可以得到
 $$
 \mathbb{P}_{S\sim D^n} [\Delta \ge \varepsilon] \le 2\exp(-2n\varepsilon^2)
 $$

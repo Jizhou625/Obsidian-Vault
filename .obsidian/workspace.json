@@ -4,30 +4,30 @@
     "type": "split",
     "children": [
       {
-        "id": "864983186ee27802",
+        "id": "c8eeb35cdae92a97",
         "type": "tabs",
         "children": [
           {
-            "id": "3040acfbaef00222",
+            "id": "ac2cb76c08705440",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "概率论/Book 2. 测度论/Chapter 1. 测度空间/Lecture 2. 测度.md",
-                "mode": "preview",
+                "file": "机器学习/Book 1. 统计学习/Chapter 2. 线性模型/Lecture 1. 回归模型.md",
+                "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           },
           {
-            "id": "8bdc35f243bcff8a",
+            "id": "6c9550ea9f3ce3c5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "概率论/Book 2. 测度论/Chapter 1. 测度空间/Lecture 3. 外测度与测度扩张.md",
-                "mode": "preview",
+                "file": "机器学习/Book 1. 统计学习/Chapter 2. 线性模型/Lecture 2. 线性分类问题.md",
+                "mode": "source",
                 "backlinks": true,
                 "source": false
               }
@@ -63,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "overline",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -88,11 +88,12 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 291.5086555480957,
+    "width": 200,
     "collapsed": true
   },
   "right": {
@@ -109,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "概率论/Book 2. 测度论/Chapter 1. 测度空间/Lecture 3. 外测度与测度扩张.md",
+                "file": "机器学习/Book 1. 统计学习/Chapter 2. 线性模型/Lecture 2. 线性分类问题.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "概率论/Book 2. 测度论/Chapter 1. 测度空间/Lecture 3. 外测度与测度扩张.md",
+                "file": "机器学习/Book 1. 统计学习/Chapter 2. 线性模型/Lecture 2. 线性分类问题.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "概率论/Book 2. 测度论/Chapter 1. 测度空间/Lecture 3. 外测度与测度扩张.md"
+                "file": "机器学习/Book 1. 统计学习/Chapter 2. 线性模型/Lecture 2. 线性分类问题.md"
               }
             }
           },
@@ -181,54 +182,54 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "8bdc35f243bcff8a",
+  "active": "6c9550ea9f3ce3c5",
   "lastOpenFiles": [
-    "专题/集合论/Lecture 2. 集合类.md",
-    "概率论/Book 2. 测度论/Chapter 1. 测度空间/Lecture 3. 外测度与测度扩张.md",
-    "概率论/Book 2. 测度论/Chapter 1. 测度空间/Lecture 4. 测度空间的完全化.md",
-    "概率论/Book 2. 测度论/Chapter 1. 测度空间/Lecture 2. 测度.md",
-    "概率论/Book 2. 测度论/Chapter 1. 测度空间/Lecture 1. 可测空间和可测映射.md",
-    "专题/集合论/Lecture 1. 集合的运算.md",
-    "代数学/Book 1. 线性代数/Chapter 1. 线性代数/Lecture 1. 矩阵范数.md",
-    "代数学/Book 1. 线性代数/Chapter 1. 线性代数/Lecture 3. 奇异值分析.md",
-    "专题/集合论/Lecture 5. 凸集.md",
+    "专题/集合论/Lecture 5. 凸集.assets/Pasted image 20230319151029.png",
+    "专题/集合论/Lecture 5. 凸集.assets/image-20230319192022011.png",
+    "专题/集合论/Lecture 5. 凸集.assets/image-20230319153718348.png",
+    "专题/集合论/Lecture 5. 凸集.assets",
+    "专题/集合论/Lecture 1. Convex Sets.assets/Pasted image 20230319151029.png",
+    "专题/集合论/Lecture 1. Convex Sets.assets/image-20230319192022011.png",
+    "专题/集合论/Lecture 1. Convex Sets.assets/image-20230319153718348.png",
+    "专题/集合论/Lecture 1. Convex Sets.assets",
+    "优化/Chapter 1. Linear Programming",
+    "优化/Chapter 1. Linear Programming.md",
+    "机器学习/Book 1. 统计学习/Chapter 2. 线性模型/Lecture 2. 线性分类问题.assets/image-20230619005230486.png",
+    "机器学习/Book 1. 统计学习/Chapter 2. 线性模型/Lecture 2. 线性分类问题.assets",
+    "概率论/Book 1. 测度论/Chapter 2. 测度空间/Lecture 2. 外测度与测度扩张.md",
+    "机器学习/Book 2. 深度学习/Lecture 2. Optimization.md",
+    "重要方法/No Free Lunch Theorem for Optimization.md",
+    "机器学习/Book 1. 统计学习/Chapter 2. 线性模型/Lecture 2. 线性分类问题.md",
+    "机器学习/Book 1. 统计学习/Chapter 2. 线性模型/Lecture 1. 回归模型.md",
+    "机器学习/Book 1. 统计学习/Chapter 2. 线性模型/Lecture 4. 最大熵模型.md",
+    "概率论/Book 1. 测度论/Chapter 2. 测度空间/Lecture 1. 测度.md",
+    "概率论/Book 1. 测度论/Chapter 4. 符号测度/Lecture 1. 符号测度.md",
+    "概率论/Book 1. 测度论/Chapter 3. 积分/Lecture 1. 积分的定义.md",
+    "概率论/Book 1. 测度论/Chapter 1. 可测空间与可测函数/Lecture 2. 可测函数的收敛性.md",
+    "机器学习/Book 1. 统计学习/Chapter 2. 线性分类器/Lecture 1. 线性分类问题.md",
+    "机器学习/Book 1. 统计学习/Chapter 2. 线性模型/Lecture 1. 线性分类问题.md",
+    "机器学习/Book 1. 统计学习/Chapter 2. 线性模型",
+    "机器学习/Book 1. 理论机器学习/Lecture 3. 线性分类问题.md",
+    "机器学习/Book 1. 理论机器学习",
+    "机器学习/Book 1. 统计学习/Chapter 2. 线性分类器",
+    "机器学习/Book 3. 强化学习",
+    "机器学习/Book 1. 统计学习",
+    "概率论/Book 1. 测度论/Chapter 3. 积分/Lecture 2. 积分的性质.md",
+    "概率论/Book 1. 测度论/Chapter 1. 可测空间与可测函数/Lecture 1. 可测空间和可测映射.md",
+    "概率论/Book 1. 测度论/Chapter 2. 测度空间/Lecture 3. Lebesgue-Stieltjes测度.md",
+    "概率论/Book 1. 测度论/Chapter 1. 可测空间与可测函数",
+    "概率论/Book 1. 测度论/Chapter 3. 积分/Lecture 4. Lebesgue积分.md",
+    "概率论/Book 1. 测度论/Chapter 3. 积分/Lecture 3. Lp空间.md",
+    "概率论/Book 1. 测度论/Chapter 3. 积分/Lecture 5. 积分变换.md",
+    "概率论/Book 2. 概率论/Chapter 2. 收敛理论/Lecture 3. 概率空间上的积分.md",
+    "概率论/Book 2. 测度论/Chapter 3. 积分/Lecture 1. 积分的定义.md",
     "专题/集合论/Lecture 4. Borel集.md",
-    "专题/集合论/Lecture 3. 实数上的简单拓扑.md",
-    "专题/集合论/Lecture 3. 简单拓扑.md",
-    "专题/集合论/Lecture 1. 集合论.md",
-    "专题/集合论/Lecture 1. 集合类.md",
-    "专题/集合论/Lecture 0. 简单拓扑.md",
-    "概率论/Book 2. 测度论/Chapter 1. 可测空间与可测映射/Lecture 2. 可测映射.md",
-    "统计学/计量经济学/Lecture 0. 数据表示.md",
-    "概率论/Book 2. 测度论/Chapter 1. 可测空间与可测映射/Lecture 2. 可测空间.md",
-    "专题/集合论/Lecture 0. 集合论.md",
-    "专题/集合论",
-    "概率论/Book 2. 测度论/Chapter 1. 可测空间与可测映射/Lecture 2. 可测空间",
-    "概率论/Book 2. 测度论/Chapter 1. 可测空间与可测映射/Lecture 1. 可测空间.md",
-    "分析学/Chapter 1. 极限/Lecture 1. 极限的基本概念.md",
-    "概率论/Book 1. 初等概率论/Chapter 1. 概率不等式/Lecture 3. Bernstein's Type Inequality.md",
-    "概率论/Book 2. 测度论/Lecture 1. 可测空间.md",
-    "概率论/Book 2. 测度论/Chapter 3. 积分",
-    "概率论/Book 2. 测度论/Chapter 1. 测度空间",
-    "概率论/Book 2. 测度论/Chapter 1. 可测空间与可测映射",
-    "分析学/Chapter 1. 极限/Lecture 2. 极限.md",
-    "分析学/Book 2. 凸分析/Lecture 2. Convex Function.md",
-    "分析学/Book 1. 数学分析/Chapter 1. 极限/Lecture 3. 函数.md",
-    "数值方法/Chapter 6. 常微分方程",
-    "数值方法/Chapter 5. 数值积分与数值微分",
-    "数值方法/Chapter 3. 线性方程组求解",
-    "数值方法/Chapter 4. 特征值",
-    "数值方法/Chapter 2. 非线性方程(组)求解",
+    "分析学/Chapter 4. 积分/Lecture 1. Riemann-Stieltjes积分.md",
+    "分析学/Chapter 4. 积分/Lecture 4. Riemann积分.md",
     "数值计算/Lecture 1. 误差.assets/image-20230529000153166.png",
     "数值计算/Lecture 1. 误差.assets/image-20230529000138386.png",
     "随机过程论/Book 1. 马尔科夫链/Lecture 1. Introduction.assets/image-20230527160737582.png",
     "随机过程论/Book 1. 马尔科夫链/Lecture 1. Introduction.assets/image-20230527160640924.png",
-    "随机过程论/Book 1. 马尔科夫链/Lecture 1. Introduction.assets/image-20230527154631349.png",
-    "随机过程论/Book 1. 马尔科夫链/Lecture 1. Introduction.assets/image-20230527154602330.png",
-    "随机过程论/Book 1. 马尔科夫链/Lecture 1. Introduction.assets/image-20230527154458490.png",
-    "信息论/Lecture 5. 信道传输.assets/image-20230527000557535.png",
-    "信息论/Lecture 5. 信道传输.assets/image-20230527000130806.png",
-    "信息论/Lecture 5. 信道传输.assets/image-20230526235454408.png",
     "未命名.canvas"
   ]
 }
