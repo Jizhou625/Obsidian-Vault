@@ -98,7 +98,7 @@ C = \{(\boldsymbol{x}, t)\mid \|\boldsymbol{x}\|\le t\} \subset \mathbb{R}^{n+1}
 $$
 当使用二阶范数$\|\cdot\|_2$时, 我们得到如下图所示的二阶锥(second-order cone).
 
-![image-20230619150824470](Chapter%201.%20凸集/Lecture%201.%20凸集.assets/image-20230619150824470.png)
+![image-20230619150824470](Lecture%201.%20凸集.assets/image-20230619150824470.png)
 
 
 #### 2.3.4. Polyhedra
@@ -162,6 +162,34 @@ $$
 我们可以定义集合 $C$ 的相对边界(relative bound)为 $\overline{C}\backslash \mathrm{ri}C$, 其中$\overline{C}$是$C$的闭包(closure). 
 
 
+## 4. Dual Cones 
+### 4.1. Dual Cones的定义
+设$K$是一个锥, 集合
+$$
+K^* = \{\boldsymbol{y}\mid \boldsymbol{y}^{\top}\boldsymbol{x}\ge 0, \forall \boldsymbol{x}\in K\}
+$$
+被称为$K$的对偶锥.
 
 
+
+![image-20230620164730687](Lecture%201.%20凸集.assets/image-20230620164730687.png)
+
+### 4.2. Dual Cones的例子
+#### 4.2.1. 子空间
+子空间$V\subset \mathbb{R}^n$的对偶锥是其正交补$V^{\perp} = \{\boldsymbol{y}\mid \boldsymbol{y}^{\top}\boldsymbol{v} = 0,\forall \boldsymbol{v}\in V\}$
+
+#### 4.2.2. 半正定锥
+半正定锥$\mathbb{S}_+^n$的对偶锥是半正定锥$\mathbb{S}_+^n$本身, 即对任意的$X, Y\in \mathbb{S}^n$
+$$
+\operatorname{tr}(XY) \ge 0, \forall X\in \mathbb{S}_+^n \iff Y\in \mathbb{S}_+^n
+$$
+
+### 4.3. Dual Cones的性质
+Dual Cones 满足如下的性质
+1. $K^*$是凸的并且是闭的
+2. $K_1\subset K_2\implies K_2^* \subset K_1^*$
+3. 如果$K$有非空的内点集, 则$K^*$是pointed的, 也就是说 $K^* \cap - K^* = \{0\}$
+4. 如果$K$的闭包是pointed的, 则$K^*$有非空的内点集
+5. $K^{**}$是$K$的凸包的闭包, 也就是说, 如果$K$是凸的并且是闭的, 则$K^{**} = K$
+6. 如果$K$是proper cone, 则其dual cone 也是 proper cone. 
 
