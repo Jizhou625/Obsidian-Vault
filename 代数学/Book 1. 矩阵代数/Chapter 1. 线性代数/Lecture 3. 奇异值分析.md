@@ -1,16 +1,6 @@
 ## 1. 奇异值分解
-### 1.1. Intuition
-考虑双线性函数
-$$
-f(\boldsymbol{x}, \boldsymbol{y}) = \boldsymbol{x}^{\top}A \boldsymbol{y},\quad A\in \mathbb{R}^{n\times n}
-$$
-引入线性变换$\boldsymbol{x} = U\boldsymbol{\xi},\ \boldsymbol{y} = V\boldsymbol{\eta}$, 将双线性函数变为 $f(\boldsymbol{x}, \boldsymbol{y})= \boldsymbol{\xi}^{\top}S\boldsymbol{\eta}$, 其中
-$$
-S = U^{\top} A V
-$$
-如果约束$U, V$均为正定矩阵, 则它们的选择存在$n^2-n$个自由度. 这就得到了正方矩阵的奇异值分解. 后来又推广到了长方矩阵中. 
-### 1.2. 奇异值分解
-**完全奇异值分解**: 设$A\in \mathbb{R}^{m\times n}$的秩是$r$, 则$A$可以被分解为
+### 1.1. 完全奇异值分解
+设$A\in \mathbb{R}^{m\times n}$的秩是$r$, 则$A$可以被分解为
 $$
 A = U\begin{pmatrix}
 \Sigma_1 & O \\
@@ -21,8 +11,30 @@ $$
 $$
 \sigma_1\ge \sigma_2\ge \cdots\ge \sigma_r > 0 
 $$
-正交矩阵$U$的前$r$列构成了矩阵$A$的列空间的标准正交基, 后$n-r$列构成了矩阵$A$的零空间的标准正交基. 矩阵$V$的前$r$列组成了矩阵$A$的行空间的标准正交基, 后$n-r$列构成了矩阵$A^{\top}$的零空间的标准正交基
-**截断奇异值分解**: 设$A\in \mathbb{R}^{m\times n}$的秩是$r$, 则$A$可以被分解为
+正交矩阵$U$的前$r$列构成了矩阵$A$的列空间的标准正交基, 后$n-r$列构成了矩阵$A$的零空间的标准正交基. 矩阵$V$的前$r$列组成了矩阵$A$的行空间的标准正交基, 后$n-r$列构成了矩阵$A^{\top}$的零空间的标准正交基. 
+___
+##### Proof
+因为$A^{\top}A\succeq 0$, 我们有$\boldsymbol{\sigma}(A^{\top}A) =\{\sigma_i\mid i=1,2,\cdots, n\} \subseteq [0, \infty)$. 不妨设
+$$
+\sigma_1\ge \sigma_2\ge \cdots \sigma_r > 0 = \sigma_{r+1} = \cdots = \sigma_n
+$$
+设$\boldsymbol{v}_1, \cdots, \boldsymbol{v}_n$是对应的正交的特征向量, 令
+$$
+V_1 = (\boldsymbol{v}_1, \cdots, \boldsymbol{v}_r), \quad V_2 = (\boldsymbol{v}_{r+1}, \cdots, \boldsymbol{v}_n)
+$$
+令$S =\mathrm{diag}\left\{\sigma_1, \cdots, \sigma_r\right\}$, 我们有$A^{\top}AV_1 = V_1S^2$. 令$U_1 = AV_1S^{-1}$, 我们有$U_1^{\top}U_1 = I$. 选择$U_2$使得$U = (U_1, U_2)$是正交矩阵. 则
+$$
+U^{\top} A V = \begin{pmatrix}U_1^{\top}AV_1 & U_1^{\top}AV_2 \\ U_2^{\top}AV_1 & U_2^{\top}AV_2\end{pmatrix} = \begin{pmatrix}
+\Sigma_1 & O \\
+O & O
+\end{pmatrix}
+$$
+因此我们得到了想要的奇异值分解
+#####
+___
+
+### 1.2. 截断奇异值分解
+设$A\in \mathbb{R}^{m\times n}$的秩是$r$, 则$A$可以被分解为
 $$
 A = U\Sigma V^{\top} 
 $$
@@ -34,7 +46,9 @@ $$
 $$
 A = \sum\limits_{i=1}^{r} \sigma_i \boldsymbol{u}_i \boldsymbol{v}_i^{\top}  
 $$
-**奇异值与特征值**: 事实上
+
+### 1.3. 奇异值与特征值
+事实上
 $$
 AA^{\top} = U\Sigma^2 U^{\top} 
 $$
@@ -42,10 +56,10 @@ $$
 $$
 \sigma^2(A) = \lambda(A A^{\top})
 $$
-注意: $\sigma(A)$和$\lambda(A)$并没有必然的联系
+但是, $\sigma(A)$和$\lambda(A)$并没有必然的联系
 
 
-### 1.3. 奇异值的奇异性
+### 1.4. 奇异值的奇异性
 设$A\in \mathbb{R}^{m\times n} (m>n)$的奇异值为
 $$
 \sigma_1\ge \sigma_2\ge \cdots\ge \sigma_r > 0 
@@ -54,7 +68,7 @@ $$
 $$
 \sigma_k = \min_{E\in \mathbb{R}^{m\times n}}\left\{\|E\|_2: \mathrm{rank}(A+E)\le k-1\right\}, \quad k=1,2,\cdots, n
 $$
-并且存在$\|E_k\|_2=\sigma_k$ 使得
+并且存在一个满足$\|E_k\|_2=\sigma_k$的误差矩阵$E_k$使得
 $$
 \mathrm{rank}(A+E_k) = k-1, \quad k=1,2,\cdots,n
 $$

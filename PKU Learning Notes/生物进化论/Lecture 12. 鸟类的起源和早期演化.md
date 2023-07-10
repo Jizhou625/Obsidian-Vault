@@ -16,12 +16,12 @@
 
    - 窃蛋龙类和鸟类都有缩短的尾椎：尾综骨
 
-    ![image_4.abf31d1a](./Lecture%2012.%20%E9%B8%9F%E7%B1%BB%E7%9A%84%E8%B5%B7%E6%BA%90%E5%92%8C%E6%97%A9%E6%9C%9F%E6%BC%94%E5%8C%96.assets/image_4.abf31d1a.png)
+    ![image_4.abf31d1a](Lecture%2012.%20鸟类的起源和早期演化.assets/image_4.abf31d1a.png)
      
 
 ### 1.3. 恐龙的分类
 恐龙的分类包含蜥臀目和鸟臀目，鸟类是从蜥臀目的恐龙演变而来
-![image_5.1037528f](./Lecture%2012.%20%E9%B8%9F%E7%B1%BB%E7%9A%84%E8%B5%B7%E6%BA%90%E5%92%8C%E6%97%A9%E6%9C%9F%E6%BC%94%E5%8C%96.assets/image_5.1037528f.png)
+![image_5.1037528f](Lecture%2012.%20鸟类的起源和早期演化.assets/image_5.1037528f.png)
 
 
 ### 2. 鸟类起源于恐龙的证据

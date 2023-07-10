@@ -205,6 +205,12 @@ $$
 \operatorname{tr}(XY) \ge 0, \forall X\in \mathbb{S}_+^n \iff Y\in \mathbb{S}_+^n
 $$
 
+#### 4.2.3. 范数锥
+令$\|\cdot\|$为定义在$\mathbb{R}^n$上的范数, 与之相关的锥$K = \{(\boldsymbol{x}, t)\in \mathbb{R}^{n+1}\mid \|\boldsymbol{x}\|\le t\}$的对偶锥由其对偶范数定义
+$$
+K^* = \{(\boldsymbol{y}, s)\in \mathbb{R}^{n+1}\mid \|\boldsymbol{y}\|_*\le s\}
+$$ 
+
 ### 4.3. Dual Cones的性质
 Dual Cones 满足如下的性质
 1. $K^*$是凸锥并且$K^*$是闭的

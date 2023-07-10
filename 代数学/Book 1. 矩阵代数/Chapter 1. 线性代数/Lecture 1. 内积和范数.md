@@ -1,3 +1,45 @@
+## 1. 内积空间、赋范空间和Hilbert空间
+### 1.1. 内积空间
+若对于所有的$\boldsymbol{x}, \boldsymbol{y}, \boldsymbol{z}\in V$和$\alpha, \beta \in \mathbb{K}$, 映射函数$\langle \cdot, \cdot\rangle: V\times V\to \mathbb{K}$满足以下三条公理
+1. 共轭对称性: $\langle \boldsymbol{x}, \boldsymbol{y}\rangle = \langle \boldsymbol{y}, \boldsymbol{x}\rangle^*$
+2. 第一变元的线性性: $\langle \alpha\boldsymbol{x}+\beta \boldsymbol{y}, \boldsymbol{z}\rangle = \alpha \langle \boldsymbol{x}, \boldsymbol{z}\rangle +\beta \langle\boldsymbol{y}, \boldsymbol{z}\rangle$
+3. 非负性: $\langle \boldsymbol{x}, \boldsymbol{x}\rangle\ge 0$, 并且$\langle \boldsymbol{x}, \boldsymbol{x}\rangle =0 \iff \boldsymbol{x}=0$
+
+则称$\langle \boldsymbol{x}, \boldsymbol{y}\rangle$为向量$\boldsymbol{x}$和$\boldsymbol{y}$的内积(inner product), $V$为内积向量空间(inner vector space). 对于实内积向量空间, 共轭对称性退化为实对称性. 
+
+### 1.2. 范数和赋范线性空间
+设$V$是一个向量空间. 向量$\boldsymbol{x}$的范数是一个实函数$p(\boldsymbol{x}): V\to \mathbb{R}$. 若对于所有向量$\boldsymbol{x}, \boldsymbol{y}\in V$和任意一个标量$c\in \mathbb{K}$, 下面的公理全部成立
+1. 非负性: $p(\boldsymbol{x})\ge 0$, 并且$p(\boldsymbol{x})=0\iff \boldsymbol{x}=\boldsymbol{0}$
+2. 齐次性: $p(c\boldsymbol{x}) = |c|\cdot p(\boldsymbol{x})$对所有复常数$c$成立
+3. 三角不等式: $p(\boldsymbol{x}+\boldsymbol{y})\le p(\boldsymbol{x})+p(\boldsymbol{y})$
+
+并称$V$为赋范向量空间. 
+
+### 1.3. 半范数(semi-norm)
+向量$\boldsymbol{x}\in V$的半范数(semi-norm), 又叫做伪范数(pseudo-norm), 定义为: 若对所有向量$\boldsymbol{x}, \boldsymbol{y}\in V$和任意的一个标量$c$, 满足条件
+1. $p(\boldsymbol{x})\ge 0$
+2. $p(c\boldsymbol{x}) = |c|\cdot p(\boldsymbol{x})$
+3. $p(\boldsymbol{x}+\boldsymbol{y})\le p(\boldsymbol{x})+p(\boldsymbol{y})$
+
+半范数和范数的唯一区别是, 半范数不满足范数的第一个公理. 
+
+### 1.4. 拟范数(quasi-norm)
+向量$\boldsymbol{x}\in V$的拟范数(quasi-norm)定义为: 若对于所有向量$\boldsymbol{x}, \boldsymbol{y}\in V$和任意一个标量$c$, 满足
+1. $p(\boldsymbol{x})\ge 0$, 并且$p(\boldsymbol{x})=0\iff \boldsymbol{x}=\boldsymbol{0}$
+2. $p(c\boldsymbol{x}) = |c|\cdot p(\boldsymbol{x})$
+3. 
+$p(\boldsymbol{x}+\boldsymbol{y})\le C\left(p(\boldsymbol{x})+p(\boldsymbol{y})\right)$, 其中$C\neq 1$是某个正实数
+
+可见拟范数不严格满足范数公理中的三角不等式.
+
+同一种定义公式有时给出范数, 有时给出拟范数, 取决于参数的不同. 例如, 容易验证
+$$
+\|\boldsymbol{x}\|_p = \left(\sum_{i=1}^n |x_i|^p\right)^{\frac{1}{p}}
+$$
+是拟范数($0<p<1$)或范数$(p\ge 1)$
+
+### 1.5. 完备性
+
 ## 1. 内积和范数
 ### 1.1. 张量的内积
 设矩阵(张量)$A, B$具有相同的形状, 则矩阵(张量)$A, B$的内积记作$\langle A, B\rangle$. 定义为两个拉长向量$\mathrm{vec}(A)$和$\mathrm{vec}(B)$的内积. 也就是说
