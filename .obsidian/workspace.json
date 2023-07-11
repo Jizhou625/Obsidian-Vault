@@ -4,19 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "ae28c8bc7f19e9cc",
+        "id": "e58c39a81ed3292d",
         "type": "tabs",
         "children": [
           {
-            "id": "30724a11de09a8b4",
+            "id": "e6f06705cfe44d44",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "PKU Learning Notes/社会科学中的计算思维方法/Lecture 4. 万维网和搜索引擎.md",
-                "mode": "preview",
-                "backlinks": true,
-                "source": false
+                "file": "PKU Learning Notes/博弈论/博弈论 Maschler.pdf"
               }
             }
           }
@@ -78,8 +75,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 343.504695892334,
-    "collapsed": true
+    "width": 343.504695892334
   },
   "right": {
     "id": "45b6cc51caac60ea",
@@ -95,7 +91,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PKU Learning Notes/社会科学中的计算思维方法/Lecture 4. 万维网和搜索引擎.md",
+                "file": "PKU Learning Notes/博弈论/博弈论 Maschler.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +108,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PKU Learning Notes/社会科学中的计算思维方法/Lecture 4. 万维网和搜索引擎.md",
+                "file": "PKU Learning Notes/博弈论/博弈论 Maschler.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,7 +131,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PKU Learning Notes/社会科学中的计算思维方法/Lecture 4. 万维网和搜索引擎.md"
+                "file": "PKU Learning Notes/博弈论/博弈论 Maschler.pdf"
               }
             }
           },
@@ -167,19 +163,21 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "30724a11de09a8b4",
+  "active": "1540de2207820773",
   "lastOpenFiles": [
+    "PKU Learning Notes/博弈论/Lecture 1. 效用理论.md",
+    "PKU Learning Notes/社会科学中的计算思维方法/Lecture 4. 万维网和搜索引擎.md",
+    "PKU Learning Notes/博弈论/Lecture 1. 效用理论",
     "PKU Learning Notes/博弈论/博弈论 马希勒.pdf",
     "PKU Learning Notes/博弈论/博弈论教程 Osborne.pdf",
     "PKU Learning Notes/博弈论/博弈论 迈克尔·马希勒 著.pdf",
     "PKU Learning Notes/博弈论/博弈论 Tirole.pdf",
-    "PKU Learning Notes/博弈论/Game Theory Maschler.pdf",
+    "PKU Learning Notes/博弈论/博弈论 Maschler.pdf",
     "PKU Learning Notes/博弈论/博弈论基础 Gibbson.pdf",
     "PKU Learning Notes/博弈论/策略：博弈论导论.pdf",
     "PKU Learning Notes/博弈论",
     "PKU Learning Notes/Readme.md",
     "PKU Learning Notes/社会科学中的计算思维方法/Lecture 1. 关系的平衡和议价.md",
-    "PKU Learning Notes/社会科学中的计算思维方法/Lecture 4. 万维网和搜索引擎.md",
     "PKU Learning Notes/社会科学中的计算思维方法/Lecture 4. 万维网和搜索引擎.assets/image-20230710222757035.png",
     "PKU Learning Notes/社会科学中的计算思维方法/Lecture 4. 万维网和搜索引擎.assets/image-20230710222744528.png",
     "PKU Learning Notes/社会科学中的计算思维方法/Lecture 4. 万维网.md",
@@ -190,14 +188,12 @@
     "Lecture 3. 万维网.assets",
     "PKU Learning Notes/社会科学中的计算思维方法/Lecture 3. 博弈论的应用.md",
     "PKU Learning Notes/社会科学中的计算思维方法/Lecture 3. 万维网.assets/image-20230710210143137.png",
-    "PKU Learning Notes/社会科学中的计算思维方法/Lecture 3. 万维网.assets",
     "PKU Learning Notes/社会科学中的计算思维方法/Lecture 2. 小世界与扩散.md",
     "PKU Learning Notes/社会科学中的计算思维方法/Lecture 5. 信息聚合行为.md",
     "PKU Learning Notes/社会科学中的计算思维方法/Lecture 1. 关系的平衡和议价.assets/image-20230710135620824.png",
     "PKU Learning Notes/社会科学中的计算思维方法/Lecture 1. 关系的平衡和议价.assets/image-20230709145658812.png",
     "PKU Learning Notes/社会科学中的计算思维方法/Lecture 1. 关系的平衡和议价.assets/image-20230709144645146.png",
     "PKU Learning Notes/社会科学中的计算思维方法/Lecture 1. 关系的平衡和议价.assets/1cd5851e450a43280906274ab434387.png",
-    "PKU Learning Notes/社会科学中的计算思维方法/Lecture 1. 关系的平衡和议价.assets",
     "PKU Learning Notes/社会科学中的计算思维方法/Lecture 1. 网络结构.md",
     "凸优化/Chapter 1. 理论/Lecture 7. 对偶.md",
     "凸优化/Chapter 1. 理论/Lecture 6. 几种优化问题.md",
