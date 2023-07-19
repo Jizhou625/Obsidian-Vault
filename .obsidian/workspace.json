@@ -8,6 +8,32 @@
         "type": "tabs",
         "children": [
           {
+            "id": "90c38cffecf4e356",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PKU Learning Notes/博弈论/Lecture 1. 效用理论.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ea39fc2b79c1c447",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PKU Learning Notes/博弈论/Lecture 2. 博弈的描述.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
             "id": "73dde3e7fa4fc3ff",
             "type": "leaf",
             "state": {
@@ -19,8 +45,22 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "bf4e8fab217bfbd2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PKU Learning Notes/博弈论/Lecture 4. 均衡(扩展式博弈).md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -95,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PKU Learning Notes/博弈论/Lecture 3. 均衡(策略式博弈).md",
+                "file": "PKU Learning Notes/博弈论/Lecture 2. 博弈的描述.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +152,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PKU Learning Notes/博弈论/Lecture 3. 均衡(策略式博弈).md",
+                "file": "PKU Learning Notes/博弈论/Lecture 2. 博弈的描述.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,7 +175,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PKU Learning Notes/博弈论/Lecture 3. 均衡(策略式博弈).md"
+                "file": "PKU Learning Notes/博弈论/Lecture 2. 博弈的描述.md"
               }
             }
           },
@@ -167,8 +207,12 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "73dde3e7fa4fc3ff",
+  "active": "ea39fc2b79c1c447",
   "lastOpenFiles": [
+    "PKU Learning Notes/博弈论/Lecture 1. 效用理论.md",
+    "PKU Learning Notes/博弈论/Lecture 2. 博弈的描述.md",
+    "PKU Learning Notes/博弈论/Lecture 4. 均衡(扩展式博弈).md",
+    "PKU Learning Notes/博弈论/Lecture 3. 均衡(策略式博弈).md",
     "PKU Learning Notes/博弈论/Lecture 4. 均衡(扩展式博弈).assets/image-20230718005649099.png",
     "PKU Learning Notes/博弈论/Lecture 4. 均衡(扩展式博弈).assets/image-20230718005335410.png",
     "PKU Learning Notes/博弈论/image.png",
@@ -178,13 +222,9 @@
     "PKU Learning Notes/博弈论/image-1.png",
     "PKU Learning Notes/博弈论/Lecture 3. 均衡(策略式博弈).assets/image-20230718000713161.png",
     "PKU Learning Notes/博弈论/Lecture 3. 均衡(策略式博弈).assets",
-    "PKU Learning Notes/博弈论/Lecture 4. 均衡(扩展式博弈).md",
     "PKU Learning Notes/博弈论/Lecture 3. 均衡.md",
-    "PKU Learning Notes/博弈论/Lecture 3. 均衡(策略式博弈).md",
     "theme.css",
-    "PKU Learning Notes/博弈论/Lecture 2. 博弈的描述.md",
     "未命名.md",
-    "PKU Learning Notes/博弈论/Lecture 1. 效用理论.md",
     "PKU Learning Notes/博弈论/018DF987.png",
     "PKU Learning Notes/博弈论/Lecture 2. 博弈的描述.assets/image-20230714144003736.png",
     "PKU Learning Notes/博弈论/Lecture 3. 纳什均衡.md",
@@ -199,7 +239,6 @@
     "PKU Learning Notes/博弈论/博弈论 Tirole.pdf",
     "PKU Learning Notes/Readme.md",
     "PKU Learning Notes/社会科学中的计算思维方法/Lecture 1. 关系的平衡和议价.md",
-    "PKU Learning Notes/社会科学中的计算思维方法/Lecture 4. 万维网和搜索引擎.assets/image-20230710222757035.png",
     "PKU Learning Notes/社会科学中的计算思维方法/Lecture 4. 万维网.md",
     "Lecture 3. 万维网.assets/image-20230709102205886.png.md",
     "PKU Learning Notes/社会科学中的计算思维方法/Lecture 3. 博弈论的应用.md",

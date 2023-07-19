@@ -77,10 +77,18 @@ $$
 
 
 ### 2.4. 行为策略均衡
-在一个扩展式博弈中, 如果所有的参与人都有完美记忆, 那么这个博弈有行为策略纳什均衡. 
+在一个有限扩展式博弈中, 如果所有的参与人都有完美记忆, 那么这个博弈有行为策略纳什均衡. 
 ___
 ##### Proof
-
+根据[[Lecture 3. 均衡(策略式博弈)#2.4. 纳什定理]], 这个博弈有混合策略纳什均衡$\boldsymbol{\sigma}^* = (\sigma_i^*)_{i\in N}$. 因为博弈中所有的参与人都有完美记忆, 根据[[#3.3. 库恩定理(Perfect Recall)]], 对每个参与人$i$, 存在等价于$\sigma_i^*$的行为策略$b_i^*$. 于是
+$$
+u_i(\boldsymbol{\sigma}^*) = u_i(\boldsymbol{b}^*), \quad i\in N
+$$
+根据[[#3.1. 行为策略转化为混合策略(Path Intersection)]], 对于每一个行为策略$b_i$, 存在等价于$b_i$的混合策略$\sigma_i$.
+$$
+u_i(\boldsymbol{b}^*) = u_i(\boldsymbol{\sigma}^*) \ge u_i(\sigma_i, \boldsymbol{\sigma}_{-i}^*) = u_i(b_i, \boldsymbol{b}_{-i}^*)
+$$
+因此, $\boldsymbol{b}^*$是一个行为策略纳什均衡.
 #####
 
 ___
@@ -90,13 +98,72 @@ ___
 ### 3.1. 行为策略转化为混合策略(Path Intersection)
 令$\Gamma = (N, V, E, v_0, (V_i)_{i\in N\cup \{0\}}, (p_x)_{x\in V_0}, (\mathcal{U}_i)_{i\in N}, O, u)$是一个扩展式博弈, 满足在每个节点上至少有两个行动. 参与人$i$的每个行为策略有一个等价的混合策略, 当且仅当参与人$i$的每个信息集和从根节点出发的每条路径最多相交一次. 
 ___
+##### Note
+在每个节点上至少有两个行动的条件是为了保证当一条路径穿过一个信息集两次时, $x_1$和$\widehat{x}_1$可以选择不同的行动来导向同一节点. 否则, 下面的证明中关于必要性的部分将不成立. 
+#####
+___
 ##### Proof
-首先证明必要性. 我们证明它的逆否命题, 假设存在一个根节点到节点$x$的路径, 与参与人$i$的同一信息集$U_i$至少相交两次. 则存在参与人$i$的一个行为策略, 没有与之等价的混合策略. 设$x_1$和$\widehat{x}_1$为上面所描述的两个不同的节点. 用$a$表示从$x_1$导向$x$的行动, $b$是$x_1$处不同于$a$的行动. 如果在节点$\widehat{x}_1$处, 参与人$i$选择的行动是$b$, 那么我们令$x_2$表示博弈展开到达的节点. 从根节点到$x_2$的路径穿过节点$x_1$和$\widehat{x}_1$, 从 $x_1$ 导向 $x_2$ 的行动是 $a$, 从 $\hat{x}_1$ 导向 $x_2$ 的行动是 $b$. 这就意味着参与人$i$的行为策略没有等价的混合策略. 
+首先证明必要性. 我们证明它的逆否命题, 假设存在一个根节点到节点$x$的路径, 与参与人$i$的同一信息集$U_i$至少相交两次, 则存在参与人$i$的一个行为策略, 没有与之等价的混合策略. 
+
+设$x_1$和$\widehat{x}_1$为上面所描述的两个不同的节点. 用$a$表示从$x_1$导向$x$的行动, $b$是$x_1$处不同于$a$的行动. 如果在节点$\widehat{x}_1$处, 参与人$i$选择的行动是$b$, 那么我们令$x_2$表示博弈展开到达的节点. 从根节点到$x_2$的路径穿过节点$x_1$和$\widehat{x}_1$, 从 $x_1$ 导向 $x_2$ 的行动是 $a$, 从 $\widehat{x}_1$ 导向 $x_2$ 的行动是 $b$. 这就意味着参与人$i$的行为策略没有等价的混合策略. 
 
 ![image-20230719114111430](./Lecture%204.%20%E5%9D%87%E8%A1%A1(%E6%89%A9%E5%B1%95%E5%BC%8F%E5%8D%9A%E5%BC%88).assets/image-20230719114111430.png)
 
+
+接下来证明充分性. 对每个节点$x$, 我们用$L_i^x$表示从根节点到$x$(不包括$x$)的路径上的节点的个数. 这条路径上的节点表示为$x_i^1, x_i^2, \cdots, x_i^{L_i^x}$. 如果参与人$i$选择行为策略$b_i$, 则他选择导向$x$的行动的概率为
+$$
+\rho_i\left(x ; b_i\right):= \begin{cases}\prod\limits_{l=1}^{L_i^x} b_i\left(a_i\left(x_i^l \rightarrow x\right) ; U_i\left(x_i^l\right)\right) & \text { If } L_i^x>0 \\ 1 & \text { If } L_i^x=0\end{cases}
+$$
+令$S_i^*(x)\subset S_i$表示参与人$i$在每个信息集$U_i(x_i^l)$选择行动$a(U_i(x_i^l)\to x)$的全部纯策略. 如果参与人$i$实行了混合策略$\sigma_i$, 则他选择导向$x$的行动的概率为
+$$
+\rho_i\left(x ; \sigma_i\right):= \begin{cases} \sum\limits_{s_i\in S_i^*(x)} \sigma_i(s_i),  & \text { If } S_i^*(x)\neq \varnothing \\ 0, & \text { If } S_i^*(x) =  \varnothing\end{cases}
+$$
+
+给定参与人$i$的纯策略$s_i$和行为策略$b_i$, 根据$b_i$选择这个纯策略的概率为
+$$
+\sigma_i(s_i) = \prod\limits_{U_i\in \mathcal{U}_i}^{} b_i(s_i(U_i); U_i) 
+$$
+因为每条路径只和信息集$U_i$相交至多一次, 所以$\sigma_i = (\sigma_i(s_i))_{s_i\in S_i}$是$S_i$上的一个概率分布. 因而是一个混合策略. 于是, 我们只需要验证$\sigma_i$和$b_i$是等价的. 令$x$是一个节点, 对任意$\boldsymbol{\sigma}_{-i}$, 有
+$$
+\begin{aligned} 
+\rho\left(x ; b_i, \boldsymbol{\sigma}_{-i}\right)&=\rho_i\left(x ; b_i\right) \times \prod_{j \neq i} \rho_j\left(x ; \sigma_j\right) \\ 
+    \rho\left(x ; \sigma_i, \boldsymbol{\sigma}_{-i}\right)&=\rho_i\left(x ; \sigma_i\right) \times \prod_{j \neq i} \rho_j\left(x ; \sigma_j\right)
+\end{aligned}
+$$
+将参与人$i$的信息集组合一分为二, $\mathcal{U}_i^1$包含从根节点到$x$的路径穿过的所有信息集; $\mathcal{U}_i^2$包含不穿过的所有信息集. 于是
+$$
+\begin{aligned}
+\rho_i\left(x ; \sigma_i\right) & =\sum_{s_i \in S_i^*(x)} \sigma_i\left(s_i\right) \\
+& =\sum_{s_i \in S_i^*(x)} \prod_{U_i \in \mathcal{U}_i} b_i\left(s_i\left(U_i\right) ; U_i\right) \\
+& =\sum_{s_i \in S_i^*(x)}\left(\prod_{U_i \in \mathcal{U}_i^1} b_i\left(s_i\left(U_i\right) ; U_i\right) \times \prod_{U_i \in \mathcal{U}_i^2} b_i\left(s_i\left(U_i\right) ; U_i\right)\right) \\ 
+& = \sum_{s_i \in S_i^*(x)}\left(\prod_{l=1}^{L_i^x} b_i\left(a_i\left(x_i^l \rightarrow x\right) ; U_i\left(x_i^l\right)\right) \times \prod_{U_i \in \mathcal{U}_i^2} b_i\left(s_i\left(U_i\right) ; U_i\right)\right) \\ 
+& = \rho_i\left(x ; b_i\right) \times\left(\sum_{s_i \in S_i^*(x)} \prod_{U_i \in \mathcal{U}_i^2} b_i\left(s_i\left(U_i\right) ; U_i\right)\right)\\ 
+& = \rho_i\left(x ; b_i\right) \times\sum_{\left\{\left(a_{U_i}\right)_{U_i \in \mathcal{U}_i^2} \in \operatorname*{\times}\limits_{U_i \in \mathcal{U}_i^2} A\left(U_i\right)\right\}} \prod_{U_i \in \mathcal{U}_i^2} b_i\left(a_{U_i} ; U_i\right) \\
+& = \rho_i\left(x ; b_i\right) 
+\end{aligned}
+$$
+因此我们证明了
+$$
+\rho_i\left(x ; \sigma_i\right) = \rho_i\left(x ; b_i\right) 
+$$
+这意味着行为策略$b_i$和混合策略$\sigma_i$是等价的.
 #####
 ___
+
+
+### 3.2. 完美记忆(Perfect Recall)
+如果下面的条件得到满足, 那么参与人$i$具有完美记忆:
+1. 参与人$i$的每个信息集和从根节点到终节点的每条路径最多相交一次.
+2. 对于参与人$i$的每个信息集$U_i$和$U_i$中的每对结点$x, \widehat{x}$, 如果参与人$i$在从根节点到$x$的路径上的决策节点是$x_i^1, x_i^2, \cdots, x_i^{L} =x$, 他在从根节点到$x$的路径上的决策节点是$\widehat{x}_i^1, \widehat{x}_i^2, \cdots, \widehat{x}_i^{\widehat{L}} =\widehat{x}$, 那么对所有的$1\le l\le L$, 有
+   $$
+   U_i(x_i^l) = U_i(\widehat{x}_i^l), \quad a_i(x_i^{l}\to x) = a_i(\widehat{x}_i^{l}\to \widehat{x})
+   $$
+
+如果一个博弈的所有参与人都有完美记忆, 那么这个博弈就叫做具有完美记忆的博弈.
+
+### 3.3. 库恩定理(Perfect Recall)
+
+混合策略转化为行为策略(Perfect Recall)
 
 
 
