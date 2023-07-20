@@ -95,7 +95,18 @@ ___
 
 
 ## 3. 行为策略和混合策略相互转化的条件
-### 3.1. 行为策略转化为混合策略(Path Intersection)
+### 3.1. 导向节点$x$的概率
+ 对每个节点$x$, 我们用$L_i^x$表示从根节点到$x$(不包括$x$)的路径上的节点的个数. 这条路径上的节点表示为$x_i^1, x_i^2, \cdots, x_i^{L_i^x}$. 如果参与人$i$选择行为策略$b_i$, 则他选择导向$x$的行动的概率为
+$$
+\rho_i\left(x ; b_i\right):= \begin{cases}\prod\limits_{l=1}^{L_i^x} b_i\left(a_i\left(x_i^l \rightarrow x\right) ; U_i\left(x_i^l\right)\right) & \text { If } L_i^x>0 \\ 1 & \text { If } L_i^x=0\end{cases}
+$$
+令$S_i^*(x)\subset S_i$表示参与人$i$在每个信息集$U_i(x_i^l), 1\le l\le L_x$选择行动$a(U_i(x_i^l)\to x)$的全部纯策略. 如果参与人$i$实行了混合策略$\sigma_i$, 则他选择导向$x$的行动的概率为
+$$
+\rho_i\left(x ; \sigma_i\right):= \begin{cases} \sum\limits_{s_i\in S_i^*(x)} \sigma_i(s_i),  & \text { If } S_i^*(x)\neq \varnothing \\ 0, & \text { If } S_i^*(x) =  \varnothing\end{cases}
+$$
+
+
+### 3.2. 行为策略转化为混合策略(Path Intersection)
 令$\Gamma = (N, V, E, v_0, (V_i)_{i\in N\cup \{0\}}, (p_x)_{x\in V_0}, (\mathcal{U}_i)_{i\in N}, O, u)$是一个扩展式博弈, 满足在每个节点上至少有两个行动. 参与人$i$的每个行为策略有一个等价的混合策略, 当且仅当参与人$i$的每个信息集和从根节点出发的每条路径最多相交一次. 
 ___
 ##### Note
@@ -110,20 +121,14 @@ ___
 ![image-20230719114111430](./Lecture%204.%20%E5%9D%87%E8%A1%A1(%E6%89%A9%E5%B1%95%E5%BC%8F%E5%8D%9A%E5%BC%88).assets/image-20230719114111430.png)
 
 
-接下来证明充分性. 对每个节点$x$, 我们用$L_i^x$表示从根节点到$x$(不包括$x$)的路径上的节点的个数. 这条路径上的节点表示为$x_i^1, x_i^2, \cdots, x_i^{L_i^x}$. 如果参与人$i$选择行为策略$b_i$, 则他选择导向$x$的行动的概率为
-$$
-\rho_i\left(x ; b_i\right):= \begin{cases}\prod\limits_{l=1}^{L_i^x} b_i\left(a_i\left(x_i^l \rightarrow x\right) ; U_i\left(x_i^l\right)\right) & \text { If } L_i^x>0 \\ 1 & \text { If } L_i^x=0\end{cases}
-$$
-令$S_i^*(x)\subset S_i$表示参与人$i$在每个信息集$U_i(x_i^l)$选择行动$a(U_i(x_i^l)\to x)$的全部纯策略. 如果参与人$i$实行了混合策略$\sigma_i$, 则他选择导向$x$的行动的概率为
-$$
-\rho_i\left(x ; \sigma_i\right):= \begin{cases} \sum\limits_{s_i\in S_i^*(x)} \sigma_i(s_i),  & \text { If } S_i^*(x)\neq \varnothing \\ 0, & \text { If } S_i^*(x) =  \varnothing\end{cases}
-$$
-
-给定参与人$i$的纯策略$s_i$和行为策略$b_i$, 根据$b_i$选择这个纯策略的概率为
+接下来证明充分性.
+给定参与人$i$的纯策略$s_i$和行为策略$b_i$, 根据$b_i$选择纯策略$s_i$的概率为
 $$
 \sigma_i(s_i) = \prod\limits_{U_i\in \mathcal{U}_i}^{} b_i(s_i(U_i); U_i) 
 $$
-因为每条路径只和信息集$U_i$相交至多一次, 所以$\sigma_i = (\sigma_i(s_i))_{s_i\in S_i}$是$S_i$上的一个概率分布. 因而是一个混合策略. 于是, 我们只需要验证$\sigma_i$和$b_i$是等价的. 令$x$是一个节点, 对任意$\boldsymbol{\sigma}_{-i}$, 有
+因为每条路径只和信息集$U_i$相交至多一次, 不难证明$\sigma_i = (\sigma_i(s_i))_{s_i\in S_i}$是$S_i$上的一个概率分布. 因而是一个混合策略. 
+
+于是, 我们只需要验证$\sigma_i$和$b_i$是等价的. 令$x$是一个节点, 对任意$\boldsymbol{\sigma}_{-i}$, 有
 $$
 \begin{aligned} 
 \rho\left(x ; b_i, \boldsymbol{\sigma}_{-i}\right)&=\rho_i\left(x ; b_i\right) \times \prod_{j \neq i} \rho_j\left(x ; \sigma_j\right) \\ 
@@ -151,21 +156,62 @@ $$
 ___
 
 
-### 3.2. 完美记忆(Perfect Recall)
+### 3.3. 完美记忆(Perfect Recall)
 如果下面的条件得到满足, 那么参与人$i$具有完美记忆:
 1. 参与人$i$的每个信息集和从根节点到终节点的每条路径最多相交一次.
-2. 对于参与人$i$的每个信息集$U_i$和$U_i$中的每对结点$x, \widehat{x}$, 如果参与人$i$在从根节点到$x$的路径上的决策节点是$x_i^1, x_i^2, \cdots, x_i^{L} =x$, 他在从根节点到$x$的路径上的决策节点是$\widehat{x}_i^1, \widehat{x}_i^2, \cdots, \widehat{x}_i^{\widehat{L}} =\widehat{x}$, 那么对所有的$1\le l\le L$, 有
+2. 对于参与人$i$的每个信息集$U_i$和$U_i$中的每对结点$x, \widehat{x}$, 如果参与人$i$在从根节点到$x$的路径上的决策节点是$x_i^1, x_i^2, \cdots, x_i^{L} =x$, 在从根节点到$\widehat{x}$的路径上的决策节点是$\widehat{x}_i^1, \widehat{x}_i^2, \cdots, \widehat{x}_i^{\widehat{L}} =\widehat{x}$. 则有$L = \widehat{L}$, 并且对所有的$1\le l\le L$, 都有
    $$
    U_i(x_i^l) = U_i(\widehat{x}_i^l), \quad a_i(x_i^{l}\to x) = a_i(\widehat{x}_i^{l}\to \widehat{x})
    $$
 
 如果一个博弈的所有参与人都有完美记忆, 那么这个博弈就叫做具有完美记忆的博弈.
 
-### 3.3. 库恩定理(Perfect Recall)
+### 3.4. 完美记忆的纯策略集
+令$i$为一个有限扩展式博弈中具有完美记忆的参与人, 令$x_1$和$x_2$为参与人$i$的同一信息集中的两个节点. 用$x_i^1 \mapsto x_i^2\mapsto \cdots\mapsto x_i^{L_i^x}\mapsto x$表示从根节点到节点$x$的路径. 令$S_i^*(x)\subset S_i$表示参与人$i$在每个信息集$U_i(x_i^l)$选择行动$a(U_i(x_i^l)\to x)$的全部纯策略. 那么$S_i^*(x_1) = S_i^*(x_2)$
 
-混合策略转化为行为策略(Perfect Recall)
+### 3.5. 库恩定理(Perfect Recall)
+在每个有限的扩展式博弈中, 如果参与人$i$有完美记忆, 那么对参与人$i$的每个混合策略, 存在一个等价的行为策略.
+___
+##### Proof
+如果参与人$i$在节点$x$选择行动$a$, 我们用$x^a$表示博弈的展开到达的节点. 令$\sigma_i$是参与人$i$的一个混合策略. 假设$U_i$是参与人$i$的一个信息集, $x$是$U_i$中的一个节点. $S_i^*(x^{a_i})$包含了$S_i^*(x)$中所有满足$s_i(U_i)=a_i$的纯策略$s_i$. 定义
+$$
+b_i\left(a_i ; U_i\right): =\begin{cases} \dfrac{\sum\limits_{s_i \in S_i^*\left(x^{a_i}\right)} \sigma_i\left(s_i\right)}{\sum\limits_{s_i \in S_i^*(x)} \sigma_i\left(s_i\right)}, \quad &\forall a_i \in A(x),\quad &\sum\limits_{s_i \in S_i^*(x)} \sigma_i\left(s_i\right)>0\\ 
+\dfrac{1}{\left|A\left(U_i\right)\right|}, \quad &\forall a_i \in A(x), & \sum\limits_{s_i \in S_i^*(x)} \sigma_i\left(s_i\right) = 0\end{cases}
+$$
+不难证明, 这样定义的$b_i$是一个行为策略. 接下来只需要证明$b_i$等价于$\sigma_i$. 令$\boldsymbol{\sigma}_i$为其他参与人的混合策略, 令$x$是博弈树的一个节点. 
+$$
+\begin{aligned}
+&\rho\left(x ; b_i, \boldsymbol{\sigma}_{-i}\right)=\rho_i\left(x ; b_i\right) \times \prod_{j \neq i} \rho_j\left(x ; \sigma_j\right)\\
+&\rho\left(x ; \sigma_i, \boldsymbol{\sigma}_{-i}\right)=\rho_i\left(x ; \sigma_i\right) \times \prod_{j \neq i} \rho_j\left(x ; \sigma_j\right)
+\end{aligned}
+$$
+我们想要证明
+$$
+\rho\left(x ; b_i, \boldsymbol{\sigma}_{-i}\right)=\rho\left(x ; \sigma_i, \boldsymbol{\sigma}_{-i}\right)
+$$
+就只需要证明
+$$
+\rho(x; b_i) = \rho(x;\sigma_i)
+$$
+如果$L_i^x=0$, 显然有$\rho(x; b_i) = 1 = \rho(x;\sigma_i)$. 
 
-
+如果$L_i^x>0$, 有
+$$
+\begin{aligned} 
+    \rho_i\left(x ; b_i\right)&=\prod_{l=1}^{L_i^x} b_i\left(a_i(x_i^l\to x) ; U_i\left(x_i^l\right)\right) \\
+    & = \prod_{l=1}^{L_i^x} \dfrac{\sum\limits_{s_i \in S_i^*\left(x_i^{l; a_i(x_i^l\to x)}\right)} \sigma_i\left(s_i\right)}{\sum\limits_{s_i \in S_i^*\left(x_i^l\right)} \sigma_i\left(s_i\right)}
+\end{aligned}
+$$
+显然, 我们有$S_i^*(x_i^{l+1}) = S_i^*\left(x_i^{l; a_i(x_i^l\to x)}\right)$, 因此上面的连乘式可以被约简为
+$$
+\rho_i\left(x ; b_i\right) = \dfrac{\sum\limits_{s_i\in S_i^*(x)}^{} \sigma_i(s_i)}{\sum\limits_{s_i\in S_i^*(x_i^1)}^{} \sigma_i(s_i)}
+$$
+又因为在$x_i^1$之前没有信息集. 因此$\sum\limits_{s_i\in S_i^*(x_i^1)}^{} \sigma_i(s_i)=1$. 于是有
+$$
+\rho_i\left(x ; b_i\right) = \sum\limits_{s_i\in S_i^*(x)}^{} \sigma_i(s_i) = \rho_i(x; \sigma_i)
+$$
+#####
+___
 
 
 ## 4. 子博弈完美均衡
@@ -174,9 +220,10 @@ ___
 $$
 u_i(\boldsymbol{\sigma}^*\mid x) \ge u_i(\sigma_i, \boldsymbol{\sigma}^*_{-i}\mid x)
 $$
+子博弈完美均衡的思路是, 即使当参与人不在均衡路径中时, 他们的行动也依然应该遵循纳什均衡. 
 
 ### 4.2. 子博弈的纳什均衡
-令$\boldsymbol{\sigma}^*$为扩展式博弈$\Gamma$的纳什均衡, 令$\Gamma(x)$是$\Gamma$的一个子博弈. 如果$\mathbb{P}_{\boldsymbol{\sigma}^*}(x)>0$, 那么局限于子博弈$\Gamma(x)$的策略向量$\boldsymbol{\sigma}^*$是子博弈$\Gamma(x)$的纳什均衡. 
+令$\boldsymbol{\sigma}^*$为扩展式博弈$\Gamma$的纳什均衡, $\Gamma(x)$是$\Gamma$的一个子博弈. 如果$\mathbb{P}_{\boldsymbol{\sigma}^*}(x)>0$, 那么局限于子博弈$\Gamma(x)$的策略向量$\boldsymbol{\sigma}^*$也是子博弈$\Gamma(x)$的纳什均衡. 
 ___
 ##### Proof
 令$\Gamma(x)$为$\Gamma$中从节点$x$出发的子博弈, 令$\boldsymbol{\sigma}^*$为满足$\mathbb{P}_{\boldsymbol{\sigma}^*}(x)>0$的$\Gamma$的纳什均衡. 令$\sigma_i^{\prime}$是子博弈$\Gamma(x)$中参与人$i$的策略. 用$\sigma_i$表示参与人$i$与$\boldsymbol{\sigma}^*$完全重叠的策略(除了在子博弈$\Gamma(x)$中). 
@@ -207,7 +254,39 @@ $$
 #####
 ___
 
-## 5. 完美均衡
+### 4.3. 子博弈完美纯策略均衡的存在性
+每个完全信息有限的扩展式博弈都有一个子博弈完美纯策略均衡.
+___
+##### Proof
+#####
+___
 
+### 4.4. 子博弈完美混合策略均衡的存在性
+
+## 5. 完美均衡
+### 5.1. 扰动扩展式博弈
+对于参与人$i$的每个信息集$U_i\in \mathcal{U}_i$, $\sum\limits_{a_i\in A(U_i)}^{} \delta_i(a_i)\le 1$成立. 令$\boldsymbol{\delta} = (\delta_i)_{i\in N}$. 博弈$\Gamma(\boldsymbol{\delta})$是一个扩展式博弈, 其中参与人$i$的策略集(表示为$\mathcal{B}_i(\delta_i)$)是行为策略集, 每个行动$a_i$被选择的概率大于或等于$\delta_i(a_i)$, 即
+$$
+\mathcal{B}_i(\delta_i) = \{\sigma_i\in \operatorname*{\times}\limits_{U_i\in \mathcal{U}_i}\Delta (A(U_i))\mid  \sigma(U_i, a_i)\ge \delta_i(a_i), \forall i\in N, \forall U_i\in \mathcal{U}_i, \forall a_i\in A(U_i)\}
+$$
+我们将$\Gamma(\boldsymbol{\delta})$称为扰动扩展式博弈. 
+$$
+M(\boldsymbol{\delta}) = \max\limits_{\{i\in N, a_i\in \bigcup\limits_{U_i\in \mathcal{U}_i}^{} A(U_i)\}} \delta_i(a_i), \quad m(\boldsymbol{\delta}) = \min\limits_{\{i\in N, a_i\in \bigcup\limits_{U_i\in \mathcal{U}_i}^{} A(U_i)\}} \delta_i(a_i)
+$$
+
+### 5.2. 扩展式完美均衡
+如果存在扰动向量序列$(\boldsymbol{\delta}^k)_{k\in \mathbb{N}}$满足$\lim\limits_{k\to\infty} M(\boldsymbol{\delta}^k) =0$, 以及对每个$k\in \mathbb{N}$, 存在$\Gamma(\boldsymbol{\delta}^k)$的均衡$\boldsymbol{\sigma}^k$, 使得$\lim\limits_{k\to\infty} \boldsymbol{\sigma}^k =\boldsymbol{\sigma}$. 那么扩展式博弈$\Gamma$中的行为策略向量$\boldsymbol{\sigma}$叫做扩展式完美均衡. 
+
+
+### 5.3. 扩展式完美均衡和策略式完美均衡的差别
+1. 扩展式完美均衡未必是策略式完美均衡. 
+   ![扩展式完美均衡未必是策略式完美均衡](Lecture%204.%20%E5%9D%87%E8%A1%A1(%E6%89%A9%E5%B1%95%E5%BC%8F%E5%8D%9A%E5%BC%88).assets/%E6%89%A9%E5%B1%95%E5%BC%8F%E5%AE%8C%E7%BE%8E%E5%9D%87%E8%A1%A1%E6%9C%AA%E5%BF%85%E6%98%AF%E7%AD%96%E7%95%A5%E5%BC%8F%E5%AE%8C%E7%BE%8E%E5%9D%87%E8%A1%A1.png)  
+2. 策略式完美均衡未必是扩展式完美均衡
+   ![策略式完美均衡未必是扩展式完美均衡](Lecture%204.%20%E5%9D%87%E8%A1%A1(%E6%89%A9%E5%B1%95%E5%BC%8F%E5%8D%9A%E5%BC%88).assets/%E7%AD%96%E7%95%A5%E5%BC%8F%E5%AE%8C%E7%BE%8E%E5%9D%87%E8%A1%A1%E6%9C%AA%E5%BF%85%E6%98%AF%E6%89%A9%E5%B1%95%E5%BC%8F%E5%AE%8C%E7%BE%8E%E5%9D%87%E8%A1%A1.png)  
+
+
+### 5.4. 完美均衡和子博弈完美均衡的关系
+令$\Gamma$为扩展式博弈, $\Gamma$的每个扩展式完美均衡也是一个子博弈完美均衡.
 
 ## 6. 序贯均衡
+

@@ -326,7 +326,7 @@ $$
 考虑变异$x=[1,0,0]$, 不难验证4.2的条件不成立. 
 
 ## 5. 完美均衡
-### 5.1. 完美均衡的定义
+### 5.1. 扰动博弈
 令$\Gamma = (N, (S_i)_{i\in N}, (u_i)_{i\in N})$为一个策略式博弈, 其中每个参与人的纯策略集是有限的. 参与人$i$的一个扰动向量是向量$\boldsymbol{\varepsilon}_i = (\varepsilon_i(s_i))_{s_i\in S_i}$, 对每个$\varepsilon_i(s_i)>0$
 $$
 \sum\limits_{s_i\in S_i}^{} \varepsilon_i(s_i) \le 1, \quad \forall i\in N 
@@ -340,31 +340,37 @@ $$
 \sum\limits_{i}^{}(\boldsymbol{\varepsilon}_i) = \left\{\sigma_i\in \Sigma_i \mid \sigma_i(s_i)\ge \varepsilon_i(s_i), \forall s_i\in S_i\right\}
 $$
 也就是说, 在$\boldsymbol{\varepsilon}$扰动博弈$\Gamma(\boldsymbol{\varepsilon})$中, 每个纯策略$s_i$被选中的概率大于或等于$\varepsilon_i(s_i)$.
-___
-##### Note
-完美均衡的概念假定, 每个参与人犯错误的概率是正的(即使很小), 而且其他参与人在选择行动时, 会考虑到这个错误.
-#####
-___
 
-### 5.2. 扰动均衡
-每个有限的$\boldsymbol{\varepsilon}$扰动博弈有一个均衡, 即对每个参与人$i\in N$, 存在一个混合策略向量$\boldsymbol{\sigma}^* = (\sigma^*_i)_{i\in N}$, 满足$\sigma_i^*\in \sum\limits_{i}^{}(\boldsymbol{\varepsilon}_i)$
+给定扰动向量$\boldsymbol{\varepsilon}$, 我们定义
+$$
+M(\boldsymbol{\varepsilon}) = \max\limits_{i\in N, s_i\in S_i} \varepsilon_i(s_i), \quad m(\boldsymbol{\varepsilon}) = \min\limits_{i\in N, s_i\in S_i} \varepsilon_i(s_i)
+$$
+
+### 5.2. 扰动均衡的存在性
+每个有限的$\boldsymbol{\varepsilon}$扰动博弈都有一个均衡. 即对每个参与人$i\in N$, 存在一个混合策略向量$\boldsymbol{\sigma}^* = (\sigma^*_i)_{i\in N}$, 满足$\sigma_i^*\in \sum\limits_{i}^{}(\boldsymbol{\varepsilon}_i)$
 $$
 U_i(\boldsymbol{\sigma}^*) \ge U_i(\sigma_i, \boldsymbol{\sigma}_{-i}^*), \quad \forall i\in N, \forall \sigma_i\in \sum\limits_{i}^{}(\boldsymbol{\varepsilon}_i)
 $$
 这是定理[[#2.5. 纳什定理的一般化]]的直接应用
 
-### 5.3. 完美均衡
+### 5.3. 策略式完美均衡
 对于策略式博弈$(N, (S_i)_{i\in N}, (u_i)_{i\in N})$, 如果存在满足$\lim\limits_{k\to\infty} M(\boldsymbol{\varepsilon}^k) = 0$的扰动向量序列$(\boldsymbol{\varepsilon}^k)_{k\in \mathbb{N}}$, 对每个$k\in \mathbb{N}$, 存在$\Gamma(\boldsymbol{\varepsilon}^k)$的均衡$\boldsymbol{\sigma}^k$使得
 $$
 \lim\limits_{k\to\infty} \boldsymbol{\sigma}^k = \boldsymbol{\sigma}
 $$
 则混合策略向量$\boldsymbol{\sigma}$被称为策略式博弈$(N, (S_i)_{i\in N}, (u_i)_{i\in N})$的一个完美均衡. 
+___
+##### Note
+完美均衡的概念假定, 每个参与人犯错误的概率都是正的(哪怕很小), 而且其他参与人在选择行动时, 会考虑到这个错误的概率.
+#####
+___
 
+### 5.4. 完美均衡与纳什均衡
 一个有限策略式博弈的每个完美均衡都是纳什均衡.
 ___
 ##### Proof
-对任意的混合策略$\sigma_i^{\prime}$, 存在收敛于$\sigma_i^{\prime}$的策略序列$(\sigma_i^{\prime k})_{k\in \mathbb{N}}$满足$\sigma_i^{\prime k}\in \sum\limits_{i}^{} (\boldsymbol{\varepsilon}_i^k)$. 
-因为$\boldsymbol{\sigma}^k$是$\Gamma(\boldsymbol{\varepsilon}^k)$的均衡, 所以
+根据$\Sigma$的凸紧性, 对任意的混合策略$\sigma_i^{\prime}$, 存在收敛于$\sigma_i^{\prime}$的策略序列$(\sigma_i^{\prime k})_{k\in \mathbb{N}}$满足$\sigma_i^{\prime k}\in \sum\limits_{i}^{} (\boldsymbol{\varepsilon}_i^k)$. 
+又因为$\boldsymbol{\sigma}^k$是$\Gamma(\boldsymbol{\varepsilon}^k)$的均衡, 所以
 $$
 u_i(\boldsymbol{\sigma}^k) \ge u_i(\sigma_i^{\prime k}, \boldsymbol{\sigma}_{-i}^k)
 $$
@@ -375,10 +381,12 @@ $$
 #####
 ___ 
 
-### 5.4. 完美均衡的存在性
+### 5.5. 完美均衡的存在性
 每个有限策略式博弈都至少有一个完美均衡.
 ___
 ##### Proof
 令$\Gamma$为一个有限的策略式博弈, 令$(\boldsymbol{\varepsilon}^k)_{k\in \mathbb{N}}$为满足$\lim\limits_{k\to\infty} M(\boldsymbol{\varepsilon}^k)=0$的扰动向量的序列. 对于每个$k\in \mathbb{N}$, 博弈$\Gamma(\boldsymbol{\varepsilon}^k)$有一个混合策略均衡$\boldsymbol{\sigma}^k$. 因为混合策略向量空间$\Sigma$是紧的, 因此存在子序列$(\boldsymbol{\sigma}^{k_j})_{j\in N}$收敛于$\boldsymbol{\sigma}$. 根据完美均衡的定义, $\boldsymbol{\sigma}$是一个完美均衡.  
 #####
 ___
+
+## 6. 相关均衡
