@@ -1,4 +1,4 @@
-[[../References/Theory/No Free Lunch.pdf]]
+[No free lunch theorems for optimization](zotero://select/library/items/YXZZHSFB)
 ### 1. Notations:
 
 **Hypothesis**:

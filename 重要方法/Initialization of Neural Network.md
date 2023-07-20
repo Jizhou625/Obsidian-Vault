@@ -3,7 +3,7 @@
 2. 从统计的角度而言, 初始化具有某种regularization的作用, 初始化值越接近0, 正则化效果越明显; 但从优化的角度而言, 全0或全等初始化会导致unidentified的对称性问题
 
 ### 2. Xavier初始化
-[[Xavier Initialization.pdf]]
+[Understanding the difﬁculty of training deep feedforward neural networks](zotero://select/library/items/SQXG25FN)
 **模型设定**: 
 1. 所有的weights都是独立初始化的, 且均值为$0$, 偏置bias初始化为0. 
 2. 输入的features的方差是相等的, 都为$\mathrm{Var}(x)$, 且进行了中心化. 
@@ -60,7 +60,7 @@ $$
 
 
 ### 3. He Kaiming初始化(pytorch Conv默认初始化方法)
-[[He Initialization.pdf]]
+[Delving Deep into Rectifiers: Surpassing Human-Level Performance on ImageNet Classification](zotero://select/library/items/UWZN4K8C)
 **模型描述**: 
 对于CNN网络, 设$\boldsymbol{x}$是神经网络的输入, 第$i$层到第$i+1$层卷积层和激活层的表达式为
 $$
