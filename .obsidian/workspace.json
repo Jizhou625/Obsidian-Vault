@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "6107dcdc2ae53bf3",
+        "id": "ddd09de6efbc3be7",
         "type": "tabs",
         "children": [
           {
-            "id": "1e624eaa7d5be6f0",
+            "id": "2e4ab2f1d0d2de6b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "重要方法/Normalization of Neural Network.md",
+                "file": "PKU Learning Notes/社会科学中的计算思维方法/Lecture 3. 博弈论的应用.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 343.504695892334
+    "width": 343.504695892334,
+    "collapsed": true
   },
   "right": {
     "id": "45b6cc51caac60ea",
@@ -94,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "重要方法/Normalization of Neural Network.md",
+                "file": "PKU Learning Notes/社会科学中的计算思维方法/Lecture 3. 博弈论的应用.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "重要方法/Normalization of Neural Network.md",
+                "file": "PKU Learning Notes/社会科学中的计算思维方法/Lecture 3. 博弈论的应用.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +135,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "重要方法/Normalization of Neural Network.md"
+                "file": "PKU Learning Notes/社会科学中的计算思维方法/Lecture 3. 博弈论的应用.md"
               }
             }
           },
@@ -166,10 +167,22 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "1e624eaa7d5be6f0",
+  "active": "2e4ab2f1d0d2de6b",
   "lastOpenFiles": [
-    "重要方法/No Free Lunch Theorem for Optimization.md",
+    "PKU Learning Notes/博弈论/Lecture 9. 讨价还价.md",
+    "PKU Learning Notes/博弈论/Lecture 9. 讨价还价.assets/lambda_alpha.png",
+    "PKU Learning Notes/博弈论/Lecture 9. 讨价还价.assets/乌托邦点.png",
+    "PKU Learning Notes/博弈论/Lecture 9. 讨价还价.assets",
+    "PKU Learning Notes/博弈论/Lecture 10. 拍卖.md",
+    "PKU Learning Notes/博弈论/Lecture 9. 讨价还价-拍卖.md",
+    "PKU Learning Notes/博弈论/Lecture 9. 讨价还价-拍卖.assets/纳什解的几何刻画.png",
+    "PKU Learning Notes/博弈论/Lecture 9. 讨价还价-拍卖.assets/纳什解的概率不可加性.png",
+    "PKU Learning Notes/博弈论/Lecture 9. 讨价还价-拍卖.assets/分别的改善未必带来均衡的改善.png",
+    "PKU Learning Notes/博弈论/Lecture 9. 讨价还价-拍卖.assets/IIA的批评.png",
     "重要方法/Initialization of Neural Network.md",
+    "PKU Learning Notes/社会科学中的计算思维方法/Lecture 5. 信息聚合行为.md",
+    "重要方法/Normalization of Neural Network.md",
+    "重要方法/No Free Lunch Theorem for Optimization.md",
     "重要方法/Domain Adaptation.md",
     "References/Initialization for neural network/He Initialization.pdf",
     "PKU Learning Notes/博弈论/Lecture 4. 均衡(扩展式博弈).md",
@@ -185,21 +198,14 @@
     "PKU Learning Notes/test.assets/9c3de93f40c09490e82b8a693f43d756bfed5d9d33960a795a346909ced301fd.png",
     "PKU Learning Notes/test.assets",
     "PKU Learning Notes/test.md",
-    "PKU Learning Notes/博弈论/Lecture 4. 均衡(扩展式博弈).assets/31187be3738c29820aed34f52a2c24bda44e7fe567dcf2f087ef3bc12a2afdc0.png",
-    "images/1f0131391b13bbed6ba994550ee3dc2cdc5d3ae52e0cb74e418c1f16394cf5c2.png",
     "images",
-    "PKU Learning Notes/博弈论/image.png",
     "PKU Learning Notes/博弈论/Lecture 1. 效用理论.md",
-    "PKU Learning Notes/博弈论/Lecture 4. 均衡(扩展式博弈).assets/image-20230718005649099.png",
-    "PKU Learning Notes/博弈论/Lecture 4. 均衡(扩展式博弈).assets/image-20230718005335410.png",
-    "PKU Learning Notes/博弈论/Lecture 4. 均衡(扩展式博弈).assets/image-20230718003340794.png",
     "PKU Learning Notes/博弈论/Lecture 4. 均衡(扩展式博弈).assets",
     "PKU Learning Notes/博弈论/Lecture 3. 均衡(策略式博弈).assets",
     "PKU Learning Notes/博弈论/Lecture 3. 均衡.md",
     "theme.css",
     "未命名.md",
     "PKU Learning Notes/博弈论/Lecture 3. 纳什均衡.md",
-    "PKU Learning Notes/博弈论/Lecture 2. 博弈的描述.assets",
     "PKU Learning Notes/社会科学中的计算思维方法/Lecture 4. 万维网和搜索引擎.md",
     "PKU Learning Notes/Readme.md",
     "PKU Learning Notes/社会科学中的计算思维方法/Lecture 1. 关系的平衡和议价.md",
@@ -207,13 +213,7 @@
     "Lecture 3. 万维网.assets/image-20230709102205886.png.md",
     "PKU Learning Notes/社会科学中的计算思维方法/Lecture 3. 博弈论的应用.md",
     "PKU Learning Notes/社会科学中的计算思维方法/Lecture 2. 小世界与扩散.md",
-    "PKU Learning Notes/社会科学中的计算思维方法/Lecture 5. 信息聚合行为.md",
     "PKU Learning Notes/社会科学中的计算思维方法/Lecture 1. 网络结构.md",
-    "凸优化/Chapter 1. 理论/Lecture 7. 对偶.md",
-    "凸优化/Chapter 1. 理论/Lecture 6. 几种优化问题.md",
-    "凸优化/Chapter 1. 理论/Lecture 5. 优化问题.md",
-    "凸优化/Chapter 1. 理论/Lecture 3. 凸函数.md",
-    "PKU Learning Notes/社会科学中的计算思维方法/Lecture 4. 网络中的博弈论.md",
     "未命名.canvas"
   ]
 }

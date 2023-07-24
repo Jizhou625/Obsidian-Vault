@@ -61,6 +61,7 @@ $$
 
 ### 3. He Kaiming初始化(pytorch Conv默认初始化方法)
 [Delving Deep into Rectifiers: Surpassing Human-Level Performance on ImageNet Classification](zotero://select/library/items/UWZN4K8C)
+
 **模型描述**: 
 对于CNN网络, 设$\boldsymbol{x}$是神经网络的输入, 第$i$层到第$i+1$层卷积层和激活层的表达式为
 $$
