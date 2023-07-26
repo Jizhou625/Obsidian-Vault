@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 343.504695892334,
-    "collapsed": true
+    "width": 343.504695892334
   },
   "right": {
     "id": "45b6cc51caac60ea",
@@ -169,6 +168,8 @@
   },
   "active": "2e4ab2f1d0d2de6b",
   "lastOpenFiles": [
+    "PKU Learning Notes/博弈论/Lecture 5. 知识的层级.md",
+    "PKU Learning Notes/社会科学中的计算思维方法/Lecture 3. 博弈论的应用.md",
     "PKU Learning Notes/博弈论/Lecture 9. 讨价还价.md",
     "PKU Learning Notes/博弈论/Lecture 9. 讨价还价.assets/lambda_alpha.png",
     "PKU Learning Notes/博弈论/Lecture 9. 讨价还价.assets/乌托邦点.png",
@@ -211,7 +212,6 @@
     "PKU Learning Notes/社会科学中的计算思维方法/Lecture 1. 关系的平衡和议价.md",
     "PKU Learning Notes/社会科学中的计算思维方法/Lecture 4. 万维网.md",
     "Lecture 3. 万维网.assets/image-20230709102205886.png.md",
-    "PKU Learning Notes/社会科学中的计算思维方法/Lecture 3. 博弈论的应用.md",
     "PKU Learning Notes/社会科学中的计算思维方法/Lecture 2. 小世界与扩散.md",
     "PKU Learning Notes/社会科学中的计算思维方法/Lecture 1. 网络结构.md",
     "未命名.canvas"
