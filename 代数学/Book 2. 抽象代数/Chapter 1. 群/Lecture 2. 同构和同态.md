@@ -56,7 +56,7 @@ $$
 $$
 \sigma_a \sigma_b^{-1}(x) = \sigma_{ab^{-1}}(x) \in G_l
 $$
-根据[[Lecture 1. 子群#1.3. 子群的判定|子群的判定定理]], $G_l$是一个变换群. 显然, $a\mapsto\sigma_a$是$G\to G_l$的一个一一对应. 其满足
+根据[子群的判定的判定定理](Lecture%201.%20子群#1.3.%20子群的判定), $G_l$是一个变换群. 显然, $a\mapsto\sigma_a$是$G\to G_l$的一个一一对应. 其满足
 $$
 \sigma_{ab} = \sigma_a\sigma_b
 $$
@@ -98,7 +98,7 @@ $$
 这说明了同态象一定同构于$G$的某个商群
 ___
 ##### Proof
-设$K = \ker \pi$, 根据[[Lecture 4. 稳定化子、中心化子和正规化子#2.3.1. 同态核都是正规子群|同态核都是正规子群]], 我们有$K\triangleleft G$. 做映射
+设$K = \ker \pi$, 根据[同态核都是正规子群](Lecture%204.%20稳定化子、中心化子和正规化子#2.3.1.%20同态核都是正规子群), 我们有$K\triangleleft G$. 做映射
 $$
 \pi_1: G/K \to \pi(G), \quad \pi_1(gK) = \pi(g)
 $$

@@ -30,7 +30,7 @@ ___
 $$
 a = \left(\dfrac{f}{\|f\|_p}\right)^p, \quad b = \left(\dfrac{g}{\|g\|_q}\right)^q
 $$
-根据[[#1.1. Young不等式]]
+根据[1.1. Young不等式](#1.1.%20Young不等式)
 $$
 a^{\frac{1}{p}} b^{\frac{1}{q}} \le \dfrac{a}{p} + \dfrac{b}{q}
 $$ 

@@ -178,7 +178,7 @@ We have the following equality holds
 $$
 \min_P\max_Q P^TMQ=\max_Q\min_P P^TMQ
 $$
-This theorem is the special case of  [[#1.4. Sion's Minimax Theorem]]
+This theorem is the special case of  [1.4. Sion's Minimax Theorem](#1.4.%20Sion's%20Minimax%20Theorem)
 
 ### 1.4. Sion's Minimax Theorem
 

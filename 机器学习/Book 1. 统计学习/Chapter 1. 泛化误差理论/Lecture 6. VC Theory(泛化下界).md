@@ -44,7 +44,7 @@ $$
 $$
 \operatorname*{\mathbb{P}}\limits_{S}\left[R_{\mathcal{\mathcal{D}}}(h_s, f_0)\ge \varepsilon\right] \ge \operatorname*{\mathbb{P}}\limits_{S\in \mathcal{S}}\left[R_{\mathcal{\mathcal{D}}}(h_s, f_0)\ge \varepsilon\right] \mathbb{P}(\mathcal{S}) \ge \dfrac{1}{7} \mathbb{P}(\mathcal{S})
 $$
-下面对$\mathbb{P}(\mathcal{S})$进行估计: 简单起见, 我们估计$\{x_1, x_2, \cdots, x_{d-1}\}$出现的次数$C_m$. 设$p= 8\varepsilon$. 利用[[../../../概率论/Book 2. 概率论/Chapter 1. 概率不等式/Lecture 3. Bernstein's Type Inequality#3. Bernstein's Inequality (Variance Version)]]
+下面对$\mathbb{P}(\mathcal{S})$进行估计: 简单起见, 我们估计$\{x_1, x_2, \cdots, x_{d-1}\}$出现的次数$C_m$. 设$p= 8\varepsilon$. 利用[Bernstein's Inequality (Variance Version)](../../../概率论/Book%202.%20概率论/Chapter%201.%20概率不等式/Lecture%203.%20Bernstein's%20Type%20Inequality#3.%20Bernstein's%20Inequality%20(Variance%20Version))
 $$
 \mathbb{P}\left(\dfrac{1}{m}C_m - p\ge \gamma p \right) \le \exp\left( - \dfrac{m\gamma^2 p^2}{2p(1-p) + \dfrac{2}{3}\gamma p}\right)
 $$
@@ -98,12 +98,12 @@ $$
 &
 \end{aligned}
 $$
-这里, $\Phi(m, \varepsilon) = \dfrac{1}{4}\left(1-\sqrt{1-\exp \left(-\dfrac{m \epsilon^2}{1-\epsilon^2}\right)}\right)$, 第一个不等式成立是由下面的引理[[#5.1 Lemma 1]]保证的. 
+这里, $\Phi(m, \varepsilon) = \dfrac{1}{4}\left(1-\sqrt{1-\exp \left(-\dfrac{m \epsilon^2}{1-\epsilon^2}\right)}\right)$, 第一个不等式成立是由下面的引理[5.1. Lemma 1](#5.1.%20Lemma%201)保证的. 
 于是一定存在某个$\boldsymbol{\sigma}\in \{-1, +1\}^d$使得
 $$
 \underset{S \sim \mathcal{D}_\sigma^m}{\mathbb{E}}\left[\frac{1}{\alpha}\left[R_{\mathcal{D}_\sigma}\left(h_S\right)-R_{\mathcal{D}_\sigma}\left(h_{\mathcal{D}_\sigma}^*\right)\right]\right]>\Phi\left(\dfrac{m}{d+1}, \alpha\right)
 $$
-根据引理[[#5.2. Lemma2]], 我们有
+根据引理[5.2. Lemma2](#5.2.%20Lemma2), 我们有
 $$
 \underset{S \sim \mathcal{D}_\sigma^m}{\mathbb{P}}\left[\frac{1}{\alpha}\left[R_{\mathcal{D}_\sigma}\left(h_S\right)-R_{\mathcal{D}_\sigma}\left(h_{\mathcal{D}_\sigma}^*\right)\right]>\gamma u\right]>(1-\gamma) u, \quad u = \Phi\left(\dfrac{m}{d+1}, \alpha\right)
 $$
@@ -144,7 +144,7 @@ $$
 $$
 \underset{\alpha}{\mathbb{E}}\left[\underset{S \sim \mathcal{D}_\alpha^m}{\mathbb{P}}[h(S) \neq \alpha]\right]
 $$
-利用[[../概率论/概率不等式/Lecture 5. Inequalities Based on Specific Distribution#1. Slud 不等式(二项分布尾界)]], 我们可以得到
+利用[Slud 不等式(二项分布尾界)](../../../概率论/Book%202.%20概率论/Chapter%201.%20概率不等式/Lecture%205.%20Inequalities%20Based%20on%20Specific%20Distribution.md#1.%20Slud%20不等式(二项分布尾界)), 我们可以得到
 #####
 ___
 ### 5.2. Lemma2

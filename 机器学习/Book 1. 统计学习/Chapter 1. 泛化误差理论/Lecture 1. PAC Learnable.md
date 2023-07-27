@@ -122,7 +122,7 @@ $$
 $$
 ___
 ##### Proof: 
-设$h_1, \cdots, h_{|\mathcal{H}|}$是$\mathcal{H}$的组成元素, 利用[[../../../概率论/Book 2. 概率论/Chapter 1. 概率不等式/Lecture 2. Hoeffding Type Bounds#2. Hoeffding Inequality|Hoeffding Inequality]]不等式, 我们有
+设$h_1, \cdots, h_{|\mathcal{H}|}$是$\mathcal{H}$的组成元素, 利用[Hoeffding Inequality](../../../概率论/Book%202.%20概率论/Chapter%201.%20概率不等式/Lecture%202.%20Hoeffding%20Type%20Bounds#2.%20Hoeffding%20Inequality)不等式, 我们有
 $$
 \begin{aligned}
 \mathbb{P}\left(\exists h\in \mathcal{H}: |\hat{R}(h) - R(h)|>\varepsilon\right)&\le \sum\limits_{h\in \mathcal{H}}^{} \mathbb{P}\left(|\hat{R}(h) - R(h)|> \varepsilon\right) \\ 

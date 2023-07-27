@@ -24,7 +24,7 @@ $$
 4. $K_iK_iA = K_iA$: 如果参与人知道事件$A$, 那么他知道他知道事件$A$. 反之亦然. 
 5. $(K_iA)^c = K_i((K_iA)^c)$: 如果参与人不知道事件$A$, 那么他知道他不知道事件$A$. 反之亦然.
 
-如果$K_i$是如[[#1.2. 知识算子$K_i$]]所定义的知识算子, 那么$K_i$是Kripke's S5 System.
+如果$K_i$是如[1.2. 知识算子$K_i$](#1.2.%20知识算子$K_i$)所定义的知识算子, 那么$K_i$是Kripke's S5 System.
 
 与此同时, 对于任意的Kripke's S5 System $K$, 定义
 $$
@@ -110,7 +110,7 @@ ___
 令$\omega\in Y$是一个状态, $A\subseteq Y$是一个事件. 那么, 当且仅当$A\supseteq C(\omega)$时, 事件$A$是状态$\omega$下的共同知识. 其中$C(\omega)$是图$G$中包含节点$\omega$的连通分量.
 ___
 ##### Proof
-首先我们证明如果$A$是$\omega$下的共同知识, 那么$C(\omega)\subseteq A$. 使用数学归纳法和[[# 1.6. 不能区分的共同知识]]的结论即得成立. 接下来, 我们证明如果$C(\omega)\subseteq A$, 那么事件$A$在状态$\omega$下是共同知识. 要证明这一点, 只要证明$C(\omega)$在$\omega$下是共同知识. 因为$C(\omega)$是连通分量, 因此对每个$\omega^{\prime}\in C(\omega)$, 我们有$F_i(\omega^{\prime})\in C(\omega)$. 这意味着
+首先我们证明如果$A$是$\omega$下的共同知识, 那么$C(\omega)\subseteq A$. 使用数学归纳法和[1.6. 不能区分的共同知识](#1.6.%20不能区分的共同知识)的结论即得成立. 接下来, 我们证明如果$C(\omega)\subseteq A$, 那么事件$A$在状态$\omega$下是共同知识. 要证明这一点, 只要证明$C(\omega)$在$\omega$下是共同知识. 因为$C(\omega)$是连通分量, 因此对每个$\omega^{\prime}\in C(\omega)$, 我们有$F_i(\omega^{\prime})\in C(\omega)$. 这意味着
 $$
 C(\omega)\supseteq \bigcup\limits_{\omega^{\prime}\in C(\omega)}^{} F_i(\omega^{\prime}) \supseteq C(\omega)  
 $$

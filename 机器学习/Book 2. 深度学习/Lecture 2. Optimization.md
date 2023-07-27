@@ -59,7 +59,7 @@
 
 ## 5. 初始值的选取
 
-具体内容见 **[[Initialization of Neural Network]]**
+具体内容见 **[Initialization of Neural Network](../../重要方法/Initialization%20of%20Neural%20Network.md)**
 
 
 ## 6. Step size/Learning rate

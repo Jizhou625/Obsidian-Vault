@@ -58,7 +58,7 @@ ___
 $$
 \mathbb{P}\left(H_n \geq r\right) \leq \exp \left(-\frac{r^2}{2 \nu_n^2+2 \kappa r}\right)
 $$
-Using [[Lecture 1. Basic Probability Inequalities#3. Chernoff Bound]], we have
+Using [Chernoff Bound](Lecture%201.%20Basic%20Probability%20Inequalities#3.%20Chernoff%20Bound), we have
 $$
 \mathbb{P}\left(H_n \geq r\right)\leq  \inf\limits_{t\ge 0}  \mathrm{e}^{-t r} \mathbb{E} \mathrm{e}^{t H_n}=\inf\limits_{t\ge 0} \mathrm{e}^{-t r} \prod_{i=1}^n \mathbb{E} \mathrm{e}^{t Z_i}
 $$
@@ -118,7 +118,7 @@ ___
 $$
 \mathbb{P}\left(S_n>r\right) \leq  \exp \left( - \nu\theta\left(\dfrac{r}{\nu}\right)\right) = \exp \left\{r - (r+\nu)\log \dfrac{\nu+r}{\nu}\right\}
 $$
-使用 [[Lecture 1. Basic Probability Inequalities#3. Chernoff Bound]], 我们可以得到
+使用 [Chernoff Bound](Lecture%201.%20Basic%20Probability%20Inequalities#3.%20Chernoff%20Bound), 我们可以得到
 $$
 \mathbb{P}\left(S_n>r\right) \leq \inf\limits_{t\ge 0}  \mathrm{e}^{-t r} \mathbb{E} \mathrm{e}^{t S_n}
 $$

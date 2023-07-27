@@ -150,7 +150,7 @@ $$
 $$
 \lim\limits_{n\to\infty} a_{n+1} =  - \lim\limits_{n\to\infty} \dfrac{1}{n+1}\sum\limits_{i=2}^{n} a_i +\lim\limits_{n\to\infty}  b_{n+1} =0
 $$
-可以得到$\lim\limits_{n\to\infty} f(n+1) -f(n) = 0$. 利用[[../专题/函数方程/Lecture 1. 柯西方程#2.2. $ lim limits_{n to infty} f(n+1) - f(n) =0$|引理]]. 我们可以得到$f(n) = \log_2 n$. 再利用柯西方法和数学归纳法, 可以得到
+可以得到$\lim\limits_{n\to\infty} f(n+1) -f(n) = 0$. 利用[$\lim\limits_{n\to \infty} f(n+1) - f(n) =0$](../专题/函数方程/Lecture%201.%20柯西方程#2.2.%20$%20lim%20limits_{n%20to%20infty}%20f(n+1)%20-%20f(n)%20=0$). 我们可以得到$f(n) = \log_2 n$. 再利用柯西方法和数学归纳法, 可以得到
 $$
 H_m\left(p_1, \ldots, p_m\right)=-\sum p_i \log p_i
 $$
@@ -214,7 +214,7 @@ D(\lambda p_1+(1-\lambda)p_2\mid \mid \lambda q_1+(1-\lambda )q_2)\le \lambda D(
 $$
 ___
 ##### Proof
-将[[../代数学/Chapter 0. 代数不等式/Lecture 1. 基础不等式#2.1. 对数和不等式|对数和不等式]]运用于每一项
+将[对数和不等式](../代数学/Chapter%200.%20代数不等式/Lecture%201.%20基础不等式#2.1.%20对数和不等式)运用于每一项
 $$
 (\lambda p_1(x) + (1-\lambda)p_2(x)) \log \dfrac{\lambda p_1(x) + (1-\lambda)p_2(x)}{\lambda q_1(x) + (1-\lambda)q_2(x)} \le \lambda p_1(x) \log \dfrac{p_1(x)}{q_1(x)} + (1-\lambda)p_2(x) \log \dfrac{p_2(x)}{q_2(x)}
 $$
@@ -233,7 +233,7 @@ D(p(X)\mid \mid p(Y))\ge D(p(Z)\mid \mid p(Y))
 $$
 ___
 ##### Proof
-根据[[#2.3. 相对熵的链式法则]], 我们可以将$D(p(x\mid y)p(z\mid y)p(x)\mid \mid p(x, y, z))$用两种方式展开
+根据[2.3. 相对熵的链式法则](#2.3.%20相对熵的链式法则), 我们可以将$D(p(x\mid y)p(z\mid y)p(x)\mid \mid p(x, y, z))$用两种方式展开
 $$
 \begin{aligned}
 D(p(x\mid y)p(z\mid y)p(x)\mid\mid p(x,y,z))&=D(p(x\mid y)p(z\mid y)\mid\mid p(x,y\mid z))+D(p(x)\mid\mid p(z))\\
@@ -302,7 +302,7 @@ $$
 $$
 A=\{x \mid P_1(x)>P_2(x)\}
 $$
-定义一个新的二元随机变量$Y=\phi(X)$为$A$的示性函数. 设$\hat{P}_1$和$\hat{P}_2$构成$Y$的分布. 利用[[../代数学/Chapter 0. 代数不等式/Lecture 1. 基础不等式#2.1. 对数和不等式|对数和不等式]], 可以得到
+定义一个新的二元随机变量$Y=\phi(X)$为$A$的示性函数. 设$\hat{P}_1$和$\hat{P}_2$构成$Y$的分布. 利用[对数和不等式](../代数学/Chapter%200.%20代数不等式/Lecture%201.%20基础不等式#2.1.%20对数和不等式), 可以得到
 $$
 \begin{aligned} 
       D(P_1\mid\mid P_2) &= \sum\limits_{x\in A}  P_1(x)\log \dfrac{P_1(x)}{P_2(x)} + \sum\limits_{x\notin A}  P_1(x)\log \dfrac{P_1(x)}{P_2(x)} \\ 

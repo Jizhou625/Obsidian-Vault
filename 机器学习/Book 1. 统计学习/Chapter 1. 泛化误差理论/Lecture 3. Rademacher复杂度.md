@@ -51,7 +51,7 @@ $$
 $$
 |\Phi(S^{\prime}) - \Phi(S) | \le \dfrac{1}{m}
 $$
-利用[[../../../概率论/Book 2. 概率论/Chapter 1. 概率不等式/Lecture 2. Hoeffding Type Bounds#3. McDiarmid's Inequality]], 有
+利用[McDiarmid's Inequality](../../../概率论/Book%202.%20概率论/Chapter%201.%20概率不等式/Lecture%202.%20Hoeffding%20Type%20Bounds#3.%20McDiarmid's%20Inequality), 有
 $$
 \mathbb{P}\left(\Phi(S) - \operatorname*{\mathbb{E}}\limits_s\Phi(S)\ge t\right) \le \exp\left(-{2mt^2}\right)
 $$
@@ -93,7 +93,7 @@ $$
 **Note**: 第二个界是数据相关的, 因为经验Rademacher复杂度是依据特定样本集$S$的分布的. 因此, 该泛化界在我们能够计算出$\widehat{\mathfrak{R}}_s(\mathcal{H})$的情况下, 是更紧的泛化界.
 ___
 ##### Proof: 
-根据[[Lecture 2. VC Theory#1.2. 损失函数的泛化界]]中的结论, 我们有
+根据[损失函数的泛化界](Lecture%203.%20Rademacher复杂度.md#2.1.%20损失函数的泛化界)中的结论, 我们有
 $$
 R(h) \le \widehat{R}(h) + 2\mathfrak{R}_m(\mathcal{G}) +\sqrt{\dfrac{\log \dfrac{1}{\delta}}{2m}}, \quad \forall h\in \mathcal{H}
 $$
@@ -141,7 +141,7 @@ $$
 & = \sum\limits_{\boldsymbol{x}\in A}^{}\prod\limits_{i=1}^{m}\operatorname*{\mathbb{E}}\limits_{\sigma_i}\exp(t\sigma_ix_i)\\
 \end{aligned}
 $$
-因为$-|x_i|\le \sigma_i x_i \le |x_i|$, 使用[[../../../概率论/Book 2. 概率论/Chapter 1. 概率不等式/Lecture 2. Hoeffding Type Bounds#1. Hoeffding Lemma]], 我们有
+因为$-|x_i|\le \sigma_i x_i \le |x_i|$, 使用[Hoeffding Lemma](../../../概率论/Book%202.%20概率论/Chapter%201.%20概率不等式/Lecture%202.%20Hoeffding%20Type%20Bounds#1.%20Hoeffding%20Lemma), 我们有
 $$
 \begin{aligned}
 \exp\left(t\operatorname*{\mathbb{E}}\limits_{\boldsymbol{\sigma}}\left[\sup\limits_{\boldsymbol{x}\in A}\sum\limits_{i=1}^{m} \sigma_ix_i  \right]\right) & \le \operatorname*{\mathbb{E}}\limits_{\boldsymbol{\sigma}}\left[\exp\left(t\sup\limits_{\boldsymbol{x}\in A}\sum\limits_{i=1}^{m} \sigma_ix_i  \right)\right]\\

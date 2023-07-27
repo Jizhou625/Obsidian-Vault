@@ -78,7 +78,7 @@ $$
 $$
 \|f_n - f_m\|_p < \varepsilon
 $$
-则由[[Lecture 1. 积分的定义#4.2. Fatou引理|Fatou引理]], 当$n\ge N$, 有
+则由[Fatou引理](Lecture%202.%20积分的性质.md#2.2.%20Fatou引理), 当$n\ge N$, 有
 $$
 \int_X|f_n-f|^p \mathrm{d}\mu =\int_X \lim\limits_{k\to\infty} |f_n-f_{n_k}|^p\mathrm{d}\mu  \leqslant \liminf _{m \rightarrow \infty} \int_X\left|f_n-f_{n_k}\right|^p \mathrm{d}\mu \leqslant \varepsilon
 $$
@@ -118,7 +118,7 @@ ___
    $$
    \lim _{n^{\prime} \rightarrow \infty} g_{n^{\prime}} =C_p\left(\lim _{n^{\prime} \rightarrow \infty}\left|f_{n^{\prime}}\right|^p+|f|^p\right)-\lim _{n^{\prime} \rightarrow \infty}\left|f_{n^{\prime}}-f\right|^p  =2 C_p|f|^p \text { a. e. . }
    $$
-   当$\|f_n\|_p\to \|f\|_p$成立时, 由[[Lecture 1. 积分的定义#4.2. Fatou引理|Fatou引理]], 我们有
+   当$\|f_n\|_p\to \|f\|_p$成立时, 由[Fatou引理](Lecture%202.%20积分的性质.md#2.2.%20Fatou引理), 我们有
    $$
    \begin{aligned}
    \int_X\left(2 C_p|f|^p\right) \mathrm{d} \mu & =\int_X\left(\lim _{n^{\prime} \rightarrow \infty} g_{n^{\prime}}\right) \mathrm{d} \mu \leqslant \liminf _{n^{\prime}\to\infty} \int_X g_{n^{\prime}} \mathrm{d} \mu \\

@@ -2,5 +2,7 @@
   "obsidian-latex-suite",
   "obsidian-linter",
   "table-editor-obsidian",
-  "obsidian-zotero-desktop-connector"
+  "obsidian-zotero-desktop-connector",
+  "obsidian-plugin-toc",
+  "obsidian-pandoc"
 ]

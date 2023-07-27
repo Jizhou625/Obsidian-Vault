@@ -1,3 +1,42 @@
+- [1. 信息的价值](#1.%20%E4%BF%A1%E6%81%AF%E7%9A%84%E4%BB%B7%E5%80%BC)
+	- [1.1. 库恩定理](#1.1.%20%E5%BA%93%E6%81%A9%E5%AE%9A%E7%90%86)
+	- [1.2. 信息对最大最小值的改善](#1.2.%20%E4%BF%A1%E6%81%AF%E5%AF%B9%E6%9C%80%E5%A4%A7%E6%9C%80%E5%B0%8F%E5%80%BC%E7%9A%84%E6%94%B9%E5%96%84)
+	- [1.3. 信息并不总是改善均衡的结果](#1.3.%20%E4%BF%A1%E6%81%AF%E5%B9%B6%E4%B8%8D%E6%80%BB%E6%98%AF%E6%94%B9%E5%96%84%E5%9D%87%E8%A1%A1%E7%9A%84%E7%BB%93%E6%9E%9C)
+- [2. 行为策略](#2.%20%E8%A1%8C%E4%B8%BA%E7%AD%96%E7%95%A5)
+	- [2.1. 行为策略的定义](#2.1.%20%E8%A1%8C%E4%B8%BA%E7%AD%96%E7%95%A5%E7%9A%84%E5%AE%9A%E4%B9%89)
+	- [2.2. 行为策略与混合策略等价](#2.2.%20%E8%A1%8C%E4%B8%BA%E7%AD%96%E7%95%A5%E4%B8%8E%E6%B7%B7%E5%90%88%E7%AD%96%E7%95%A5%E7%AD%89%E4%BB%B7)
+	- [2.3. 行为策略和混合策略的差异](#2.3.%20%E8%A1%8C%E4%B8%BA%E7%AD%96%E7%95%A5%E5%92%8C%E6%B7%B7%E5%90%88%E7%AD%96%E7%95%A5%E7%9A%84%E5%B7%AE%E5%BC%82)
+	- [2.4. 行为策略均衡](#2.4.%20%E8%A1%8C%E4%B8%BA%E7%AD%96%E7%95%A5%E5%9D%87%E8%A1%A1)
+- [3. 行为策略和混合策略相互转化的条件](#3.%20%E8%A1%8C%E4%B8%BA%E7%AD%96%E7%95%A5%E5%92%8C%E6%B7%B7%E5%90%88%E7%AD%96%E7%95%A5%E7%9B%B8%E4%BA%92%E8%BD%AC%E5%8C%96%E7%9A%84%E6%9D%A1%E4%BB%B6)
+	- [3.1. 导向节点$x$的概率](#3.1.%20%E5%AF%BC%E5%90%91%E8%8A%82%E7%82%B9$x$%E7%9A%84%E6%A6%82%E7%8E%87)
+	- [3.2. 行为策略转化为混合策略(Path Intersection)](#3.2.%20%E8%A1%8C%E4%B8%BA%E7%AD%96%E7%95%A5%E8%BD%AC%E5%8C%96%E4%B8%BA%E6%B7%B7%E5%90%88%E7%AD%96%E7%95%A5(Path%20Intersection))
+	- [3.3. 完美记忆(Perfect Recall)](#3.3.%20%E5%AE%8C%E7%BE%8E%E8%AE%B0%E5%BF%86(Perfect%20Recall))
+	- [3.4. 完美记忆的纯策略集](#3.4.%20%E5%AE%8C%E7%BE%8E%E8%AE%B0%E5%BF%86%E7%9A%84%E7%BA%AF%E7%AD%96%E7%95%A5%E9%9B%86)
+	- [3.5. 库恩定理(Perfect Recall)](#3.5.%20%E5%BA%93%E6%81%A9%E5%AE%9A%E7%90%86(Perfect%20Recall))
+- [4. 子博弈完美均衡(SPE, subgame perfect equilibrium)](#4.%20%E5%AD%90%E5%8D%9A%E5%BC%88%E5%AE%8C%E7%BE%8E%E5%9D%87%E8%A1%A1(SPE,%20subgame%20perfect%20equilibrium))
+	- [4.1. 子博弈完美均衡](#4.1.%20%E5%AD%90%E5%8D%9A%E5%BC%88%E5%AE%8C%E7%BE%8E%E5%9D%87%E8%A1%A1)
+	- [4.2. 子博弈的纳什均衡](#4.2.%20%E5%AD%90%E5%8D%9A%E5%BC%88%E7%9A%84%E7%BA%B3%E4%BB%80%E5%9D%87%E8%A1%A1)
+	- [4.3. 子博弈完美纯策略均衡的存在性](#4.3.%20%E5%AD%90%E5%8D%9A%E5%BC%88%E5%AE%8C%E7%BE%8E%E7%BA%AF%E7%AD%96%E7%95%A5%E5%9D%87%E8%A1%A1%E7%9A%84%E5%AD%98%E5%9C%A8%E6%80%A7)
+	- [4.4. 子博弈完美混合策略均衡的存在性](#4.4.%20%E5%AD%90%E5%8D%9A%E5%BC%88%E5%AE%8C%E7%BE%8E%E6%B7%B7%E5%90%88%E7%AD%96%E7%95%A5%E5%9D%87%E8%A1%A1%E7%9A%84%E5%AD%98%E5%9C%A8%E6%80%A7)
+	- [4.5. 子博弈完美均衡的缺陷](#4.5.%20%E5%AD%90%E5%8D%9A%E5%BC%88%E5%AE%8C%E7%BE%8E%E5%9D%87%E8%A1%A1%E7%9A%84%E7%BC%BA%E9%99%B7)
+		- [4.5.1. 不可置信的威胁未必无效](#4.5.1.%20%E4%B8%8D%E5%8F%AF%E7%BD%AE%E4%BF%A1%E7%9A%84%E5%A8%81%E8%83%81%E6%9C%AA%E5%BF%85%E6%97%A0%E6%95%88)
+		- [4.5.2. 心照不宣的重复博弈](#4.5.2.%20%E5%BF%83%E7%85%A7%E4%B8%8D%E5%AE%A3%E7%9A%84%E9%87%8D%E5%A4%8D%E5%8D%9A%E5%BC%88)
+- [5. 完美均衡](#5.%20%E5%AE%8C%E7%BE%8E%E5%9D%87%E8%A1%A1)
+	- [5.1. 扰动扩展式博弈](#5.1.%20%E6%89%B0%E5%8A%A8%E6%89%A9%E5%B1%95%E5%BC%8F%E5%8D%9A%E5%BC%88)
+	- [5.2. 扩展式完美均衡](#5.2.%20%E6%89%A9%E5%B1%95%E5%BC%8F%E5%AE%8C%E7%BE%8E%E5%9D%87%E8%A1%A1)
+	- [5.3. 扩展式完美均衡和策略式完美均衡的差别](#5.3.%20%E6%89%A9%E5%B1%95%E5%BC%8F%E5%AE%8C%E7%BE%8E%E5%9D%87%E8%A1%A1%E5%92%8C%E7%AD%96%E7%95%A5%E5%BC%8F%E5%AE%8C%E7%BE%8E%E5%9D%87%E8%A1%A1%E7%9A%84%E5%B7%AE%E5%88%AB)
+	- [5.4. 完美均衡和子博弈完美均衡的关系](#5.4.%20%E5%AE%8C%E7%BE%8E%E5%9D%87%E8%A1%A1%E5%92%8C%E5%AD%90%E5%8D%9A%E5%BC%88%E5%AE%8C%E7%BE%8E%E5%9D%87%E8%A1%A1%E7%9A%84%E5%85%B3%E7%B3%BB)
+	- [5.5. 扩展式完美均衡的存在性](#5.5.%20%E6%89%A9%E5%B1%95%E5%BC%8F%E5%AE%8C%E7%BE%8E%E5%9D%87%E8%A1%A1%E7%9A%84%E5%AD%98%E5%9C%A8%E6%80%A7)
+- [6. 序贯均衡](#6.%20%E5%BA%8F%E8%B4%AF%E5%9D%87%E8%A1%A1)
+	- [6.1. 信念体系](#6.1.%20%E4%BF%A1%E5%BF%B5%E4%BD%93%E7%B3%BB)
+	- [6.2. 序贯理性](#6.2.%20%E5%BA%8F%E8%B4%AF%E7%90%86%E6%80%A7)
+	- [6.3. 一致性](#6.3.%20%E4%B8%80%E8%87%B4%E6%80%A7)
+	- [6.4. 序贯均衡](#6.4.%20%E5%BA%8F%E8%B4%AF%E5%9D%87%E8%A1%A1)
+	- [6.5. 序贯理性与行为策略纳什均衡](#6.5.%20%E5%BA%8F%E8%B4%AF%E7%90%86%E6%80%A7%E4%B8%8E%E8%A1%8C%E4%B8%BA%E7%AD%96%E7%95%A5%E7%BA%B3%E4%BB%80%E5%9D%87%E8%A1%A1)
+	- [6.6. 扩展式完美均衡都是序贯均衡](#6.6.%20%E6%89%A9%E5%B1%95%E5%BC%8F%E5%AE%8C%E7%BE%8E%E5%9D%87%E8%A1%A1%E9%83%BD%E6%98%AF%E5%BA%8F%E8%B4%AF%E5%9D%87%E8%A1%A1)
+
+
+
 ## 1. 信息的价值
 ### 1.1. 库恩定理
 每一个完全信息有限博弈都有至少一个纯策略纳什均衡.
@@ -49,7 +88,7 @@ $$
 我们用$\mathcal{B}_i$表示参与人$i$的行为策略集合.
 
 
-### 2.2. 等价的定义
+### 2.2. 行为策略与混合策略等价
 用$\rho(x;\boldsymbol{\sigma})$表示策略向量为$\boldsymbol{\sigma}$时, 博弈的展开到访节点$x$的概率. 在扩展式博弈中, 如果对参与人 $N \backslash\{i\}$ 的每个混合 (或行为) 策略向量 $\boldsymbol{\sigma}_{-i}$ 以及博弈树的每个节点 $x$, 下式成立, 那么, 参与人 $i$ 的混合策略 $\sigma_i$ 和行为策略 $b_i$ 互相等价:
 $$
 \rho\left(x ; \sigma_i, \boldsymbol{\sigma}_{-i}\right)=\rho\left(x ; b_i, \boldsymbol{\sigma}_{-i}\right)
@@ -80,11 +119,11 @@ $$
 在一个有限扩展式博弈中, 如果所有的参与人都有完美记忆, 那么这个博弈有行为策略纳什均衡. 
 ___
 ##### Proof
-根据[[Lecture 3. 均衡(策略式博弈)#2.4. 纳什定理]], 这个博弈有混合策略纳什均衡$\boldsymbol{\sigma}^* = (\sigma_i^*)_{i\in N}$. 因为博弈中所有的参与人都有完美记忆, 根据[[#3.3. 库恩定理(Perfect Recall)]], 对每个参与人$i$, 存在等价于$\sigma_i^*$的行为策略$b_i^*$. 于是
+根据[纳什定理](Lecture%203.%20均衡(策略式博弈)#2.4.%20纳什定理), 这个博弈有混合策略纳什均衡$\boldsymbol{\sigma}^* = (\sigma_i^*)_{i\in N}$. 因为博弈中所有的参与人都有完美记忆, 根据[3.5. 库恩定理(Perfect Recall)](#3.5.%20库恩定理(Perfect%20Recall)), 对每个参与人$i$, 存在等价于$\sigma_i^*$的行为策略$b_i^*$. 于是
 $$
 u_i(\boldsymbol{\sigma}^*) = u_i(\boldsymbol{b}^*), \quad i\in N
 $$
-根据[[#3.1. 行为策略转化为混合策略(Path Intersection)]], 对于每一个行为策略$b_i$, 存在等价于$b_i$的混合策略$\sigma_i$.
+根据[3.2. 行为策略转化为混合策略(Path Intersection)](#3.2.%20行为策略转化为混合策略(Path%20Intersection)), 对于每一个行为策略$b_i$, 存在等价于$b_i$的混合策略$\sigma_i$.
 $$
 u_i(\boldsymbol{b}^*) = u_i(\boldsymbol{\sigma}^*) \ge u_i(\sigma_i, \boldsymbol{\sigma}_{-i}^*) = u_i(b_i, \boldsymbol{b}_{-i}^*)
 $$
@@ -132,8 +171,16 @@ $$
 $$
 \begin{aligned} 
 \rho\left(x ; b_i, \boldsymbol{\sigma}_{-i}\right)&=\rho_i\left(x ; b_i\right) \times \prod_{j \neq i} \rho_j\left(x ; \sigma_j\right) \\ 
-    \rho\left(x ; \sigma_i, \boldsymbol{\sigma}_{-i}\right)&=\rho_i\left(x ; \sigma_i\right) \times \prod_{j \neq i} \rho_j\left(x ; \sigma_j\right)
+\rho\left(x ; \sigma_i, \boldsymbol{\sigma}_{-i}\right)&=\rho_i\left(x ; \sigma_i\right) \times \prod_{j \neq i} \rho_j\left(x ; \sigma_j\right)
 \end{aligned}
+$$
+我们想要证明
+$$
+\rho\left(x ; b_i, \boldsymbol{\sigma}_{-i}\right) = \rho\left(x ; \sigma_i, \boldsymbol{\sigma}_{-i}\right)
+$$
+就只要证明
+$$
+\rho_i\left(x ; b_i\right) = \rho_i\left(x ; \sigma_i\right)
 $$
 将参与人$i$的信息集组合一分为二, $\mathcal{U}_i^1$包含从根节点到$x$的路径穿过的所有信息集; $\mathcal{U}_i^2$包含不穿过的所有信息集. 于是
 $$
@@ -214,13 +261,15 @@ $$
 ___
 
 
-## 4. 子博弈完美均衡
+## 4. 子博弈完美均衡(SPE, subgame perfect equilibrium)
 ### 4.1. 子博弈完美均衡
 在扩展式博弈$\Gamma$中, 策略向量$\boldsymbol{\sigma}^*$叫做子博弈完美均衡, 当且仅当局限在每个子博弈的策略向量$\boldsymbol{\sigma}^*$是那个子博弈的纳什均衡: 即对每个参与人$i\in N$, 每个策略$\sigma_i$和每个子博弈$\Gamma(x)$, 都有 
 $$
 u_i(\boldsymbol{\sigma}^*\mid x) \ge u_i(\sigma_i, \boldsymbol{\sigma}^*_{-i}\mid x)
 $$
 子博弈完美均衡的思路是, 即使当参与人不在均衡路径中时, 他们的行动也依然应该遵循纳什均衡. 
+![](Lecture%204.%20%E5%9D%87%E8%A1%A1(%E6%89%A9%E5%B1%95%E5%BC%8F%E5%8D%9A%E5%BC%88).assets/%E4%B8%8D%E5%8F%AF%E7%BD%AE%E4%BF%A1%E7%9A%84%E5%A8%81%E8%83%81.png)  
+如图所示, $(A, C)$是扩展式博弈的纳什均衡, 但$C$并不是子博弈$\Gamma(x_2)$的均衡. 这里, 参与人II通过对参与人I发出威胁, 使得参与人I在博弈中选择了$A$, 但参与人II的威胁是不可置信的. 这不是一个子博弈完美均衡. 
 
 ### 4.2. 子博弈的纳什均衡
 令$\boldsymbol{\sigma}^*$为扩展式博弈$\Gamma$的纳什均衡, $\Gamma(x)$是$\Gamma$的一个子博弈. 如果$\mathbb{P}_{\boldsymbol{\sigma}^*}(x)>0$, 那么局限于子博弈$\Gamma(x)$的策略向量$\boldsymbol{\sigma}^*$也是子博弈$\Gamma(x)$的纳什均衡. 
@@ -267,21 +316,40 @@ ___
 ___
 ##### Proof
 对于每个具有完美记忆的扩展式博弈, 其混合策略都有一个等价的行为策略, 每个行为策略也有与其等价的混合策略. 因此, 我们只需要考虑行为策略. 
+
+仍然采用逆向归纳法. 我们构造辅助子博弈, 对于每个信息集$U_i$, 我们构造一个辅助子博弈$\Gamma(U_i)$, $\Gamma(U_i)$在$U_i$的所有节点之前添加了一个公共的根节点, 根据纳什定理, $\Gamma(U_i)$存在一个混合策略均衡. 对辅助子博弈进行归纳, 就得到了一个子博弈完美行为策略均衡, 这对应着一个子博弈完美混合策略均衡. 
 #####
 ___
+
+### 4.5. 子博弈完美均衡的缺陷
+#### 4.5.1. 不可置信的威胁未必无效
+![](Lecture%204.%20%E5%9D%87%E8%A1%A1(%E6%89%A9%E5%B1%95%E5%BC%8F%E5%8D%9A%E5%BC%88).assets/%E4%B8%8D%E5%8F%AF%E7%BD%AE%E4%BF%A1%E7%9A%84%E5%A8%81%E8%83%81%E6%9C%AA%E5%BF%85%E6%97%A0%E6%95%88.png)  
+考虑如上图所示的扩展式博弈, 子博弈完美均衡的收益是$(2,2)$, 但另一个纳什均衡可以获得收益$(4,4)$, 尽管参与人I的威胁$E$是不可置信的. 但它却给参与人II带来了好处. 参与人II会选择相信参与人I的威胁以获得更高的收益. 
+#### 4.5.2. 心照不宣的重复博弈
+![](Lecture%204.%20%E5%9D%87%E8%A1%A1(%E6%89%A9%E5%B1%95%E5%BC%8F%E5%8D%9A%E5%BC%88).assets/%E8%9C%88%E8%9A%A3%E5%8D%9A%E5%BC%88.png)  
+如上图所示, 蜈蚣博弈的唯一子博弈完美均衡就是参与人I在第一阶段终止博弈. 但在实践中, 许多人确实攀爬蜈蚣到一定的水平, 然后其中的一个人终止博弈. 这种情况下, 子博弈完美均衡并不是一个好的预测.
+
 ## 5. 完美均衡
 ### 5.1. 扰动扩展式博弈
-对于参与人$i$的每个信息集$U_i\in \mathcal{U}_i$, $\sum\limits_{a_i\in A(U_i)}^{} \delta_i(a_i)\le 1$成立. 令$\boldsymbol{\delta} = (\delta_i)_{i\in N}$. 博弈$\Gamma(\boldsymbol{\delta})$是一个扩展式博弈, 其中参与人$i$的策略集(表示为$\mathcal{B}_i(\delta_i)$)是行为策略集, 每个行动$a_i$被选择的概率大于或等于$\delta_i(a_i)$, 即
+对于参与人$i$的每个信息集$U_i\in \mathcal{U}_i$, 令$\boldsymbol{\delta} = (\delta_i)_{i\in N}$满足
 $$
-\mathcal{B}_i(\delta_i) = \{\sigma_i\in \operatorname*{\times}\limits_{U_i\in \mathcal{U}_i}\Delta (A(U_i))\mid  \sigma(U_i, a_i)\ge \delta_i(a_i), \forall i\in N, \forall U_i\in \mathcal{U}_i, \forall a_i\in A(U_i)\}
+\sum\limits_{a_i\in A(U_i)}^{} \delta_i(a_i)\le 1
+$$ 
+在扩展式博弈$\Gamma(\boldsymbol{\delta})$中, 定义参与人$i$的行为策略集$\mathcal{B}_i(\delta_i)$如下:
 $$
-我们将$\Gamma(\boldsymbol{\delta})$称为扰动扩展式博弈. 
+\mathcal{B}_i(\delta_i) = \left\{\sigma_i\in \operatorname*{\times}\limits_{U_i\in \mathcal{U}_i}\Delta (A(U_i))\ \Big|\  \sigma(U_i, a_i)\ge \delta_i(a_i), \forall i\in N, \forall U_i\in \mathcal{U}_i, \forall a_i\in A(U_i)\right\}
 $$
-M(\boldsymbol{\delta}) = \max\limits_{\{i\in N, a_i\in \bigcup\limits_{U_i\in \mathcal{U}_i}^{} A(U_i)\}} \delta_i(a_i), \quad m(\boldsymbol{\delta}) = \min\limits_{\{i\in N, a_i\in \bigcup\limits_{U_i\in \mathcal{U}_i}^{} A(U_i)\}} \delta_i(a_i)
+我们将$\Gamma(\boldsymbol{\delta})$称为扰动扩展式博弈. 定义
+$$
+\begin{aligned} 
+M(\boldsymbol{\delta}) = \max\limits_{\left\{i\in N, a_i\in \bigcup\limits_{U_i\in \mathcal{U}_i}^{} A(U_i)\right\}} \delta_i(a_i)\\ 
+ m(\boldsymbol{\delta}) = \min\limits_{\left\{i\in N, a_i\in \bigcup\limits_{U_i\in \mathcal{U}_i}^{} A(U_i)\right\}} \delta_i(a_i)
+    
+\end{aligned}
 $$
 
 ### 5.2. 扩展式完美均衡
-如果存在扰动向量序列$(\boldsymbol{\delta}^k)_{k\in \mathbb{N}}$满足$\lim\limits_{k\to\infty} M(\boldsymbol{\delta}^k) =0$, 以及对每个$k\in \mathbb{N}$, 存在$\Gamma(\boldsymbol{\delta}^k)$的均衡$\boldsymbol{\sigma}^k$, 使得$\lim\limits_{k\to\infty} \boldsymbol{\sigma}^k =\boldsymbol{\sigma}$. 那么扩展式博弈$\Gamma$中的行为策略向量$\boldsymbol{\sigma}$叫做扩展式完美均衡. 
+如果存在扰动向量序列$(\boldsymbol{\delta}^k)_{k\in \mathbb{N}}$满足$\lim\limits_{k\to\infty} M(\boldsymbol{\delta}^k) =0$, 并且对每个$k\in \mathbb{N}$, 存在$\Gamma(\boldsymbol{\delta}^k)$的均衡$\boldsymbol{\sigma}^k$, 使得$\lim\limits_{k\to\infty} \boldsymbol{\sigma}^k =\boldsymbol{\sigma}$. 那么扩展式博弈$\Gamma$中的行为策略向量$\boldsymbol{\sigma}$叫做扩展式完美均衡. 
 
 
 ### 5.3. 扩展式完美均衡和策略式完美均衡的差别
@@ -292,13 +360,126 @@ $$
 
 
 ### 5.4. 完美均衡和子博弈完美均衡的关系
-令$\Gamma$为扩展式博弈, $\Gamma$的每个扩展式完美均衡也是一个子博弈完美均衡.
+令$\Gamma$为扩展式博弈, $\Gamma$的每个扩展式完美均衡也是一个子博弈完美均衡. 但一个子博弈完美均衡未必是一个扩展式完美均衡. 
+___
+##### Proof
+令$\boldsymbol{\sigma}^* = (\sigma_i^*)_{i\in N}$是扩展式完美均衡, 令$\Gamma(x)$是一个子博弈, 我们证明, 局限在这个子博弈上的策略向量$\boldsymbol{\sigma}^*$是一个子博弈完美均衡. 
+
+根据扩展式完美均衡的定义, 对每个$k\in \mathbb{N}$, 存在扰动向量$\boldsymbol{\delta}^k$, 用$\boldsymbol{\sigma}^k$表示$\Gamma(\boldsymbol{\delta}^k)$的扰动均衡. 满足$\lim\limits_{k\to\infty} M(\boldsymbol{\delta}^k) = 0$和$\lim\limits_{k\to\infty} \boldsymbol{\sigma}^k = \boldsymbol{\sigma}$. 显然, 策略向量$\boldsymbol{\sigma}^k$是博弈$\Gamma(x; \boldsymbol{\delta}^k)$的一个行为策略纳什均衡. 令$\sigma^{\prime}_i$是参与人$i$的一个行为策略, 显然, 存在收敛于$\sigma^{\prime}_i$的行为策略序列$(\sigma_i^{\prime k})_{k\in \mathbb{N}}$, 对每个$k\in \mathbb{N}$, 满足$\sigma_i^{\prime k}\in \mathcal{B}_i(\delta_i^k)$, 因为$\boldsymbol{\sigma}^k$是子博弈$\Gamma(x; \boldsymbol{\delta}^k)$的均衡, 因此
+$$
+u_i(\boldsymbol{\sigma}^k\mid x) \ge u_i((\sigma_i^{\prime k}, \boldsymbol{\sigma}_{-i}^k)\mid x)
+$$
+取$k\to \infty$, 可以得到
+$$
+u_i(\boldsymbol{\sigma}^*\mid x) \ge u_i((\sigma_i^{\prime}, \boldsymbol{\sigma}_{-i}^*)\mid x)
+$$
+
+![](Lecture%204.%20%E5%9D%87%E8%A1%A1(%E6%89%A9%E5%B1%95%E5%BC%8F%E5%8D%9A%E5%BC%88).assets/%E5%AD%90%E5%8D%9A%E5%BC%88%E5%AE%8C%E7%BE%8E%E5%9D%87%E8%A1%A1%E6%9C%AA%E5%BF%85%E6%98%AF%E6%89%A9%E5%B1%95%E5%BC%8F%E5%AE%8C%E7%BE%8E%E5%9D%87%E8%A1%A1.png)  
+如上图所示, 均衡$(A, L)$是子博弈完美均衡, 但不是扩展式完美均衡
+#####
+___
+
+### 5.5. 扩展式完美均衡的存在性
+每个具有完美记忆的有限的扩展式博弈都有扩展式完美均衡
+___
+##### Proof
+令$\Gamma$为具有完美记忆的有限扩展式博弈, 令$(\boldsymbol{\delta}^k)_{k\in \mathbb{N}}$是满足$\lim\limits_{k\to\infty} M(\boldsymbol{\delta}^k) = 0$的一个扰动向量序列. 因为每个参与人都有完美记忆, 因此$\Gamma(\boldsymbol{\delta}^k)$有一个行为策略均衡$\boldsymbol{\sigma}^k$. 又因为行为策略向量空间$\operatorname*{\times}\limits_{i\in N}\mathcal{B}_i$是紧的, 因此序列$(\boldsymbol{\sigma}^k)_{k\in \mathbb{N}}$有一个收敛的子序列收敛于极限$\boldsymbol{\sigma}^*$, 这就是一个扩展式完美均衡. 
+#####
+___
 
 ## 6. 序贯均衡
-### 6.1. 序贯均衡
-序贯理性: 给定参与人在某个信息集上的信念, 参与人的策略要求他在每个信息集都选择最大化其期望收益的行动. 
+### 6.1. 信念体系
+令$\boldsymbol{\sigma}$是策略向量, 当参与人实施策略向量$\boldsymbol{\sigma}$时, 博弈的展开以正的概率到达的所有信息集的组合表示为$\mathcal{U}_{\sigma} = \{U\in\mathcal{U}\mid \mathbb{P}_{\boldsymbol{\sigma}}(U)>0\}$. 策略向量$\boldsymbol{\sigma}$引出的局部信念体系是分布的组合$\boldsymbol{\mu}_{\boldsymbol{\sigma}} = (\mu_{\boldsymbol{\sigma}, U})_{U\in \mathcal{U}_{\boldsymbol{\sigma}}}$, 对每个$U\in \mathcal{U}_{\boldsymbol{\sigma}}$, 满足
+$$
+\boldsymbol{\mu}_{\boldsymbol{\sigma}, U(x)} = \mathbb{P}_{\boldsymbol{\sigma}} (x\mid U) = \dfrac{\mathbb{P}_{\boldsymbol{\sigma}}(x)}{\mathbb{P}_{\boldsymbol{\sigma}}(U)}, \quad \forall x\in U
+$$
 
-序贯均衡: 序贯均衡是组合$(\boldsymbol{\sigma}, \boldsymbol{\mu})$, 其中$\boldsymbol{\sigma} = (\sigma_i)_{i\in N}$是一个行为策略向量,  $\boldsymbol{\mu}$是一个完整的信念体系. 组合$(\boldsymbol{\sigma}, \boldsymbol{\mu})$必须满足两个特征
-1. 信念$\boldsymbol{\mu}$必须和贝叶斯公式以及策略向量$\boldsymbol{\sigma}$一致. 
-2. 给定信念$\boldsymbol{\mu}$, $\boldsymbol{\sigma}$必须是序贯理性的. 
+
+### 6.2. 序贯理性
+设$\boldsymbol{\sigma}$是一个行为策略向量, $\boldsymbol{\mu}$是局部信念体系, $U_i\in \mathcal{U}_{\boldsymbol{\mu}}$是参与人$i$的一个信息集. 如果对参与人$i$的每个行为策略$\sigma_i$, 有
+$$
+u_i(\boldsymbol{\sigma}\mid U_i, \boldsymbol{\mu}) \ge u_i(\sigma_i^{\prime}, \boldsymbol{\sigma}_{-i}\mid U_i, \boldsymbol{\mu})
+$$
+其中
+$$
+u_i(\boldsymbol{\sigma}\mid U_i, \boldsymbol{\mu}) = \sum\limits_{x\in U_i} \boldsymbol{\mu}_{\boldsymbol{\sigma}, U_i(x)} u_i(\boldsymbol{\sigma}\mid x)
+$$
+那么就称, 相对于$\boldsymbol{\mu}$, 策略向量$\boldsymbol{\sigma}$在信息集$U_i$中是理性的. 
+
+如果对每个参与人$i$和每个信息集$U_i\in \mathcal{U}_{\boldsymbol{\mu}}$, 相对于$\boldsymbol{\mu}$, 策略向量$\boldsymbol{\sigma}$在$U_i$是理性的, 那么组合$(\boldsymbol{\sigma}, \boldsymbol{\mu})$是序贯理性的.
+
+### 6.3. 一致性
+如果存在一个完全混合行为策略向量$(\boldsymbol{\sigma}^k)_{k\in \mathbb{N}}$的序列, 满足如下条件
+1. 策略$(\boldsymbol{\sigma}^k)_{k\in \mathbb{N}}$收敛于$\boldsymbol{\sigma}$, 即$\lim\limits_{k\to\infty} \boldsymbol{\sigma}^k = \boldsymbol{\sigma}$
+2. $(\boldsymbol{\sigma}^k)_{k\in \mathbb{N}}$引发的信念序列 $(\boldsymbol{\mu}_{\boldsymbol{\sigma}^k})_{k\in \mathbb{N}}$ 收敛于信念体系$\boldsymbol{\mu}$
+   $$
+   \boldsymbol{\mu}_{\boldsymbol{\sigma}}(U) = \lim\limits_{k\to\infty} \boldsymbol{\mu}_{\boldsymbol{\sigma}^k}(U), \quad \forall U\in \mathcal{U}
+   $$
+
+那么assessment $(\boldsymbol{\sigma}, \boldsymbol{\mu})$ 就是一致的, 其中 $\boldsymbol{\sigma} = (\sigma_i)_{i\in N}$ 是行为策略向量, $\boldsymbol{\mu} = (\mu_U)_{U\in \mathcal{U}}$ 是完整信念体系. 
+
+### 6.4. 序贯均衡
+Assessment $(\boldsymbol{\sigma}, \boldsymbol{\mu})$是序贯均衡, 当且仅当, 它是一致的并且是序贯理性的. 其中$\boldsymbol{\sigma} = (\sigma_i)_{i\in N}$是行为策略向量, $\boldsymbol{\mu} = (\mu_U)_{U\in \mathcal{U}}$是完整信念体系. 
+
+### 6.5. 序贯理性与行为策略纳什均衡
+在具有完美记忆的扩展式博弈中, 如果assessment $(\boldsymbol{\sigma}, \boldsymbol{\mu}_{\boldsymbol{\sigma}})$是序贯均衡, 那么策略向量$\boldsymbol{\sigma}$是行为策略纳什均衡. 与此同时, 如果$\boldsymbol{\sigma}$是完全混合行为策略的纳什均衡, 那么$(\boldsymbol{\sigma}, \boldsymbol{\mu}_{\boldsymbol{\sigma}})$是序贯均衡.
+___
+##### Proof
+首先先证明第一部分, 设$i\in N$是一个参与人, 令$\sigma_i^{\prime}$是参与人$i$的任意一个行为策略. 我们称信息集$U_i$是最高的, 如果从终节点到$U_i$中的节点的每条路径都不经过其他任意的信息集. 用$\widehat{\mathcal{U}}_i$表示参与人$i$的最高信息集的集合. 从根节点到终节点的任一路径, 只要穿过参与人$i$的一个信息集, 一定穿过$\widehat{\mathcal{U}}_i$中的一个信息集. 当策略向量$\boldsymbol{\sigma}$被选择时, 设博弈展开不穿过参与人$i$的任一信息集的概率表示为$p_{\boldsymbol{\sigma}, i}^*$, 参与人$i$的期望收益表示为$u_{\boldsymbol{\sigma}, i}^*$. 我们有
+$$
+\begin{aligned} 
+p_{\boldsymbol{\sigma}}(U_i) &= p_{(\sigma_i^{\prime}, \boldsymbol{\sigma}_{-i})}(U_i),\quad \forall U_i\in \widehat{\mathcal{U}}_i\\
+u_i(\boldsymbol{\sigma}) &= \sum\limits_{U_i\in\widehat{\mathcal{U}}_i} p_{\boldsymbol{\sigma}}(U_i) u_i(\boldsymbol{\sigma}\mid U_i, \boldsymbol{\mu}) + p_{\boldsymbol{\sigma}, i}^*u_{\boldsymbol{\sigma}, i}^* \\ 
+u_i(\sigma_i^{\prime}, \boldsymbol{\sigma}_{-i}) &= \sum\limits_{U_i\in\widehat{\mathcal{U}}_i} p_{(\sigma_i^{\prime}, \boldsymbol{\sigma}_{-i})}(U_i) u_i(\sigma_i^{\prime}, \boldsymbol{\sigma}_{-i}\mid U_i, \boldsymbol{\mu}) + p_{\boldsymbol{\sigma}, i}^*u_{\boldsymbol{\sigma}, i}^* \\ 
+& = \sum\limits_{U_i\in\widehat{\mathcal{U}}_i} p_{\boldsymbol{\sigma}}(U_i) u_i(\sigma_i^{\prime}, \boldsymbol{\sigma}_{-i}\mid U_i, \boldsymbol{\mu}) + p_{\boldsymbol{\sigma}, i}^*u_{\boldsymbol{\sigma}, i}^* \\
+\end{aligned}
+$$
+因为对每个$U_i\in \mathcal{U}_{\boldsymbol{\mu}_{\boldsymbol{\sigma}}}$, 组合$(\boldsymbol{\sigma}, \boldsymbol{\mu})$在$U_i$上是序贯理性的.
+$$
+u_i(\boldsymbol{\sigma}\mid U_i, \boldsymbol{\mu}) \ge u_i(\sigma_i^{\prime}, \boldsymbol{\sigma}_{-i}\mid U_i, \boldsymbol{\mu})
+$$
+这样我们就得到了$u_i(\boldsymbol{\sigma})\ge u_i(\sigma_i^{\prime}, \boldsymbol{\sigma}_{-i})$. 
+
+接下来证明第二部分, 因为$\boldsymbol{\sigma}$是完全混合的行为策略均衡, 因此是一致的. 于是我们只要证明$(\boldsymbol{\sigma}, \boldsymbol{\mu}_{\boldsymbol{\sigma}})$在$\mathcal{U}_{\boldsymbol{\mu}_{\boldsymbol{\sigma}}}$上是序贯理性的. 用反证法, 假设存在$U_i$, 使得
+$$
+u_i(\boldsymbol{\sigma}\mid U_i, \boldsymbol{\mu}) < u_i(\sigma_i^{\prime}, \boldsymbol{\sigma}_{-i}\mid U_i, \boldsymbol{\mu})
+$$
+因为这个博弈是完全信息的, 我们视和$U_i$深度相同的所有节点为终节点. 根据库恩定理, 存在和行为策略等价的混合策略, 固定$\boldsymbol{\sigma}_{-i}$, 我们就可以将以和$U_i$深度相同的所有节点为终节点的博弈描述为一个单层的扩展式博弈, 我们用这个扩展式博弈代替原先复杂的扩展式博弈. 因此, 可以不妨设$U_i$就在根节点的下一层. 
+
+如果根节点到$U_i$的行动人是参与人$i$, 我们可以将行为策略$\sigma_i$分解为两部分, 在根节点的决策$\sigma_i^r$和在之后的决策$\sigma_i^{ur}$. 定义新的策略为
+$$
+\sigma_i^{*r}(r\to x) = \begin{cases}\sigma_i^r(r\to x), \quad & x\notin U_i \\ \dfrac{\sigma_i^{\prime r}(r\to x)}{\sigma_i^{\prime r}(r\to U_i)}\sigma_i^{r}(r\to U_i),\quad  & x\in U_i\end{cases} 
+$$
+$$
+\sigma_i^{*ur} = \begin{cases}\sigma_i^{\prime ur},\quad  &\text{pass } U_i
+ \\ 
+   \sigma_i^{ur},\quad  &\text{not pass } U_i
+\end{cases}
+$$
+于是
+$$
+\begin{aligned} 
+   u_i(\boldsymbol{\sigma}) &=  \sum\limits_{x\in U_i}  \sigma_i^r(r\to x)u_i(\boldsymbol{\sigma}\mid x) + \sum\limits_{x\notin U_i}  \sigma_i^r(r\to x)u_i(\boldsymbol{\sigma}\mid x) \\
+   & =\sigma_i^{r}(r\to U_i)\sum\limits_{x\in U_i}^{} \mathbb{P}_{\boldsymbol{\sigma}}(x\mid U_i)u_i(\boldsymbol{\sigma}\mid x) + \sum\limits_{x\notin U_i}  \sigma_i^r(r\to x)u_i(\boldsymbol{\sigma}\mid x) \\
+   & = \sigma_i^{r}(r\to U_i)u_i(\boldsymbol{\sigma}\mid U_i, \boldsymbol{\mu}) + \sum\limits_{x\notin U_i}\sigma_i^{*r}(r\to x)u_i(\sigma^*_i, \boldsymbol{\sigma}_{-i}\mid x) \\ 
+   & < \sigma_i^{r}(r\to U_i)u_i(\sigma_i^{\prime}, \boldsymbol{\sigma}_{-i}\mid U_i, \boldsymbol{\mu}) + \sum\limits_{x\notin U_i}\sigma_i^{*r}(r\to x)u_i(\sigma^*_i, \boldsymbol{\sigma}_{-i}\mid x) \\
+   & = \sigma_i^{r}(r\to U_i)\sum\limits_{x\in U_i}^{} \mathbb{P}_{(\sigma_i^{\prime}, \boldsymbol{\sigma}_{-i})}(x\mid U_i)u_i(\sigma^*_i, \boldsymbol{\sigma}_{-i}\mid x) + \sum\limits_{x\notin U_i}\sigma_i^{*r}(r\to x)u_i(\sigma^*_i, \boldsymbol{\sigma}_{-i}\mid x) \\
+   & = \sum\limits_{x\in U_i}^{} \sigma_i^{*r}(r\to x) u_i(\sigma^*_i, \boldsymbol{\sigma}_{-i}\mid x) + \sum\limits_{x\notin U_i}\sigma_i^{*r}(r\to x)u_i(\sigma^*_i, \boldsymbol{\sigma}_{-i}\mid x) \\ 
+   & = u_i(\sigma^*_i, \boldsymbol{\sigma}_{-i})
+\end{aligned}
+$$
+这就导出了矛盾!
+
+如果从根节点到$U_i$的行动人不是参与人$i$, 我们只要保留上面的构造的第二部分即可. 
+#####
+___
+
+
+### 6.6. 扩展式完美均衡都是序贯均衡
+令$\boldsymbol{\sigma}$是具有完美记忆的扩展式博弈$\Gamma$的扩展式完美均衡, 那么存在一个完整的信念体系$\boldsymbol{\mu} = (\mu_U)_{U\in \mathcal{U}}$, 使得$(\boldsymbol{\sigma}, \boldsymbol{\mu})$是序贯均衡.
+___
+##### Proof
+因为$\boldsymbol{\sigma}$是扩展式完美均衡, 因此存在$\lim\limits_{k\to\infty} M(\boldsymbol{\delta}^k) =0$的扰动序列$(\boldsymbol{\delta}^k)_{k\in \mathbb{N}}$, 使得对每个$k\in \mathbb{N}$, 扰动博弈$\Gamma(\boldsymbol{\delta}^k)$的均衡$\boldsymbol{\sigma}^k$, 满足$\lim\limits_{k\to\infty} \boldsymbol{\sigma}^k = \boldsymbol{\sigma}$. 
+#####
+___
 

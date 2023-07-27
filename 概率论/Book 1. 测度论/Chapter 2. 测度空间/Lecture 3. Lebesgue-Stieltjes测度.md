@@ -145,7 +145,7 @@ ___
 
 ## 2. Lebesgue-Stieltjes测度
 ### 2.1. $\mathscr{Q}_{\mathbb{R}^n}$上的Lebesgue-Stieltjes测度
-考虑$\mathbb{R}^n$上的准分布函数$F$, 根据[[Lecture 3. Lebesgue-Stieltjes测度#1.3. $ mathscr{Q}_{ mathbb{R} n}$上准分布函数导出的测度|准分布函数导出的测度]], 我们可以得到$F$在半环$\mathscr{Q}_{\mathbb{R}^n}$上定义的有限测度$\mu_F$.
+考虑$\mathbb{R}^n$上的准分布函数$F$, 根据[$\mathscr{Q}_{\mathbb{R} n}$上准分布函数导出的测度](Lecture%203.%20Lebesgue-Stieltjes测度#1.3.%20$%20mathscr{Q}_{%20mathbb{R}%20n}$上准分布函数导出的测度), 我们可以得到$F$在半环$\mathscr{Q}_{\mathbb{R}^n}$上定义的有限测度$\mu_F$.
 $$
 \mu_F((\boldsymbol{a}, \boldsymbol{b}]) = \begin{cases} \Delta^n_{(\boldsymbol{a}, \boldsymbol{b}]} F, \quad & \boldsymbol{a}\le \boldsymbol{b} \\ 0, \quad & \boldsymbol{a} > \boldsymbol{b} \end{cases}
 $$
@@ -166,10 +166,10 @@ $$
 $$
 \mathbb{R}^n = \bigcup\limits_{i=1}^{\infty} \alpha_i, \quad \alpha_i \cap \alpha_j = \varnothing, \quad i \neq j
 $$
-根据[[Lecture 2. 外测度与测度扩张#2.3. 测度扩张定理|测度扩张定理]], $\mu_F$在$\sigma(\mathscr{Q}_{\mathbb{R}^n}) = \mathscr{B}_{\mathbb{R}^n}$上有唯一的扩张, 仍然记为$\mu_F$. 这就定义了在$\mathscr{B}_{\mathbb{R}^n}$上的Lebesgue-Stieltjes (Lebesgue) 测度.
+根据[测度扩张定理](Lecture%202.%20外测度与测度扩张#2.3.%20测度扩张定理), $\mu_F$在$\sigma(\mathscr{Q}_{\mathbb{R}^n}) = \mathscr{B}_{\mathbb{R}^n}$上有唯一的扩张, 仍然记为$\mu_F$. 这就定义了在$\mathscr{B}_{\mathbb{R}^n}$上的Lebesgue-Stieltjes (Lebesgue) 测度.
 
 ### 2.3. $\mathscr{F}_{\lambda_F}$上的Lebesgue-Stieltjes测度
-根据[[Lecture 2. 外测度与测度扩张#1.5. Caratheodory定理|Caratheodory定理]], $\mu_F$的生成外测度$\lambda_F$在全体$\lambda_F$可测集组成的$\sigma$域$\mathscr{F}_{\lambda_F}$上是一个测度. 
+根据[Caratheodory定理](Lecture%202.%20外测度与测度扩张#1.5.%20Caratheodory定理), $\mu_F$的生成外测度$\lambda_F$在全体$\lambda_F$可测集组成的$\sigma$域$\mathscr{F}_{\lambda_F}$上是一个测度. 
 
 我们将$\mathscr{F}_{\lambda_F}$中的集合叫做$\mathbb{R}^n$中的Lebesgue-Stieljes可测集, 将$\lambda_F$叫做$\mathbb{R}^n$上的Lebesgue-Stieljes测度, 将$(\mathbb{R}^n, \mathscr{F}_{\lambda_F})$上的可测函数叫做Lebesgue-Stieljes可测函数.
 

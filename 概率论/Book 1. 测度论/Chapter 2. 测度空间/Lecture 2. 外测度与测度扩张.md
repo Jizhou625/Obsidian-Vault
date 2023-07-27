@@ -134,7 +134,7 @@ $$
 则称$\tau$为$\mu$在$\overline{\mathscr{E}}$上的扩张. 
 ___
 ##### 利用外测度的扩张
-如果在集合系$\mathscr{E}$上有测度$\mu$, 就可以利用[[#1.2. 生成外测度]]在$X$上生成一个外测度$\tau$. 而根据[[#1.5. Caratheodory定理]], 这个外测度限制在$\sigma$域$\mathscr{F}_{\tau}$上就得到了一个测度. 
+如果在集合系$\mathscr{E}$上有测度$\mu$, 就可以利用[1.2. 生成外测度](#1.2.%20生成外测度)在$X$上生成一个外测度$\tau$. 而根据[1.5. Caratheodory定理](#1.5.%20Caratheodory定理), 这个外测度限制在$\sigma$域$\mathscr{F}_{\tau}$上就得到了一个测度. 
 
 但是, $\mathscr{F}_{\tau}$未必比$\mathscr{E}$更大, 例如下面的例子: 
 
@@ -192,7 +192,7 @@ $$
    \end{aligned}
    $$
 
-这就证明了$\mathscr{L}$是$\lambda$系. 又因为$\mathscr{L}\supset \mathscr{P}$, 根据[[../../../专题/集合论/Lecture 2. 集合类#4.5 $ pi$系的生成$ lambda$系是$ sigma$代数(Dynkin's $ pi- lambda$ Theorem)|Dynkin's Theorem]], 有 $\mathscr{L}\supset \sigma(\mathscr{P})$.  即对每个$A\in \sigma(\mathscr{P})$和满足$\mu(B)<\infty$的$B\in \mathscr{P}$有
+这就证明了$\mathscr{L}$是$\lambda$系. 又因为$\mathscr{L}\supset \mathscr{P}$, 根据[Dynkin's $ pi- lambda$ Theorem](../../../专题/集合论/Lecture%202.%20集合类#4.5%20$%20pi$系的生成$%20lambda$系是$%20sigma$代数(Dynkin's%20$%20pi-%20lambda$%20Theorem)), 有 $\mathscr{L}\supset \sigma(\mathscr{P})$.  即对每个$A\in \sigma(\mathscr{P})$和满足$\mu(B)<\infty$的$B\in \mathscr{P}$有
 $$
 \mu(A\cap B) = \nu(A\cap B)
 $$
@@ -217,7 +217,7 @@ $$
 如果存在两两不交的$\{A_n\in \mathscr{Q}\}$使得$\bigcup\limits_{n=1}^{\infty} A_n = X$且$\mu(A_n)<\infty$, 则使得$\tau(A) = \mu(A)$的$\tau$唯一. 
 ___
 ##### Proof: 
-设$\tau$为$\mu$通过[[#1.2. 生成外测度]]产生的外测度. 我们按照下面的顺序来进行证明
+设$\tau$为$\mu$通过[1.2. 生成外测度](#1.2.%20生成外测度)产生的外测度. 我们按照下面的顺序来进行证明
 1. 首先证明对每个$A\in \mathscr{Q}$, 有$\tau(A) = \mu(A)$. 设$A\in \mathscr{Q}$, 对任何满足$\bigcup\limits_{n=1}^{\infty} A_n \supset A$的$\{A_n\in \mathscr{Q}\}$, 均有
    $$
    \mu(A) = \mu\left(\bigcup\limits_{n=1}^{\infty} (A\cap A_n)\right) \le \sum\limits_{n=1}^{\infty} \mu(A\cap A_n) \le \sum\limits_{n=1}^{\infty} \mu(A_n)
@@ -267,7 +267,7 @@ ___
    $$
 4. $\tau$是$\sigma(\mathscr{Q})$上的测度. 这是因为$\mathscr{F}_{\tau}$是$\sigma$域, 故$\mathscr{Q}\subset \mathscr{F}_{\tau}\Longrightarrow \sigma(\mathscr{Q})\subset\mathscr{F}_{\tau}$. 因为$\tau$限制在$\mathscr{F}_{\tau}$上是测度, 因此$\tau$是$\sigma(\mathscr{Q})$上的测度. 
 
-因为半环也是一个$\pi$系, 根据[[#2.2. 测度的唯一性]], 如果存在两两不交的$\{A_n\in \mathscr{Q}\}$使得$\bigcup\limits_{n=1}^{\infty} A_n = X$且$\mu(A_n)<\infty$, 则使得$\tau(A) = \mu(A)$的$\tau$唯一. 
+因为半环也是一个$\pi$系, 根据[2.2. 测度的唯一性](#2.2.%20测度的唯一性), 如果存在两两不交的$\{A_n\in \mathscr{Q}\}$使得$\bigcup\limits_{n=1}^{\infty} A_n = X$且$\mu(A_n)<\infty$, 则使得$\tau(A) = \mu(A)$的$\tau$唯一. 
 
 #####
 ___
@@ -419,9 +419,9 @@ ___
 特别地, 测度空间$(\mathbb{R}, \mathscr{F}_{\lambda_F}, \lambda_F)$是测度空间$(\mathbb{R}, \mathscr{B}_{\mathbb{R}}, \lambda_F)$的完全化. 
 ___
 ##### Proof:
-根据[[#4.1. 每个测度空间都可以被完全化]], 设$\mathscr{F} = \sigma(\mathscr{Q})$, 只需要证明$\widetilde{\mathscr{F}} = \mathscr{F}_{\tau}$. 
+根据[4.1. 每个测度空间都可以被完全化](#4.1.%20每个测度空间都可以被完全化), 设$\mathscr{F} = \sigma(\mathscr{Q})$, 只需要证明$\widetilde{\mathscr{F}} = \mathscr{F}_{\tau}$. 
 
-设$A\in \mathscr{F}_{\tau}$, 根据[[#3.1. $ sigma( mathscr{Q})$对$ mathscr{F}_{ tau}$的测度逼近]]可以得到, 存在 $C\in\mathscr{F}$使得$C\supset A$且$\tau(C\backslash A) =0$. 对$C\backslash A\in \mathscr{F}_{\tau}$, 同样有, 存在 $B\in \mathscr{F}$ 使得$B\supset C\backslash A$且$\tau(B) = \tau(C\backslash A)=0$. 从而
+设$A\in \mathscr{F}_{\tau}$, 根据[3.1. $\sigma(\mathscr{Q})$对$\mathscr{F}_{\tau}$的测度逼近](#3.1.%20$%20sigma(%20mathscr{Q})$对$%20mathscr{F}_{%20tau}$的测度逼近)可以得到, 存在 $C\in\mathscr{F}$使得$C\supset A$且$\tau(C\backslash A) =0$. 对$C\backslash A\in \mathscr{F}_{\tau}$, 同样有, 存在 $B\in \mathscr{F}$ 使得$B\supset C\backslash A$且$\tau(B) = \tau(C\backslash A)=0$. 从而
 $$
 \begin{aligned} 
     A &= (A\cap B^c) \cup (A\cap B) \\ 

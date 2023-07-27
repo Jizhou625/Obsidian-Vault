@@ -198,7 +198,7 @@ $$
 $$
 ___
 ##### Proof: 
-首先, 根据[[#1.2. 可积的性质]], $f$可积意味着$|f|$可积. 由于$|f|$是非负可测函数, 因此可以取非负简单函数
+首先, 根据[1.2. 可积的性质](#1.2.%20可积的性质), $f$可积意味着$|f|$可积. 由于$|f|$是非负可测函数, 因此可以取非负简单函数
 $$
 g_n \uparrow |f| \Longrightarrow\lim\limits_{n\to\infty} \int_X g_n\mathrm{d}\mu = \int_X |f|\mathrm{d}\mu 
 $$
@@ -271,7 +271,7 @@ $$
 $$
 ___
 ##### Proof:
-设$g_k =\inf\limits_{n\ge k} f_n$, 则我们有$g_k\uparrow \liminf\limits_{n\to\infty} f_n$, 因此根据[[#2.1. 单调收敛定理(Levi定理)]], 我们有
+设$g_k =\inf\limits_{n\ge k} f_n$, 则我们有$g_k\uparrow \liminf\limits_{n\to\infty} f_n$, 因此根据[2.1. 单调收敛定理(Levi定理)](#2.1.%20单调收敛定理(Levi定理)), 我们有
 $$
 \int_X(\liminf_{n\to\infty}f_n)\mathrm{d}\mu = \lim\limits_{k\to\infty}\int_X g_k\mathrm{d}\mu = \lim\limits_{k\to\infty} \int_X \left(\inf\limits_{n\ge k}f_n\right) \mathrm{d}\mu \le \liminf\limits_{n\to\infty} \int_X f_n\mathrm{d}\mu
 $$
@@ -295,7 +295,7 @@ $$
    & = \int_X f\mathrm{d}\mu 
 \end{aligned}
 $$
-从而我们有结论成立. 再考虑$f_n \overset{\mu}{\longrightarrow} f$的情况, 根据[[../Chapter 1. 可测空间与可测函数/Lecture 2. 可测函数的收敛性#3.2. 依测度收敛有几乎一致收敛的子子列|依测度收敛有几乎一致收敛的子子列]], 我们知道对$\{f_n\}$的任意一个子序列, 存在一个子子列$\{f_{n^{\prime}}\}$使得$f_{n^{\prime}}\overset{\mathrm{a.e.}}{\longrightarrow} f$. 从而根据已经证明的结论有
+从而我们有结论成立. 再考虑$f_n \overset{\mu}{\longrightarrow} f$的情况, 根据[依测度收敛有几乎一致收敛的子子列](../Chapter%201.%20可测空间与可测函数/Lecture%202.%20可测函数的收敛性#3.2.%20依测度收敛有几乎一致收敛的子子列), 我们知道对$\{f_n\}$的任意一个子序列, 存在一个子子列$\{f_{n^{\prime}}\}$使得$f_{n^{\prime}}\overset{\mathrm{a.e.}}{\longrightarrow} f$. 从而根据已经证明的结论有
 $$
 \lim _{n^{\prime} \rightarrow \infty} \int_X f_{n^{\prime}} \mathrm{d} \mu=\int_X f \mathrm{~d} \mu .
 $$

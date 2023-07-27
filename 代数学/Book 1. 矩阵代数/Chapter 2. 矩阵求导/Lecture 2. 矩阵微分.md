@@ -50,7 +50,7 @@ $$
 &\iff \nabla_XF(X) = A^{\top} +K_{nm}B^{\top}
 \end{align}
 $$
-根据[[矩阵代数/Chapter 2. 矩阵求导/Lecture 0. Basic Knowledge#3.2. 向量化算子的性质]], 我们有
+根据[向量化算子的性质](../Chapter%201.%20线性代数/Lecture%201.2%20矩阵算子%20(Hadamard积,%20Kronecker积,%20向量化).md#3.2.%20向量化算子的性质), 我们有
 $$
 \begin{align}
 \mathrm{d}F(X)= A(\mathrm{d}X)B&\iff \mathrm{d}(\mathrm{vec}(F(X))) = (B^{\top}\otimes   A)\mathrm{d}(\mathrm{vec}X)  \\
