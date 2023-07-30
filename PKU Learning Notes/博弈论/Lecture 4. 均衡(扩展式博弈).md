@@ -32,8 +32,10 @@
 	- [6.2. 序贯理性](#6.2.%20%E5%BA%8F%E8%B4%AF%E7%90%86%E6%80%A7)
 	- [6.3. 一致性](#6.3.%20%E4%B8%80%E8%87%B4%E6%80%A7)
 	- [6.4. 序贯均衡](#6.4.%20%E5%BA%8F%E8%B4%AF%E5%9D%87%E8%A1%A1)
-	- [6.5. 序贯理性与行为策略纳什均衡](#6.5.%20%E5%BA%8F%E8%B4%AF%E7%90%86%E6%80%A7%E4%B8%8E%E8%A1%8C%E4%B8%BA%E7%AD%96%E7%95%A5%E7%BA%B3%E4%BB%80%E5%9D%87%E8%A1%A1)
-	- [6.6. 扩展式完美均衡都是序贯均衡](#6.6.%20%E6%89%A9%E5%B1%95%E5%BC%8F%E5%AE%8C%E7%BE%8E%E5%9D%87%E8%A1%A1%E9%83%BD%E6%98%AF%E5%BA%8F%E8%B4%AF%E5%9D%87%E8%A1%A1)
+	- [6.5. 序贯均衡与行为策略纳什均衡](#6.5.%20%E5%BA%8F%E8%B4%AF%E5%9D%87%E8%A1%A1%E4%B8%8E%E8%A1%8C%E4%B8%BA%E7%AD%96%E7%95%A5%E7%BA%B3%E4%BB%80%E5%9D%87%E8%A1%A1)
+	- [6.6. 扩展式完美均衡与序贯均衡](#6.6.%20%E6%89%A9%E5%B1%95%E5%BC%8F%E5%AE%8C%E7%BE%8E%E5%9D%87%E8%A1%A1%E4%B8%8E%E5%BA%8F%E8%B4%AF%E5%9D%87%E8%A1%A1)
+	- [6.7. 无法将序贯均衡推广到不完美记忆的博弈](#6.7.%20%E6%97%A0%E6%B3%95%E5%B0%86%E5%BA%8F%E8%B4%AF%E5%9D%87%E8%A1%A1%E6%8E%A8%E5%B9%BF%E5%88%B0%E4%B8%8D%E5%AE%8C%E7%BE%8E%E8%AE%B0%E5%BF%86%E7%9A%84%E5%8D%9A%E5%BC%88)
+
 
 
 
@@ -97,7 +99,8 @@ $$
 ### 2.3. 行为策略和混合策略的差异
 1. 下面的例子表明存在混合策略, 其没有等价的行为策略
 
-   ![image-20230718005335410](./Lecture%204.%20%E5%9D%87%E8%A1%A1(%E6%89%A9%E5%B1%95%E5%BC%8F%E5%8D%9A%E5%BC%88).assets/image-20230718005335410.png)
+   ![image-0](Lecture%204.%20%E5%9D%87%E8%A1%A1(%E6%89%A9%E5%B1%95%E5%BC%8F%E5%8D%9A%E5%BC%88).assets/%E6%B7%B7%E5%90%88%E7%AD%96%E7%95%A5%E6%B2%A1%E6%9C%89%E7%AD%89%E4%BB%B7%E7%9A%84%E8%A1%8C%E4%B8%BA%E7%AD%96%E7%95%A5.png)  
+
    不难验证, 混合策略
    $$
    \sigma_{\mathrm{I}}=\left[\frac{1}{2}\left(T_1 T_2\right), 0\left(T_1 B_2\right), 0\left(T_2 B_1\right), \frac{1}{2}\left(B_1 B_2\right)\right]
@@ -106,7 +109,9 @@ $$
 
 2. 下面的例子表明存在行为策略, 其没有等价的混合策略
 
-   ![image-20230718005649099](./Lecture%204.%20%E5%9D%87%E8%A1%A1(%E6%89%A9%E5%B1%95%E5%BC%8F%E5%8D%9A%E5%BC%88).assets/image-20230718005649099.png)
+   ![image-3](Lecture%204.%20%E5%9D%87%E8%A1%A1(%E6%89%A9%E5%B1%95%E5%BC%8F%E5%8D%9A%E5%BC%88).assets/%E8%A1%8C%E4%B8%BA%E7%AD%96%E7%95%A5%E6%B2%A1%E6%9C%89%E7%AD%89%E4%BB%B7%E7%9A%84%E6%B7%B7%E5%90%88%E7%AD%96%E7%95%A5.png)  
+
+
 
    考虑行为策略$\left[\dfrac{1}{2}(L), \dfrac{1}{2}(R)\right]$, 其导致结果的概率分布为
    $$
@@ -268,7 +273,7 @@ $$
 u_i(\boldsymbol{\sigma}^*\mid x) \ge u_i(\sigma_i, \boldsymbol{\sigma}^*_{-i}\mid x)
 $$
 子博弈完美均衡的思路是, 即使当参与人不在均衡路径中时, 他们的行动也依然应该遵循纳什均衡. 
-![](Lecture%204.%20%E5%9D%87%E8%A1%A1(%E6%89%A9%E5%B1%95%E5%BC%8F%E5%8D%9A%E5%BC%88).assets/%E4%B8%8D%E5%8F%AF%E7%BD%AE%E4%BF%A1%E7%9A%84%E5%A8%81%E8%83%81.png)  
+![子博弈完美均衡](Lecture%204.%20%E5%9D%87%E8%A1%A1(%E6%89%A9%E5%B1%95%E5%BC%8F%E5%8D%9A%E5%BC%88).assets/%E4%B8%8D%E5%8F%AF%E7%BD%AE%E4%BF%A1%E7%9A%84%E5%A8%81%E8%83%81.png)  
 如图所示, $(A, C)$是扩展式博弈的纳什均衡, 但$C$并不是子博弈$\Gamma(x_2)$的均衡. 这里, 参与人II通过对参与人I发出威胁, 使得参与人I在博弈中选择了$A$, 但参与人II的威胁是不可置信的. 这不是一个子博弈完美均衡. 
 
 ### 4.2. 子博弈的纳什均衡
@@ -354,7 +359,8 @@ $$
 
 ### 5.3. 扩展式完美均衡和策略式完美均衡的差别
 1. 扩展式完美均衡未必是策略式完美均衡. 
-   ![扩展式完美均衡未必是策略式完美均衡](Lecture%204.%20%E5%9D%87%E8%A1%A1(%E6%89%A9%E5%B1%95%E5%BC%8F%E5%8D%9A%E5%BC%88).assets/%E6%89%A9%E5%B1%95%E5%BC%8F%E5%AE%8C%E7%BE%8E%E5%9D%87%E8%A1%A1%E6%9C%AA%E5%BF%85%E6%98%AF%E7%AD%96%E7%95%A5%E5%BC%8F%E5%AE%8C%E7%BE%8E%E5%9D%87%E8%A1%A1.png)  
+   ![扩展式完美均衡未必是策略式完美均衡](Lecture%204.%20%E5%9D%87%E8%A1%A1(%E6%89%A9%E5%B1%95%E5%BC%8F%E5%8D%9A%E5%BC%88).assets/%E6%89%A9%E5%B1%95%E5%BC%8F%E5%AE%8C%E7%BE%8E%E5%9D%87%E8%A1%A1%E6%9C%AA%E5%BF%85%E6%98%AF%E7%AD%96%E7%95%A5%E5%BC%8F%E5%AE%8C%E7%BE%8E%E5%9D%87%E8%A1%A1.png) 
+   
 2. 策略式完美均衡未必是扩展式完美均衡
    ![策略式完美均衡未必是扩展式完美均衡](Lecture%204.%20%E5%9D%87%E8%A1%A1(%E6%89%A9%E5%B1%95%E5%BC%8F%E5%8D%9A%E5%BC%88).assets/%E7%AD%96%E7%95%A5%E5%BC%8F%E5%AE%8C%E7%BE%8E%E5%9D%87%E8%A1%A1%E6%9C%AA%E5%BF%85%E6%98%AF%E6%89%A9%E5%B1%95%E5%BC%8F%E5%AE%8C%E7%BE%8E%E5%9D%87%E8%A1%A1.png)  
 
@@ -421,8 +427,10 @@ $$
 ### 6.4. 序贯均衡
 Assessment $(\boldsymbol{\sigma}, \boldsymbol{\mu})$是序贯均衡, 当且仅当, 它是一致的并且是序贯理性的. 其中$\boldsymbol{\sigma} = (\sigma_i)_{i\in N}$是行为策略向量, $\boldsymbol{\mu} = (\mu_U)_{U\in \mathcal{U}}$是完整信念体系. 
 
-### 6.5. 序贯理性与行为策略纳什均衡
-在具有完美记忆的扩展式博弈中, 如果assessment $(\boldsymbol{\sigma}, \boldsymbol{\mu}_{\boldsymbol{\sigma}})$是序贯均衡, 那么策略向量$\boldsymbol{\sigma}$是行为策略纳什均衡. 与此同时, 如果$\boldsymbol{\sigma}$是完全混合行为策略的纳什均衡, 那么$(\boldsymbol{\sigma}, \boldsymbol{\mu}_{\boldsymbol{\sigma}})$是序贯均衡.
+### 6.5. 序贯均衡与行为策略纳什均衡
+在具有完美记忆的扩展式博弈中, 如果assessment $(\boldsymbol{\sigma}, \boldsymbol{\mu}_{\boldsymbol{\sigma}})$是序贯均衡, 那么策略向量$\boldsymbol{\sigma}$是行为策略纳什均衡. 
+
+与此同时, 如果$\boldsymbol{\sigma}$是完全混合的行为策略的纳什均衡, 那么$(\boldsymbol{\sigma}, \boldsymbol{\mu}_{\boldsymbol{\sigma}})$是序贯均衡.
 ___
 ##### Proof
 首先先证明第一部分, 设$i\in N$是一个参与人, 令$\sigma_i^{\prime}$是参与人$i$的任意一个行为策略. 我们称信息集$U_i$是最高的, 如果从终节点到$U_i$中的节点的每条路径都不经过其他任意的信息集. 用$\widehat{\mathcal{U}}_i$表示参与人$i$的最高信息集的集合. 从根节点到终节点的任一路径, 只要穿过参与人$i$的一个信息集, 一定穿过$\widehat{\mathcal{U}}_i$中的一个信息集. 当策略向量$\boldsymbol{\sigma}$被选择时, 设博弈展开不穿过参与人$i$的任一信息集的概率表示为$p_{\boldsymbol{\sigma}, i}^*$, 参与人$i$的期望收益表示为$u_{\boldsymbol{\sigma}, i}^*$. 我们有
@@ -475,11 +483,44 @@ $$
 ___
 
 
-### 6.6. 扩展式完美均衡都是序贯均衡
+### 6.6. 扩展式完美均衡与序贯均衡
 令$\boldsymbol{\sigma}$是具有完美记忆的扩展式博弈$\Gamma$的扩展式完美均衡, 那么存在一个完整的信念体系$\boldsymbol{\mu} = (\mu_U)_{U\in \mathcal{U}}$, 使得$(\boldsymbol{\sigma}, \boldsymbol{\mu})$是序贯均衡.
+
+然而, 存在具有形式为$(\boldsymbol{\sigma}, \boldsymbol{\mu})$的序贯均衡, 使得策略向量$\boldsymbol{\sigma}$不是扩展式完美均衡. 
 ___
 ##### Proof
-因为$\boldsymbol{\sigma}$是扩展式完美均衡, 因此存在$\lim\limits_{k\to\infty} M(\boldsymbol{\delta}^k) =0$的扰动序列$(\boldsymbol{\delta}^k)_{k\in \mathbb{N}}$, 使得对每个$k\in \mathbb{N}$, 扰动博弈$\Gamma(\boldsymbol{\delta}^k)$的均衡$\boldsymbol{\sigma}^k$, 满足$\lim\limits_{k\to\infty} \boldsymbol{\sigma}^k = \boldsymbol{\sigma}$. 
+首先证明扩展式完美均衡都是序贯均衡. 因为$\boldsymbol{\sigma}$是扩展式完美均衡, 因此存在$\lim\limits_{k\to\infty} M(\boldsymbol{\delta}^k) =0$的扰动序列$(\boldsymbol{\delta}^k)_{k\in \mathbb{N}}$, 使得对每个$k\in \mathbb{N}$, 扰动博弈$\Gamma(\boldsymbol{\delta}^k)$的均衡$\boldsymbol{\sigma}^k$, 满足$\lim\limits_{k\to\infty} \boldsymbol{\sigma}^k = \boldsymbol{\sigma}$. 根据[6.5. 序贯均衡与行为策略纳什均衡](#6.5.%20序贯均衡与行为策略纳什均衡), 我们有对每个$k\in \mathbb{N}$, assessment $(\boldsymbol{\sigma}^k, \boldsymbol{\mu}_{\boldsymbol{\sigma}^k})$ 是博弈$\Gamma(\boldsymbol{\sigma}^k)$的序贯均衡. 显然, 存在 $\boldsymbol{\mu}_{\boldsymbol{\sigma}^k}$ 的一个子序列收敛于某个完整的信念体系$\boldsymbol{\mu}$. 因此, $(\boldsymbol{\sigma}, \boldsymbol{\mu})$是一致评估. 下面, 我们证明$(\boldsymbol{\sigma}, \boldsymbol{\mu})$是序贯理性的. 令$i\in N$为参与人, $U_i$是参与人$i$的信息集, $\sigma_i^{\prime}$是参与人$i$的行为策略, 显然, 存在参与人$i$的行为策略序列$(\sigma_i^{\prime k})_{k\in \mathbb{N}}$, 收敛于$\sigma_i^{\prime}$, 满足每个$k\in \mathbb{N}$, 策略$\sigma_i^{\prime k}$是参与人$i$在博弈$\Gamma(\boldsymbol{\delta}^k)$中的可能策略. 因为$\boldsymbol{\sigma}^k$是完全混合的行为策略均衡, 根据[6.5. 序贯均衡与行为策略纳什均衡](#6.5.%20序贯均衡与行为策略纳什均衡), 可以得到$(\boldsymbol{\sigma}^k, \boldsymbol{\mu}_{\boldsymbol{\sigma}^k})$是序贯均衡: 这意味着
+$$
+u_i(\boldsymbol{\sigma}^k\mid U_i, \boldsymbol{\mu}_{\boldsymbol{\sigma}^k}) \ge u_i(\sigma_i^{\prime k}, \boldsymbol{\sigma}_{-i}^k\mid U_i, \boldsymbol{\mu}_{\boldsymbol{\sigma}^k})
+$$
+根据$u_i$的连续性, 我们可以得到
+$$
+u_i(\boldsymbol{\sigma}\mid U_i, \boldsymbol{\mu}) \ge u_i(\sigma_i^{\prime}, \boldsymbol{\sigma}_{-i}\mid U_i, \boldsymbol{\mu})
+$$
+这就证明了$(\boldsymbol{\sigma}, \boldsymbol{\mu})$是序贯理性的. 因此, $(\boldsymbol{\sigma}, \boldsymbol{\mu})$是序贯均衡. 
+
+下面, 证明序贯均衡未必是扩展式完美均衡, 考虑下面的例子
+![image-4](Lecture%204.%20%E5%9D%87%E8%A1%A1(%E6%89%A9%E5%B1%95%E5%BC%8F%E5%8D%9A%E5%BC%88).assets/%E5%BA%8F%E8%B4%AF%E5%9D%87%E8%A1%A1%E6%9C%AA%E5%BF%85%E6%98%AF%E6%89%A9%E5%B1%95%E5%BC%8F%E5%AE%8C%E7%BE%8E%E5%9D%87%E8%A1%A1.png)  
+因为策略$T$占优于策略$B$, 所以只有$(T, \mu)$是一个策略式完美均衡. 但是, $(B, b)$构成了序贯均衡的要素. 考虑策略$\boldsymbol{\sigma} = (B, b)$和$\boldsymbol{\mu} = ([1(x_1)], [1(x_3)])$. 首先证明组合$(\boldsymbol{\sigma}, \boldsymbol{\mu})$是一致评估. 定义
+$$
+\boldsymbol{\sigma}^k = \left(\left[\dfrac{1}{k}(T), \dfrac{k-1}{k}(B)\right], \left[\dfrac{1}{k}(t), \dfrac{k-1}{k}(b)\right]\right), \forall k\in \mathbb{N}
+$$
+那么, 我们有$\boldsymbol{\mu}_{\boldsymbol{\sigma}^k}(U_{\mathrm{II}}) = \left[\dfrac{1}{k}(x_2), \dfrac{k-1}{k}(x_3)\right]$, 这就证明了一致性. 而这个组合是序贯理性的, 是因为不管参与人I选择$T$或是$B$, 他都得到$0$, 而给定参与人II在他的信息集$\{x_2, x_3\}$的信念, 不管他选择$t$还是$b$, 都得到$0$. 
 #####
 ___
+
+### 6.7. 无法将序贯均衡推广到不完美记忆的博弈
+在不完美记忆的博弈中, 即使assessment $(\boldsymbol{\sigma}, \boldsymbol{\mu})$是序贯均衡, 也不能保证$\boldsymbol{\sigma}$是一个纳什均衡.
+___
+##### Proof
+考虑心不在焉的司机的例子. 这个博弈唯一的纳什均衡就是$T$, 因为这个策略带来的收益是博弈的最高收益. 
+![image-5](Lecture%204.%20%E5%9D%87%E8%A1%A1(%E6%89%A9%E5%B1%95%E5%BC%8F%E5%8D%9A%E5%BC%88).assets/%E5%BF%83%E4%B8%8D%E5%9C%A8%E7%84%89%E7%9A%84%E5%8F%B8%E6%9C%BA.png)  
+因为在同一个信息集中有两个不同的节点, 因此在[6.1. 信念体系](#6.1.%20信念体系)中的定义不再适用. 我们需要重新定义信念体系如下
+$$
+\mu_U(x_1) = \dfrac{p_{\boldsymbol{\sigma}}(x_1)}{p_{\boldsymbol{\sigma}}(x_1) + p_{\boldsymbol{\sigma}}(x_2)} = \dfrac{1}{2}, \quad \mu_U(x_2) = \dfrac{p_{\boldsymbol{\sigma}}(x_2)}{p_{\boldsymbol{\sigma}}(x_1) + p_{\boldsymbol{\sigma}}(x_2)} = \dfrac{1}{2}
+$$
+如果参与人I在他的信息集执行策略$B$, 他的期望收益为$2$, 而如果参与人I在他的信息集执行策略$T$, 他的期望策略为$\dfrac{3}{2}$. 因此$\left(B, \left[\dfrac{1}{2}(x_1), \dfrac{1}{2}(x_2)\right]\right)$是一个序贯均衡, 但$B$不是一个纳什均衡. 
+___
+
+
 

@@ -72,6 +72,8 @@ body {
   --radius-m: 8px;
   --radius-l: 10px;
   --radius-xl: 16px;
+
+  --file-line-width: calc(82vh);
 }
 
 /* COLOR SCHEMES

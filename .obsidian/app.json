@@ -10,5 +10,7 @@
   },
   "newLinkFormat": "relative",
   "showUnsupportedFiles": true,
-  "useMarkdownLinks": true
+  "useMarkdownLinks": true,
+  "readableLineLength": true,
+  "showLineNumber": true
 }

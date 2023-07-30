@@ -1,3 +1,34 @@
+- [1. 理性假定](#1.%20%E7%90%86%E6%80%A7%E5%81%87%E5%AE%9A)
+	- [1.1. 严格占优策略](#1.1.%20%E4%B8%A5%E6%A0%BC%E5%8D%A0%E4%BC%98%E7%AD%96%E7%95%A5)
+	- [1.2. 理性假定](#1.2.%20%E7%90%86%E6%80%A7%E5%81%87%E5%AE%9A)
+	- [1.3. 弱占优策略](#1.3.%20%E5%BC%B1%E5%8D%A0%E4%BC%98%E7%AD%96%E7%95%A5)
+	- [1.4. 剔除劣策略的顺序](#1.4.%20%E5%89%94%E9%99%A4%E5%8A%A3%E7%AD%96%E7%95%A5%E7%9A%84%E9%A1%BA%E5%BA%8F)
+- [2. 稳定性(纳什均衡)](#2.%20%E7%A8%B3%E5%AE%9A%E6%80%A7(%E7%BA%B3%E4%BB%80%E5%9D%87%E8%A1%A1))
+	- [2.1. 纳什均衡](#2.1.%20%E7%BA%B3%E4%BB%80%E5%9D%87%E8%A1%A1)
+	- [2.2. 最佳应对](#2.2.%20%E6%9C%80%E4%BD%B3%E5%BA%94%E5%AF%B9)
+	- [2.3. 无差异原则](#2.3.%20%E6%97%A0%E5%B7%AE%E5%BC%82%E5%8E%9F%E5%88%99)
+	- [2.4. 纳什定理](#2.4.%20%E7%BA%B3%E4%BB%80%E5%AE%9A%E7%90%86)
+	- [2.5. 纳什定理的一般化](#2.5.%20%E7%BA%B3%E4%BB%80%E5%AE%9A%E7%90%86%E7%9A%84%E4%B8%80%E8%88%AC%E5%8C%96)
+- [3. 安全性(最大最小原则)](#3.%20%E5%AE%89%E5%85%A8%E6%80%A7(%E6%9C%80%E5%A4%A7%E6%9C%80%E5%B0%8F%E5%8E%9F%E5%88%99))
+	- [3.1. 最大最小值和最小最大值](#3.1.%20%E6%9C%80%E5%A4%A7%E6%9C%80%E5%B0%8F%E5%80%BC%E5%92%8C%E6%9C%80%E5%B0%8F%E6%9C%80%E5%A4%A7%E5%80%BC)
+	- [3.2. 大小关系](#3.2.%20%E5%A4%A7%E5%B0%8F%E5%85%B3%E7%B3%BB)
+	- [3.3. 二人零和博弈](#3.3.%20%E4%BA%8C%E4%BA%BA%E9%9B%B6%E5%92%8C%E5%8D%9A%E5%BC%88)
+- [4. 演化稳定均衡](#4.%20%E6%BC%94%E5%8C%96%E7%A8%B3%E5%AE%9A%E5%9D%87%E8%A1%A1)
+	- [4.1. 演化稳定策略](#4.1.%20%E6%BC%94%E5%8C%96%E7%A8%B3%E5%AE%9A%E7%AD%96%E7%95%A5)
+	- [4.2. 演化稳定策略的刻画](#4.2.%20%E6%BC%94%E5%8C%96%E7%A8%B3%E5%AE%9A%E7%AD%96%E7%95%A5%E7%9A%84%E5%88%BB%E7%94%BB)
+	- [4.3. 演化稳定策略的存在性](#4.3.%20%E6%BC%94%E5%8C%96%E7%A8%B3%E5%AE%9A%E7%AD%96%E7%95%A5%E7%9A%84%E5%AD%98%E5%9C%A8%E6%80%A7)
+- [5. 完美均衡](#5.%20%E5%AE%8C%E7%BE%8E%E5%9D%87%E8%A1%A1)
+	- [5.1. 扰动博弈](#5.1.%20%E6%89%B0%E5%8A%A8%E5%8D%9A%E5%BC%88)
+	- [5.2. 扰动均衡的存在性](#5.2.%20%E6%89%B0%E5%8A%A8%E5%9D%87%E8%A1%A1%E7%9A%84%E5%AD%98%E5%9C%A8%E6%80%A7)
+	- [5.3. 策略式完美均衡](#5.3.%20%E7%AD%96%E7%95%A5%E5%BC%8F%E5%AE%8C%E7%BE%8E%E5%9D%87%E8%A1%A1)
+	- [5.4. 完美均衡与纳什均衡](#5.4.%20%E5%AE%8C%E7%BE%8E%E5%9D%87%E8%A1%A1%E4%B8%8E%E7%BA%B3%E4%BB%80%E5%9D%87%E8%A1%A1)
+	- [5.5. 完美均衡的存在性](#5.5.%20%E5%AE%8C%E7%BE%8E%E5%9D%87%E8%A1%A1%E7%9A%84%E5%AD%98%E5%9C%A8%E6%80%A7)
+- [6. 相关均衡](#6.%20%E7%9B%B8%E5%85%B3%E5%9D%87%E8%A1%A1)
+	- [6.1. 包含旁观者的博弈](#6.1.%20%E5%8C%85%E5%90%AB%E6%97%81%E8%A7%82%E8%80%85%E7%9A%84%E5%8D%9A%E5%BC%88)
+	- [6.2. $\Gamma^*(p)$中的均衡](#6.2.%20$%5CGamma%5E*(p)$%E4%B8%AD%E7%9A%84%E5%9D%87%E8%A1%A1)
+	- [6.3. 相关均衡](#6.3.%20%E7%9B%B8%E5%85%B3%E5%9D%87%E8%A1%A1)
+	- [6.4. 纳什均衡与相关均衡](#6.4.%20%E7%BA%B3%E4%BB%80%E5%9D%87%E8%A1%A1%E4%B8%8E%E7%9B%B8%E5%85%B3%E5%9D%87%E8%A1%A1)
+
 ## 1. 理性假定
 ### 1.1. 严格占优策略
 给定参与人$i$的策略$s_i$, 如果他有另一个策略$t_i$, 使得对其他参与人的每个策略向量$\boldsymbol{s}_{-i} \in S_{-i}$, 满足如下的关系
@@ -390,3 +421,89 @@ ___
 ___
 
 ## 6. 相关均衡
+### 6.1. 包含旁观者的博弈
+设$G = (N,(S_i)_{i\in N}, (u_i)_{i\in N})$是一个策略式博弈, 这里$N$是参与人的集合, $S_i$是参与人$i\in N$的行动集, $u_i: S\to \mathbb{R}$是参与人$i$的收益函数, 对于集合$S$上的每个概率分布$\boldsymbol{p}$, 定义博弈$\Gamma^*(p)$如下
+1. 旁观者根据概率分布$\boldsymbol{p}$, 从$S$中选择一个行动向量$\boldsymbol{s}$
+2. 对每个参与人$i\in N$, 旁观者告知$s_i$而不告知$\boldsymbol{s}_{-i}$. 换言之, 旁观者告知参与人$i$他推荐的行动
+3. 每个参与人$i$选择行动$s_i^{\prime}\in S_i$
+4. 每个参与人$i$获得收益$u_i(s_1^{\prime}, s_2^{\prime}, \cdots, s_n^{\prime})$
+
+考虑如下图所示的斗鸡博弈
+|  | $L$ | $R$ |
+| :---: | :---: | :---: |
+| $T$ | 6,6 | 2,7 |
+| $B$ | 7,2 | 0,0 |
+
+
+|  | $L$ | $R$ |
+| :---: | :---: | :---: |
+| $T$ | $\dfrac{1}{3}$ | $\dfrac{1}{3}$ |
+| $B$ | $\dfrac{1}{3}$ | 0 |
+
+下图展示了加入了相关机制的斗鸡博弈的扩展式表达
+![image-0](Lecture%203.%20%E5%9D%87%E8%A1%A1(%E7%AD%96%E7%95%A5%E5%BC%8F%E5%8D%9A%E5%BC%88).assets/%E7%9B%B8%E5%85%B3%E6%9C%BA%E5%88%B6%E7%9A%84%E6%96%97%E9%B8%A1%E5%8D%9A%E5%BC%88.png)  
+
+
+### 6.2. $\Gamma^*(p)$中的均衡
+博弈$\Gamma^*(p)$中, 参与人$i$的(纯)策略是函数$\tau: S_i\to S_i$, 将旁观者推荐的每个策略$s_i$映射到行动$\tau_i(s_i)\in S_i$. 
+
+
+策略向量$\boldsymbol{\tau}^*$(其中$\tau_i^*(s_i) = s_i$对任意的$i\in N$成立)是博弈$\Gamma^*(p)$的一个均衡, 当且仅当
+$$
+\sum\limits_{\boldsymbol{s}_{-i}\in S_{-i}} p(s_i, \boldsymbol{s}_{-i})  u_i(s_i, \boldsymbol{s}_{-i}) \ge \sum\limits_{\boldsymbol{s}_{-i}\in S_{-i}} p(s_i^{\prime}, \boldsymbol{s}_{-i})  u_i(s_i^{\prime}, \boldsymbol{s}_{-i}), \quad \forall i\in N, \forall s_i, s_i^{\prime}\in S_i
+$$
+___
+##### Proof
+当参与人$i$得到的推荐行动是$s_i$时, 他的收益是
+$$
+\begin{aligned} 
+u_i(s_i) &= \sum\limits_{\boldsymbol{s}_{-i}\in S_{-i}} p( \boldsymbol{s}_{-i} \mid s_i)  u_i(s_i, \boldsymbol{s}_{-i})  \\ 
+&= \sum\limits_{\boldsymbol{s}_{-i}\in S_{-i}} \dfrac{p(s_i, \boldsymbol{s}_{-i})}{\sum\limits_{\boldsymbol{t}_{-i}\in S_{-i}}^{} p(s_i, \boldsymbol{t}_{-i})} u_i(s_i, \boldsymbol{s}_{-i})
+\end{aligned}
+$$
+如果他选择了$s_i^{\prime}$, 他的收益是
+$$
+u_i(s_i^{\prime})= \sum\limits_{\boldsymbol{s}_{-i}\in S_{-i}} \dfrac{p(s_i, \boldsymbol{s}_{-i})}{\sum\limits_{\boldsymbol{t}_{-i}\in S_{-i}}^{} p(s_i, \boldsymbol{t}_{-i})} u_i(s_i^{\prime}, \boldsymbol{s}_{-i})
+$$
+这意味着$\boldsymbol{\tau}^*$是均衡, 当且仅当对每个参与人$i\in N$和每个$s_i, s_i^{\prime}\in S_i$, 有
+$$
+\sum\limits_{\boldsymbol{s}_{-i}\in S_{-i}} \dfrac{p(s_i, \boldsymbol{s}_{-i})}{\sum\limits_{\boldsymbol{t}_{-i}\in S_{-i}}^{} p(s_i, \boldsymbol{t}_{-i})} u_i(s_i, \boldsymbol{s}_{-i}) \ge \sum\limits_{\boldsymbol{s}_{-i}\in S_{-i}} \dfrac{p(s_i, \boldsymbol{s}_{-i})}{\sum\limits_{\boldsymbol{t}_{-i}\in S_{-i}}^{} p(s_i, \boldsymbol{t}_{-i})} u_i(s_i^{\prime}, \boldsymbol{s}_{-i})
+$$
+这就得到了结论
+#####
+___
+
+### 6.3. 相关均衡
+如果策略向量$\boldsymbol{\tau}^*$是博弈$\Gamma^*(p)$的纳什均衡, 那么行动向量集$S$上的概率分布$\boldsymbol{p}$叫作相关均衡, 换言之, 对每个参与人$i\in N$
+$$
+\sum\limits_{\boldsymbol{s}_{-i}\in S_{-i}} p(s_i, \boldsymbol{s}_{-i})  u_i(s_i, \boldsymbol{s}_{-i}) \ge \sum\limits_{\boldsymbol{s}_{-i}\in S_{-i}} p(s_i^{\prime}, \boldsymbol{s}_{-i})  u_i(s_i^{\prime}, \boldsymbol{s}_{-i}), \quad \forall i\in N, \forall s_i, s_i^{\prime}\in S_i
+$$
+
+### 6.4. 纳什均衡与相关均衡
+对每个纳什均衡$\boldsymbol{\sigma}^*$, 定义概率分布为
+$$
+p_{\boldsymbol{\sigma}^*}(s_1, s_2, \cdots, s_n) = \prod\limits_{i=1}^n \sigma_i^*(s_i)
+$$
+那么$p_{\boldsymbol{\sigma^*}}$是相关均衡.
+___
+##### Proof
+要证明$p_{\boldsymbol{\sigma^*}}$是相关均衡, 只需证明对每个参与人$i\in N$和每个$s_i, s_i^{\prime}\in S_i$, 有
+$$
+\sum\limits_{\boldsymbol{s}_{-i}\in S_{-i}} p_{\boldsymbol{\sigma^*}}(s_i, \boldsymbol{s}_{-i})  u_i(s_i, \boldsymbol{s}_{-i}) \ge \sum\limits_{\boldsymbol{s}_{-i}\in S_{-i}} p_{\boldsymbol{\sigma^*}}(s_i^{\prime}, \boldsymbol{s}_{-i})  u_i(s_i^{\prime}, \boldsymbol{s}_{-i}), \quad \forall i\in N, \forall s_i, s_i^{\prime}\in S_i
+$$
+定义符号
+$$
+p_{\boldsymbol{\sigma^*}}(\boldsymbol{s}_{-i}) = \dfrac{p_{\boldsymbol{\sigma}^*}(s_1, s_2, \cdots, s_n)}{p(s_i)}, \quad \forall s_i>0
+$$
+于是
+$$
+\begin{aligned} 
+    { }&  \sum\limits_{\boldsymbol{s}_{-i}\in S_{-i}} p_{\boldsymbol{\sigma^*}}(s_i, \boldsymbol{s}_{-i})  u_i(s_i, \boldsymbol{s}_{-i}) \ge \sum\limits_{\boldsymbol{s}_{-i}\in S_{-i}} p_{\boldsymbol{\sigma^*}}(s_i^{\prime}, \boldsymbol{s}_{-i})  u_i(s_i^{\prime}, \boldsymbol{s}_{-i}), \quad \forall i\in N, \forall s_i, s_i^{\prime}\in S_i \\ 
+    & \iff \sum\limits_{\boldsymbol{s}_{-i}\in S_{-i}} p_{\boldsymbol{\sigma^*}}(\boldsymbol{s}_{-i})  u_i(s_i, \boldsymbol{s}_{-i}) \ge \sum\limits_{\boldsymbol{s}_{-i}\in S_{-i}} p_{\boldsymbol{\sigma^*}}(\boldsymbol{s}_{-i})  u_i(s_i^{\prime}, \boldsymbol{s}_{-i}), \quad \forall i\in N, \forall s_i, s_i^{\prime}\in S_i \\ 
+    & \iff u_i({\boldsymbol{\sigma}}^*)(s_i) \ge u_i({\boldsymbol{\sigma}}^*)(s_i^{\prime}), \quad \forall i\in N, \forall s_i, s_i^{\prime}\in S_i
+\end{aligned}
+$$
+最后一个不等式成立是因为$\boldsymbol{\sigma}^*$是纳什均衡和无差异原则. 
+#####
+___
+
