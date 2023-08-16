@@ -1,31 +1,58 @@
 ## 0. 讨价还价博弈
-### 0.1. 讨价还价博弈
-一个讨价还价博弈是有序组合$(S, \boldsymbol{d})$, 其中
+### 0.1. 两人讨价还价博弈
+一个两人讨价还价博弈是有序组合$(S, \boldsymbol{d})$, 其中
 1. $S\subseteq \mathbb{R}^2$是非空凸紧集, 叫做备选方案集
-2. $\boldsymbol{d} = (d_1,d_2)\in S$叫做分歧点
+2. $\boldsymbol{d} = (d_1,d_2)\in S$叫做分歧点, 分歧点是当合作没有达成时, 双方参与人的收益.
 3. 存在满足$\boldsymbol{x} >> \boldsymbol{d}$的备选方案$\boldsymbol{x} = (x_1, x_2)\in S$ . 这里, $\boldsymbol{x} >> \boldsymbol{d}$表示对任意的$1\le i\le \mathrm{len}(\boldsymbol{x})$, 都有$x_i>d_i$. 
 
 用$\mathcal{F}$表示所有讨价还价博弈组成的集合. 
 
-### 0.2. 解的概念
-将每个讨价还价博弈$(S, \boldsymbol{d})\in \mathcal{F}$和一个备选方案$\boldsymbol{\varphi}(S, \boldsymbol{d})\in S$联系起来的函数$\boldsymbol{\varphi}$叫做解的概念.
+### 0.2. 参与人集为$N$的讨价还价博弈
+一个多人的讨价还价博弈是$(N, S, \boldsymbol{d})$, 这里
+
+1. $N$是参与人的有限集合
+2. $S\subseteq \mathbb{R}^N$是备选方案的非空凸紧集, 并且存在$\boldsymbol{x}\in S$, 满足$\boldsymbol{x}>>\boldsymbol{d}$. 
+3. $\boldsymbol{d}\subseteq \mathbb{R}^N$是分歧点
+
+用$\mathcal{F}^N$表示参与人集为$N$的所有讨价还价博弈$(N, S, \boldsymbol{d})$组成的集合. 用$\mathcal{F}^* = \bigcup\limits_{N\subseteq \mathbb{N}}^{} \mathcal{F}^N$表示具有有限参与人集的所有讨价还价博弈组成的集合. 
+
+### 0.3. 解的概念
+对于两人讨价还价博弈, 将每个讨价还价博弈$(S, \boldsymbol{d})\in \mathcal{F}$和一个备选方案$\boldsymbol{\varphi}(S, \boldsymbol{d})\in S$联系起来的函数$\boldsymbol{\varphi}$叫做解的概念. 
+
+对于多人讨价还价博弈, 将每个讨价还价博弈$(N, S, \boldsymbol{d})\in \mathcal{F}^*$和一个备选方案$\boldsymbol{\varphi}(N, S, \boldsymbol{d})\in S$联系起来的函数$\boldsymbol{\varphi}$叫做解的概念. 
+
+### 0.4. 讨价还价博弈的特征
+#### 0.4.1. 对称性
+如果讨价还价博弈$(N, S, \boldsymbol{d})\in \mathcal{F}^*$满足如下的两个特征
+1. **分歧点是对称的**: $d_i=d_j$对所有的$i, j\in N$成立
+2. **备选方案集是对称的**: 如果$\boldsymbol{x} \in S$, 那么对集合$N$的任意置换$\pi$, 有$\left(x_{\pi(i)}\right)_{i \in N} \in S$. 
+
+则称讨价还价博弈$(N, S, \boldsymbol{d})\in \mathcal{F}^*$是对称的
+
+#### 0.4.2. 有效率
+设$\boldsymbol{x}\in S$, 如果不存在备选方案$\boldsymbol{y}\in S\backslash\{\boldsymbol{x}\}$, 使得$\boldsymbol{y}\ge \boldsymbol{x}$, 则称$\boldsymbol{x}$在$S$内是有效率的. 用$\mathrm{PO}(S)$表示在$S$内有效率点的集合. 
+
+设$\boldsymbol{x}\in S$, 如果不存在备选方案$\boldsymbol{y}\in S$, 使得$\boldsymbol{y}>>\boldsymbol{x}$, 则称$\boldsymbol{x}$在$S$内是弱有效率的. 用$\mathrm{PO}^W(S)$表示在$S$内弱有效率点的集合
+
+### 0.5. 讨价还价博弈族$\mathcal{F}^*_0$
+用$\mathcal{F}_0^*$表示讨价还价博弈$(N, S, \boldsymbol{d})$的族
+1. 参与人集合$N$是有限的
+2. 分歧点$\boldsymbol{d} = \boldsymbol{0}$
+3. 集合$S$是$\mathbb{R}^N$内的非空凸紧集
+4. 对每个$\boldsymbol{x}\in S$, 都有$\boldsymbol{x}\ge \boldsymbol{0}$, 并且存在$\boldsymbol{x}\in S$, 使得$\boldsymbol{x}>> \boldsymbol{0}$
+5. **完备性**: 如果$\boldsymbol{x}\in S$, 那么矩形$\operatorname*{\times}\limits_{i\in N}[d_i, x_i]\subseteq S$
 
 ## 1. 纳什解
 ### 1.1. 纳什解的特征
 #### 1.1.1. 对称性
-如果满足如下的两个特征, 那么称讨价还价博弈$(S, \boldsymbol{d})\in \mathcal{F}$是对称的
-1. 分歧点是对称的: $d_1 = d_2$
-2. 备选方案集是对称的: 如果$\boldsymbol{x} = (x_1, x_2)\in S$, 那么$\boldsymbol{x}^{\prime} = (x_2, x_1)\in S$. 
+一个解的概念$\boldsymbol{\varphi}$是对称的, 如果对每个对称的讨价还价博弈$(S, \boldsymbol{d})\in \mathcal{F}$, 向量$\boldsymbol{\varphi}(S, \boldsymbol{d}) =(\varphi_1(S, \boldsymbol{d}), \varphi_2(S, \boldsymbol{d}))$满足$\varphi_1(S, \boldsymbol{d}) = \varphi_2(S, \boldsymbol{d})$.
 
-从几何上来看, 对称性意味着备选方案集$S$关于$\mathbb{R}^2$内的主对角线是对称的. 
-
-我们称解的概念$\boldsymbol{\varphi}$是对称的, 如果对每个对称的讨价还价博弈$(S, \boldsymbol{d})\in \mathcal{F}$, 向量$\boldsymbol{\varphi}(S, \boldsymbol{d}) =(\varphi_1(S, \boldsymbol{d}), \varphi_2(S, \boldsymbol{d}))$满足$\varphi_1(S, \boldsymbol{d}) = \varphi_2(S, \boldsymbol{d})$.
+当扩展到参与人集合为$N$的情形时, 一个解的概念$\boldsymbol{\varphi}$是对称的, 如果对每个对称的讨价还价博弈$(N, S, \boldsymbol{d})\in \mathcal{F}^*$和任意的$i, j\in N$
+$$
+\varphi_i(N, S, \boldsymbol{d}) = \varphi_j(N, S, \boldsymbol{d})
+$$
 
 #### 1.1.2. 有效率
-一个备选方案$\boldsymbol{x}\in S$在$S$内是有效率的, 如果不存在一个备选方案$\boldsymbol{y}\in S$, $\boldsymbol{y}\neq \boldsymbol{x}$, 使得$\boldsymbol{y}\ge \boldsymbol{x}$. 我们用$\mathrm{PO}(S)$表示在$S$内有效率点的集合. 
-
-一个备选方案$\boldsymbol{x}\in S$在$S$内是弱有效率的, 如果在$S$内不存在被双方参与人都严格偏好的备选方案. 换言之, 不存在$\boldsymbol{y}\in S$, 使得$\boldsymbol{y}>>\boldsymbol{x}$. 用$\mathrm{PO}^W(S)$表示$S$内弱有效率点的集合.
-
 一个解的概念$\boldsymbol{\varphi}$是有效率的, 如果对每个讨价还价博弈$(S, \boldsymbol{d})\in \mathcal{F}$, 都有$\boldsymbol{\varphi}(S, \boldsymbol{d}) \in \mathrm{PO}(S)$. 一个解的概念$\boldsymbol{\varphi}$是弱有效率的, 如果对每个讨价还价博弈$(S, \boldsymbol{d})\in \mathcal{F}$, 都有$\boldsymbol{\varphi}(S, \boldsymbol{d}) \in \mathrm{PO}^{W}(S)$.
 
 #### 1.1.3. 正向仿射变换下的协变
@@ -36,7 +63,7 @@ $$
 
 
 #### 1.1.4. 无关备选方案的独立性(Independent of Irrelevant Alternatives, IIA)
-解的概念$\boldsymbol{\varphi}$满足IIA性, 如果对每个讨价还价博弈$(T, \boldsymbol{d})\in \mathcal{F}$和$S\subseteq T$, 下式成立: 
+一个解的概念$\boldsymbol{\varphi}$是IIA的, 如果对每个讨价还价博弈$(T, \boldsymbol{d})\in \mathcal{F}$和$S\subseteq T$, 下式成立: 
 $$
 \boldsymbol{\varphi}(T, \boldsymbol{d}) \in S \implies \boldsymbol{\varphi}(S, \boldsymbol{d}) = \boldsymbol{\varphi}(T, \boldsymbol{d})
 $$
@@ -44,12 +71,18 @@ $$
 
 
 ### 1.2. 纳什解的唯一性
-在所有满足对称性、有效率、正向仿射变换下的协变和IIA的族$\mathcal{F}$中, 存在唯一的解的概念$\boldsymbol{\mathcal{N}}$. 讨价还价博弈$(S, \boldsymbol{d})$的解$\boldsymbol{\mathcal{N}}(S, \boldsymbol{d})$是$S$内个体理性的备选方案, 并且最大化矩形的面积
+在所有满足对称性、弱有效率、正向仿射变换下的协变和IIA的族$\mathcal{F}$中, 存在唯一的解的概念$\boldsymbol{\mathcal{N}}$, 满足$\boldsymbol{\mathcal{N}}(S, \boldsymbol{d})$是$S$内个体理性的备选方案, 并且最大化矩形的面积
 $$
 f(\boldsymbol{x}) = (x_1 - d_1)(x_2 -d_2)
 $$
+对于多人博弈族$\mathcal{F}^*$, 存在唯一的解的概念$\boldsymbol{\mathcal{N}}$, 满足$\boldsymbol{\mathcal{N}}(N, S, \boldsymbol{d})$是$S$内个体理性的备选方案, 并且最大化超矩形的体积
+$$
+f(\boldsymbol{x}) = \prod\limits_{i\in N}^{} (x_i-d_i)
+$$
 ___
 ##### Proof
+只要证明结论对二人博弈成立即可, 对于多人博弈的情形, 我们只需要将下面的证明进行简单的推广.
+
 首先我们证明, 对每个讨价还价博弈$(S, \boldsymbol{d})\in \mathcal{F}$, 在集合$S$中存在唯一的点$\boldsymbol{x}$最大化
 $$
 f(\boldsymbol{x}) = (x_1 - d_1)(x_2 -d_2)
@@ -77,40 +110,62 @@ $$
 $$
 L(x_1, x_2) = \left(\dfrac{x_1-d_1}{y_1^* - d_1}, \dfrac{x_2-d_2}{y_2^* - d_2}\right)
 $$
-这个仿射变换将$\boldsymbol{y}^*$变换为$(1,1)$, 将$\boldsymbol{d}$变换为$(0,0)$. 因此, 可以不妨设$\mathcal{N}(S, \boldsymbol{d}) = (1,1)$, $\boldsymbol{d} = (0,0)$. 根据$\mathcal{N}$的最优性, 对每个$\boldsymbol{x}\in S$, 都有$x_1+x_2\le 2$成立. 设$T$是一个相对于对角线$x_1 = x_2$的对称方格, 包含$S$, 其中一个边沿着线$x_1+x_2=2$(如下图所示)
+这个仿射变换将$\boldsymbol{y}^*$变换为$(1,1)$, 将$\boldsymbol{d}$变换为$(0,0)$. 因此, 可以不妨设$\mathcal{N}(S, \boldsymbol{d}) = (1,1)$, $\boldsymbol{d} = (0,0)$. 根据$\mathcal{N}$最大化矩形的面积, 我们有对每个$\boldsymbol{x}\in S$, 都有$x_1+x_2\le 2$成立. 设$T$是一个相对于对角线$x_1 = x_2$的对称方格, 包含$S$, 其中一个边沿着线$x_1+x_2=2$(如下图所示)
+
 ![](Lecture%209.%20讨价还价.assets/纳什解的证明.png)  
 
-根据$\boldsymbol{\varphi}$是对称的和有效率的, 因此$\boldsymbol{\varphi}(T, (0,0)) = (1,1)$. 又因为IIA并且$S\subseteq T$, 于是$\boldsymbol{\varphi}(S, (0,0)) = (1,1)$. 这就证明了$\boldsymbol{\varphi} = \boldsymbol{\mathcal{N}}$.
+根据$\boldsymbol{\varphi}$是对称的和弱有效率的, 因此$\boldsymbol{\varphi}(T, (0,0)) = (1,1)$. 又因为IIA并且$S\subseteq T$, 于是$\boldsymbol{\varphi}(S, (0,0)) = (1,1)$. 这就证明了$\boldsymbol{\varphi} = \boldsymbol{\mathcal{N}}$.
 #####
 ___
 
 ### 1.3. 纳什解的最小特征
 下面我们将给出例子, 当某个特征无法满足, 而另外三个特征满足时, 解的概念$\boldsymbol{\mathcal{N}}$不再是唯一的.
-#### 1.3.1. 不满足有效率
-定义解的概念$\boldsymbol{\varphi}$如下
-$$
-\boldsymbol{\varphi}(S, \boldsymbol{d}) = \dfrac{\boldsymbol{d}+ \mathcal{N}(S, \boldsymbol{d})}{2}
-$$
-在四个纳什特征中, 这个解的概念唯一没有满足的是有效率.
-
-#### 1.3.2. 不满足对称性
+#### 1.3.1. 不满足对称性
 定义解的概念$\boldsymbol{\varphi}$如下
 $$
 \boldsymbol{\varphi}(S, \boldsymbol{d}) = \operatorname*{argmax}\limits_{\boldsymbol{x}\in \mathrm{PO}(S), \boldsymbol{x}\ge \boldsymbol{d}} x_1
 $$
 在四个纳什特征中, 这个解的概念唯一没有满足的是对称性.
 
+#### 1.3.2. 不满足弱有效率
+定义解的概念$\boldsymbol{\varphi}$如下
+$$
+\boldsymbol{\varphi}(S, \boldsymbol{d}) = \boldsymbol{d}
+$$
+在四个纳什特征中, 这个解的概念唯一没有满足的是有效率.
+___
+##### Note: 不满足弱有效性的唯一非纳什解就是$\boldsymbol{d}$
+事实上, 弱有效率这个条件是不必要的, 如果我们只关注所有严格个体理性的备选方案. 注意到, 在[1.2. 纳什解的唯一性](#1.2.%20纳什解的唯一性)的证明中, 我们对弱有效率的唯一应用是得到$\boldsymbol{\varphi}(T, (0,0)) = (1,1)$. 可以证明, 当只考虑严格个体理性的解时, 我们有
+$$
+\boldsymbol{\varphi}(T, \boldsymbol{0}) \in \{\boldsymbol{x}\in T\mid k\boldsymbol{x}\notin T, k>1\} \tag{1}
+$$
+再根据对称性, 自然也可以得到$\boldsymbol{\varphi}(T, (0,0)) = (1,1)$
+
+![](Lecture%209.%20讨价还价.assets/纳什解的证明.png)  
+
+**(1)的证明**: 因为$\boldsymbol{\varphi}$满足仿射变换下的协变性, 因此我们可以不妨设$\boldsymbol{d}=\boldsymbol{0}$. 用$\boldsymbol{y}$记$\boldsymbol{\varphi}(T, \boldsymbol{0})$. 取$k\ge 1$使得$k\boldsymbol{y} = \boldsymbol{x}\in T$($k$一定存在, 因为$k=1$时, $\boldsymbol{x}=\boldsymbol{y}\in T$), 令$c = \dfrac{1}{k}$, 并且设$S=cT$. 显然$S\subsetneq T$并且$\boldsymbol{y}\in S$, 根据IIA, 有$\boldsymbol{\varphi}(S) = \boldsymbol{y}$. 但是, 仿射变换下的协变性要求$\boldsymbol{\varphi}(S) = c\boldsymbol{y}$, 因此$k=c=1$. 这样, 我们就证明了对于任意的讨价还价博弈$T$
+$$
+\boldsymbol{\varphi}(T, \boldsymbol{0}) \in \{\boldsymbol{x}\in T\mid k\boldsymbol{x}\notin T, k>1\} \tag{1}
+$$
+
+#####
+___
+
 #### 1.3.3. 不满足正向仿射变换下的协变
 对每个角$0<\alpha < \dfrac{\pi}{2}$. 令$\lambda_{\alpha}(S, \boldsymbol{d})$为如下所示的射线上的最高点. 
 ![](Lecture%209.%20讨价还价.assets/正向仿射变换下的协变.png)  
 
-在四个纳什特征中, $\lambda_{\frac{\pi}{4}}(S, \boldsymbol{d})$唯一没有满足的是正向仿射变换下的协变.
+定义解的概念$\boldsymbol{\varphi}$如下
+$$
+\boldsymbol{\varphi}(S, \boldsymbol{d})  = \lambda_{\frac{\pi}{4}}(S, \boldsymbol{d})
+$$
 
+在四个纳什特征中, 这个解的概念唯一没有满足的是正向仿射变换下的协变.
 
 #### 1.3.4. 不满足IIA
 定义解的概念$\boldsymbol{\varphi}$如下: 如果存在一个正向的仿射变换$L$, 满足特征$(L(S), L(\boldsymbol{d}))$是一个对称的讨价还价博弈, 那么$\boldsymbol{\varphi}(S, \boldsymbol{d}) = \mathcal{N}(S, \boldsymbol{d})$. 
 $$
-\boldsymbol{\varphi}(S, \boldsymbol{d}) = \begin{cases} \mathcal{N}(S, \boldsymbol{d}), & \exists L \text{ is affine},\ \mathrm{s.t.} (L(S), L(\boldsymbol{d})) \text{ is a symmetric bargaining game} \\ 
+\boldsymbol{\varphi}(S, \boldsymbol{d}) = \begin{cases} \mathcal{N}(S, \boldsymbol{d}), & \exists L \text{ affine},\ \mathrm{s.t.} (L(S), L(\boldsymbol{d})) \text{ is symmetric} \\ 
 \operatorname*{argmax}\limits_{\boldsymbol{x}\in\mathrm{PO}(S); \boldsymbol{x}\ge \boldsymbol{d}} x_1, &\mathrm{Others}\end{cases}
 $$
 在四个纳什特征中, $\boldsymbol{\varphi}$唯一没有满足的是IIA.
@@ -133,23 +188,22 @@ IIA是一个有争议的概念. 当解的概念$\boldsymbol{\varphi}$反映了�
 考虑两个参与人以$\dfrac{1}{2}$的概率参与讨价还价博弈$(S, \boldsymbol{0})$和$(T, \boldsymbol{0})$. 理论上来说, 这等价于他们在参加讨价还价博弈$\left(\dfrac{1}{2}S + \dfrac{1}{2}T, \boldsymbol{0}\right)$. 不难计算出, 博弈$(S, \boldsymbol{0})$的纳什解是$(25, 50)$, $(T, \boldsymbol{0})$的纳什解为$(50, 25)$, 它们的均值是$(37.5, 37.5)$. 但在讨价还价博弈$\left(\dfrac{1}{2}S + \dfrac{1}{2}T, \boldsymbol{0}\right)$中, 纳什解是$(50, 50)$. 
 
 
-
 ## 2. 对纳什解的深入讨论
 ### 2.1. 纳什解的几何刻画
-对每个讨价还价博弈$(S, \boldsymbol{d})\in \mathcal{F}$, 我们有$\boldsymbol{\mathcal{N}}(S, \boldsymbol{d}) = \boldsymbol{y}$当且仅当
+对每个讨价还价博弈$(S, \boldsymbol{d})\in \mathcal{F}$, $\boldsymbol{\mathcal{N}}(S, \boldsymbol{d}) = \boldsymbol{y}$当且仅当
 1. $\boldsymbol{y}\in \mathrm{PO}(S)$
 2. $\boldsymbol{y}>>\boldsymbol{d}$
-3. 在$\boldsymbol{y}$处存在$S$的支撑线$l$. 设$l$与$x_2 = d_2$相交于点$\boldsymbol{p}$, 则三角形$\Delta DYP$是一个等腰三角形. 
+3. 在$\boldsymbol{y}$处存在$S$的支撑线$l$ (其中$l$与$x_2 = d_2$相交于点$\boldsymbol{p}$), 使得三角形$\Delta DYP$是一个等腰三角形. 
 
 ![](Lecture%209.%20讨价还价.assets/纳什解的几何刻画.png)  
 
 ___
 ##### Proof
-给定讨价还价博弈$(S, \boldsymbol{d})\in \mathcal{F}$和$\boldsymbol{y}^* = \mathcal{N}(S, \boldsymbol{d})$. 我们知道, 存在正向的仿射变换$L$, 使得$L(\boldsymbol{d}) = (0, 0), \boldsymbol{z}^* = L(\boldsymbol{y}^*) = (1,1)$, 并且$L(S)$是半空间$x_1+ x_2 \le 2$的子集. 因此$x_1+x_2=2$是$L(S)$在$\boldsymbol{z}^*$处的支撑线. 而$(0, 0), (1,1)$和$(2,0)$三个点恰好构成一个等腰三角形. 根据仿射变换的性质. 我们不难证明纳什解的几何性质. 
+给定讨价还价博弈$(S, \boldsymbol{d})\in \mathcal{F}$和$\boldsymbol{y}^* = \mathcal{N}(S, \boldsymbol{d})$. 我们知道, 存在正向的仿射变换$L$, 使得$L(\boldsymbol{d}) = (0, 0), \boldsymbol{z}^* = L(\boldsymbol{y}^*) = (1,1)$, 并且$L(S)$是半空间$x_1+ x_2 \le 2$的子集. 因此$x_1+x_2=2$是$L(S)$在$\boldsymbol{z}^*$处的支撑线. 而$(0, 0), (1,1)$和$(2,0)$三个点恰好构成一个等腰三角形. 根据仿射变换的性质, 不难证明结论成立. 
 #####
 ___
 
-### 2.2. 沙普利对纳什解的刻画(效用的人际比较)
+### 2.2. 对二人讨价还价博弈纳什解的另一种刻画(效用的人际比较)
 令$(S, \boldsymbol{d})\in \mathcal{F}$是一个讨价还价博弈. 对每个满足$\boldsymbol{y}>> \boldsymbol{d}$的有效率点, 在$\boldsymbol{y}$处存在$S$唯一的切线. 那么存在唯一的备选方案$\boldsymbol{x}\in S$, 使得存在一个正数$c>0$满足
 1. 平均主义: $x_2 - d_2 = c(x_1-d_1)$
 2. 功利主义: $\boldsymbol{x}\in \operatorname*{argmax}\limits_{\boldsymbol{y}\in S} \{(y_2 - d_2)+ c(y_1 - d_1)\}$
@@ -164,49 +218,30 @@ ___
 ___
 
 
-### 2.3. 超过2人的讨价还价博弈
-#### 2.3.1. 参与人集为$N$的讨价还价博弈
-一个多人的讨价还价博弈是$(N, S, \boldsymbol{d})$, 这里
-1. $N$是参与人的有限集合
-2. $S\subseteq \mathbb{R}^N$是备选方案的非空凸紧集, 并且存在满足$\boldsymbol{x}>>\boldsymbol{d}$的备选方案$\boldsymbol{x}\in S$.
-3. $\boldsymbol{d}\subseteq \mathbb{R}^N$是分歧点
-
-用$\mathcal{F}^N$表示参与人集为$N$的所有讨价还价博弈$(N, S, \boldsymbol{d})$组成的集合. 用$\mathcal{F}^* = \bigcap\limits_{N\subseteq \mathbb{N}}^{} \mathcal{F}^N$表示具有有限参与人集的所有讨价还价博弈组成的集合. 
-
-#### 2.3.2. 解的概念
-解的概念$\boldsymbol{\varphi}$是一个函数, 它将每个讨价还价博弈$(N, S, \boldsymbol{d})\in \mathcal{F}^*$和一个备选方案$\boldsymbol{\varphi}(N, S, \boldsymbol{d})\in S$联系起来.
-
-
-#### 2.3.3. 纳什解的唯一性
-对于讨价还价博弈族$\mathcal{F}^*$, 存在唯一的解的概念$\boldsymbol{\mathcal{N}}^*$, 它满足对称性、有效率、正向仿射变换下的协变和IIA. 对每个讨价还价博弈$(N, S, \boldsymbol{d})\in \mathcal{F}^*$, 解的概念$\boldsymbol{\mathcal{N}}^*(N, S, \boldsymbol{d})$是$S$内个体理性的备选方案, 并且最大化超矩形的体积
-$$
-f(\boldsymbol{x}) = \prod\limits_{i\in N}^{} (x_i - d_i)
-$$
-### 2.4. 多人讨价还价博弈的纳什解的另一种刻画
-#### 2.4.1. 一致性
+### 2.3. 多人讨价还价博弈的纳什解的另一种刻画
+#### 2.3.1. 一致性
 解的概念$\boldsymbol{\varphi}$满足一致性, 如果对每个讨价还价博弈$(N, S, \boldsymbol{d})\in \mathcal{F}^*$和每个非空参与人集合$I\subset N$. $\{\varphi_i(I, S,\boldsymbol{d})\}_{i\in I}$是讨价还价博弈$(I, \widehat{S}, \widehat{d})$的解. 其中
 1. 对每个$i\in I, \widehat{d}_i = d_i$. 
 2. $\widehat{S} = \{(x_i)_{i\in I}\in \mathbb{R}^I\mid ((x_i)_{i\in I}, (\varphi_j(N, S, \boldsymbol{d}))_{j\notin I})\in S\}$. 
 
-一致性特征是我们给出的唯一涉及不同参与人数量的博弈特征.
+一致性特征描述的是, 任意的参与人组合对组合内收益的重新分配仍然导向原先的纳什解. 
 
-#### 2.4.2. 匿名性
-解的概念$\boldsymbol{\varphi}$满足匿名性, 如果对每个讨价还价博弈$(N, S, \boldsymbol{d})\in \mathcal{F}^*$和参与人集合$N$的每个排列$\pi$
+#### 2.3.2. 匿名性
+解的概念$\boldsymbol{\varphi}$满足匿名性, 如果对每个讨价还价博弈$(N, S, \boldsymbol{d})\in \mathcal{F}^*$和参与人集$N$的每个置换$\pi$, 都有
 $$
-\boldsymbol{\varphi}_{\pi(i)}(\pi(S), \pi(\boldsymbol{d})) = \varphi_i(S, \boldsymbol{d}), \quad \forall i \in N
+\varphi_{\pi(i)}(\pi(S), \pi(d))=\varphi_i(S, d), \quad \forall i \in N
 $$
+事实上, 对称性是匿名性在对称博弈中的特例.
 
-#### 2.4.3. 讨价还价博弈族$\mathcal{F}^*_0$
-用$\mathcal{F}_0^*$表示讨价还价博弈$(N, S, \boldsymbol{d})$的族
-1. 参与人集合$N$是有限的
-2. 分歧点$\boldsymbol{d} = \boldsymbol{0}$
-3. 集合$S$是$\mathbb{R}^N$内的非空凸紧集
-4. 对每个$\boldsymbol{x}\in S$, 都有$\boldsymbol{x}\ge \boldsymbol{0}$, 并且存在$\boldsymbol{x}\in S$, 使得$\boldsymbol{x}>> \boldsymbol{0}$
-5. 完备性: 如果$\boldsymbol{x}\in S$, 那么矩形$\operatorname*{\times}\limits_{i\in N}[d_i, x_i]\subseteq S$
+#### 2.3.3. 纳什解的另一种刻画
+在讨价还价博弈族$\mathcal{F}_0^*$中, 满足有效率、匿名性、正向仿射变换的协变性以及一致性特征的唯一的解的概念是纳什解$\boldsymbol{\mathcal{N}}$.
+___
+##### Proof
+为了简便起见, 我们用数字编号所有的参与者, 并重复利用符号$N$, $N= \{1,2, \cdots, N\}$. 因为$\mathcal{F}_0^*$中总有$\boldsymbol{d}=\boldsymbol{0}$, 为了简便起见, 解的概念可以省略第三个参数. 用$\boldsymbol{y}$表示$\mathcal{N}(N, S)$, 假设有一个满足条件的不同于纳什解的解的概念$\boldsymbol{\varphi}(N, S)$. 因为$\boldsymbol{\varphi}$还满足正向仿射变换的协变性, 因此可以不妨设$\boldsymbol{y}=1$, 再根据纳什解的定义, $S$被半空间$\{\boldsymbol{x}\mid x_1+x_2+\cdots +x_N\le N\}$限制. 
 
-#### 2.4.4. 纳什解的另一种刻画
-在讨价还价博弈族$\mathcal{F}_0^*$中, 满足有效率、匿名性、正向仿射变换的协变以及一致性特征的唯一的解的概念是纳什解$\boldsymbol{\mathcal{N}}^*$.
-
+当$N=2$时, 
+#####
+___
 
 ## 3. 讨价还价博弈中其他解的概念
 ### 3.1. 单调性特征

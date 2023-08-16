@@ -81,6 +81,7 @@ $$
 ## 3. 其他Normalization方法
 ### 3.1. Layer Normalization
 [Layer Normalization](zotero://select/library/items/JNY7DNDD)
+
 Layer Normalization是针对 Batch Normalization的不足而提出的。与 BN 不同，LN 是一种横向的规范化，它综合考虑一层所有维度的输入. 
 $$
 \mu^{(t)}=\sum_i a_i^{(t)}, \quad \sigma^{(t)}=\sqrt{\sum_i\left(a_i^{(t)}-\mu^{(t)}\right)^2+\varepsilon^{(t)}}
@@ -96,6 +97,7 @@ $$
 
 ### 3.2. Instant Normalization & Group Normalization
 [Group Normalization](zotero://select/library/items/L5X6KT3G)
+
 对于CNN结构的网络, Layer Normalization将所有Channel的数据进行了统一的转换, 从而忽略了不同通道的差异.
 
 Instant Normalization是对每一个通道单独进行标准化, 而Group Normalization是对每一个Group进行标准化(每个group里包含一定数量的Channel, 是对Layer Normalization和Instant Normalization的折中)

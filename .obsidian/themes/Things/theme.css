@@ -41,6 +41,12 @@ body {
   --h5-color: var(--red);
   --h6-color: var(--text-muted);
 
+  --h1-size: 2.2em;
+  --h2-size: 1.8em;
+  --h3-size: 1.5em;
+  --h4-size: 1.3em;
+  --h5-size: 1.1em;
+
   --strong-color: var(--pink);
   --em-color: var(--pink);
   --quote-color: var(--green);
@@ -1228,7 +1234,7 @@ settings:
         title: H1 font size
         description: Accepts any CSS font-size value
         type: variable-text
-        default: 2em
+        default: 2.5em
     - 
         id: h1-weight
         title: H1 font weight
@@ -1252,7 +1258,7 @@ settings:
         title: H2 font size
         description: Accepts any CSS font-size value
         type: variable-text
-        default: 1.5em
+        default: 2em
     - 
         id: h2-weight
         title: H2 font weight
@@ -1282,7 +1288,7 @@ settings:
         title: H3 font size
         description: Accepts any CSS font-size value
         type: variable-text
-        default: 1.3em
+        default: 1.5em
     - 
         id: h3-weight
         title: H3 font weight
@@ -1306,7 +1312,7 @@ settings:
         title: H4 font size
         description: Accepts any CSS font-size value
         type: variable-text
-        default: 1.2em
+        default: 1.3em
     - 
         id: h4-weight
         title: H4 font weight
@@ -1343,7 +1349,7 @@ settings:
         title: H5 font size
         description: Accepts any CSS font-size value
         type: variable-text
-        default: 1.1em
+        default: 1.2em
     - 
         id: h5-weight
         title: H5 font weight

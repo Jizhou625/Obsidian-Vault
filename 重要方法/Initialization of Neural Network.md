@@ -4,6 +4,7 @@
 
 ### 2. Xavier初始化
 [Understanding the difﬁculty of training deep feedforward neural networks](zotero://select/library/items/SQXG25FN)
+
 **模型设定**: 
 1. 所有的weights都是独立初始化的, 且均值为$0$, 偏置bias初始化为0. 
 2. 输入的features的方差是相等的, 都为$\mathrm{Var}(x)$, 且进行了中心化. 

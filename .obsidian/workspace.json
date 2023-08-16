@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PKU Learning Notes/博弈论/Lecture 5. 知识的层级.md",
-                "mode": "preview",
+                "file": "代数学/Book 1. 矩阵代数/Chapter 1. 基本概念/Lecture 1. 矩阵的基.md",
+                "mode": "source",
                 "backlinks": true,
                 "source": false
               }
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 343.504695892334,
-    "collapsed": true
+    "width": 343.504695892334
   },
   "right": {
     "id": "45b6cc51caac60ea",
@@ -95,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PKU Learning Notes/博弈论/Lecture 5. 知识的层级.md",
+                "file": "代数学/Book 1. 矩阵代数/Chapter 1. 基本概念/Lecture 1. 矩阵的基.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PKU Learning Notes/博弈论/Lecture 5. 知识的层级.md",
+                "file": "代数学/Book 1. 矩阵代数/Chapter 1. 基本概念/Lecture 1. 矩阵的基.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PKU Learning Notes/博弈论/Lecture 5. 知识的层级.md"
+                "file": "代数学/Book 1. 矩阵代数/Chapter 1. 基本概念/Lecture 1. 矩阵的基.md"
               }
             }
           },
@@ -168,52 +167,52 @@
   },
   "active": "3cc77370206ce44b",
   "lastOpenFiles": [
-    "PKU Learning Notes/博弈论/Lecture 11. 合作博弈.md",
+    "代数学/Book 1. 矩阵代数/Chapter 1. 基本概念/Lecture 3. 矩阵分块.md",
+    "代数学/Book 1. 矩阵代数/Chapter 1. 基本概念/Lecture 4. 内积与范数.md",
+    "代数学/Book 1. 矩阵代数/Chapter 1. 基本概念/Lecture 1. 矩阵的基.md",
+    "代数学/Book 1. 矩阵代数/Chapter 1. 线性代数/Lecture 1. 内积和范数.md",
+    "代数学/Book 1. 矩阵代数/Chapter 1. 基本概念/Lecture 1. 矩阵的秩.md",
+    "代数学/Book 1. 矩阵代数/Chapter 1. 基本概念/Lecture 4. 特殊矩阵.md",
+    "代数学/Book 1. 矩阵代数/Chapter 1. 基本概念/Lecture 5. 内积与范数.md",
+    "代数学/Book 1. 矩阵代数/Chapter 1. 基本概念/Lecture 5. 内积与范数",
+    "代数学/Book 1. 矩阵代数/Chapter 1. 基本概念/Lecture 3. 分块矩阵.md",
+    "代数学/Book 1. 矩阵代数/Chapter 1. 基本概念/Lecture 2. 行列式.md",
+    "代数学/Book 1. 矩阵代数/Chapter 1. 基本概念/Lecture 3. 特殊矩阵.md",
+    "代数学/Book 1. 矩阵代数/Chapter 1. 基本概念/Lecture 1. 基本概念.md",
+    "代数学/Book 1. 矩阵代数/Chapter 1. 线性代数/Lecture 1. 基本概念.md",
+    "PKU Learning Notes/博弈论/Lecture 9. 讨价还价.md",
+    "PKU Learning Notes/社会科学中的计算思维方法/Lecture 2. 小世界与扩散.md",
+    "PKU Learning Notes/社会科学中的计算思维方法/Lecture 3. 博弈论的应用.md",
+    "PKU Learning Notes/社会科学中的计算思维方法/Lecture 5. 信息聚合行为.md",
+    "PKU Learning Notes/社会科学中的计算思维方法/Lecture 4. 万维网和搜索引擎.md",
+    "PKU Learning Notes/社会科学中的计算思维方法/Lecture 1. 关系的平衡和议价.md",
+    "PKU Learning Notes/博弈论/Lecture 9. 讨价还价.assets/平衡结果.png",
+    "重要方法/Normalization of Neural Network.md",
+    "重要方法/Initialization of Neural Network.md",
+    "PKU Learning Notes/博弈论/Lecture 14. 稳定匹配.md",
+    "PKU Learning Notes/博弈论/Lecture 13. 社会选择.md",
+    "theme.css",
+    "PKU Learning Notes/博弈论/Lecture 13. 社会选择与稳定匹配.md",
+    "重要方法/Domain Adaptation.md",
+    "PKU Learning Notes/博弈论/Lecture 13. 社会选择.assets/偏好关系的拼接.png",
+    "Lecture 13. 社会选择与稳定匹配.assets/Z(P%2C Q%3B R).png.md",
+    "Lecture 13. 社会选择与稳定匹配.assets",
+    "PKU Learning Notes/博弈论/Lecture 4. 均衡(扩展式博弈).md",
     "PKU Learning Notes/博弈论/Lecture 5. 知识的层级.assets/Aumann同意一个例子.png",
     "PKU Learning Notes/博弈论/Lecture 5. 知识的层级.assets/Aumann同意定理一个例子.png",
     "PKU Learning Notes/博弈论/Lecture 5. 知识的层级.assets",
-    "PKU Learning Notes/博弈论/Lecture 5. 知识的层级.md",
-    "PKU Learning Notes/博弈论/Lecture 3. 均衡(策略式博弈).md",
-    "PKU Learning Notes/博弈论/Lecture 4. 均衡(扩展式博弈).md",
     "PKU Learning Notes/博弈论/Lecture 3. 均衡(策略式博弈).assets/相关机制的斗鸡博弈.png",
     "PKU Learning Notes/博弈论/Lecture 4. 均衡(扩展式博弈).html",
     "PKU Learning Notes/博弈论/Lecture 4. 均衡(扩展式博弈).assets/行为策略没有等价的混合策略.png",
     "PKU Learning Notes/博弈论/Lecture 4. 均衡(扩展式博弈).assets/${filename}.png",
     "PKU Learning Notes/博弈论/Lecture 4. 均衡(扩展式博弈).assets/混合策略没有等价的行为策略.png",
-    "PKU Learning Notes/博弈论/Lecture 1. 效用理论.md",
     "PKU Learning Notes/博弈论/Lecture 4. 均衡(扩展式博弈).pdf",
-    "概率论/Book 1. 测度论/Chapter 3. 积分/Lecture 3. Lp空间.md",
-    "代数学/Book 1. 矩阵代数/Chapter 1. 基本概念/Lecture 1. 矩阵.md",
     "代数学/Book 1. 矩阵代数/Chapter 1. 基本概念/Lecture 1. 矩阵.html",
     "代数学/Book 1. 矩阵代数/Chapter 1. 基本概念",
     "PKU Learning Notes/博弈论/Lecture 10. 拍卖.html",
     "PKU Learning Notes/博弈论/Lecture 9. 讨价还价.html",
-    "PKU Learning Notes/博弈论/Lecture 8. 重复博弈.html",
-    "PKU Learning Notes/博弈论/Lecture 5. 知识的层级.html",
-    "PKU Learning Notes/博弈论/Lecture 3. 均衡(策略式博弈).html",
-    "概率论/Book 2. 概率论/Chapter 1. 概率不等式/Lecture 1. Basic Probability Inequalities.md",
-    "机器学习/Book 1. 统计学习/Chapter 1. 泛化误差理论/Lecture 5. VC Theory(泛化上界).md",
-    "机器学习/Book 1. 统计学习/Chapter 1. 泛化误差理论/Lecture 4. 生长函数.md",
-    "PKU Learning Notes/社会科学中的计算思维方法/Lecture 4. 万维网和搜索引擎.md",
-    "概率论/Book 1. 测度论/Chapter 2. 测度空间/Lecture 3. Lebesgue-Stieltjes测度.md",
-    "概率论/Book 1. 测度论/Chapter 3. 积分/Lecture 2. 积分的性质.md",
-    "代数学/Book 1. 矩阵代数/Chapter 2. 矩阵求导/Lecture 2. 矩阵微分.md",
-    "信息论/Lecture 2. 数据压缩.md",
-    "概率论/Book 1. 测度论/Chapter 2. 测度空间/Lecture 2. 外测度与测度扩张.md",
-    "代数学/Book 2. 抽象代数/Chapter 1. 群/Lecture 2. 同构和同态.md",
-    "机器学习/Book 1. 统计学习/Chapter 1. 泛化误差理论/Lecture 2. PAC-Bayesian Theory.md",
-    "信息论/Lecture 1. 熵、相对熵和互信息.md",
-    "专题/函数方程/Lecture 1. 柯西方程.md",
-    "PKU Learning Notes/社会科学中的计算思维方法/Lecture 1. 关系的平衡和议价.md",
-    "机器学习/Book 1. 统计学习/Chapter 1. 泛化误差理论/Lecture 1. PAC Learnable.md",
-    "随机过程论/Book 1. 马尔科夫链/Lecture 1. Introduction.md",
-    "重要方法/Initialization of Neural Network.md",
-    "机器学习/Book 1. 统计学习/Chapter 1. 泛化误差理论/Lecture 6. VC Theory(泛化下界).md",
-    "概率论/Book 2. 概率论/Chapter 1. 概率不等式/Lecture 5. Inequalities Based on Specific Distribution.md",
     "PKU Learning Notes/博弈论/Lecture 4. 均衡(扩展式博弈).assets/子博弈完美均衡未必是扩展式完美均衡.png",
     "PKU Learning Notes/博弈论/Lecture 9. 讨价还价.assets/lambda_alpha.png",
-    "PKU Learning Notes/博弈论/Lecture 9. 讨价还价.assets/乌托邦点.png",
-    "PKU Learning Notes/博弈论/Lecture 9. 讨价还价.assets/纳什解的几何刻画.png",
     "未命名.canvas"
   ]
 }
