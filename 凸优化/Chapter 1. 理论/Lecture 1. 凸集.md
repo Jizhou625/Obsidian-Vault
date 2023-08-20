@@ -1,6 +1,6 @@
 ## 1. 凸集
 ### 1.1. 凸集的定义
-集合 $C$ 被称为是凸的, 如果对任意的$\boldsymbol{x}_1, \boldsymbol{x}_2\in C$, 线段$\boldsymbol{x}_1 \boldsymbol{x}_2$ 在 $C$ 中. 即
+集合 $C$ 被称为是凸的, 如果对任意的$\boldsymbol{x}_1, \boldsymbol{x}_2\in C$, 都有
 $$
 \theta \boldsymbol{x}_1 + (1-\theta)\boldsymbol{x}_2\in C, \quad 0\le \theta\le 1
 $$
@@ -24,12 +24,8 @@ $$
 $$
 $\mathrm{conv}C$ 是包含$C$的最小凸集.
 
-
-
 ## 2. 锥(Cone)
-
 ### 2.1 锥和凸锥
-
 集合$C$ 被称为锥, 如果对于任意的 $\boldsymbol{x}\in C$ 和 $\theta\ge 0$, 都有 $\theta \boldsymbol{x}\in C$. 
 
 集合 $C$ 被称为凸锥, 如果它既是凸的也是一个锥, 也就是说, 对任意的$\boldsymbol{x}_1, \boldsymbol{x}_2\in C$ 和 $\theta_1, \theta_2\ge 0$, 都有 
@@ -46,7 +42,7 @@ $$
 $\mathrm{cone}C$是包含$C$的最小凸锥. 
 
 
-### 2.3. Norm cone 的重要例子
+### 2.3. 例子
 #### 2.3.1. 超平面和半空间
 超平面是具有如下形式的集合
 $$
@@ -57,7 +53,7 @@ $$
 \{\boldsymbol{x} \mid \boldsymbol{a}^{\top}\boldsymbol{x} = b\} = \boldsymbol{x}_0 + \boldsymbol{a}^{\perp}
 $$
 
-一个超平面将$\mathbb{R}^n$划分为两个半平面. 半平面具有如下的表达形式
+一个超平面将$\mathbb{R}^n$划分为两个半空间. 半空间具有如下的表达形式
 $$
 \{\boldsymbol{x}\mid \boldsymbol{a}^{\top} \boldsymbol{x}\le b\}, \quad \boldsymbol{a}\in \mathbb{R}^n, \boldsymbol{a}\ne \boldsymbol{0}, b\in \mathbb{R}
 $$
@@ -81,7 +77,7 @@ $$
 \mathcal{E} = \{\boldsymbol{x}_0 + Au\mid \|\boldsymbol{u}\|_2\le 1\}, \quad A = P^{\frac{1}{2}}
 $$
 
-#### 2.3.3. Norm ball and norm cone
+#### 2.3.3. Norm Ball and Norm Cone
 对于一般的范数$\|\cdot\|$, 定义与其相关的norm ball为
 $$
 \{\boldsymbol{x}\mid \|\boldsymbol{x} - \boldsymbol{x}_0\|\le r\}
@@ -103,21 +99,39 @@ $$
 &= \{\boldsymbol{x}\mid A\boldsymbol{x}\preceq \boldsymbol{b}, C\boldsymbol{x} = \boldsymbol{d}\}
 \end{aligned}
 $$
-因此, Polyhedra是有限个半空间和超平面的交集. 
+从几何上来说, Polyhedra是有限个半空间和超平面的交集. 
 
 多面体有另外一种凸包描述, 考虑
 $$
-\mathcal{P}^{\prime} = \{\theta_1\boldsymbol{v}_1 + \theta_2\boldsymbol{v}_2 + \cdots + \theta_k \boldsymbol{v}_k \mid \theta_1+\theta_2+\cdots +\theta_m =1, \theta_i\ge 0, i=1,2,\cdots, k\}, \quad m\le k
+\mathcal{P}^{\prime} = \{\theta_1\boldsymbol{v}_1 + \theta_2\boldsymbol{v}_2 + \cdots + \theta_m\boldsymbol{v}_m +\cdots + \theta_k \boldsymbol{v}_k \mid \theta_1+\theta_2+\cdots +\theta_m =1, \theta_i\ge 0, i=1,2,\cdots, k\}, \quad m\le k
 $$
-$\mathcal{P}^{\prime}$可以被解释为$\boldsymbol{v}_1, \cdots, \boldsymbol{v}_m$的凸包加上点$\boldsymbol{v}_{m+1}, \cdots, \boldsymbol{v}_k$的锥包. $\mathcal{P}^{\prime}$是一个多面体, 并且每个多面体都可以表示为此类形式. 
+$\mathcal{P}^{\prime}$可以被解释为$\boldsymbol{v}_1, \cdots, \boldsymbol{v}_m$的凸包加上点$\boldsymbol{v}_{m+1}, \cdots, \boldsymbol{v}_k$的锥包. 这样定义的$\mathcal{P}^{\prime}$是一个多面体, 并且每个多面体都可以表示为此类形式. 
+___
+##### Note
+如何表示多面体是微妙的. 考虑$\ell_{\infty}$-norm下的$\mathbb{R}^n$中的单位球
+$$
+C = \{\boldsymbol{x}\mid |x_i|\le 1, i=1, 2, \cdots, n\}
+$$
+如果用半空间和超平面的交集来表示, 那么
+$$
+C = \{\boldsymbol{x}\mid \pm \boldsymbol{e}_i^{\top}\boldsymbol{x}\le 1, i=1,2, \cdots, n\}
+$$
+但如果用凸包和锥包来表示, 那么至少需要$2^n$个点
+$$
+C = \mathrm{conv}\{\boldsymbol{v}_1, \cdots, \boldsymbol{v}_{2^n}\}
+$$
+其中$\boldsymbol{v}_1, \cdots, \boldsymbol{v}_{2^n}$是所有元素均为$1$或$-1$的向量. 因此, 这两种表现形式的成本是差异巨大的. 
+#####
+___
 
-#### 2.3.5. 单纯形
+#### 2.3.5. 单纯形(Simplexes)
 单纯形是一类重要的多面体, 设$k+1$个点$\boldsymbol{v}_0, \cdots, \boldsymbol{v}_k\in \mathbb{R}^n$仿射独立, 即$\boldsymbol{v}_1 - \boldsymbol{v}_0, \cdots , \boldsymbol{v}_k - \boldsymbol{v}_0$线性独立. 那么, 这些点决定了一个单纯形
 $$
 C = \mathrm{conv}\{\boldsymbol{v}_0, \cdots , \boldsymbol{v}_k\} = \{\theta_0\boldsymbol{v}_0 + \cdots + \theta_k\boldsymbol{v}_k\mid \boldsymbol{\theta}\succeq \boldsymbol{0}, \sum_{i=0}^k\theta_i = 1\}
 $$
 这个单纯形的仿射维度为$k$, 因此也称为$\mathbb{R}^n$空间上的$k$维单纯形. 
-
+___
+##### Proof 单纯形是多面体
 考虑$B = (\boldsymbol{v}_1 - \boldsymbol{v}_0, \cdots, \boldsymbol{v}_k - \boldsymbol{v}_0)\in \mathbb{R}^{n\times k}$. 我们知道$\boldsymbol{x}\in C$的充要条件为
 $$
 \boldsymbol{x} = \boldsymbol{v}_0 + B\boldsymbol{y}, \quad \boldsymbol{y}\succeq \boldsymbol{0},\ \boldsymbol{1}^{\top}\boldsymbol{y} \le 1
@@ -131,34 +145,32 @@ $$
 A_2\boldsymbol{x} = A_2\boldsymbol{v}_0, \quad A_1\boldsymbol{x}\succeq A_1\boldsymbol{v}_0, \quad \boldsymbol{1}^{\top}A_1\boldsymbol{x} \le 1 + \boldsymbol{1}^{\top}A_1\boldsymbol{v}_0
 $$
 这描述了一个多面体. 
+#####
+___
+
+
 
 #### 2.3.6. 半正定锥(positive semidefinite cone)
-我们用$\mathbb{S}^n$表示所有对称的$n\times n$矩阵组成的集合
-$$
-\mathbb{S}^n = \{X\in \mathbb{R}^{n\times n}\mid X = X^{\top}\}
-$$
-用$\mathbb{S}^n_+$表示所有半正定矩阵组成的集合, 称其为半正定锥(positive semidefinite cone)
+用$\mathbb{S}^n_+$表示所有半正定矩阵组成的集合, 称其为半正定锥
 $$
 \mathbb{S}^n_+ = \{X\in \mathbb{S}^n\mid X\succeq 0\}
 $$
-用$\mathbb{S}^n_{++}$表示所有正定矩阵组成的集合
-$$
-\mathbb{S}^n_{++} = \{X\in \mathbb{S}^n\mid X\succ 0\}
-$$
+
+![image-1](Lecture%201.%20%E5%87%B8%E9%9B%86.assets/R%5E2%E4%B8%AD%E7%9A%84%E6%AD%A3%E5%AE%9A%E9%94%A5%E8%BE%B9%E7%95%8C.png)  
 
 
 ## 3. 仿射集(Affine Sets)
 
 ### 3.1. 仿射子空间(Affine Subspaces)
-一个集合$C$被称为仿射子空间, 当且仅当对任意$\boldsymbol{x}_1$, $\boldsymbol{x}_2\in C$, 过$\boldsymbol{x}_1$, $\boldsymbol{x}_2$的直线都包含在$C$中, 也就是说
+一个集合$C$被称为仿射子空间, 当且仅当对任意$\boldsymbol{x}_1$, $\boldsymbol{x}_2\in C$, 有
 $$
-\theta_1\boldsymbol{x}_1+(1-\theta)\boldsymbol{x}_2  \in C
+\theta_1\boldsymbol{x}_1+(1-\theta)\boldsymbol{x}_2  \in C,\quad \forall \theta\in\mathbb{R}
 $$
 如果 $C$ 是一个仿射子空间并且 $\boldsymbol{x}_0\in C$, 那么
 $$
 V = C - \boldsymbol{x}_0= \{\boldsymbol{x}-\boldsymbol{x}_0\mid \boldsymbol{x}\in C\}
 $$
-是一个线性子空间.  我们定义仿射子空间的维数为$\mathrm{dim}C = \mathrm{dim}V$
+是一个线性子空间.  定义仿射子空间的维数为$\mathrm{dim}C = \mathrm{dim}V$. 
 
 ### 3.2. 仿射组合(Affine Combination)
 设$C\subset \mathbb{R}^n$是一个点集, $\boldsymbol{x}_1, \cdots, \boldsymbol{x}_k\in C$, $\theta_1, \cdots, \theta_k\in \mathbb{R}$, 且$\theta_1+\cdots+\theta_k=1$, 则
@@ -172,51 +184,21 @@ $$
 $$
 \mathrm{aff}C = \{\theta_1\boldsymbol{x}_1+\cdots+\theta_k\boldsymbol{x}_k\mid \boldsymbol{x}_1,\cdots, \boldsymbol{x}_k\in C, \theta_1+ \cdots+\theta_k=1\}
 $$
-$\mathrm{aff} C$是包含$C$的最小的仿射子空间. 我们定义集合$C$的仿射维数为其仿射包$\mathrm{aff} C$的维数. 
+$\mathrm{aff} C$是包含$C$的最小的仿射子空间. 
+
+定义集合$C$的仿射维数为其仿射包$\mathrm{aff} C$的维数.
+___
+##### Note: 仿射维数与正常
+考虑$\{\boldsymbol{x}\in \mathbb{R}^2\mid x_1^2 +x_2^2 = 1\}$, 它的仿射包(affine hull)是$\mathbb{R}^2$, 因此它的仿射维数(affine dimension)为2. 但通常$\mathbb{R}^2$中的单位球的维数为1.
+#####
+___ 
 
 
-### 3.4. 相对内点(Relative Interior)
-如果$\mathrm{aff}C \neq \mathbb{R}^n$, 定义集合$C$的相对内点如下
+### 3.4. 相对内点(Relative Interior)和相对边界(Relative Boundary)
+对于任意的集合$C$满足$\mathrm{aff}C \neq \mathbb{R}^n$, 定义集合$C$的相对内点为
 $$
 \operatorname{ri} C=\{\boldsymbol{x} \in C \mid \mathcal{B}(\boldsymbol{x}, r) \cap \operatorname{aff} C \subseteq C \text { for some } r>0\}
 $$
-我们可以定义集合 $C$ 的相对边界(relative bound)为 $\overline{C}\backslash \mathrm{ri}C$, 其中$\overline{C}$是$C$的闭包(closure). 
+定义集合 $C$ 的相对边界为 $\overline{C}\backslash \mathrm{ri}C$, 其中$\overline{C}$是$C$的闭包(closure). 
 
-
-## 4. Dual Cones 
-### 4.1. Dual Cones的定义
-设$K$是一个锥, 集合
-$$
-K^* = \{\boldsymbol{y}\mid \boldsymbol{y}^{\top}\boldsymbol{x}\ge 0, \forall \boldsymbol{x}\in K\}
-$$
-被称为$K$的对偶锥.
-
-
-
-![image-20230620164730687](Lecture%201.%20凸集.assets/image-20230620164730687.png)
-
-### 4.2. Dual Cones的例子
-#### 4.2.1. 子空间
-子空间$V\subseteq \mathbb{R}^n$的对偶锥是其正交补$V^{\perp} = \{\boldsymbol{y}\mid \boldsymbol{y}^{\top}\boldsymbol{v} = 0,\forall \boldsymbol{v}\in V\}$
-
-#### 4.2.2. 半正定锥
-半正定锥$\mathbb{S}_+^n$的对偶锥是半正定锥$\mathbb{S}_+^n$本身, 即对任意的$X, Y\in \mathbb{S}^n$
-$$
-\operatorname{tr}(XY) \ge 0, \forall X\in \mathbb{S}_+^n \iff Y\in \mathbb{S}_+^n
-$$
-
-#### 4.2.3. 范数锥
-令$\|\cdot\|$为定义在$\mathbb{R}^n$上的范数, 与之相关的锥$K = \{(\boldsymbol{x}, t)\in \mathbb{R}^{n+1}\mid \|\boldsymbol{x}\|\le t\}$的对偶锥由其对偶范数定义
-$$
-K^* = \{(\boldsymbol{y}, s)\in \mathbb{R}^{n+1}\mid \|\boldsymbol{y}\|_*\le s\}
-$$ 
-
-### 4.3. Dual Cones的性质
-Dual Cones 满足如下的性质
-1. $K^*$是凸锥并且$K^*$是闭的
-2. $K_1\subset K_2\implies K_2^* \subset K_1^*$
-3. 如果$K$有非空的内点集, 则$K^*$是pointed的, 也就是说 $K^* \cap - K^* = \{0\}$
-4. 如果$K$的闭包是pointed的, 则$K^*$有非空的内点集
-5. $K^{**}$是$K$的凸包的闭包, 也就是说, 如果$K$是凸的并且是闭的, 则$K^{**} = K$
-6. 如果$K$是proper cone, 则其dual cone 也是 proper cone. 
 

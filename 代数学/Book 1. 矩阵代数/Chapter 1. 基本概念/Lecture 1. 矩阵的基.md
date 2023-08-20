@@ -26,7 +26,7 @@ $$
 $$
 
 ### 1.4. $\mathcal{B}_1 - \mathcal{B}_2$基变换矩阵 
-可以证明
+容易证明
 $$
 {}_{\mathcal{B}_2}[T]_{\mathcal{B}_2} = {}_{\mathcal{B}_2}[I]_{\mathcal{B}_1} {}_{\mathcal{B}_1}[T]_{\mathcal{B}_1} {}_{\mathcal{B}_1}[I]_{\mathcal{B}_2}
 $$
@@ -39,10 +39,7 @@ $$
 $$
 \dim(\mathrm{range}) + \dim(\mathrm{null\ space}) = \mathrm{rank}\left(A\right) + \mathrm{nullity}\left(A\right) = n
 $$
-___
-##### Proof
-#####
-___
+
 ### 2.2. Sylvester不等式
 如果$A\in \mathbb{M}_{m, k}(\mathbb{F})$且$B\in \mathbb{M}_{k, n}(\mathbb{F})$, 那么
 $$

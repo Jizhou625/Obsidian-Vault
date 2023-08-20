@@ -20,16 +20,16 @@ $$
 $$
 我们可以统一表示为
 $$
-\mathrm{d} f = \mathrm{tr}\left(\left(\frac{\partial f}{\partial X}\right)^{\top}  \mathrm{d} X\right) = \mathrm{D}_{\mathrm{vec}(X)}f(X) \mathrm{d}(\mathrm{vec}(X))
+\mathrm{d} f = \mathrm{tr}\left(\left(\frac{\partial f}{\partial X}\right)^{\top}  \mathrm{d} X\right)
 $$
 这里$X$可以退化为向量. 因此Jacobi derivative和梯度函数可以通过下式辨识
 $$
-\mathrm{d}f(X) =\mathrm{tr}\left\{A\mathrm{d}X\right\}\iff \mathrm{D}_Xf(X) = A \iff \nabla_Xf(X)=A^{\top}  
+\mathrm{d}f(X) =\mathrm{tr}\left\{A^{\top}\mathrm{d}X\right\}\iff \mathrm{D}_Xf(X) = \mathrm{vec}^{\top}\left(A\right) \iff \nabla_Xf(X)=\mathrm{vec}\left(A\right) 
 $$
 ### 1.3. 实值矩阵函数的全微分
-根据1.2的结论, 我们有
+根据[1.2. 标量函数的全微分](#1.2.%20标量函数的全微分)的结论, 我们有
 $$
-\mathrm{d}f_{kl}(X) =\mathrm{tr}\left(\left(\frac{\partial f_{kl}}{\partial X}\right)^{\top}  \mathrm{d} X\right) = \mathrm{D}_{\mathrm{vec}(X)}f_{kl}(X) \mathrm{d}(\mathrm{vec}(X)) 
+\mathrm{d}f_{kl}(X) =\mathrm{tr}\left(\left(\frac{\partial f_{kl}}{\partial X}\right)^{\top}  \mathrm{d} X\right) = \mathrm{D}_{X}f_{kl}(X) \mathrm{d}(\mathrm{vec}(X)) 
 $$
 于是, 全微分矩阵的向量化函数具有下列的表达式
 $$

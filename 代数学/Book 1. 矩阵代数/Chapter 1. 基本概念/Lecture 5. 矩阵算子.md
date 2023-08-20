@@ -7,41 +7,13 @@ A & O_{m\times n} \\
 O_{n\times m} & B
 \end{pmatrix}
 $$
-递归的, 可以定义多个矩阵的直和
-### 1.2 直和的性质
-1. 若$A, B$是$m\times m$矩阵, 且$C, D$为$n\times n$矩阵, 则
-  $$
-  \begin{align}
-  (A\pm B)\oplus (C\pm D) &= (A\oplus C)\pm (B\oplus D) \\
-  (A\oplus C)(B\oplus D) &= AB\oplus CD
-  \end{align}
-  $$
+递归地, 可以定义多个矩阵的直和为
+$$
+A_1 \oplus A_2 \oplus \cdots \oplus A_N = \mathrm{diag}\left\{A_1, A_2, \cdots, A_N\right\}
+$$
 
-2. 若$A,B, C$分别是$m\times m, n\times n, p\times p$矩阵, 则
-   $$
-   A\oplus (B\oplus C)=(A\oplus B)\oplus C=A\oplus B\oplus C
-   $$
-   
-3. 若$A_{m\times m}$和$B_{n\times n}$均为正交矩阵, 则$A\oplus B$是$(m+n)\times (m+n)$正交矩阵
 
-4. 矩阵直和的转置, 共轭转置与逆矩阵
-  $$
-  \begin{align}
-  (A\oplus B)^{\top} &=A^{\top}  \oplus B^{\top}  \\
-  (A\oplus B)^{\mathrm{H}} &= A^{\mathrm{H}}  \oplus B^{\mathrm{H}} \\
-  (A\oplus B)^{-1} &= A^{-1}  \oplus B^{-1}
-  \end{align}
-  $$
-  
-5. 矩阵直和的迹, 秩和行列式
-  $$
-  \begin{aligned}
-  \operatorname{tr}\left(\bigoplus_{i=0}^{N-1} \boldsymbol{A}_i\right) & =\sum_{i=0}^{N-1} \operatorname{tr}\left(\boldsymbol{A}_i\right) \\
-  \operatorname{rank}\left(\bigoplus_{i=0}^{N-1} \boldsymbol{A}_i\right) & =\sum_{i=0}^{N-1} \operatorname{rank}\left(\boldsymbol{A}_i\right) \\
-  \operatorname{det}\left(\bigoplus_{i=0}^{N-1} \boldsymbol{A}_i\right) & =\prod_{i=0}^{N-1} \operatorname{det}\left(\boldsymbol{A}_i\right)
-  \end{aligned}
-  $$
-### 1.3. Hadamard积
+### 1.2. Hadamard积
 $m\times n$矩阵$A$和$m\times n$矩阵$B$的Hadamard积记作$A\odot B$, 它仍然是一个$m\times n$矩阵, 其元素定义为两个矩阵的对应元素的乘积, 即Hadamard积是一映射$\mathbb{R}^{m\times n}\times \mathbb{R}^{m\times n}\mapsto \mathbb{R}^{m\times n}$
 $$
 A\odot B = \begin{pmatrix}
@@ -52,15 +24,15 @@ a_{m1}b_{m1} & a_{m2}b_{m2} & \cdots & a_{mn}b_{mn}  \\
 \end{pmatrix}
 $$
 
-### 1.4. Hadamard积的性质
-1. **交换率、结合律和分配律**: 
+### 1.3. Hadamard积的性质
+1. 交换率、结合律和分配律: 
   $$
-  \begin{align}
+  \begin{aligned}
   A\odot B &= B\odot A \\
   A\odot(B\odot C) &= (A\odot B)\odot C \\
   A\odot (B\pm C) &= A\odot B \pm A\odot C \\
   (A+B)\odot (C+D) &= A\odot C + A\odot D + B\odot C + B\odot D
-  \end{align}
+  \end{aligned}
   $$
 
 2. 若$AB^{\top}$为正方矩阵, 则$\mathrm{tr}\left\{AB^{\top}\right\}=\boldsymbol{1}^{\top}(A\odot B)\boldsymbol{1}$
@@ -72,7 +44,7 @@ $$
    \mathrm{tr}\left\{A^{\top} (B\odot C)\right\}=\mathrm{tr}\left\{(A^{\top} \odot B^{\top} )C\right\}
    $$
 
-5. **正定性(Schur积定理)**: 若$m\times m$矩阵$A, B$是正定(或半正定)的, 则它们的Hadamard积$A\odot B$也是正定(或半正定)的
+5. **正定性(Schur积定理)**: 若$m\times m$矩阵$M, N$是正定(或半正定)的, 则它们的Hadamard积$M\odot N$也是正定(或半正定)的. 
 
 6. **Oppenheim不等式**: 令$A, B$是$n\times n$半正定矩阵, 则
    $$
@@ -86,21 +58,27 @@ $$
    $$
    
 ___
-***Proof***: 我们只证明加粗部分的结论
-**Schur积定理**:  For any matrices $M$ and $N$, the Hadamard product $M \circ N$ considered as a bilinear form acts on vectors $a, b$ as
+##### Proof 
+我们只证明加粗部分的结论:
+
+**Schur积定理**: 对任意的正定矩阵$M$, $N$ 和向量 $\boldsymbol{a}, \boldsymbol{b}$, 我们有
 $$
-a^{\top} (M \odot N) b=\operatorname{tr}\left(M^{\top} \operatorname{diag}\left(a\right) N \operatorname{diag}(b)\right)
+\boldsymbol{a}^{\top} (M \odot N) \boldsymbol{b}=\operatorname{tr}\left(M^{\top} \mathrm{diag}\left\{\boldsymbol{a}\right\} N \mathrm{diag}\left\{\boldsymbol{b}\right\}\right)
 $$
-where $\operatorname{tr}$ is the matrix trace and $\operatorname{diag}(a)$ is the diagonal matrix having as diagonal entries the elements of $a$.
-Suppose $M$ and $N$ are positive definite. We can consider their square-roots $C_{M}^{\top}C_M$ and $C_{N}^{\top}C_N$ and write
+考虑正定矩阵$M, N$的平方根$C_M$和$C_N$(都是对称矩阵)
 $$
-\begin{align}
-\operatorname{tr}\left(M^{\top} \operatorname{diag}\left(a\right) N \operatorname{diag}(b)\right)&=\operatorname{tr}\left(C_{M}^{\top}C_M \operatorname{diag}\left(a\right) C_{N}^{\top}C_N\operatorname{diag}(b)\right) \\
-&=\operatorname{tr}\left(C_M\operatorname{diag}\left(a\right) C_{N}^{\top}C_N\operatorname{diag}(b) C_{M}^{\top}\right)
-\end{align}
+\begin{aligned}
+\operatorname{tr}\left(M^{\top} \mathrm{diag}\left\{\boldsymbol{a}\right\} N \mathrm{diag}\left\{\boldsymbol{b}\right\}\right)&=\operatorname{tr}\left(C_{M}^2 \mathrm{diag}\left\{\boldsymbol{a}\right\} C_{N}^2\mathrm{diag}\left\{\boldsymbol{b}\right\}\right) \\
+&=\operatorname{tr}\left(C_M\mathrm{diag}\left\{\boldsymbol{a}\right\} C_{N}C_N\mathrm{diag}\left\{\boldsymbol{b}\right\} C_{M}\right)
+\end{aligned}
 $$
-Then, for $a=b$, this is written as $\operatorname{tr}\left(A^{\top} A\right)$ for $A=C_{N}\operatorname{diag}(a) C_{M}^{\top}$ and thus is strictly positive for $A \neq 0$, which occurs if and only if $a \neq 0$. This shows that $(M \odot N)$ is a positive definite matrix.
-**Oppenheim不等式**: Consider about partition $A=\left(\begin{array}{ll}a_{11} & A_{12} \\ A_{21} & A_{22}\end{array}\right)$ and partition $B=\left(\begin{array}{ll}b_{11} & B_{12} \\ B_{21} & B_{22}\end{array}\right)$, where $A_{22}, B_{22}$ is of order $n-1$. We will use induction on the order of $A$ and $B$. Since $n=1$ is obvious, we assume $n>1$ and the result holds for positive definite matrices of order $K<n$. Let $E = \dfrac{1}{b_{11}}B_{21}B_{12}$, then
+当$\boldsymbol{a}=\boldsymbol{b}$时, 设$A=C_{N}\mathrm{diag}\left\{\boldsymbol{a}\right\} C_{M}$, 则有
+$$
+\operatorname{tr}\left(M^{\top} \mathrm{diag}\left\{\boldsymbol{a}\right\} N \mathrm{diag}\left\{\boldsymbol{b}\right\}\right) = \mathrm{tr}\left(A^{\top}A\right) \ge 0
+$$
+等号成立当且仅当$A = 0$也就是说$\boldsymbol{a} = 0$, 这就证明了正定性
+
+**Oppenheim不等式**: 考虑分块 $A=\left(\begin{array}{ll}a_{11} & A_{12} \\ A_{21} & A_{22}\end{array}\right)$ 和 $B=\left(\begin{array}{ll}b_{11} & B_{12} \\ B_{21} & B_{22}\end{array}\right)$. 我们对$A$ 和 $B$的阶数进行归纳.  $n=1$时, 显然成立, 当 $n>1$时, 假设结论对所有的$k<n$成立. 设 $E = \dfrac{1}{b_{11}}B_{21}B_{12}$, 于是
 $$
 \begin{aligned}
 |A \odot B| & =\begin{vmatrix}
@@ -111,16 +89,23 @@ A_{21}\odot B_{21} & A_{22}\odot B_{22}
 & =a_{11} b_{11} |A_{22} \odot\left(B /b_{11}\right)+\left(A / a_{11}\right) \odot E|
 \end{aligned} 
 $$
-Next, we prove that if $B$ is positive definite, then $B / b_{11}$ is positive definite. For any $(n-1)\times 1$ vector $\boldsymbol{\alpha}$ and any scalar value $a$, we have
-$$(a, \boldsymbol{\alpha}^{\top} ) \left(\begin{array}{ll}b_{11} & B_{12} \\ B_{21} & B_{22}\end{array}\right) \begin{pmatrix}
+接下来我们证明如果$B$是正定的, 那么 $B / b_{11}$ 也是正定的. 对任意的 $(n-1)\times 1$ 向量 $\boldsymbol{\alpha}$ 和实数 $a$, 因为$B$是正定的, 所以
+
+$$
+f(a) = (a, \boldsymbol{\alpha}^{\top} ) \left(\begin{array}{ll}b_{11} & B_{12} \\ B_{21} & B_{22}\end{array}\right) \begin{pmatrix}
 a \\
 \boldsymbol{\alpha}
-\end{pmatrix} = a^2 b_{11} + 2 a \boldsymbol{\alpha}^{\top} B_{21}+ \boldsymbol{\alpha}^{\top} B_{22}\boldsymbol{\alpha}\geq 0,\quad  \forall a$$
-minimize for $a$, we can get that when $a = -\dfrac{\boldsymbol{\alpha}^{\top}B_{21}}{b_{11}}$
+\end{pmatrix} = a^2 b_{11} + 2 a \boldsymbol{\alpha}^{\top} B_{21}+ \boldsymbol{\alpha}^{\top} B_{22}\boldsymbol{\alpha}\geq 0 
 $$
-\boldsymbol{\alpha}^{\top} B_{22} \boldsymbol{a} - \dfrac{1}{b_{11}}\boldsymbol{\alpha}^{\top} B_{21}B_{12}\boldsymbol{\alpha}\geq 0 
+
+最小化$f(a)$, 当 $a = -\dfrac{\boldsymbol{\alpha}^{\top}B_{21}}{b_{11}}$时, 有
 $$
-which means that $B / b_{11}$ is positive definite. Using Schur Product theorem, we know that $A_{22} \odot\left(B / b_{11}\right)$ is positive definite, and $\left(A / a_{11}\right) \odot E$ is also positive definite for the same reason. Minkowski's inequality allows us to say
+\boldsymbol{\alpha}^{\top} B_{22} \boldsymbol{\alpha} - \dfrac{1}{b_{11}}\boldsymbol{\alpha}^{\top} B_{21}B_{12}\boldsymbol{\alpha}\geq 0 
+$$
+
+因此 $B / b_{11}$ 是正定的. 
+
+利用Schur积定理, 我们有 $A_{22} \odot\left(B / b_{11}\right)$ 和 $\left(A / a_{11}\right) \odot E$ 都是正定的. Minkowski's inequality allows us to say
 $$
 |A_{22} \odot\left(B /b_{11}\right)+\left(A / a_{11}\right) \odot E|\ge |A_{22} \odot\left(B /b_{11}\right)| + |\left(A / a_{11}\right) \odot E|
 $$
@@ -155,6 +140,7 @@ $$
 $$
 \mathrm{rank}(A\odot B)\le \mathrm{rank}(A)\mathrm{rank}(B)
 $$
+#####   
 ___
 
 

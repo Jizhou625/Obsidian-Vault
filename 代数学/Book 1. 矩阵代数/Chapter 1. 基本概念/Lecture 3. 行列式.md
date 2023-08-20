@@ -1,28 +1,17 @@
-## 1. 行列式
-### 1.1. 定义
-$A$ is a $n \times n$ square matrix. Given a permutation $\sigma$. The signature of $\sigma$ is defincd to be $+1$ whenever the reordering given by $\sigma$ can be achicved by successively interchanging two entries an even number of times, and $-1$ whenever it can be achieved by an odd number of such interchangings.
+## 1. 行列式的计算
+### 1.1. 拉普拉斯展开(Laplace Expansion)
+用$\sum\alpha$表示指标集$\alpha$内所有元素的和, 设$A$是一个$n\times n$的方阵, 设$|\alpha|=k$是一个固定的指标集, 则
 $$
-\operatorname{det}(A)=\sum_{\sigma \in S_n}\left(\operatorname{sgn}(\sigma) \prod_{i=1}^n a_{i, \sigma_i}\right)
+\det(A)=\sum_{|\beta| = k} (-1)^{\sum\limits_{}^{}\alpha +\sum \beta } \det(A[\alpha, \beta])\det(A[\alpha^c, \beta^c])
 $$
-### 1.2. Cofactor Expansion
-The minor $M_{i, j}$ is defined to be the determinant of the $(n-1) \times(n-1)$ matrix that results from $A$ by removing the $i$ th row and the $j$ th column. The expansion $(-1)^{i+j} M_{i, j}$ is known as a cofactor. For every $i$, one has the equality
-$$
-\operatorname{det}(A)=\sum_{j=1}^n(-1)^{i+j} a_{i j} M_{i j}
-$$
-### 1.3. Laplace Expansion
-Let $A\left(\begin{array}{llll}i_1, & i_2, & \cdots, & i_k \\ j_1, & j_2, & \cdots, & j_k\end{array}\right)$ denote the determinant of $i_1, i_2, \cdots, i_k$ rows and $j_1, j_2, \cdots, j_k$ columns of matrix $A$.
-$$
-|A|=\sum_{1 \leq j_1<\cdots<j_k \leq n} (-1)^{i_1+\cdots+i_k+j_1+\cdots+j_k} A\left(\begin{array}{llll}
-i_1, & i_2, & \cdots, & i_k \\
-j_1, & j_2, & \cdots, & j_k
-\end{array}\right)A\left(\begin{array}{llll}
-i_1^{\prime}, & i_2^{\prime}, & \cdots, & i_{n-k}^{\prime} \\
-j_1^{\prime}, & j_2^{\prime}, & \cdots, & j_{n-k}^{\prime}
-\end{array}\right)
-$$
-这里$\{i_1<i_2<\cdots<i_k\}\bigcup \{i_1^{\prime}<i_2^{\prime}<\cdots<i_{n-k}^{\prime}\} = \{1,2,\cdots,n\}$ and $\{j_1<j_2<\cdots<j_k\}\bigcup \{j_1^{\prime}<j_2^{\prime}<\cdots<j_{n-k}^{\prime}\} = \{1,2,\cdots,n\}$
 
-### 1.4. Inequalities 
+### 1.2. Cauchy-Binet公式
+设$A\in\mathbb{M}_{m, k}(\mathbb{F})$, $B\in\mathbb{M}_{k, n}(\mathbb{F})$, 以及$C=AB$. 进一步假设$1\le r\le \min\{m, k, n\}$, 又设$\alpha\subseteq\{1,2,\cdots, m\}$, $\beta\subseteq \{1,2,\cdots, n\}$是指标集, 且$|\alpha|=|\beta|=r$, $C$的$\alpha, \beta$子式的一个表达式是
+$$
+\det(C[\alpha, \beta]) =\sum\limits_{|\gamma|=r}^{} \det(A[\alpha, \gamma])\det(B[\gamma, \beta])
+$$
+
+### 1.2. Inequalities 
 1. **Cauchy-Schwartz不等式**: 若$A,B$都是$m\times n$矩阵, 则
    $$
    |A^{\top} B|^2 \le |A^{\top} A||B^{\top} B|
